@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 class Seq:
 
-    def __init__(self, fasta_dir):
+    def __init__(self, fasta_dir, encoding):
 
         self.fasta_dir = fasta_dir
 
@@ -17,16 +17,19 @@ class Seq:
         self.names = fasta_labels
 
         label_dict = {label: [1 if label_num == label else 0 for label_num in fasta_labels] for label in fasta_labels}
-        seq_dict = {'A': [1, 0, 0, 0], 'C': [0, 1, 0, 0], 'G': [0, 0, 1, 0], 'T': [0, 0, 0, 1]}
-
+        seq_ohe = {'A': [1, 0, 0, 0], 'C': [0, 1, 0, 0], 'G': [0, 0, 1, 0], 'T': [0, 0, 0, 1]}
+        seq_label = {'A': 1, 'C': 2, 'G': 3, 'T': 4}
+        
         seqs, labels = [], []
 
         for i, fasta_file in enumerate(fasta_files):
             for record in SeqIO.parse(fasta_file, "fasta"):
+                
+                if encoding == 'ohe':
+                    seqs.append([seq_ohe[c] for c in record.seq])
+                elif encoding == 'label':
+                    seqs.append([seq_label[c] for c in record.seq])
 
-                seq_encoded = [seq_dict[c] for c in record.seq]
-
-                seqs.append(seq_encoded)
                 labels.append(label_dict[fasta_labels[i]])
 
         self.seqs = np.array(seqs, dtype=object)
@@ -114,7 +117,8 @@ class Seq:
                 datasets.append(dataset_di)
                 datasets.append(dataset_tri)
 
-            if 5 in features:
+            if 5 in features:                #seq_encoded = [seq_dict[c] for c in record.seq]
+
                 dataset = dataset_path + '/ORF.csv'
                 subprocess.run(['python', 'MathFeature/methods/CodingClass.py', '-i',
                                 fasta_file, '-o', dataset, '-l', self.names[i]],
@@ -180,3 +184,4 @@ def pad_data(train, test):
         test.padding(test.max_len())
 
         return test.max_len()
+    
