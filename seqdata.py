@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 
 class Seq:
 
-    def __init__(self, fasta_dir, encoding):
+    def __init__(self, fasta_dir, encoding, k = 6):
 
         self.fasta_dir = fasta_dir
 
@@ -29,6 +29,8 @@ class Seq:
                     seqs.append([seq_ohe[c] for c in record.seq])
                 elif encoding == 'label':
                     seqs.append([seq_label[c] for c in record.seq])
+                elif encoding == 'k-mer':
+                    seqs.append([[seq_label[c] for c in str(record.seq[i:i+k])] for i in range(len(record.seq) - k + 1)])
 
                 labels.append(label_dict[fasta_labels[i]])
 
