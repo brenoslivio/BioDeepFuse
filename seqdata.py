@@ -4,6 +4,7 @@ import numpy as np
 import tensorflow as tf
 import os, subprocess, shutil
 from sklearn.preprocessing import StandardScaler
+from itertools import product
 
 class Seq:
 
@@ -19,6 +20,7 @@ class Seq:
         label_dict = {label: [1 if label_num == label else 0 for label_num in fasta_labels] for label in fasta_labels}
         seq_ohe = {'A': [1, 0, 0, 0], 'C': [0, 1, 0, 0], 'G': [0, 0, 1, 0], 'T': [0, 0, 0, 1]}
         seq_label = {'A': 1, 'C': 2, 'G': 3, 'T': 4}
+        seq_kmer = {''.join(comb): i for i, comb in enumerate(product(['A', 'C', 'G', 'T'], repeat= k))}
         
         seqs, labels = [], []
 
@@ -30,7 +32,7 @@ class Seq:
                 elif encoding == 'label':
                     seqs.append([seq_label[c] for c in record.seq])
                 elif encoding == 'k-mer':
-                    seqs.append([[seq_label[c] for c in str(record.seq[i:i+k])] for i in range(len(record.seq) - k + 1)])
+                    seqs.append([seq_kmer[record.seq[i:i+k]] for i in range(len(record.seq) - k + 1)])
 
                 labels.append(label_dict[fasta_labels[i]])
 
