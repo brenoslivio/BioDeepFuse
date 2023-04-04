@@ -121,7 +121,7 @@ class Seq:
                 datasets.append(dataset_di)
                 datasets.append(dataset_tri)
 
-            if 5 in features:                #seq_encoded = [seq_dict[c] for c in record.seq]
+            if 5 in features:
 
                 dataset = dataset_path + '/ORF.csv'
                 subprocess.run(['python', 'MathFeature/methods/CodingClass.py', '-i',
