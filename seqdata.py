@@ -27,11 +27,11 @@ class Seq:
         for i, fasta_file in enumerate(fasta_files):
             for record in SeqIO.parse(fasta_file, "fasta"):
                 
-                if encoding == 'ohe':
+                if encoding == 0:
                     seqs.append([seq_ohe[c] for c in record.seq])
-                elif encoding == 'label':
+                elif encoding == 1:
                     seqs.append([seq_label[c] for c in record.seq])
-                elif encoding == 'k-mer':
+                elif encoding == 2:
                     seqs.append([seq_kmer[record.seq[i:i+k]] for i in range(len(record.seq) - k + 1)])
 
                 labels.append(label_dict[fasta_labels[i]])
