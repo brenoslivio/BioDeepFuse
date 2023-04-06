@@ -10,12 +10,7 @@ import numpy as np
 import seqdata
 import argparse
 import warnings
-
-warnings.filterwarnings(action='ignore', category=FutureWarning)
-warnings.filterwarnings('ignore')
-
-tf.keras.utils.set_random_seed(0)  # sets seeds for base-python, numpy and tf
-tf.config.experimental.enable_op_determinism()
+import os
 
 # one-hot encoding + features
 # python main.py --train train/ --test test/ --epochs 10 --encoding 0 --feat_extraction 1 --output results.csv
@@ -164,6 +159,13 @@ def report_model(model, encoding, test_data, feat_extraction, output_file):
     df_report.to_csv(output_file)
 
 if __name__ == '__main__':
+    warnings.filterwarnings(action='ignore', category=FutureWarning)
+    warnings.filterwarnings('ignore')
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
+    tf.keras.utils.set_random_seed(0)  # sets seeds for base-python, numpy and tf
+    tf.config.experimental.enable_op_determinism()
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-train', '--train', help='Folder with FASTA training files')
     parser.add_argument('-test', '--test', help='Folder with FASTA testing files')
