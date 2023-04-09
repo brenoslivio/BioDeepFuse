@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.layers import Input, Concatenate, BatchNormalization, Bidirectional, LSTM, Dense, Dropout, Conv1D, MaxPooling1D, Flatten, Embedding
+from tensorflow.keras.layers import Input, LeakyReLU, Concatenate, Activation, BatchNormalization, Bidirectional, LSTM, Dense, Dropout, Conv1D, MaxPooling1D, Flatten, Embedding
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras import Model
 from itertools import product
@@ -45,10 +45,20 @@ def base_layers(encoding, max_len):
     if encoding == 0: # One-hot encoding
         input_layer = Input(shape=(max_len, 4))
 
-        x = Conv1D(filters=128, kernel_size=3, activation='relu')(input_layer)
+        # x = Conv1D(filters=128, kernel_size=3)(input_layer)
+        # x = BatchNormalization()(x)
+        # x = Activation(LeakyReLU())(x)
+        # x = MaxPooling1D(pool_size=2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())((input_layer))
         x = MaxPooling1D(pool_size=2)(x)
         x = Dropout(0.2)(x)
-        x = Conv1D(filters=128, kernel_size=3, activation='relu')(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
+        x = MaxPooling1D(pool_size=2)(x)
+        x = Dropout(0.2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
+        x = MaxPooling1D(pool_size=2)(x)
+        x = Dropout(0.2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
         x = MaxPooling1D(pool_size=2)(x)
         x = Dropout(0.2)(x)
         out = Flatten()(x)
@@ -56,10 +66,16 @@ def base_layers(encoding, max_len):
         input_layer = Input(shape=(max_len,))
 
         x = Embedding(5, 32, input_length=max_len)(input_layer)
-        x = Conv1D(filters=128, kernel_size=3, activation='relu')(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
         x = MaxPooling1D(pool_size=2)(x)
         x = Dropout(0.2)(x)
-        x = Conv1D(filters=128, kernel_size=3, activation='relu')(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
+        x = MaxPooling1D(pool_size=2)(x)
+        x = Dropout(0.2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
+        x = MaxPooling1D(pool_size=2)(x)
+        x = Dropout(0.2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
         x = MaxPooling1D(pool_size=2)(x)
         x = Dropout(0.2)(x)
         out = Flatten()(x)
@@ -67,10 +83,16 @@ def base_layers(encoding, max_len):
         input_layer = Input(shape=(max_len,))
 
         x = Embedding(4096, 32, input_length=max_len)(input_layer)
-        x = Conv1D(filters=128, kernel_size=3, activation='relu')(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
         x = MaxPooling1D(pool_size=2)(x)
         x = Dropout(0.2)(x)
-        x = Conv1D(filters=128, kernel_size=3, activation='relu')(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
+        x = MaxPooling1D(pool_size=2)(x)
+        x = Dropout(0.2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
+        x = MaxPooling1D(pool_size=2)(x)
+        x = Dropout(0.2)(x)
+        x = Conv1D(filters=128, kernel_size=3, activation=LeakyReLU())(x)
         x = MaxPooling1D(pool_size=2)(x)
         x = Dropout(0.2)(x)
         out = Flatten()(x)
@@ -108,7 +130,8 @@ def create_model(encoding, feat_extraction, num_labels, max_len):
         outs = outs[0]
 
     # Dense layers
-    x = Dense(128, activation='relu')(outs)
+    x = Dense(128, activation=LeakyReLU())(outs)
+    x = Dense(64, activation=LeakyReLU())(x)
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
 
@@ -172,7 +195,7 @@ if __name__ == '__main__':
     parser.add_argument('-epochs', '--epochs', help='Number of epochs to train')
     parser.add_argument('-encoding', '--encoding', default=0, help='Encoding - 0: One-hot encoding, 1: Label encoding 2: k-mer encoding, 3: No encoding (only feature extraction), 4: All')
     parser.add_argument('-feat_extraction', '--feat_extraction', default=0, help='Add biological sequences descriptors (0 = False, 1 = True; Default: False)')
-    parser.add_argument('-output', '--output', default=0, help='Output filename for classification report.')
+    parser.add_argument('-output', '--output', default=0, help='Output folder for classification reports.')
 
     args = parser.parse_args()
 
@@ -181,14 +204,28 @@ if __name__ == '__main__':
     epochs = int(args.epochs)
     encoding = int(args.encoding)
     feat_extraction = int(args.feat_extraction)
-    output_file = str(args.output)
+    output_folder = str(args.output)
 
     train_data, test_data, max_len = load_data(train_path, test_path, encoding, feat_extraction)
 
     num_labels = len(train_data[0].names)
 
-    model = create_model(encoding, feat_extraction, num_labels, max_len)
+    for i in range(1, 11):
+        model = create_model(encoding, feat_extraction, num_labels, max_len)
 
-    train_model(model, encoding, train_data, feat_extraction, epochs)
+        # tf.keras.utils.plot_model(
+        #     model,
+        #     to_file='model.png',
+        #     show_shapes=False,
+        #     show_dtype=False,
+        #     show_layer_names=True,
+        #     rankdir='TB',
+        #     expand_nested=False,
+        #     dpi=96,
+        #     layer_range=None,
+        #     show_layer_activations=False
+        # )
 
-    report_model(model, encoding, test_data, feat_extraction, output_file)
+        train_model(model, encoding, train_data, feat_extraction, epochs)
+
+        report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results_{i}.csv')
