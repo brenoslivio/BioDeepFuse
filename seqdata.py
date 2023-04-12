@@ -8,7 +8,7 @@ from itertools import product
 
 class Seq:
 
-    def __init__(self, fasta_dir, encoding, k = 6):
+    def __init__(self, fasta_dir, encoding, k):
 
         self.fasta_dir = fasta_dir
 
@@ -18,20 +18,26 @@ class Seq:
         self.names = fasta_labels
 
         label_dict = {label: [1 if label_num == label else 0 for label_num in fasta_labels] for label in fasta_labels}
-        seq_ohe = {'A': [1, 0, 0, 0], 'C': [0, 1, 0, 0], 'G': [0, 0, 1, 0], 'T': [0, 0, 0, 1]}
-        seq_label = {'A': 1, 'C': 2, 'G': 3, 'T': 4}
-        seq_kmer = {''.join(comb): i for i, comb in enumerate(product(['A', 'C', 'G', 'T'], repeat= k))}
+
+        combs = list(product(['A', 'C', 'G', 'T'], repeat= k))
+        num_combs = len(combs)
+
+        if encoding == 0: # one-hot encoding
+            seq_ohe = {''.join(comb): [0]*num_combs for comb in combs}
+            
+            for i, comb in enumerate(seq_ohe):
+                seq_ohe[comb][i] = 1
+        elif encoding == 1: # k-mer embedding    
+            seq_kmer = {''.join(comb): i for i, comb in enumerate(product(['A', 'C', 'G', 'T'], repeat= k))}
         
         seqs, labels = [], []
 
         for i, fasta_file in enumerate(fasta_files):
             for record in SeqIO.parse(fasta_file, "fasta"):
-                
+
                 if encoding == 0:
-                    seqs.append([seq_ohe[c] for c in record.seq])
+                    seqs.append([seq_ohe[record.seq[i:i+k]] for i in range(0, len(record.seq) - k + 1)])
                 elif encoding == 1:
-                    seqs.append([seq_label[c] for c in record.seq])
-                elif encoding == 2:
                     seqs.append([seq_kmer[record.seq[i:i+k]] for i in range(len(record.seq) - k + 1)])
 
                 labels.append(label_dict[fasta_labels[i]])
