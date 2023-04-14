@@ -1,0 +1,1798 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/PS-24.fas
+# output directed to file:               sequences/PS-24/tRNA.out
+# tabular output of hits:                sequences/PS-24/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence                                  start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------------------------------- ------- -------   --- ----- ----  -----------
+  (1) !   7.3e-17   75.6   0.0  PS-24_4121872circular_true_q1023579_ori   95566   95638 +  cm    no 0.48  -
+  (2) !   7.3e-17   75.6   0.0  PS-24_4121872circular_true_q1023579_ori  528765  528837 +  cm    no 0.48  -
+  (3) !   7.3e-17   75.6   0.0  PS-24_4121872circular_true_q1023579_ori 3089391 3089319 -  cm    no 0.48  -
+  (4) !   7.3e-17   75.6   0.0  PS-24_4121872circular_true_q1023579_ori 4066167 4066095 -  cm    no 0.48  -
+  (5) !   2.4e-16   73.7   0.0  PS-24_4121872circular_true_q1023579_ori  906830  906902 +  cm    no 0.59  -
+  (6) !   2.4e-16   73.7   0.0  PS-24_4121872circular_true_q1023579_ori 3088314 3088242 -  cm    no 0.59  -
+  (7) !   2.4e-16   73.7   0.0  PS-24_4121872circular_true_q1023579_ori 4065817 4065745 -  cm    no 0.59  -
+  (8) !   3.9e-16   73.0   0.0  PS-24_4121872circular_true_q1023579_ori   95771   95842 +  cm    no 0.60  -
+  (9) !   3.9e-16   73.0   0.0  PS-24_4121872circular_true_q1023579_ori  166042  166113 +  cm    no 0.60  -
+ (10) !   3.9e-16   73.0   0.0  PS-24_4121872circular_true_q1023579_ori  907400  907471 +  cm    no 0.60  -
+ (11) !   3.9e-16   73.0   0.0  PS-24_4121872circular_true_q1023579_ori 3089213 3089142 -  cm    no 0.60  -
+ (12) !   4.4e-16   72.8   0.0  PS-24_4121872circular_true_q1023579_ori  165836  165907 +  cm    no 0.56  -
+ (13) !   4.4e-16   72.8   0.0  PS-24_4121872circular_true_q1023579_ori  906281  906352 +  cm    no 0.56  -
+ (14) !   4.6e-16   72.7   0.0  PS-24_4121872circular_true_q1023579_ori 3088135 3088065 -  cm    no 0.54  -
+ (15) !   5.7e-16   72.4   0.0  PS-24_4121872circular_true_q1023579_ori  528381  528452 +  cm    no 0.56  -
+ (16) !   5.7e-16   72.4   0.0  PS-24_4121872circular_true_q1023579_ori 3087959 3087888 -  cm    no 0.56  -
+ (17) !     6e-16   72.3   0.0  PS-24_4121872circular_true_q1023579_ori 3088046 3087973 -  cm    no 0.59  -
+ (18) !   8.9e-16   71.7   0.0  PS-24_4121872circular_true_q1023579_ori   11461   11534 +  cm    no 0.62  -
+ (19) !   8.9e-16   71.7   0.0  PS-24_4121872circular_true_q1023579_ori   31929   32002 +  cm    no 0.62  -
+ (20) !   9.9e-16   71.5   0.0  PS-24_4121872circular_true_q1023579_ori 3088684 3088611 -  cm    no 0.54  -
+ (21) !   1.4e-15   71.0   0.0  PS-24_4121872circular_true_q1023579_ori  613226  613296 +  cm    no 0.51  -
+ (22) !   1.4e-15   71.0   0.0  PS-24_4121872circular_true_q1023579_ori  921764  921834 +  cm    no 0.51  -
+ (23) !   3.5e-15   69.5   0.0  PS-24_4121872circular_true_q1023579_ori  907480  907550 +  cm    no 0.58  -
+ (24) !     4e-15   69.3   0.0  PS-24_4121872circular_true_q1023579_ori  618509  618582 +  cm    no 0.64  -
+ (25) !     4e-15   69.3   0.0  PS-24_4121872circular_true_q1023579_ori  906741  906814 +  cm    no 0.64  -
+ (26) !     4e-15   69.3   0.0  PS-24_4121872circular_true_q1023579_ori 3088403 3088330 -  cm    no 0.64  -
+ (27) !     4e-15   69.3   0.0  PS-24_4121872circular_true_q1023579_ori 4065929 4065856 -  cm    no 0.64  -
+ (28) !     8e-15   68.3   0.0  PS-24_4121872circular_true_q1023579_ori 2774336 2774263 -  cm    no 0.59  -
+ (29) !   1.2e-14   67.6   0.0  PS-24_4121872circular_true_q1023579_ori   95454   95526 +  cm    no 0.52  -
+ (30) !   1.2e-14   67.6   0.0  PS-24_4121872circular_true_q1023579_ori  194535  194607 +  cm    no 0.52  -
+ (31) !   1.2e-14   67.6   0.0  PS-24_4121872circular_true_q1023579_ori  906911  906983 +  cm    no 0.52  -
+ (32) !   1.2e-14   67.6   0.0  PS-24_4121872circular_true_q1023579_ori 3089504 3089432 -  cm    no 0.52  -
+ (33) !   1.3e-14   67.5   0.0  PS-24_4121872circular_true_q1023579_ori   70264   70335 +  cm    no 0.61  -
+ (34) !   1.3e-14   67.5   0.0  PS-24_4121872circular_true_q1023579_ori  194377  194448 +  cm    no 0.61  -
+ (35) !   1.3e-14   67.5   0.0  PS-24_4121872circular_true_q1023579_ori  528580  528651 +  cm    no 0.61  -
+ (36) !   1.3e-14   67.5   0.0  PS-24_4121872circular_true_q1023579_ori  906487  906558 +  cm    no 0.61  -
+ (37) !   1.3e-14   67.5   0.0  PS-24_4121872circular_true_q1023579_ori 3087765 3087694 -  cm    no 0.61  -
+ (38) !   1.3e-14   67.5   0.0  PS-24_4121872circular_true_q1023579_ori 4066082 4066011 -  cm    no 0.61  -
+ (39) !     2e-14   66.8   0.0  PS-24_4121872circular_true_q1023579_ori  194719  194790 +  cm    no 0.56  -
+ (40) !     2e-14   66.8   0.0  PS-24_4121872circular_true_q1023579_ori  528663  528734 +  cm    no 0.56  -
+ (41) !     2e-14   66.8   0.0  PS-24_4121872circular_true_q1023579_ori  907279  907350 +  cm    no 0.56  -
+ (42) !   2.3e-14   66.6   0.0  PS-24_4121872circular_true_q1023579_ori  907096  907166 +  cm    no 0.54  -
+ (43) !   2.3e-14   66.6   0.0  PS-24_4121872circular_true_q1023579_ori   96059   96132 +  cm    no 0.57  -
+ (44) !   2.3e-14   66.6   0.0  PS-24_4121872circular_true_q1023579_ori  166252  166325 +  cm    no 0.57  -
+ (45) !   2.3e-14   66.6   0.0  PS-24_4121872circular_true_q1023579_ori 3088937 3088864 -  cm    no 0.57  -
+ (46) !   2.4e-14   66.5   0.0  PS-24_4121872circular_true_q1023579_ori  618372  618445 +  cm    no 0.64  -
+ (47) !   2.4e-14   66.5   0.0  PS-24_4121872circular_true_q1023579_ori  906653  906726 +  cm    no 0.64  -
+ (48) !   2.4e-14   66.5   0.0  PS-24_4121872circular_true_q1023579_ori 3088491 3088418 -  cm    no 0.64  -
+ (49) !     4e-14   65.7   0.0  PS-24_4121872circular_true_q1023579_ori  194630  194711 +  cm    no 0.62  -
+ (50) !     4e-14   65.7   0.0  PS-24_4121872circular_true_q1023579_ori  907006  907087 +  cm    no 0.62  -
+ (51) !   4.2e-14   65.7   0.0  PS-24_4121872circular_true_q1023579_ori 2009521 2009449 -  cm    no 0.53  -
+ (52) !   5.7e-14   65.2   0.0  PS-24_4121872circular_true_q1023579_ori   95374   95446 +  cm    no 0.60  -
+ (53) !   5.7e-14   65.2   0.0  PS-24_4121872circular_true_q1023579_ori  194455  194527 +  cm    no 0.60  -
+ (54) !   5.7e-14   65.2   0.0  PS-24_4121872circular_true_q1023579_ori  906568  906640 +  cm    no 0.60  -
+ (55) !   5.7e-14   65.2   0.0  PS-24_4121872circular_true_q1023579_ori 3089612 3089540 -  cm    no 0.60  -
+ (56) !   7.4e-14   64.8   0.0  PS-24_4121872circular_true_q1023579_ori   95955   96028 +  cm    no 0.57  -
+ (57) !   7.4e-14   64.8   0.0  PS-24_4121872circular_true_q1023579_ori  166148  166221 +  cm    no 0.57  -
+ (58) !   7.4e-14   64.8   0.0  PS-24_4121872circular_true_q1023579_ori  613136  613209 +  cm    no 0.57  -
+ (59) !   7.4e-14   64.8   0.0  PS-24_4121872circular_true_q1023579_ori 3089029 3088956 -  cm    no 0.57  -
+ (60) !     2e-13   63.2   0.0  PS-24_4121872circular_true_q1023579_ori 2424619 2424689 +  cm    no 0.54  -
+ (61) !   2.2e-13   63.1   0.0  PS-24_4121872circular_true_q1023579_ori 3088221 3088149 -  cm    no 0.56  -
+ (62) !   2.9e-13   62.7   0.0  PS-24_4121872circular_true_q1023579_ori  165913  165985 +  cm    no 0.56  -
+ (63) !   3.5e-13   62.4   0.0  PS-24_4121872circular_true_q1023579_ori   11549   11621 +  cm    no 0.66  -
+ (64) !   3.5e-13   62.4   0.0  PS-24_4121872circular_true_q1023579_ori   32017   32089 +  cm    no 0.66  -
+ (65) !   3.5e-13   62.4   0.0  PS-24_4121872circular_true_q1023579_ori   96144   96216 +  cm    no 0.66  -
+ (66) !   3.5e-13   62.4   0.0  PS-24_4121872circular_true_q1023579_ori  166337  166409 +  cm    no 0.66  -
+ (67) !   3.5e-13   62.4   0.0  PS-24_4121872circular_true_q1023579_ori 3088855 3088783 -  cm    no 0.66  -
+ (68) !   3.9e-13   62.2   0.0  PS-24_4121872circular_true_q1023579_ori  906361  906449 +  cm    no 0.57  -
+ (69) !   6.5e-13   61.4   0.0  PS-24_4121872circular_true_q1023579_ori  907194  907266 +  cm    no 0.58  -
+ (70) !   7.3e-13   61.2   0.0  PS-24_4121872circular_true_q1023579_ori 3110451 3110379 -  cm    no 0.67  -
+ (71) !   9.7e-13   60.8   0.0  PS-24_4121872circular_true_q1023579_ori 3088601 3088512 -  cm    no 0.59  -
+ (72) !   9.7e-13   60.8   0.0  PS-24_4121872circular_true_q1023579_ori   22288   22377 +  cm    no 0.60  -
+ (73) !   2.7e-12   59.2   0.0  PS-24_4121872circular_true_q1023579_ori  528852  528933 +  cm    no 0.60  -
+ (74) !   2.8e-12   59.2   0.0  PS-24_4121872circular_true_q1023579_ori 1217463 1217535 +  cm    no 0.59  -
+ (75) !   3.1e-12   59.0   0.0  PS-24_4121872circular_true_q1023579_ori 3087881 3087794 -  cm    no 0.59  -
+ (76) !   3.1e-12   59.0   0.0  PS-24_4121872circular_true_q1023579_ori  528460  528547 +  cm    no 0.60  -
+ (77) !   3.4e-12   58.9   0.0  PS-24_4121872circular_true_q1023579_ori   95648   95730 +  cm    no 0.57  -
+ (78) !   4.4e-12   58.5   0.0  PS-24_4121872circular_true_q1023579_ori   95860   95945 +  cm    no 0.60  -
+ (79) !   4.4e-12   58.5   0.0  PS-24_4121872circular_true_q1023579_ori  907558  907643 +  cm    no 0.60  -
+ (80) !   4.4e-12   58.5   0.0  PS-24_4121872circular_true_q1023579_ori 3089124 3089039 -  cm    no 0.60  -
+ (81) !   4.7e-12   58.4   0.0  PS-24_4121872circular_true_q1023579_ori   70178   70251 +  cm    no 0.65  -
+ (82) !   4.7e-12   58.4   0.0  PS-24_4121872circular_true_q1023579_ori 3088763 3088690 -  cm    no 0.65  -
+ (83) !     1e-11   57.2   0.0  PS-24_4121872circular_true_q1023579_ori 3469673 3469598 -  cm    no 0.63  -
+ (84) !     3e-11   55.5   0.0  PS-24_4121872circular_true_q1023579_ori  907912  907993 +  cm    no 0.61  -
+ (85) !   2.8e-10   52.0   0.0  PS-24_4121872circular_true_q1023579_ori  529015  529098 +  cm    no 0.63  -
+ (86) !   3.7e-10   51.6   0.0  PS-24_4121872circular_true_q1023579_ori 3089305 3089222 -  cm    no 0.56  -
+
+
+Hit alignments:
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   7.3e-17   75.6   0.0  cm        1       71 []       95566       95638 + .. 1.00    no 0.48
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>) CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcu 64   
+                                                G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC:GA GG CG::GGUUCGA UCC::C:
+  PS-24_4121872circular_true_q1023579_ori 95566 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCGAAGGUUCGAGUCCUUCA 95631
+                                                ****************************************************************** PP
+
+                                                        NC
+                                                )))))): CS
+                                     tRNA    65 aucucCa 71   
+                                                :::::CA
+  PS-24_4121872circular_true_q1023579_ori 95632 UGGCUCA 95638
+                                                ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.3e-17   75.6   0.0  cm        1       71 []      528765      528837 + .. 1.00    no 0.48
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC:GA GG CG::GGUUCGA UCC::
+  PS-24_4121872circular_true_q1023579_ori 528765 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCGAAGGUUCGAGUCCUU 528828
+                                                 **************************************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 C::::::CA
+  PS-24_4121872circular_true_q1023579_ori 528829 CAUGGCUCA 528837
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   7.3e-17   75.6   0.0  cm        1       71 []     3089391     3089319 - .. 1.00    no 0.48
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC:GA GG CG::GGUUCGA UCC
+  PS-24_4121872circular_true_q1023579_ori 3089391 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCGAAGGUUCGAGUCC 3089330
+                                                  ************************************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  ::C::::::CA
+  PS-24_4121872circular_true_q1023579_ori 3089329 UUCAUGGCUCA 3089319
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   7.3e-17   75.6   0.0  cm        1       71 []     4066167     4066095 - .. 1.00    no 0.48
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC:GA GG CG::GGUUCGA UCC
+  PS-24_4121872circular_true_q1023579_ori 4066167 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCGAAGGUUCGAGUCC 4066106
+                                                  ************************************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  ::C::::::CA
+  PS-24_4121872circular_true_q1023579_ori 4066105 UUCAUGGCUCA 4066095
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   2.4e-16   73.7   0.0  cm        1       71 []      906830      906902 + .. 1.00    no 0.59
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 GG:::::UAGCUCAGU GGUAGAGC+:CGGACU+AAAAUCCG:  G CG :GGUUCGA UCC: 
+  PS-24_4121872circular_true_q1023579_ori 906830 GGCUCGGUAGCUCAGUuGGUAGAGCAACGGACUGAAAAUCCGUGUGuCGGCGGUUCGAUUCCGU 906893
+                                                 **************************************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 C:::::CCA
+  PS-24_4121872circular_true_q1023579_ori 906894 CCCGAGCCA 906902
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   2.4e-16   73.7   0.0  cm        1       71 []     3088314     3088242 - .. 1.00    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  GG:::::UAGCUCAGU GGUAGAGC+:CGGACU+AAAAUCCG:  G CG :GGUUCGA UCC
+  PS-24_4121872circular_true_q1023579_ori 3088314 GGCUCGGUAGCUCAGUuGGUAGAGCAACGGACUGAAAAUCCGUGUGuCGGCGGUUCGAUUCC 3088253
+                                                  ************************************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  : C:::::CCA
+  PS-24_4121872circular_true_q1023579_ori 3088252 GUCCCGAGCCA 3088242
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   2.4e-16   73.7   0.0  cm        1       71 []     4065817     4065745 - .. 1.00    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  GG:::::UAGCUCAGU GGUAGAGC+:CGGACU+AAAAUCCG:  G CG :GGUUCGA UCC
+  PS-24_4121872circular_true_q1023579_ori 4065817 GGCUCGGUAGCUCAGUuGGUAGAGCAACGGACUGAAAAUCCGUGUGuCGGCGGUUCGAUUCC 4065756
+                                                  ************************************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  : C:::::CCA
+  PS-24_4121872circular_true_q1023579_ori 4065755 GUCCCGAGCCA 4065745
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   3.9e-16   73.0   0.0  cm        1       71 []       95771       95842 + .. 1.00    no 0.60
+
+                                                                                                                   NC
+                                                (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>)) CS
+                                     tRNA     1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcua 65   
+                                                G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::G: GG C:CGGGUUCGAAUCCCG:::
+  PS-24_4121872circular_true_q1023579_ori 95771 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGUGGGGGuCGCGGGUUCGAAUCCCGUCU 95836
+                                                ****************************************************************** PP
+
+                                                       NC
+                                                ))))): CS
+                                     tRNA    66 ucucCa 71   
+                                                UC::C 
+  PS-24_4121872circular_true_q1023579_ori 95837 UCCGCU 95842
+                                                ****** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   3.9e-16   73.0   0.0  cm        1       71 []      166042      166113 + .. 1.00    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::G: GG C:CGGGUUCGAAUCCCG:
+  PS-24_4121872circular_true_q1023579_ori 166042 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGUGGGGGuCGCGGGUUCGAAUCCCGU 166105
+                                                 **************************************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 ::UC::C 
+  PS-24_4121872circular_true_q1023579_ori 166106 CUUCCGCU 166113
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   3.9e-16   73.0   0.0  cm        1       71 []      907400      907471 + .. 1.00    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::G: GG C:CGGGUUCGAAUCCCG:
+  PS-24_4121872circular_true_q1023579_ori 907400 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGUGGGGGuCGCGGGUUCGAAUCCCGU 907463
+                                                 **************************************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 ::UC::C 
+  PS-24_4121872circular_true_q1023579_ori 907464 CUUCCGCU 907471
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   3.9e-16   73.0   0.0  cm        1       71 []     3089213     3089142 - .. 1.00    no 0.60
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61     
+                                                  G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::G: GG C:CGGGUUCGAAUCCC
+  PS-24_4121872circular_true_q1023579_ori 3089213 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGUGGGGGuCGCGGGUUCGAAUCCC 3089152
+                                                  ************************************************************** PP
+
+                                                             NC
+                                                  >>))))))): CS
+                                     tRNA      62 gcuaucucCa 71     
+                                                  G:::UC::C 
+  PS-24_4121872circular_true_q1023579_ori 3089151 GUCUUCCGCU 3089142
+                                                  ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   4.4e-16   72.8   0.0  cm        1       71 []      165836      165907 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 :::G:::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CG::GGUUCGAAUCC::C
+  PS-24_4121872circular_true_q1023579_ori 165836 UCCGCAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGUAGGUUCGAAUCCUAC 165899
+                                                 **************************************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 :::C:::+
+  PS-24_4121872circular_true_q1023579_ori 165900 CUGCGGAG 165907
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   4.4e-16   72.8   0.0  cm        1       71 []      906281      906352 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 :::G:::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CG::GGUUCGAAUCC::C
+  PS-24_4121872circular_true_q1023579_ori 906281 UCCGCAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGUAGGUUCGAAUCCUAC 906344
+                                                 **************************************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 :::C:::+
+  PS-24_4121872circular_true_q1023579_ori 906345 CUGCGGAG 906352
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   4.6e-16   72.7   0.0  cm        1       71 []     3088135     3088065 - .. 1.00    no 0.54
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcg 62     
+                                                  G::G:U:UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:GA+G C::GGGUUCGA UCCC:
+  PS-24_4121872circular_true_q1023579_ori 3088135 GCGGGUGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCUGAUGUCGUGGGUUCGAUUCCCA 3088074
+                                                  ************************************************************** PP
+
+                                                            NC
+                                                  >))))))): CS
+                                     tRNA      63 cuaucucCa 71     
+                                                  ::A:C::C 
+  PS-24_4121872circular_true_q1023579_ori 3088073 UCACCCGCU 3088065
+                                                  ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   5.7e-16   72.4   0.0  cm        1       71 []      528381      528452 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CGC:GGUUCGAAUCC:GC
+  PS-24_4121872circular_true_q1023579_ori 528381 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGCAGGUUCGAAUCCUGC 528444
+                                                 **************************************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 :::::::+
+  PS-24_4121872circular_true_q1023579_ori 528445 CUGUGGAG 528452
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   5.7e-16   72.4   0.0  cm        1       71 []     3087959     3087888 - .. 1.00    no 0.56
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61     
+                                                  :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CGC:GGUUCGAAUCC:
+  PS-24_4121872circular_true_q1023579_ori 3087959 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGCAGGUUCGAAUCCU 3087898
+                                                  ************************************************************** PP
+
+                                                             NC
+                                                  >>))))))): CS
+                                     tRNA      62 gcuaucucCa 71     
+                                                  GC:::::::+
+  PS-24_4121872circular_true_q1023579_ori 3087897 GCCUGUGGAG 3087888
+                                                  ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !     6e-16   72.3   0.0  cm        1       71 []     3088046     3087973 - .. 1.00    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:C:::AGG C:::GGUUCGA UC
+  PS-24_4121872circular_true_q1023579_ori 3088046 GGGCCUGUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAGCGUGAGGuCGAUGGUUCGAGUC 3087985
+                                                  ************************************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  C::::A:::CCA
+  PS-24_4121872circular_true_q1023579_ori 3087984 CAUUCAGGCCCA 3087973
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   8.9e-16   71.7   0.0  cm        1       71 []       11461       11534 + .. 1.00    no 0.62
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63   
+                                                GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:C:::AGG C:::GGUUCGA UCC:::
+  PS-24_4121872circular_true_q1023579_ori 11461 GGGCCUGUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAGCGUGAGGuCGGUGGUUCGAGUCCACU 11526
+                                                ****************************************************************** PP
+
+                                                         NC
+                                                ))))))): CS
+                                     tRNA    64 uaucucCa 71   
+                                                :A:::CCA
+  PS-24_4121872circular_true_q1023579_ori 11527 CAGGCCCA 11534
+                                                ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   8.9e-16   71.7   0.0  cm        1       71 []       31929       32002 + .. 1.00    no 0.62
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63   
+                                                GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:C:::AGG C:::GGUUCGA UCC:::
+  PS-24_4121872circular_true_q1023579_ori 31929 GGGCCUGUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAGCGUGAGGuCGGUGGUUCGAGUCCACU 31994
+                                                ****************************************************************** PP
+
+                                                         NC
+                                                ))))))): CS
+                                     tRNA    64 uaucucCa 71   
+                                                :A:::CCA
+  PS-24_4121872circular_true_q1023579_ori 31995 CAGGCCCA 32002
+                                                ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   9.9e-16   71.5   0.0  cm        1       71 []     3088684     3088611 - .. 1.00    no 0.54
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  GGA::U:UAGCUCAGU GGU AGAGC+:::G:CU A+AA:C::: GG CG::GGUUCGA UC
+  PS-24_4121872circular_true_q1023579_ori 3088684 GGACCUUUAGCUCAGUuGGUuAGAGCAGACGGCUCAUAACCGUCCGGuCGUAGGUUCGAGUC 3088623
+                                                  ************************************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  C::C:A::UCCA
+  PS-24_4121872circular_true_q1023579_ori 3088622 CUACAAGGUCCA 3088611
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   1.4e-15   71.0   0.0  cm        1       71 []      613226      613296 + .. 1.00    no 0.51
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>) CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcu 64    
+                                                 G::G:U:UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:GA+G C::G:GUUCGA UC:C:::
+  PS-24_4121872circular_true_q1023579_ori 613226 GCGGGUGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCUGAUGUCGUGAGUUCGAUUCUCAUC 613289
+                                                 **************************************************************** PP
+
+                                                         NC
+                                                 )))))): CS
+                                     tRNA     65 aucucCa 71    
+                                                 A:C::C 
+  PS-24_4121872circular_true_q1023579_ori 613290 ACCCGCU 613296
+                                                 ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   1.4e-15   71.0   0.0  cm        1       71 []      921764      921834 + .. 1.00    no 0.51
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>) CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcu 64    
+                                                 G::G:U:UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:GA+G C::G:GUUCGA UC:C:::
+  PS-24_4121872circular_true_q1023579_ori 921764 GCGGGUGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCUGAUGUCGUGAGUUCGAUUCUCAUC 921827
+                                                 **************************************************************** PP
+
+                                                         NC
+                                                 )))))): CS
+                                     tRNA     65 aucucCa 71    
+                                                 A:C::C 
+  PS-24_4121872circular_true_q1023579_ori 921828 ACCCGCU 921834
+                                                 ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   3.5e-15   69.5   0.0  cm        1       71 []      907480      907550 + .. 1.00    no 0.58
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>) CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcu 64    
+                                                 GG:G :AUAGC::AGUGGUA::GC+::GG:CU+ AAA:CC::++ C:C:GGUUCGAAUCC:G:U
+  PS-24_4121872circular_true_q1023579_ori 907480 GGCGGCAUAGCCAAGUGGUAAGGCAGAGGUCUGCAAAACCUUUAUCCCCGGUUCGAAUCCGGGU 907543
+                                                 **************************************************************** PP
+
+                                                         NC
+                                                 )))))): CS
+                                     tRNA     65 aucucCa 71    
+                                                 : C:CC 
+  PS-24_4121872circular_true_q1023579_ori 907544 GUCGCCU 907550
+                                                 ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !     4e-15   69.3   0.0  cm        1       71 []      618509      618582 + .. 1.00    no 0.64
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                 GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :C:G:AGG C:CGGGUUCGA UCCC
+  PS-24_4121872circular_true_q1023579_ori 618509 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACGCAGGAGGuCGCGGGUUCGAGUCCC 618572
+                                                 **************************************************************** PP
+
+                                                            NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 G::::::CC+
+  PS-24_4121872circular_true_q1023579_ori 618573 GUCCGGACCG 618582
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !     4e-15   69.3   0.0  cm        1       71 []      906741      906814 + .. 1.00    no 0.64
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                 GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :C:G:AGG C:CGGGUUCGA UCCC
+  PS-24_4121872circular_true_q1023579_ori 906741 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACGCAGGAGGuCGCGGGUUCGAGUCCC 906804
+                                                 **************************************************************** PP
+
+                                                            NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 G::::::CC+
+  PS-24_4121872circular_true_q1023579_ori 906805 GUCCGGACCG 906814
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !     4e-15   69.3   0.0  cm        1       71 []     3088403     3088330 - .. 1.00    no 0.64
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :C:G:AGG C:CGGGUUCGA UC
+  PS-24_4121872circular_true_q1023579_ori 3088403 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACGCAGGAGGuCGCGGGUUCGAGUC 3088342
+                                                  ************************************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  CCG::::::CC+
+  PS-24_4121872circular_true_q1023579_ori 3088341 CCGUCCGGACCG 3088330
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !     4e-15   69.3   0.0  cm        1       71 []     4065929     4065856 - .. 1.00    no 0.64
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :C:G:AGG C:CGGGUUCGA UC
+  PS-24_4121872circular_true_q1023579_ori 4065929 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACGCAGGAGGuCGCGGGUUCGAGUC 4065868
+                                                  ************************************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  CCG::::::CC+
+  PS-24_4121872circular_true_q1023579_ori 4065867 CCGUCCGGACCG 4065856
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !     8e-15   68.3   0.0  cm        1       71 []     2774336     2774263 - .. 0.99    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  G::::::UAGCUCAG  GG  AGAGC+:CGG:CUU +AA:CCG: GG CG G:GUUCGAAUC
+  PS-24_4121872circular_true_q1023579_ori 2774336 GUCCCAGUAGCUCAGCuGGAuAGAGCAACGGCCUUCUAAGCCGUCGGuCGGGAGUUCGAAUC 2774275
+                                                  *****************8888***************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  :C C::::::C+
+  PS-24_4121872circular_true_q1023579_ori 2774274 UCUCCUGGGACG 2774263
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   1.2e-14   67.6   0.0  cm        1       71 []       95454       95526 + .. 1.00    no 0.52
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>) CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcu 64   
+                                                G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC :: 
+  PS-24_4121872circular_true_q1023579_ori 95454 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCCUCUU 95519
+                                                ****************************************************************** PP
+
+                                                        NC
+                                                )))))): CS
+                                     tRNA    65 aucucCa 71   
+                                                 :C::CA
+  PS-24_4121872circular_true_q1023579_ori 95520 GCCGGCA 95526
+                                                ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   1.2e-14   67.6   0.0  cm        1       71 []      194535      194607 + .. 1.00    no 0.52
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC :
+  PS-24_4121872circular_true_q1023579_ori 194535 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCCUC 194598
+                                                 **************************************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 :  :C::CA
+  PS-24_4121872circular_true_q1023579_ori 194599 UUGCCGGCA 194607
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   1.2e-14   67.6   0.0  cm        1       71 []      906911      906983 + .. 1.00    no 0.52
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC :
+  PS-24_4121872circular_true_q1023579_ori 906911 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCCUC 906974
+                                                 **************************************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 :  :C::CA
+  PS-24_4121872circular_true_q1023579_ori 906975 UUGCCGGCA 906983
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   1.2e-14   67.6   0.0  cm        1       71 []     3089504     3089432 - .. 1.00    no 0.52
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC
+  PS-24_4121872circular_true_q1023579_ori 3089504 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCC 3089443
+                                                  ************************************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                   ::  :C::CA
+  PS-24_4121872circular_true_q1023579_ori 3089442 UCUUGCCGGCA 3089432
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   1.3e-14   67.5   0.0  cm        1       71 []       70264       70335 + .. 1.00    no 0.61
+
+                                                                                                                   NC
+                                                (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>)) CS
+                                     tRNA     1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcua 65   
+                                                G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCCG:::
+  PS-24_4121872circular_true_q1023579_ori 70264 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCCGUAC 70329
+                                                ****************9999********************************************** PP
+
+                                                       NC
+                                                ))))): CS
+                                     tRNA    66 ucucCa 71   
+                                                ::: CA
+  PS-24_4121872circular_true_q1023579_ori 70330 GGGUCA 70335
+                                                ****** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   1.3e-14   67.5   0.0  cm        1       71 []      194377      194448 + .. 1.00    no 0.61
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgc 63    
+                                                 G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCCG:
+  PS-24_4121872circular_true_q1023579_ori 194377 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCCGU 194440
+                                                 ****************9999******************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 ::::: CA
+  PS-24_4121872circular_true_q1023579_ori 194441 ACGGGUCA 194448
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   1.3e-14   67.5   0.0  cm        1       71 []      528580      528651 + .. 1.00    no 0.61
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgc 63    
+                                                 G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCCG:
+  PS-24_4121872circular_true_q1023579_ori 528580 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCCGU 528643
+                                                 ****************9999******************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 ::::: CA
+  PS-24_4121872circular_true_q1023579_ori 528644 ACGGGUCA 528651
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   1.3e-14   67.5   0.0  cm        1       71 []      906487      906558 + .. 1.00    no 0.61
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgc 63    
+                                                 G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCCG:
+  PS-24_4121872circular_true_q1023579_ori 906487 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCCGU 906550
+                                                 ****************9999******************************************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 ::::: CA
+  PS-24_4121872circular_true_q1023579_ori 906551 ACGGGUCA 906558
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   1.3e-14   67.5   0.0  cm        1       71 []     3087765     3087694 - .. 1.00    no 0.61
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCc 61     
+                                                  G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCC
+  PS-24_4121872circular_true_q1023579_ori 3087765 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCC 3087704
+                                                  ****************9999****************************************** PP
+
+                                                             NC
+                                                  >>))))))): CS
+                                     tRNA      62 gcuaucucCa 71     
+                                                  G:::::: CA
+  PS-24_4121872circular_true_q1023579_ori 3087703 GUACGGGUCA 3087694
+                                                  ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.3e-14   67.5   0.0  cm        1       71 []     4066082     4066011 - .. 1.00    no 0.61
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCc 61     
+                                                  G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCC
+  PS-24_4121872circular_true_q1023579_ori 4066082 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCC 4066021
+                                                  ****************9999****************************************** PP
+
+                                                             NC
+                                                  >>))))))): CS
+                                     tRNA      62 gcuaucucCa 71     
+                                                  G:::::: CA
+  PS-24_4121872circular_true_q1023579_ori 4066020 GUACGGGUCA 4066011
+                                                  ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !     2e-14   66.8   0.0  cm        1       71 []      194719      194790 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCCG: +  CG :GGUUCGAAUCC: C
+  PS-24_4121872circular_true_q1023579_ori 194719 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCCGUCAUgCGUUGGUUCGAAUCCAGC 194782
+                                                 *******************************************999****************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 UA:C:C:+
+  PS-24_4121872circular_true_q1023579_ori 194783 UAGCCCAG 194790
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !     2e-14   66.8   0.0  cm        1       71 []      528663      528734 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCCG: +  CG :GGUUCGAAUCC: C
+  PS-24_4121872circular_true_q1023579_ori 528663 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCCGUCAUgCGUUGGUUCGAAUCCAGC 528726
+                                                 *******************************************999****************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 UA:C:C:+
+  PS-24_4121872circular_true_q1023579_ori 528727 UAGCCCAG 528734
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !     2e-14   66.8   0.0  cm        1       71 []      907279      907350 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63    
+                                                 :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCCG: +  CG :GGUUCGAAUCC: C
+  PS-24_4121872circular_true_q1023579_ori 907279 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCCGUCAUgCGUUGGUUCGAAUCCAGC 907342
+                                                 *******************************************999****************** PP
+
+                                                          NC
+                                                 ))))))): CS
+                                     tRNA     64 uaucucCa 71    
+                                                 UA:C:C:+
+  PS-24_4121872circular_true_q1023579_ori 907343 UAGCCCAG 907350
+                                                 ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   2.3e-14   66.6   0.0  cm        1       71 []      907096      907166 + .. 1.00    no 0.54
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>) CS
+                                     tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcu 64    
+                                                 :G:G::AUAG:U:A+ GGUA:A:C+::GG:CU  AAA:CC:: GG+G: GGUUCGA UCC :CU
+  PS-24_4121872circular_true_q1023579_ori 907096 AGGGGCAUAGUUUAACGGUAGAACAGAGGUCUCCAAAACCUCCGGUGUGGGUUCGAUUCCUACU 907159
+                                                 **************************************************************** PP
+
+                                                         NC
+                                                 )))))): CS
+                                     tRNA     65 aucucCa 71    
+                                                 ::C:C:+
+  PS-24_4121872circular_true_q1023579_ori 907160 GCCCCUG 907166
+                                                 ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   2.3e-14   66.6   0.0  cm        1       71 []       96059       96132 + .. 1.00    no 0.57
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA     1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63   
+                                                :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:C::: GG C:C:GGUUCGAAUCC:G:
+  PS-24_4121872circular_true_q1023579_ori 96059 CGGGAAGUAGCUCAGCuuGGUAGAGCACAUGGUUUGGGACCAUGGGGuCGCAGGUUCGAAUCCUGU 96124
+                                                ****************************************************************** PP
+
+                                                         NC
+                                                ))))))): CS
+                                     tRNA    64 uaucucCa 71   
+                                                ::UC:C:A
+  PS-24_4121872circular_true_q1023579_ori 96125 CUUCCCGA 96132
+                                                ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   2.3e-14   66.6   0.0  cm        1       71 []      166252      166325 + .. 1.00    no 0.57
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                 :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:C::: GG C:C:GGUUCGAAUCC:
+  PS-24_4121872circular_true_q1023579_ori 166252 CGGGAAGUAGCUCAGCuuGGUAGAGCACAUGGUUUGGGACCAUGGGGuCGCAGGUUCGAAUCCU 166315
+                                                 **************************************************************** PP
+
+                                                            NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 G:::UC:C:A
+  PS-24_4121872circular_true_q1023579_ori 166316 GUCUUCCCGA 166325
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   2.3e-14   66.6   0.0  cm        1       71 []     3088937     3088864 - .. 1.00    no 0.57
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:C::: GG C:C:GGUUCGAAUC
+  PS-24_4121872circular_true_q1023579_ori 3088937 CGGGAAGUAGCUCAGCuuGGUAGAGCACAUGGUUUGGGACCAUGGGGuCGCAGGUUCGAAUC 3088876
+                                                  ************************************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  C:G:::UC:C:A
+  PS-24_4121872circular_true_q1023579_ori 3088875 CUGUCUUCCCGA 3088864
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   2.4e-14   66.5   0.0  cm        1       71 []      618372      618445 + .. 1.00    no 0.64
+
+                                                 v                                                                NC
+                                                 (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                  G:G:::U+G :CAGU  GGUAG: CGUCGG:CU A+AA:CCGAAGG CGC:GGUUC+AAUCC:
+  PS-24_4121872circular_true_q1023579_ori 618372 CGCGGGGUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGCAGGUUCAAAUCCU 618435
+                                                 **************************************************************** PP
+
+                                                         v  NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 GC:::C:C A
+  PS-24_4121872circular_true_q1023579_ori 618436 GCCCCCGCAA 618445
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   2.4e-14   66.5   0.0  cm        1       71 []      906653      906726 + .. 1.00    no 0.64
+
+                                                 v                                                                NC
+                                                 (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                  G:G:::U+G :CAGU  GGUAG: CGUCGG:CU A+AA:CCGAAGG CGC:GGUUC+AAUCC:
+  PS-24_4121872circular_true_q1023579_ori 906653 CGCGGGGUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGCAGGUUCAAAUCCU 906716
+                                                 **************************************************************** PP
+
+                                                         v  NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 GC:::C:C A
+  PS-24_4121872circular_true_q1023579_ori 906717 GCCCCCGCAA 906726
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   2.4e-14   66.5   0.0  cm        1       71 []     3088491     3088418 - .. 1.00    no 0.64
+
+                                                  v                                                              NC
+                                                  (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                   G:G:::U+G :CAGU  GGUAG: CGUCGG:CU A+AA:CCGAAGG CGC:GGUUC+AAUC
+  PS-24_4121872circular_true_q1023579_ori 3088491 CGCGGGGUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGCAGGUUCAAAUC 3088430
+                                                  ************************************************************** PP
+
+                                                            v  NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  C:GC:::C:C A
+  PS-24_4121872circular_true_q1023579_ori 3088429 CUGCCCCCGCAA 3088418
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !     4e-14   65.7   0.0  cm        1       71 []      194630      194711 + .. 0.97    no 0.62
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<< CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGG 51    
+                                                 GGAG:::UAGC::AGUGG   A::GCG:CGGACU++AAAUCCG:+             CG:::G
+  PS-24_4121872circular_true_q1023579_ori 194630 GGAGGGGUAGCGAAGUGGCuaAACGCGGCGGACUGUAAAUCCGCU-cccucaggguu-CGGCAG 194691
+                                                 ****************7777*************************.*********74.****** PP
+
+                                                                      NC
+                                                 _______>>>>>))))))): CS
+                                     tRNA     52 UUCgAaUCCcgcuaucucCa 71    
+                                                 UUCGAAUC:::C:::CUCCA
+  PS-24_4121872circular_true_q1023579_ori 194692 UUCGAAUCUGCCCCCCUCCA 194711
+                                                 ******************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !     4e-14   65.7   0.0  cm        1       71 []      907006      907087 + .. 0.97    no 0.62
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<< CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGG 51    
+                                                 GGAG:::UAGC::AGUGG   A::GCG:CGGACU++AAAUCCG:+             CG:::G
+  PS-24_4121872circular_true_q1023579_ori 907006 GGAGGGGUAGCGAAGUGGCuaAACGCGGCGGACUGUAAAUCCGCU-cccucaggguu-CGGCAG 907067
+                                                 ****************7777*************************.*********74.****** PP
+
+                                                                      NC
+                                                 _______>>>>>))))))): CS
+                                     tRNA     52 UUCgAaUCCcgcuaucucCa 71    
+                                                 UUCGAAUC:::C:::CUCCA
+  PS-24_4121872circular_true_q1023579_ori 907068 UUCGAAUCUGCCCCCCUCCA 907087
+                                                 ******************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   4.2e-14   65.7   0.0  cm        1       71 []     2009521     2009449 - .. 0.98    no 0.53
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  G::::::UAGC:CAG GG  AG:GC+:C:G:+U  +AA:C:G:AGG CG G:GUUCGAAUC:
+  PS-24_4121872circular_true_q1023579_ori 2009521 GCUCUAGUAGCACAGCGGAuAGUGCAGCAGUUUCCUAAACUGCAGGuCGGGAGUUCGAAUCU 2009460
+                                                  ****************7777****************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  C C::::::C+
+  PS-24_4121872circular_true_q1023579_ori 2009459 CUCCUAGAGCG 2009449
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   5.7e-14   65.2   0.0  cm        1       71 []       95374       95446 + .. 0.98    no 0.60
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>) CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcu 64   
+                                                GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGA  CC: C:
+  PS-24_4121872circular_true_q1023579_ori 95374 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAGCCCGUCA 95439
+                                                ****************9555********************************************** PP
+
+                                                        NC
+                                                )))))): CS
+                                     tRNA    65 aucucCa 71   
+                                                ::CUCCA
+  PS-24_4121872circular_true_q1023579_ori 95440 UCCUCCA 95446
+                                                ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   5.7e-14   65.2   0.0  cm        1       71 []      194455      194527 + .. 0.98    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGA  CC: 
+  PS-24_4121872circular_true_q1023579_ori 194455 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAGCCCGU 194518
+                                                 ****************9555******************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 C:::CUCCA
+  PS-24_4121872circular_true_q1023579_ori 194519 CAUCCUCCA 194527
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   5.7e-14   65.2   0.0  cm        1       71 []      906568      906640 + .. 0.98    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGA  CC: 
+  PS-24_4121872circular_true_q1023579_ori 906568 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAGCCCGU 906631
+                                                 ****************9555******************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 C:::CUCCA
+  PS-24_4121872circular_true_q1023579_ori 906632 CAUCCUCCA 906640
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) !   5.7e-14   65.2   0.0  cm        1       71 []     3089612     3089540 - .. 0.98    no 0.60
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGA  CC
+  PS-24_4121872circular_true_q1023579_ori 3089612 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAGCCC 3089551
+                                                  ****************9555****************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  : C:::CUCCA
+  PS-24_4121872circular_true_q1023579_ori 3089550 GUCAUCCUCCA 3089540
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) !   7.4e-14   64.8   0.0  cm        1       71 []       95955       96028 + .. 0.99    no 0.57
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63   
+                                                G::::::UAGCUCA+U GG  AGAGCGU::GACU    AUC::AAGG +:: GGUUCGA UCC ::
+  PS-24_4121872circular_true_q1023579_ori 95955 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAUCAAAAGGuUAGGGGUUCGACUCCUCU 96020
+                                                *****************8888********************************************* PP
+
+                                                         NC
+                                                ))))))): CS
+                                     tRNA    64 uaucucCa 71   
+                                                ::::::C+
+  PS-24_4121872circular_true_q1023579_ori 96021 CGGGCGCG 96028
+                                                ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) !   7.4e-14   64.8   0.0  cm        1       71 []      166148      166221 + .. 0.99    no 0.57
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                 G::::::UAGCUCA+U GG  AGAGCGU::GACU    AUC::AAGG +:: GGUUCGA UCC 
+  PS-24_4121872circular_true_q1023579_ori 166148 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAUCAAAAGGuUAGGGGUUCGACUCCU 166211
+                                                 *****************8888******************************************* PP
+
+                                                            NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 ::::::::C+
+  PS-24_4121872circular_true_q1023579_ori 166212 CUCGGGCGCG 166221
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) !   7.4e-14   64.8   0.0  cm        1       71 []      613136      613209 + .. 0.99    no 0.57
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCc 61    
+                                                 G::::::UAGCUCA+U GG  AGAGCGU::GACU    AUC::AAGG +:: GGUUCGA UCC 
+  PS-24_4121872circular_true_q1023579_ori 613136 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAUCAAAAGGuUAGGGGUUCGACUCCU 613199
+                                                 *****************8888******************************************* PP
+
+                                                            NC
+                                                 >>))))))): CS
+                                     tRNA     62 gcuaucucCa 71    
+                                                 ::::::::C+
+  PS-24_4121872circular_true_q1023579_ori 613200 CUCGGGCGCG 613209
+                                                 ********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) !   7.4e-14   64.8   0.0  cm        1       71 []     3089029     3088956 - .. 0.99    no 0.57
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  G::::::UAGCUCA+U GG  AGAGCGU::GACU    AUC::AAGG +:: GGUUCGA UC
+  PS-24_4121872circular_true_q1023579_ori 3089029 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAUCAAAAGGuUAGGGGUUCGACUC 3088968
+                                                  *****************8888***************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  C ::::::::C+
+  PS-24_4121872circular_true_q1023579_ori 3088967 CUCUCGGGCGCG 3088956
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (60) !     2e-13   63.2   0.0  cm        1       71 []     2424619     2424689 + .. 1.00    no 0.54
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcg 62     
+                                                  :G:G:UAUAGC::AG GGUA::GC+: GGACUU+ A UCC : + CG :GGUUCGAAUCC: 
+  PS-24_4121872circular_true_q1023579_ori 2424619 UGGGCUAUAGCCAAGCGGUAAGGCAAUGGACUUUGACUCCGUGAUCGUUGGUUCGAAUCCAG 2424680
+                                                  *******************************************9****************** PP
+
+                                                            NC
+                                                  >))))))): CS
+                                     tRNA      63 cuaucucCa 71     
+                                                  CUA:C:C:+
+  PS-24_4121872circular_true_q1023579_ori 2424681 CUAGCCCAG 2424689
+                                                  ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (61) !   2.2e-13   63.1   0.0  cm        1       71 []     3088221     3088149 - .. 0.99    no 0.56
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  G:: :U:U+GC::AGUGGU A::GC+:C:GA+U++   UC:G: +  C::GGGUUCGA UCC
+  PS-24_4121872circular_true_q1023579_ori 3088221 GCGGUUGUGGCGAAGUGGUuAACGCACCAGAUUGUGGCUCUGGCAUuCGUGGGUUCGAUUCC 3088160
+                                                  ****************9999************************99**************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  C:::A: ::C 
+  PS-24_4121872circular_true_q1023579_ori 3088159 CAUCAAUCGCC 3088149
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (62) !   2.9e-13   62.7   0.0  cm        1       71 []      165913      165985 + .. 1.00    no 0.56
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 G:::::AUAGCUCAG  GGUAGAGC+::::: U+ +AA:::::AGG C:::GGUUCGA  CC::
+  PS-24_4121872circular_true_q1023579_ori 165913 GCUUCCAUAGCUCAGCaGGUAGAGCACUUCCAUGGUAAGGAAGAGGuCAGCGGUUCGAGCCCGC 165976
+                                                 **************************************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 :U:::::C 
+  PS-24_4121872circular_true_q1023579_ori 165977 UUGGAAGCU 165985
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (63) !   3.5e-13   62.4   0.0  cm        1       71 []       11549       11621 + .. 0.98    no 0.66
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>) CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcu 64   
+                                                GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::::
+  PS-24_4121872circular_true_q1023579_ori 11549 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGCUA 11614
+                                                ****************9555********************************************** PP
+
+                                                        NC
+                                                )))))): CS
+                                     tRNA    65 aucucCa 71   
+                                                ::C CCA
+  PS-24_4121872circular_true_q1023579_ori 11615 GGCUCCA 11621
+                                                ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (64) !   3.5e-13   62.4   0.0  cm        1       71 []       32017       32089 + .. 0.98    no 0.66
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>) CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcu 64   
+                                                GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::::
+  PS-24_4121872circular_true_q1023579_ori 32017 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGCUA 32082
+                                                ****************9555********************************************** PP
+
+                                                        NC
+                                                )))))): CS
+                                     tRNA    65 aucucCa 71   
+                                                ::C CCA
+  PS-24_4121872circular_true_q1023579_ori 32083 GGCUCCA 32089
+                                                ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (65) !   3.5e-13   62.4   0.0  cm        1       71 []       96144       96216 + .. 0.98    no 0.66
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>) CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcu 64   
+                                                GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::::
+  PS-24_4121872circular_true_q1023579_ori 96144 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGCUA 96209
+                                                ****************9555********************************************** PP
+
+                                                        NC
+                                                )))))): CS
+                                     tRNA    65 aucucCa 71   
+                                                ::C CCA
+  PS-24_4121872circular_true_q1023579_ori 96210 GGCUCCA 96216
+                                                ******* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (66) !   3.5e-13   62.4   0.0  cm        1       71 []      166337      166409 + .. 0.98    no 0.66
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::
+  PS-24_4121872circular_true_q1023579_ori 166337 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGC 166400
+                                                 ****************9555******************************************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 ::::C CCA
+  PS-24_4121872circular_true_q1023579_ori 166401 UAGGCUCCA 166409
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (67) !   3.5e-13   62.4   0.0  cm        1       71 []     3088855     3088783 - .. 0.98    no 0.66
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC
+  PS-24_4121872circular_true_q1023579_ori 3088855 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCC 3088794
+                                                  ****************9555****************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  ::::::C CCA
+  PS-24_4121872circular_true_q1023579_ori 3088793 GCUAGGCUCCA 3088783
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (68) !   3.9e-13   62.2   0.0  cm        1       71 []      906361      906449 + .. 0.99    no 0.57
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.................. CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.................. 44    
+                                                 GGAGA: U+ C::AGUGGU  A::G G:::GA+U+ AAAUC:::+                   
+  PS-24_4121872circular_true_q1023579_ori 906361 GGAGAGCUGUCCGAGUGGUcgAAGGAGCACGAUUGGAAAUCGUGU-aggcggucaacuccgucu 906423
+                                                 *********************************************.8***************95 PP
+
+                                                                             NC
+                                                 ,,<<<<<_______>>>>>))))))): CS
+                                     tRNA     45 gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                  C::GGGUUCGAAUCCC:: :UCUCC+
+  PS-24_4121872circular_true_q1023579_ori 906424 -CAAGGGUUCGAAUCCCUUGCUCUCCG 906449
+                                                 .************************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (69) !   6.5e-13   61.4   0.0  cm        1       71 []      907194      907266 + .. 0.99    no 0.58
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>> CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcg 62    
+                                                 G:: :U:U+GC::AGUGGU A::GC+:C:GA+U++   UC:G: +  C::GGGUUCGA UCCC:
+  PS-24_4121872circular_true_q1023579_ori 907194 GCGGUUGUGGCGAAGUGGUuAACGCACCAGAUUGUGGCUCUGGCACuCGUGGGUUCGAUUCCCA 907257
+                                                 ****************9999************************988***************** PP
+
+                                                           NC
+                                                 >))))))): CS
+                                     tRNA     63 cuaucucCa 71    
+                                                 ::A: ::C 
+  PS-24_4121872circular_true_q1023579_ori 907258 UCAAUCGCC 907266
+                                                 ********* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (70) !   7.3e-13   61.2   0.0  cm        1       71 []     3110451     3110379 - .. 0.98    no 0.67
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  GG G::AUAGCUCAG  GG AGAGCG:::::CU+  A :::::AGG C::GGGUUCGA  CC
+  PS-24_4121872circular_true_q1023579_ori 3110451 GGGGCCAUAGCUCAGCuGGGAGAGCGCUACGCUGGCAGCGUAGAGGuCAGGGGUUCGAGCCC 3110390
+                                                  ****************9555****************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  C::U::C CCA
+  PS-24_4121872circular_true_q1023579_ori 3110389 CCUUGGCUCCA 3110379
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (71) !   9.7e-13   60.8   0.0  cm        1       71 []     3088601     3088512 - .. 0.98    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,.............. CS
+                                     tRNA       1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag.............. 44     
+                                                  GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AAA:CCGA                
+  PS-24_4121872circular_true_q1023579_ori 3088601 GGAGGAAUACCCAAGUcuGGCugAAGGGAUCGGUCUUGAAAACCGAC-aggggugucaaagc 3088541
+                                                  ******************7778*************************.8************* PP
+
+                                                                                NC
+                                                  ..,,<<<<<_______>>>>>))))))): CS
+                                     tRNA      45 ..gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                    GCG GGGUUCGAAUCCC CU::CUCC+
+  PS-24_4121872circular_true_q1023579_ori 3088540 ccGCGGGGGUUCGAAUCCCUCUUCCUCCG 3088512
+                                                  *96************************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (72) !   9.7e-13   60.8   0.0  cm        1       71 []       22288       22377 + .. 0.98    no 0.60
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,................,, CS
+                                     tRNA     1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag................gc 46   
+                                                GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AAA:CCGA                  GC
+  PS-24_4121872circular_true_q1023579_ori 22288 GGAGGAAUACCCAAGUccGGCugAAGGGAUCGGUCUUGAAAACCGAC-aggggugucaaagcccGC 22352
+                                                ******************8878*************************.8**************96* PP
+
+                                                                          NC
+                                                <<<<<_______>>>>>))))))): CS
+                                     tRNA    47 gcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                G GGGUUCGAAUCCC CU::CUCC+
+  PS-24_4121872circular_true_q1023579_ori 22353 GGGGGUUCGAAUCCCUCUUCCUCCG 22377
+                                                ************************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (73) !   2.7e-12   59.2   0.0  cm        1       71 []      528852      528933 + .. 0.99    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_ CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGU 52    
+                                                 G::G:U:U+GC::A+U GG   ::GCG:::GACUUA  AUC:::+           G+: GGGU
+  PS-24_4121872circular_true_q1023579_ori 528852 GCGGGUGUGGCGGAAUuGGCaGACGCGCUAGACUUAGGAUCUAGU-gucuuacgacGUGGGGGU 528914
+                                                 *******************9*9***********************.8********95******* PP
+
+                                                                     NC
+                                                 ______>>>>>))))))): CS
+                                     tRNA     53 UCgAaUCCcgcuaucucCa 71    
+                                                 UCGA UCCC ::A:C::CA
+  PS-24_4121872circular_true_q1023579_ori 528915 UCGAGUCCCUUCACCCGCA 528933
+                                                 ******************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (74) !   2.8e-12   59.2   0.0  cm        1       71 []     1217463     1217535 + .. 0.98    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCC 60     
+                                                  G::::::UAGCUCAG  GG AGAGCG:::::+U+A A :::::AGG C:C:GGUUCGA  CC
+  PS-24_4121872circular_true_q1023579_ori 1217463 GAUUCCGUAGCUCAGCuGGGAGAGCGCUACCUUGACAGGGUAGAGGuCGCUGGUUCGAGCCC 1217524
+                                                  ****************9555****************************************** PP
+
+                                                              NC
+                                                  >>>))))))): CS
+                                     tRNA      61 cgcuaucucCa 71     
+                                                  :G:::::::CA
+  PS-24_4121872circular_true_q1023579_ori 1217525 AGUCGGAAUCA 1217535
+                                                  *********** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (75) !   3.1e-12   59.0   0.0  cm        1       71 []     3087881     3087794 - .. 0.98    no 0.59
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................ CS
+                                     tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................ 44     
+                                                  GGAGA::UA::::AGUGG   A::::G: :::CU+ +AA::: :+                 
+  PS-24_4121872circular_true_q1023579_ori 3087881 GGAGAAGUACUCAAGUGGCugAAGAGGCGCCCCUGCUAAGGGUGU-aggucguguaagcggc 3087821
+                                                  ****************7777*************************.8**************9 PP
+
+                                                                              NC
+                                                  ,,<<<<<_______>>>>>))))))): CS
+                                     tRNA      45 gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                  GCG:GGGUUC+AAUCCC:C::UCUCC+
+  PS-24_4121872circular_true_q1023579_ori 3087820 GCGAGGGUUCAAAUCCCUCCUUCUCCG 3087794
+                                                  5************************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (76) !   3.1e-12   59.0   0.0  cm        1       71 []      528460      528547 + .. 0.98    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,, CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gc 46    
+                                                 GGAGA::UA::::AGUGG   A::::G: :::CU+ +AA::: :+                 GC
+  PS-24_4121872circular_true_q1023579_ori 528460 GGAGAAGUACUCAAGUGGCugAAGAGGCGCCCCUGCUAAGGGUGU-aggucgcguaagcggcGC 528522
+                                                 ****************7777*************************.8**************95* PP
+
+                                                                           NC
+                                                 <<<<<_______>>>>>))))))): CS
+                                     tRNA     47 gcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                 G:GGGUUC+AAUCCC:C::UCUCC+
+  PS-24_4121872circular_true_q1023579_ori 528523 GAGGGUUCAAAUCCCUCCUUCUCCG 528547
+                                                 ************************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (77) !   3.4e-12   58.9   0.0  cm        1       71 []       95648       95730 + .. 0.99    no 0.57
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,...........,,<<<<<__ CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUU 53   
+                                                G::G:U:U+GC::A+U GG   ::GCG:::GACUUA  AUC:::+            G+: GGGUU
+  PS-24_4121872circular_true_q1023579_ori 95648 GCGGGUGUGGCGGAAUuGGCaGACGCGCUAGACUUAGGAUCUAGU-gucuuuaugacGUGGGGGUU 95712
+                                                *******************9*9***********************.8*********95******** PP
+
+                                                                   NC
+                                                _____>>>>>))))))): CS
+                                     tRNA    54 CgAaUCCcgcuaucucCa 71   
+                                                C+A UCCC ::A:C::CA
+  PS-24_4121872circular_true_q1023579_ori 95713 CAAGUCCCUUCACCCGCA 95730
+                                                ****************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (78) !   4.4e-12   58.5   0.0  cm        1       71 []       95860       95945 + .. 0.99    no 0.60
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..............,,<<<< CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgG 50   
+                                                G::G ::U+G:::A+U GG   :::C+::GGACUUAAAAUCC::                G+GC:G
+  PS-24_4121872circular_true_q1023579_ori 95860 GCCGGGGUGGUGGAAUuGGCaGACACACAGGACUUAAAAUCCUGC-gguaggugacuaccGUGCCG 95924
+                                                *******************9*9***********************.8************96***** PP
+
+                                                                      NC
+                                                <_______>>>>>))))))): CS
+                                     tRNA    51 GUUCgAaUCCcgcuaucucCa 71   
+                                                GUUC+A UCC:GC:: C::CA
+  PS-24_4121872circular_true_q1023579_ori 95925 GUUCAAGUCCGGCCCUCGGCA 95945
+                                                ********************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (79) !   4.4e-12   58.5   0.0  cm        1       71 []      907558      907643 + .. 0.99    no 0.60
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..............,,<< CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..............gcgc 48    
+                                                 G::G ::U+G:::A+U GG   :::C+::GGACUUAAAAUCC::                G+GC
+  PS-24_4121872circular_true_q1023579_ori 907558 GCCGGGGUGGUGGAAUuGGCaGACACACAGGACUUAAAAUCCUGC-gguaggugacuaccGUGC 907620
+                                                 *******************9*9***********************.8************96*** PP
+
+                                                                         NC
+                                                 <<<_______>>>>>))))))): CS
+                                     tRNA     49 gGGUUCgAaUCCcgcuaucucCa 71    
+                                                 :GGUUC+A UCC:GC:: C::CA
+  PS-24_4121872circular_true_q1023579_ori 907621 CGGUUCAAGUCCGGCCCUCGGCA 907643
+                                                 *********************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (80) !   4.4e-12   58.5   0.0  cm        1       71 []     3089124     3089039 - .. 0.99    no 0.60
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..............,, CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..............gc 46     
+                                                  G::G ::U+G:::A+U GG   :::C+::GGACUUAAAAUCC::                G+
+  PS-24_4121872circular_true_q1023579_ori 3089124 GCCGGGGUGGUGGAAUuGGCaGACACACAGGACUUAAAAUCCUGC-gguaggugacuaccGU 3089064
+                                                  *******************9*9***********************.8************96* PP
+
+                                                                            NC
+                                                  <<<<<_______>>>>>))))))): CS
+                                     tRNA      47 gcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                  GC:GGUUC+A UCC:GC:: C::CA
+  PS-24_4121872circular_true_q1023579_ori 3089063 GCCGGUUCAAGUCCGGCCCUCGGCA 3089039
+                                                  ************************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (81) !   4.7e-12   58.4   0.0  cm        1       71 []       70178       70251 + .. 0.99    no 0.65
+
+                                                                                                                   NC
+                                                (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>> CS
+                                     tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgc 63   
+                                                :G:G: :UAGCUCAG  GG  AGAGCG ::G:+U A+A :C:: AGG CG GGGUUCGA  CCC C
+  PS-24_4121872circular_true_q1023579_ori 70178 GGCGGUGUAGCUCAGCuGGCuAGAGCGUACGGUUCAUACCCGUGAGGuCGGGGGUUCGAUCCCCUC 70243
+                                                *****************9999********************************************* PP
+
+                                                         NC
+                                                ))))))): CS
+                                     tRNA    64 uaucucCa 71   
+                                                : :C:C:A
+  PS-24_4121872circular_true_q1023579_ori 70244 CGCCGCUA 70251
+                                                ******** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (82) !   4.7e-12   58.4   0.0  cm        1       71 []     3088763     3088690 - .. 0.99    no 0.65
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______> CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUC 59     
+                                                  :G:G: :UAGCUCAG  GG  AGAGCG ::G:+U A+A :C:: AGG CG GGGUUCGA  C
+  PS-24_4121872circular_true_q1023579_ori 3088763 GGCGGUGUAGCUCAGCuGGCuAGAGCGUACGGUUCAUACCCGUGAGGuCGGGGGUUCGAUCC 3088702
+                                                  *****************9999***************************************** PP
+
+                                                               NC
+                                                  >>>>))))))): CS
+                                     tRNA      60 CcgcuaucucCa 71     
+                                                  CC C: :C:C:A
+  PS-24_4121872circular_true_q1023579_ori 3088701 CCUCCGCCGCUA 3088690
+                                                  ************ PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (83) !     1e-11   57.2   0.0  cm        1       71 []     3469673     3469598 - .. 0.97    no 0.63
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,....,.,<<<<<____ CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag....g.cgcgGGUUCg 55     
+                                                  G::::::UAGCUCAGU GG  AGAGCG::GG:+U     :CC::        CG GGGUUCG
+  PS-24_4121872circular_true_q1023579_ori 3469673 GCGCUCGUAGCUCAGUuGGAuAGAGCGGUGGUUUCCGGUACCACG-ucug-uCGGGGGUUCG 3469614
+                                                  *****************8888**********************99.8996.4********** PP
+
+                                                                   NC
+                                                  ___>>>>>))))))): CS
+                                     tRNA      56 AaUCCcgcuaucucCa 71     
+                                                  AAUCCC C::::::C+
+  PS-24_4121872circular_true_q1023579_ori 3469613 AAUCCCUCCGAGCGCG 3469598
+                                                  **************** PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (84) !     3e-11   55.5   0.0  cm        1       71 []      907912      907993 + .. 0.98    no 0.61
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_ CS
+                                     tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGU 52    
+                                                 :::G:U:U+GC::A+U GG   ::GCG:::GACU AAAAUC:::+           G+G::GGU
+  PS-24_4121872circular_true_q1023579_ori 907912 GCCGGUGUGGCGGAAUuGGCaGACGCGCACGACUCAAAAUCGUGU-uccuucuggaGUGUCGGU 907974
+                                                 *******************9*9***********************.9********74******* PP
+
+                                                                     NC
+                                                 ______>>>>>))))))): CS
+                                     tRNA     53 UCgAaUCCcgcuaucucCa 71    
+                                                 UCGA  CC::C:A:C:::A
+  PS-24_4121872circular_true_q1023579_ori 907975 UCGACCCCGACCACCGGUA 907993
+                                                 ******************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (85) !   2.8e-10   52.0   0.0  cm        1       71 []      529015      529098 + .. 0.99    no 0.63
+
+                                                                                                                  NC
+                                                 (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,.............,,<<<< CS
+                                     tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgG 50    
+                                                 G::G ::U+GC::A+UGG   ::GCG:::G:+U+A   :C:::+              G+:::G
+  PS-24_4121872circular_true_q1023579_ori 529015 GCGGUCGUGGCGGAAUGGCaGACGCGCUAGGUUGAGGGCCUAGU-gggugaauaacccGUGGAG 529077
+                                                 *******************9************************.8***********96***** PP
+
+                                                                       NC
+                                                 <_______>>>>>))))))): CS
+                                     tRNA     51 GUUCgAaUCCcgcuaucucCa 71    
+                                                 GUUC+A UCC::::: C::CA
+  PS-24_4121872circular_true_q1023579_ori 529078 GUUCAAGUCCUCUCGGCCGCA 529098
+                                                 ********************* PP
+
+>> PS-24_4121872circular_true_q1023579_ori  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (86) !   3.7e-10   51.6   0.0  cm        1       71 []     3089305     3089222 - .. 0.99    no 0.56
+
+                                                                                                                 NC
+                                                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<< CS
+                                     tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgc 48     
+                                                  G::GAU:U+GC::A+U GG   ::GCG:::GA U A   UC:::+             G+: 
+  PS-24_4121872circular_true_q1023579_ori 3089305 GCGGAUGUGGCGGAAUuGGCaGACGCGCUAGAAUCAGGCUCUAGU-gucuuuacagacGUGG 3089245
+                                                  *******************9*9***********************.8**********95*** PP
+
+                                                                          NC
+                                                  <<<_______>>>>>))))))): CS
+                                     tRNA      49 gGGUUCgAaUCCcgcuaucucCa 71     
+                                                  GGGUUC+A UCCC ::AUC::CA
+  PS-24_4121872circular_true_q1023579_ori 3089244 GGGUUCAAGUCCCUUCAUCCGCA 3089222
+                                                  *********************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (8243744 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2991  (0.09432); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             593  (0.01886); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             548  (0.01743); expected (0.02)
+Windows   passing  local HMM Forward       filter:              48  (0.001735); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              47  (0.001711); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              24  (0.001638); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              24  (0.001638); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              89  (0.0008232); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              87  (0.0008015); expected (0.0001)
+Total CM hits reported:                                         86  (0.0007835); includes 0 truncated hit(s)
+
+# CPU time: 0.76u 0.03s 00:00:00.79 Elapsed: 00:00:00.15
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (8243744 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4599  (0.07904); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1192  (0.02091); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1149  (0.02016); expected (0.02)
+Windows   passing  local HMM Forward       filter:              65  (0.001102); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              64  (0.001086); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              22  (0.0009592); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              22  (0.0009592); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              36  (0.0003843); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              28  (0.0002804); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.72u 0.03s 00:00:00.75 Elapsed: 00:00:00.16
+//
+[ok]

@@ -1,0 +1,364 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/Intron.cm
+# target sequence database:              genomes/PS-14.fas
+# output directed to file:               sequences/PS-14/Intron.out
+# tabular output of hits:                sequences/PS-14/Intron.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Intron_gpI  [CLEN=251]
+Accession:   RF00028
+Description: Group I catalytic intron
+Hit scores:
+ rank     E-value  score  bias  sequence                                                                  start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------------------------------------------------------------------- ------- -------   --- ----- ----  -----------
+  (1) !   4.6e-23   91.9   0.0  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186558 2186343 -  cm    no 0.47  -
+
+
+Hit alignments:
+>> PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.6e-23   91.9   0.0  cm        1      251 []     2186558     2186343 - .. 0.90    no 0.47
+
+                                                                                       v                  v                NC
+                                                                                  ::::<<<<<<<<<____>>>>>>>>>,,,<<<._____>> CS
+                                                               Intron_gpI       1 cuAugagcuUaauauauauuGagcucauaagc.GaAAcgc 39     
+                                                                                  C A+: G::U: :   U: :G::C :+U A C G AA+G 
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186558 CCAAAUGGGUUGA---UUUGGCCCCUUUCAUCaGCAAUGG 2186522
+                                                                                  ***********65...455667777777777779999765 PP
+
+                                                                                                                           NC
+                                                                                  >,,,,,,......,,(((((-((,,,<<<<<<---.<<<< CS
+                                                               Intron_gpI      40 uaUAAGU......AAauCuGuCaAAUUGCGgGAAA.cCcu 72     
+                                                                                  U            AAA:CU U :AAUU:::GG AA :CC:
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186521 U------gaucgaAAACCUCUUUAAUUCAUGGGAAcUCCU 2186488
+                                                                                  5......3577889************************** PP
+
+                                                                                                                           NC
+                                                                                  <________>>>>>--->>>>>><<---<~~~~~~>---> CS
+                                                               Intron_gpI      73 agaauaAAAuugGgCAAUcCGCAGCCAAa*[30]*aaAgG 136    
+                                                                                  :        ::GG:CAAUC:::AGC AA:      :AA G
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186487 AC-------AGGGACAAUCAUGAGCGAAG*[14]*GAACG 2186447
+                                                                                  *9.......*******************6...5..6789* PP
+
+                                                                                                                           NC
+                                                                                  >,,,,,,,,,,............................. CS
+                                                               Intron_gpI     137 UUCAaAGACUA............................. 147    
+                                                                                  U CAA+GACUA                             
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186446 UGCAACGACUAgccgaaaggcguaggcugcaagcuauugg 2186407
+                                                                                  **************************************** PP
+
+                                                                                                        vvv                NC
+                                                                                  .......,,))-))))),<<<<<<<<<_____________ CS
+                                                               Intron_gpI     148 .......AAuGgCaGacAgccuacauuaugGAuuUAaaaa 180    
+                                                                                         AA: G AG:CA:CCU++                
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186406 cagucgaAACAGGAGGCACCCUUAG--------------- 2186382
+                                                                                  ***********************99............... PP
+
+                                                                                                               vvv         NC
+                                                                                  ___________________________>>>>>>>>>,,,, CS
+                                                               Intron_gpI     181 cguUcaauuaauuaucuuugauuuguaaauguaggcUgAA 220    
+                                                                                                                  AGG:UGAA
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186381 --------------------------------AGGGUGAA 2186374
+                                                                                  ................................******** PP
+
+                                                                                                                  NC
+                                                                                  ,,,,,,,,,,,,,,,<<<<<____>>>>>:: CS
+                                                               Intron_gpI     221 GAUAUAGUCuaaucUcucauGAAAaugagaG 251    
+                                                                                  GAUAUAGUCUAA+CU:::::G+AA:::::AG
+  PS-14_Unicycler_I2+N2_99127_S1_length_4237280_depth_1.00x_circular_true 2186373 GAUAUAGUCUAACCUUCAUGGUAACAUGAAG 2186343
+                                                                                  ******************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (251 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (5324 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1522  (0.2731); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             109  (0.02184); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:              31  (0.005707); expected (0.02)
+Windows   passing  local HMM Forward       filter:              11  (0.00233); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               8  (0.001761); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               8  (0.001761); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               8  (0.001761); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              10  (0.0006031); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               4  (0.0001502); expected (0.0001)
+Total CM hits reported:                                          1  (2.547e-05); includes 0 truncated hit(s)
+
+# CPU time: 5.94u 0.45s 00:00:06.39 Elapsed: 00:00:02.46
+//
+Query:       Intron_gpII  [CLEN=93]
+Accession:   RF00029
+Description: Group II catalytic intron
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (93 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (2048 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1120  (0.06723); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             219  (0.01456); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             214  (0.01423); expected (0.02)
+Windows   passing  local HMM Forward       filter:               1  (5.38e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               1  (5.38e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.03
+//
+Query:       group-II-D1D4-1  [CLEN=84]
+Accession:   RF01998
+Description: Group II catalytic intron D1-D4-1
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (84 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (756 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3315  (0.08461); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             739  (0.01946); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             660  (0.01737); expected (0.02)
+Windows   passing  local HMM Forward       filter:               7  (0.000176); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               5  (0.000122); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               4  (9.711e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               4  (9.711e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               4  (5.734e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               2  (1.569e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.04
+//
+Query:       group-II-D1D4-2  [CLEN=118]
+Accession:   RF01999
+Description: Group II catalytic intron D1-D4-2
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (118 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (632 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3719  (0.08267); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             670  (0.01506); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             638  (0.01431); expected (0.02)
+Windows   passing  local HMM Forward       filter:              21  (0.0005225); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              17  (0.0004105); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              14  (0.0003167); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              14  (0.0003167); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              13  (0.0002012); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.39u 0.00s 00:00:00.39 Elapsed: 00:00:00.05
+//
+Query:       group-II-D1D4-3  [CLEN=171]
+Accession:   RF02001
+Description: Group II catalytic intron D1-D4-3
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (171 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1268 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2653  (0.1134); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             671  (0.03016); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             394  (0.0176); expected (0.02)
+Windows   passing  local HMM Forward       filter:              35  (0.001696); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              20  (0.000935); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              17  (0.0007954); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              17  (0.0007954); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              17  (0.0004446); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               8  (0.0001387); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 1.59u 0.10s 00:00:01.69 Elapsed: 00:00:00.37
+//
+Query:       group-II-D1D4-4  [CLEN=138]
+Accession:   RF02003
+Description: Group II catalytic intron D1-D4-4
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (138 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1460 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1544  (0.07159); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             164  (0.00794); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             142  (0.006867); expected (0.02)
+Windows   passing  local HMM Forward       filter:               4  (0.000187); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               2  (9.71e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               1  (4.991e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               1  (4.991e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               1  (1.546e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (1.475e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.05
+//
+Query:       group-II-D1D4-5  [CLEN=201]
+Accession:   RF02004
+Description: Group II catalytic intron D1-D4-5
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (201 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1116 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3112  (0.1218); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             472  (0.01919); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             291  (0.01182); expected (0.02)
+Windows   passing  local HMM Forward       filter:              16  (0.0006755); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              11  (0.0004632); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               7  (0.000278); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.000278); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.0001849); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (2.867e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.85u 0.03s 00:00:00.88 Elapsed: 00:00:00.23
+//
+Query:       group-II-D1D4-6  [CLEN=225]
+Accession:   RF02005
+Description: Group II catalytic intron D1-D4-6
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (225 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1460 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1205  (0.05986); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             164  (0.008257); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             139  (0.006968); expected (0.02)
+Windows   passing  local HMM Forward       filter:              10  (0.0005267); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               6  (0.0002925); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               4  (0.000197); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               4  (0.000197); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               4  (0.0001174); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.55u 0.02s 00:00:00.57 Elapsed: 00:00:00.10
+//
+Query:       group-II-D1D4-7  [CLEN=148]
+Accession:   RF02012
+Description: Group II catalytic intron D1-D4-7
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (148 consensus positions)
+Target sequences:                                                1  (8474560 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1040 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2692  (0.09415); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             306  (0.01104); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             272  (0.009811); expected (0.02)
+Windows   passing  local HMM Forward       filter:              10  (0.0003633); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               9  (0.0003195); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               7  (0.0002838); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.0002838); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.0001195); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               2  (9.085e-06); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.44u 0.00s 00:00:00.44 Elapsed: 00:00:00.08
+//
+[ok]

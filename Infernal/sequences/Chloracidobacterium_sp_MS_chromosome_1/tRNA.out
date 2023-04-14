@@ -1,0 +1,721 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Chloracidobacterium_sp_MS_chromosome_1.fasta
+# output directed to file:               sequences/Chloracidobacterium_sp_MS_chromosome_1/tRNA.out
+# tabular output of hits:                sequences/Chloracidobacterium_sp_MS_chromosome_1/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   1.2e-17   77.7   0.0  NZ_CP072646.1  433190  433118 -  cm    no 0.51  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (2) !     1e-16   74.4   0.0  NZ_CP072646.1 2426437 2426510 +  cm    no 0.55  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (3) !   1.7e-16   73.6   0.0  NZ_CP072646.1  577686  577614 -  cm    no 0.58  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (4) !   3.3e-16   72.5   0.0  NZ_CP072646.1  272009  272081 +  cm    no 0.53  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (5) !     5e-16   71.9   0.0  NZ_CP072646.1 2016898 2016825 -  cm    no 0.57  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (6) !   5.4e-16   71.8   0.0  NZ_CP072646.1 2501281 2501208 -  cm    no 0.53  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (7) !     6e-16   71.6   0.0  NZ_CP072646.1  394151  394079 -  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (8) !   9.9e-16   70.8   0.0  NZ_CP072646.1  107986  108058 +  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (9) !   1.3e-15   70.5   0.0  NZ_CP072646.1  175266  175338 +  cm    no 0.56  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (10) !   1.4e-15   70.3   0.0  NZ_CP072646.1  573626  573697 +  cm    no 0.61  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (11) !   1.5e-15   70.1   0.0  NZ_CP072646.1  271929  272000 +  cm    no 0.60  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (12) !   1.9e-15   69.8   0.0  NZ_CP072646.1  271740  271812 +  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (13) !   2.6e-15   69.3   0.0  NZ_CP072646.1  410059  409988 -  cm    no 0.53  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (14) !   2.7e-15   69.3   0.0  NZ_CP072646.1  171759  171830 +  cm    no 0.54  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (15) !   2.8e-15   69.2   0.0  NZ_CP072646.1 1941457 1941384 -  cm    no 0.58  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (16) !   3.5e-15   68.9   0.0  NZ_CP072646.1  107907  107980 +  cm    no 0.54  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (17) !   3.9e-15   68.7   0.0  NZ_CP072646.1 1495192 1495263 +  cm    no 0.58  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (18) !   5.4e-15   68.2   0.0  NZ_CP072646.1  246725  246796 +  cm    no 0.61  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (19) !   7.8e-15   67.6   0.0  NZ_CP072646.1 1534126 1534198 +  cm    no 0.62  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (20) !   9.2e-15   67.4   0.0  NZ_CP072646.1 1697025 1696952 -  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (21) !   9.3e-15   67.3   0.0  NZ_CP072646.1  573753  573826 +  cm    no 0.66  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (22) !   1.4e-14   66.7   0.0  NZ_CP072646.1 2513966 2514050 +  cm    no 0.66  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (23) !   2.7e-14   65.7   0.0  NZ_CP072646.1  271830  271913 +  cm    no 0.60  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (24) !   3.8e-14   65.2   0.0  NZ_CP072646.1 1169512 1169426 -  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (25) !   5.1e-14   64.7   0.0  NZ_CP072646.1  419111  419038 -  cm    no 0.62  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (26) !   6.7e-14   64.3   0.0  NZ_CP072646.1  350949  350878 -  cm    no 0.58  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (27) !   1.2e-13   63.4   0.0  NZ_CP072646.1 2520575 2520648 +  cm    no 0.64  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (28) !   1.7e-13   62.8   0.0  NZ_CP072646.1  398879  398806 -  cm    no 0.61  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (29) !   2.1e-13   62.5   0.0  NZ_CP072646.1 1169731 1169645 -  cm    no 0.61  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (30) !   2.3e-13   62.4   0.0  NZ_CP072646.1 2440395 2440477 +  cm    no 0.64  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (31) !   2.8e-13   62.1   0.0  NZ_CP072646.1 1117599 1117526 -  cm    no 0.65  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (32) !   4.4e-13   61.4   0.0  NZ_CP072646.1 1461417 1461497 +  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (33) !   4.4e-13   61.3   0.0  NZ_CP072646.1  682209  682137 -  cm    no 0.60  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (34) !   6.1e-13   60.9   0.0  NZ_CP072646.1 2599679 2599593 -  cm    no 0.57  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (35) !   6.7e-13   60.7   0.0  NZ_CP072646.1  273371  273443 +  cm    no 0.55  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (36) !   6.7e-13   60.7   0.0  NZ_CP072646.1 2471381 2471463 +  cm    no 0.58  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (37) !   6.9e-13   60.7   0.0  NZ_CP072646.1 2626574 2626504 -  cm    no 0.55  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (38) !   7.2e-13   60.6   0.0  NZ_CP072646.1 1986255 1986183 -  cm    no 0.60  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (39) !   8.5e-13   60.3   0.0  NZ_CP072646.1 1957868 1957798 -  cm    no 0.55  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (40) !     7e-12   57.1   0.0  NZ_CP072646.1 2276129 2276056 -  cm    no 0.61  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (41) !   7.9e-12   56.9   0.0  NZ_CP072646.1 2501373 2501290 -  cm    no 0.60  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+ (42) !   3.9e-11   54.4   0.0  NZ_CP072646.1 2568813 2568734 -  cm    no 0.61  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+
+
+Hit alignments:
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.2e-17   77.7   0.0  cm        1       71 []      433190      433118 - .. 1.00    no 0.51
+
+                                                                                                 NC
+                       (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG:::U:UAGCUCA+ GGU AGAGC+:CGGACU A+AAUCCG:+GG +G::GGUUCGAAUCC::C:A:::CCA
+  NZ_CP072646.1 433190 GGGACUUUAGCUCAACGGUcAGAGCAGCGGACUCAUAAUCCGUUGGuUGUAGGUUCGAAUCCUACAAGUCCCA 433118
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !     1e-16   74.4   0.0  cm        1       71 []     2426437     2426510 + .. 0.99    no 0.55
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::::AUAGCUCAGU GG  AGAGC+:C:G:CUU +AA:C:G:AGG CG::GGUUCGA UCC::CU:::::CA
+  NZ_CP072646.1 2426437 GCGCCCAUAGCUCAGUuGGAuAGAGCAACUGCCUUCUAAGCAGUAGGuCGUAGGUUCGAGUCCUACUGGGCGCA 2426510
+                        *****************8888***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.7e-16   73.6   0.0  cm        1       71 []      577686      577614 - .. 1.00    no 0.58
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::GA::UAGCUCAGU GGUAGAGCG:C:GA+U  +AAUC:G:AGG CGC:GGUUC+A UCC:GC::UC::C 
+  NZ_CP072646.1 577686 GCCGACUUAGCUCAGUcGGUAGAGCGACUGAUUCGUAAUCAGUAGGuCGCCGGUUCAAGUCCGGCAGUCGGCU 577614
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   3.3e-16   72.5   0.0  cm        1       71 []      272009      272081 + .. 1.00    no 0.53
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G:::AUAUAGCUCAGU GGUAGAGC+:::::+U+ +AA:::::AGG C:C:GGUUC+A UCC:G:UAU:::C 
+  NZ_CP072646.1 272009 GCCCAUAUAGCUCAGUcGGUAGAGCACUUCCUUGGUAAGGAAGAGGuCACCGGUUCAAGUCCGGUUAUGGGCU 272081
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !     5e-16   71.9   0.0  cm        1       71 []     2016898     2016825 - .. 0.99    no 0.57
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:A::::UAGCUCAGU GG  AGAGCGU:GG:CU    A:CC:AAGG CGC:GGUUCGAAUCC:GC::::U:CA
+  NZ_CP072646.1 2016898 GCAUCCUUAGCUCAGUuGGAuAGAGCGUUGGCCUCCGGAGCCAAAGGuCGCUGGUUCGAAUCCAGCAGGAUGCA 2016825
+                        *****************8888***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   5.4e-16   71.8   0.0  cm        1       71 []     2501281     2501208 - .. 0.99    no 0.53
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:A::::UAGCUCAGU GG  AGAGCGUC:GACU   AAUC:GAAGG C: :GGUUCGAAUCC: :::::U:CA
+  NZ_CP072646.1 2501281 GCACCCGUAGCUCAGUuGGAuAGAGCGUCUGACUACGAAUCAGAAGGuCAUAGGUUCGAAUCCUGUCGGGUGCA 2501208
+                        *****************8888***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !     6e-16   71.6   0.0  cm        1       71 []      394151      394079 - .. 1.00    no 0.59
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G :::::UAGCUCAGU GGUAGAGC+:C:G:CUU++AA:C:G: GG CGC:GGUUCGA UCC:GC::::: CA
+  NZ_CP072646.1 394151 GGGCCGUUAGCUCAGUcGGUAGAGCAACUGGCUUUUAACCAGUGGGuCGCAGGUUCGAGUCCUGCACGGCUCA 394079
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   9.9e-16   70.8   0.0  cm        1       71 []      107986      108058 + .. 1.00    no 0.59
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG G ::UAGCUCAGU GGUAGAGCGU:GG:+UU  AA:CC:AA+G C:::GGUUCGA UCC::::: C CCA
+  NZ_CP072646.1 107986 GGGGGCGUAGCUCAGUuGGUAGAGCGUUGGCUUUGCAAGCCAAAAGuCAGCGGUUCGAGUCCGCUCGUCUCCA 108058
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.3e-15   70.5   0.0  cm        1       71 []      175266      175338 + .. 1.00    no 0.56
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG:::::UAGCUCAGU GGUAGAGC+:C:GACU ++AAUC:G: GG CG::GGUUCGA  CC::C:::::CCA
+  NZ_CP072646.1 175266 GGGUCGUUAGCUCAGUuGGUAGAGCAGCUGACUCUUAAUCAGCGGGuCGUAGGUUCGAGCCCUACACGACCCA 175338
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.4e-15   70.3   0.0  cm        1       71 []      573626      573697 + .. 1.00    no 0.61
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG:::::UAGCUCAGUGGUAGAGC+ CGG:CUUA AA:CCG  GG C:C:GGUUCGA  CC:G::::::CCA
+  NZ_CP072646.1 573626 GGGCGGUUAGCUCAGUGGUAGAGCAUCGGUCUUACAAACCGGGGGuCACUGGUUCGAGCCCAGUACCGCCCA 573697
+                       ************************************************************************ PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   1.5e-15   70.1   0.0  cm        1       71 []      271929      272000 + .. 1.00    no 0.60
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::G:::UA:CUCAGUGGUAGAG: :CGG:CUU  AA:CCG:+GG C:CG:GUUCGAAUC:CG::::C::C 
+  NZ_CP072646.1 271929 GCGGGAGUAACUCAGUGGUAGAGUCACGGCCUUCCAAGCCGUUGGuCGCGAGUUCGAAUCUCGUCUCCCGCU 272000
+                       ************************************************************************ PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   1.9e-15   69.8   0.0  cm        1       71 []      271740      271812 + .. 1.00    no 0.59
+
+                                                                        v             v          NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::G:::UAGCUCAGU GGUAGAGC+:C:GACUU +AAUC:G:AGG C: GGGUUCGA UCCC ::::C::C 
+  NZ_CP072646.1 271740 GCCGGCGUAGCUCAGUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuCGCGGGUUCGAGUCCCAUCGCCGGCU 271812
+                       ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   2.6e-15   69.3   0.0  cm        1       71 []      410059      409988 - .. 1.00    no 0.53
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :::::::UAGCUCA+UGG AGAGC+U::G:CU+++AA:C::A GG +G::GGUUCGA UCC::C:::::::+
+  NZ_CP072646.1 410059 UCCUCAGUAGCUCAAUGGCAGAGCAUUCGGCUGUUAACCGAAGGGuUGUAGGUUCGAGUCCUACCUGAGGAG 409988
+                       ************************************************************************ PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   2.7e-15   69.3   0.0  cm        1       71 []      171759      171830 + .. 1.00    no 0.54
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::G:::UA:CUCAGUGGUAGAG:G:::::+U+  AA:::::A+G C:CG:GUUC+AAUC:CG::::C::C 
+  NZ_CP072646.1 171759 GCGGGAGUAACUCAGUGGUAGAGUGCAACCUUGCCAAGGUUGAAGuCGCGAGUUCAAAUCUCGUCUCCCGCU 171830
+                       ************************************************************************ PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   2.8e-15   69.2   0.0  cm        1       71 []     1941457     1941384 - .. 1.00    no 0.58
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:: :U:UAGCUCAGU GGU AGAGCG:::GA+U++   UC:::AGG C::GGGUUCGAAUCCC:::A: ::C 
+  NZ_CP072646.1 1941457 GCGGGUGUAGCUCAGUcGGUuAGAGCGCUUGAUUGUGGCUCAAGAGGuCGUGGGUUCGAAUCCCAUCACUCGCC 1941384
+                        ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   3.5e-15   68.9   0.0  cm        1       71 []      107907      107980 + .. 1.00    no 0.54
+
+                                                                                                  NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:C:::AGG C::::GUUC+A UC:::::A:::CCA
+  NZ_CP072646.1 107907 GGGUCUGUAGCUCAGGuGGUuAGAGCGCACGCCUGAUAAGCGUGAGGuCAGUAGUUCAAGUCUACUCAGACCCA 107980
+                       ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   3.9e-15   68.7   0.0  cm        1       71 []     1495192     1495263 + .. 1.00    no 0.58
+
+                                                 v               v                               NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:G:::UAGC::AGUGGUA::GC+ :GG:CU+ AAA:CC: ++  CG::GGUUCGA UCC::C:::C:CC 
+  NZ_CP072646.1 1495192 GGUGGCGUAGCCAAGUGGUAAGGCACGGGUCUGCAAAACCCUUAUuCGUCGGUUCGAUUCCGACCGCCACCU 1495263
+                        *******************************************999************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   5.4e-15   68.2   0.0  cm        1       71 []      246725      246796 + .. 1.00    no 0.61
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::G:::UA:CUCA+UGGUAGAG:+:C:G:+U   AA:C:G:  G +::GGGUUCGA UCCC:::::C::C 
+  NZ_CP072646.1 246725 GCGGGCGUAGCUCAAUGGUAGAGUACCAGCUUCCCAAGCUGGGUGuUGUGGGUUCGAGUCCCAUCGCCCGCU 246796
+                       *******************************************999************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   7.8e-15   67.6   0.0  cm        1       71 []     1534126     1534198 + .. 1.00    no 0.62
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG GAU:UAGCUCAGU GGUAGAGCG::G: +U   AA :C::AGG C::GGGUUCGA  CCC:::AUC CCA
+  NZ_CP072646.1 1534126 GGGGAUGUAGCUCAGUuGGUAGAGCGCUGCGUUCGCAAUGCAGAGGcCAGGGGUUCGACCCCCCUCAUCUCCA 1534198
+                        ************************************************************************* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   9.2e-15   67.4   0.0  cm        1       71 []     1697025     1696952 - .. 0.99    no 0.59
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::::::UAGCUCA+U GG  AGAGC+UC:GACUU   AUC:GA GG +G G:GUUCGA UC:C C::::::CA
+  NZ_CP072646.1 1697025 GCGCCCGUAGCUCAAUcGGAuAGAGCAUCAGACUUCGGAUCUGAGGGuUGGGAGUUCGAGUCUCUCCGGGCGCA 1696952
+                        *****************8888***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   9.3e-15   67.3   0.0  cm        1       71 []      573753      573826 + .. 1.00    no 0.66
+
+                                                                                                  NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GGAG U:UAGCUCAGU GGU AGAGCG:CG :CU++ A : CG:AGG C:CGGGUUCGA  CCCG::A CUCC+
+  NZ_CP072646.1 573753 GGAGUUGUAGCUCAGUuGGUuAGAGCGCCGGCCUGUCACGUCGGAGGuCGCGGGUUCGAGCCCCGUCAGCUCCG 573826
+                       ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   1.4e-14   66.7   0.0  cm        1       71 []     2513966     2514050 + .. 0.99    no 0.66
+
+                                                                                                               NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::G ::U+GC::A+UGGU  ::GC+:CGGACUUAAAAUCCG:+               G+GCGGGUUCGA UCCCGC:: C::CA
+  NZ_CP072646.1 2513966 GCCGGGGUGGCGGAAUGGUaGACGCAACGGACUUAAAAUCCGUU-gcuccgcaaggggcGUGCGGGUUCGAGUCCCGCCCUCGGCA 2514050
+                        ********************************************.8************95************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   2.7e-14   65.7   0.0  cm        1       71 []      271830      271913 + .. 0.99    no 0.60
+
+                                                                                                              NC
+                       (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G:AG:::U+GC: AG GGU  A :GC+:C:GACU++AAAUC:G:                C:C:GGUUCGAAUCC:G::::CU:CA
+  NZ_CP072646.1 271830 GCAGGGGUGGCCGAGCGGUcaAUGGCAGCAGACUGUAAAUCUGCC-cuccgagugaguu-CACAGGUUCGAAUCCUGUCCCCUGCA 271913
+                       *********************************************.***********74.************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   3.8e-14   65.2   0.0  cm        1       71 []     1169512     1169426 - .. 0.97    no 0.59
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GGAG: :U+GC::AGUGG   A::GCG::G:A+U+ AAAU:C::+                  CG:GGGUUCGAAUCCC:C: :CUCC
+  NZ_CP072646.1 1169512 GGAGGGGUGGCCGAGUGGCugAAGGCGCAGCAUUGGAAAUGCUGU-auacgggaaacugua-uCGAGGGUUCGAAUCCCUCCUCCUCC 1169427
+                        ****************7777*************************.8*************6.4************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_CP072646.1 1169426 G 1169426
+                        * PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   5.1e-14   64.7   0.0  cm        1       71 []      419111      419038 - .. 1.00    no 0.62
+
+                       v                                                                       v  NC
+                       (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                        G:G:::U+G :CAGU  GGUAG: CGU:GG:CU A+AA:CC:AAGG C:CGGGUUC+AAUCCCG::::C:C  
+  NZ_CP072646.1 419111 CGCGGGGUGGAGCAGUccGGUAGCUCGUUGGGCUCAUAACCCAAAGGuCACGGGUUCAAAUCCCGUCCCCGCAU 419038
+                       ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   6.7e-14   64.3   0.0  cm        1       71 []      350949      350878 - .. 1.00    no 0.58
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:::::UAGCUCAG GGUAGAGC+:::::+U+A A ::::: GG C:::GGUUC+AAUCC::::::::C:A
+  NZ_CP072646.1 350949 AGUCGCGUAGCUCAGGGGUAGAGCACUACCUUGACACGGUAGGGGuCCACGGUUCAAAUCCGUGCGCGACUA 350878
+                       ***************9999***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   1.2e-13   63.4   0.0  cm        1       71 []     2520575     2520648 + .. 1.00    no 0.64
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::G:UAU+G:::A+  GGU A:::CG:CG::CU + A ::CG:AG+ +:CGGGUUCGA  CCCG:UA:C:::A
+  NZ_CP072646.1 2520575 GCCGCUAUGGUGUAACcGGUuAACACGCCGCCCUCUCACGGCGGAGAgUACGGGUUCGAGCCCCGUUAGCGGUA 2520648
+                        ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   1.7e-13   62.8   0.0  cm        1       71 []      398879      398806 - .. 1.00    no 0.61
+
+                                                      v       v                                   NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:G:::UAGCUCAG  GGU AGAGCG:CGG +U A+AA CCG:AGG C C:GGUUCGA  CC:G :::C:C:A
+  NZ_CP072646.1 398879 GGCGGCGUAGCUCAGAuGGUuAGAGCGACGGAUUCAUAACCCGUAGGuCUCCGGUUCGAUCCCGGACGCCGCUA 398806
+                       ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   2.1e-13   62.5   0.0  cm        1       71 []     1169731     1169645 - .. 0.97    no 0.61
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GG:GA::U+::::AGUGG   A::::GUCGG:CU  AAA:CCGA+                  CG:GGGUUCGAAUCCC:C::UC:CC
+  NZ_CP072646.1 1169731 GGUGAGGUGCGAGAGUGGCugAAUCGGUCGGUCUCGAAAACCGAU-guacggggaaccgua-cCGUGGGUUCGAAUCCCACCCUCACC 1169646
+                        ****************7777*************************.8*************5.5************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_CP072646.1 1169645 G 1169645
+                        * PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   2.3e-13   62.4   0.0  cm        1       71 []     2440395     2440477 + .. 0.99    no 0.64
+
+                                                                                                             NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::G:::U+G ::A+UGGU  :: CG:CGGACU AAAAUCCG:+             G+G:G:GUUCGA UC:C:C:::C::CA
+  NZ_CP072646.1 2440395 GCCGGAGUGGUGGAAUGGUaGACGCGCCGGACUCAAAAUCCGGU-gggggcaaccccGUGAGAGUUCGAGUCUCUCCUCCGGCA 2440477
+                        ********************************************.8**********96************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   2.8e-13   62.1   0.0  cm        1       71 []     1117599     1117526 - .. 1.00    no 0.65
+
+                                                                                                   NC
+                        (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:GAU:U+GC:CAG   GGUAG:GCG:::G:+U+    :C:::AGG C:C:GGUUC+AAUCC:G::AUC:C:A
+  NZ_CP072646.1 1117599 CGGGAUGUGGCGCAGCcuGGUAGCGCGCACGCUUGGGGUGCGUGAGGuCGCUGGUUCAAAUCCAGUCAUCCCGA 1117526
+                        ************************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   4.4e-13   61.4   0.0  cm        1       71 []     1461417     1461497 + .. 0.99    no 0.59
+
+                                                                                                           NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GA::U+GC::A+UGG   ::GC+:C:GACUUA  AUC:G:            ++G:G:GUUCGA UC:C:C::UC::CA
+  NZ_CP072646.1 1461417 GCGGAAGUGGCGAAAUGGCaGACGCACCAGACUUAGGAUCUGGC-gccgcaaggcAUGAGAGUUCGAGUCUCUCCUUCCGCA 1461497
+                        *******************9************************.8********95************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   4.4e-13   61.3   0.0  cm        1       71 []      682209      682137 - .. 0.99    no 0.60
+
+                                                                                                 NC
+                       (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::::::U G:::AGUGG   A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGA UCCCG:::::::CA
+  NZ_CP072646.1 682209 GUCUCGUUCGUCUAGUGGCcuAGGACACCGCCCUUUCACGGCGGUAACACGGGUUCGACUCCCGUACGAGACA 682137
+                       ****************9999***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   6.1e-13   60.9   0.0  cm        1       71 []     2599679     2599593 - .. 0.98    no 0.57
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GGAGA::U GC::AGUGG   A::GCG: GG:+U+ +AA:CC :+                  CG:GGGUUCGAAUCCC:C::UCUCC
+  NZ_CP072646.1 2599679 GGAGAAGUCGCAUAGUGGCcuAGUGCGCUGGUUUGCUAAACCGGU-guacgcgaaagcgua-cCGAGGGUUCGAAUCCCUCCUUCUCC 2599594
+                        ****************9999*************************.8*************5.5************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_CP072646.1 2599593 G 2599593
+                        * PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   6.7e-13   60.7   0.0  cm        1       71 []      273371      273443 + .. 0.98    no 0.55
+
+                                                                                                 NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:G:UAU+G::: +  GGU A:::CGUCGG:CU  AAA:CCGAA+G+:C GGUUCGA UCC G:UA:C:C:+
+  NZ_CP072646.1 273371 AGGGGUAUGGUGUCAAuGGUcAGCACGUCGGUCUCCAAAACCGAAAGUACGGGUUCGACUCCUGUUACCCCUG 273443
+                       ************87777******************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   6.7e-13   60.7   0.0  cm        1       71 []     2471381     2471463 + .. 0.98    no 0.58
+
+                                                                                                             NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GGAG:: U+GC::A+UGG  A::GC+:CGG:CUU AAA:CCG:              ++::GGGUUCGAAUCCC:: ::CUCC+
+  NZ_CP072646.1 2471381 GGAGGGUUGGCAGAAUGGCuAAUGCACCGGUCUUGAAAACCGGC-guccgaaaggacAUGUGGGUUCGAAUCCCAUGCCCUCCG 2471463
+                        ****************9988************************.8**********95************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   6.9e-13   60.7   0.0  cm        1       71 []     2626574     2626504 - .. 1.00    no 0.55
+
+                                                                                                NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:GA:AU G: CA+UGGUAG :C+UC:G:CU +  A:C:GA  ++: GGGUUCGAAUCCC :U:UC:C:+
+  NZ_CP072646.1 2626574 UGGGAGAUCGUUCAAUGGUAGGACAUCUGGCUCUGGACCAGAGUAUCGGGGUUCGAAUCCCUGUCUCCCAG 2626504
+                        *********************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   7.2e-13   60.6   0.0  cm        1       71 []     1986255     1986183 - .. 0.98    no 0.60
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G:UAUAGCUCAG  GG AGAGCG::G:A U+  A U:C::AGG C:::GGUUCGAA CC:::UA:C CCA
+  NZ_CP072646.1 1986255 GGGGGUAUAGCUCAGCuGGGAGAGCGCUGCAAUGGCAUUGCAGAGGuCAGCGGUUCGAACCCGCUUACCUCCA 1986183
+                        ****************9555***************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   8.5e-13   60.3   0.0  cm        1       71 []     1957868     1957798 - .. 1.00    no 0.55
+
+                                                                                                NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G::A:AU G::CA+UGGUAG::C+:::G:CUU+  A:C::: +++:::GGUUCGA UCC:::U:U::C:+
+  NZ_CP072646.1 1957868 UGGCAGAUCGUCCAAUGGUAGGACAAGCGCCUUUGGAGCGCUGAAUCAAGGUUCGAGUCCUUGUCUGCCAG 1957798
+                        *********************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !     7e-12   57.1   0.0  cm        1       71 []     2276129     2276056 - .. 0.99    no 0.61
+
+                                                                                                   NC
+                        (((((((,,<.<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAG.CucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:::::UAG CUCAGU GGUAGAGC+:::G:+U A A :C::: GG C:C:GGUUCGA UCC:G::::::CCA
+  NZ_CP072646.1 2276129 GGGCGGUUAGuCUCAGUuGGUAGAGCACUCGCUUCACACGCGAGGGGuCACAGGUUCGAGUCCUGUACCGCCCA 2276056
+                        ********976*************************************************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   7.9e-12   56.9   0.0  cm        1       71 []     2501373     2501290 - .. 0.99    no 0.60
+
+                                                                                                               NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GAU:U+GC::A+U GG   ::GCG:::G:CU A  A:C:::+               +:::GGUUC+A UCC::::AUC::CA
+  NZ_CP072646.1 2501373 GCGGAUGUGGCGGAAUuGGCaGACGCGCAUGGCUCAGGACCAUGU-gggcuucggcccu-UGAAGGUUCAAGUCCUUUCAUCCGCA 2501290
+                        *******************9*9***********************.8**********95.************************** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   3.9e-11   54.4   0.0  cm        1       71 []     2568813     2568734 - .. 0.99    no 0.61
+
+                                                                                                          NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GA::U+G:::A+U GGU  :::CGU::G +U+A    C::A+         G+G:GGGUUCGA UCCC:C::UC::CA
+  NZ_CP072646.1 2568813 GCCGAAGUGGUGGAAUuGGUaGACACGUACGUUUGAGGGGCGUAU-gggcaaccGUGGGGGUUCGAGUCCCCCCUUCGGCA 2568734
+                        *********************************************.8******96************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (5334886 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:             967  (0.04734); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             181  (0.009028); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             180  (0.008931); expected (0.02)
+Windows   passing  local HMM Forward       filter:              39  (0.002317); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              39  (0.002317); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              36  (0.002317); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              36  (0.002317); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              43  (0.0006252); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              43  (0.0006244); expected (0.0001)
+Total CM hits reported:                                         42  (0.0005956); includes 0 truncated hit(s)
+
+# CPU time: 0.40u 0.02s 00:00:00.42 Elapsed: 00:00:00.09
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   2.6e-12   62.4   0.0  NZ_CP072646.1 1576563 1576470 -  cm    no 0.64  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (2) !   1.5e-08   47.9   0.0  NZ_CP072646.1 2513966 2514049 +  cm    no 0.67  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (3) !   1.6e-08   47.8   0.0  NZ_CP072646.1 2599681 2599592 -  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+  (4) !   2.1e-08   47.3   0.0  NZ_CP072646.1 2471379 2471464 +  cm    no 0.59  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequen
+
+
+Hit alignments:
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.6e-12   62.4   0.0  cm        1       91 []     1576563     1576470 - .. 0.95    no 0.64
+
+                               vv                  vv               vv                                        vv NC
+                        (((((((((,,<<<<<<____>>>>>><<<<<<_______>>>>>>,<<<<<______....__>>>>>,,<<<<_______>>>>)) CS
+       tRNA-Sec       1 GggggggcgaucggcccUGGUgggccguccGGgCUUCAAAcCCggaGggggcuagcaa....cggccccgGggGGUUCGAUUCCcccg 84     
+                        G :GG:G   U :G::C GGUG::C:   CG::CUUCAAA::CG  G: ::C  G+ +    + G:: :GG:GGGUUCGA UCCC:  
+  NZ_CP072646.1 1576563 GGAGGCGCA-UGCGGUCCGGUGGCCGUCACGAACUUCAAAUUCGCUGCGUCCGUGUGGcaacACGGAUGGGUGGGUUCGACUCCCACA 1576477
+                        *******87.9***********************************999999988877777777999999****************** PP
+
+                                NC
+                        ))))))) CS
+       tRNA-Sec      85 ccccccC 91     
+                        C:CC: C
+  NZ_CP072646.1 1576476 CGCCUUC 1576470
+                        ******* PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.5e-08   47.9   0.0  cm        1       91 []     2513966     2514049 + .. 0.91    no 0.67
+
+                               v      vvv    vvv                        v  v        v  v                   v     NC
+                        (((((((((,,<<<<<<____>>>>>><<<<<<_______>>>>>>,<<<<<________>>>>>,,<<<<_______>>>>)))))) CS
+       tRNA-Sec       1 GggggggcgaucggcccUGGUgggccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccgGggGGUUCGAUUCCcccgcccc 88     
+                        G::G:GG+G  ::G   UGGU   C::::CGG:CUU AAA:CCG::G: ::  A       :: : G:GGGUUCGA UCCC:C CC:C
+  NZ_CP072646.1 2513966 GCCGGGGUG--GCGGAAUGGUAGACGCAACGGACUUAAAAUCCGUUGCUCCGCAAG----GGGCGUGCGGGUUCGAGUCCCGC-CCUC 2514046
+                        ****99986..***********************************9877765555....677788****************7.899* PP
+
+                            NC
+                        ))) CS
+       tRNA-Sec      89 ccC 91     
+                        ::C
+  NZ_CP072646.1 2514047 GGC 2514049
+                        *** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.6e-08   47.8   0.0  cm        1       91 []     2599681     2599592 - .. 0.97    no 0.59
+
+                                                                                                                 NC
+                        (((((((((,,<<<<<<____>>>.>>><<<<<<_______>>>>>>,<<<<<________>>>>>,.,<<<<_______>>>>.))) CS
+       tRNA-Sec       1 GggggggcgaucggcccUGGUggg.ccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccg.GggGGUUCGAUUCCcc.cgc 85     
+                        G:GG:G::G  ::::::UGG ::: ::::C GG: U C AA:CC G:G:::GC A +    GC:::  G:GGGUUCGA UCCC: C::
+  NZ_CP072646.1 2599681 GCGGAGAAGUCGCAUAGUGGCCUAgUGCGCUGGUUUGCUAAACCGGUGUACGCGAAA----GCGUACcGAGGGUUCGAAUCCCUcCUU 2599598
+                        *********************99769***************************9999....******9****************99** PP
+
+                               NC
+                        )))))) CS
+       tRNA-Sec      86 cccccC 91     
+                        C:CC:C
+  NZ_CP072646.1 2599597 CUCCGC 2599592
+                        ****** PP
+
+>> NZ_CP072646.1  Chloracidobacterium sp. MS 40/45 chromosome 1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   2.1e-08   47.3   0.0  cm        1       91 []     2471379     2471464 + .. 0.93    no 0.59
+
+                                      vv      vv   v                 v vv              vv                        NC
+                        (((((((((,,<<<<<<____>>>>>><<<<<<_______>>>>>>,<<<<<________>>>>>,,<<<<_______>>>>.))))) CS
+       tRNA-Sec       1 GggggggcgaucggcccUGGUgggccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccgGggGGUUCGAUUCCcc.cgccc 87     
+                        G:GG:GG:   :::  :UGG :  ::: CCGG:CUU AAA:CCGG G  ::C A +    G::C+ G:GGGUUCGA UCCC:  :CC:
+  NZ_CP072646.1 2471379 GCGGAGGGUUGGCAGAAUGGCUAAUGCACCGGUCUUGAAAACCGGCG--UCCGAAA----GGACAUGUGGGUUCGAAUCCCAuGCCCU 2471460
+                        ********************************************998..4555555....666678********************** PP
+
+                             NC
+                        )))) CS
+       tRNA-Sec      88 cccC 91     
+                        CC:C
+  NZ_CP072646.1 2471461 CCGC 2471464
+                        **** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (5334886 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            7193  (0.192); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1889  (0.05273); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1014  (0.02823); expected (0.02)
+Windows   passing  local HMM Forward       filter:             115  (0.003506); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              80  (0.002458); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              61  (0.002049); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              59  (0.001989); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              62  (0.00118); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              27  (0.0004324); expected (0.0001)
+Total CM hits reported:                                          4  (6.635e-05); includes 0 truncated hit(s)
+
+# CPU time: 0.95u 0.05s 00:00:01.00 Elapsed: 00:00:00.19
+//
+[ok]

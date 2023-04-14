@@ -1,0 +1,592 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Prochlorococcus_marinus_subsp._marinus_str_CCMP1375.fasta
+# output directed to file:               sequences/Prochlorococcus_marinus_subsp._marinus_str_CCMP1375/tRNA.out
+# tabular output of hits:                sequences/Prochlorococcus_marinus_subsp._marinus_str_CCMP1375/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   4.7e-17   74.9   0.0  NC_005042.1 1304251 1304181 -  cm    no 0.59  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (2) !   1.2e-16   73.5   0.0  NC_005042.1 1616743 1616670 -  cm    no 0.61  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (3) !     2e-16   72.7   0.0  NC_005042.1  355056  355128 +  cm    no 0.58  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (4) !   2.2e-16   72.5   0.0  NC_005042.1 1656359 1656288 -  cm    no 0.54  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (5) !   7.8e-16   70.5   0.0  NC_005042.1  852209  852295 +  cm    no 0.60  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (6) !   1.6e-15   69.4   0.0  NC_005042.1 1173899 1173985 +  cm    no 0.57  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (7) !   1.8e-15   69.2   0.0  NC_005042.1 1546512 1546424 -  cm    no 0.60  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (8) !   2.1e-15   69.0   0.0  NC_005042.1  370578  370507 -  cm    no 0.61  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+  (9) !   2.2e-15   68.9   0.0  NC_005042.1  452454  452382 -  cm    no 0.59  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (10) !   2.6e-15   68.6   0.0  NC_005042.1 1704924 1704853 -  cm    no 0.61  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (11) !     3e-15   68.5   0.0  NC_005042.1 1595707 1595777 +  cm    no 0.58  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (12) !   3.9e-15   68.0   0.0  NC_005042.1  554563  554634 +  cm    no 0.60  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (13) !   4.3e-15   67.9   0.0  NC_005042.1 1337241 1337312 +  cm    no 0.54  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (14) !   4.8e-15   67.7   0.0  NC_005042.1 1510408 1510479 +  cm    no 0.58  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (15) !   5.2e-15   67.6   0.0  NC_005042.1  651118  651189 +  cm    no 0.56  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (16) !   5.9e-15   67.4   0.0  NC_005042.1 1212078 1212151 +  cm    no 0.55  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (17) !   9.5e-15   66.7   0.0  NC_005042.1  451989  451916 -  cm    no 0.64  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (18) !     1e-14   66.5   0.0  NC_005042.1  896720  896793 +  cm    no 0.50  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (19) !   1.1e-14   66.4   0.0  NC_005042.1  544514  544599 +  cm    no 0.52  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (20) !   1.4e-14   66.0   0.0  NC_005042.1  146967  147038 +  cm    no 0.62  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (21) !   1.6e-14   65.8   0.0  NC_005042.1 1237285 1237213 -  cm    no 0.62  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (22) !     2e-14   65.5   0.0  NC_005042.1  282777  282704 -  cm    no 0.59  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (23) !   2.2e-14   65.3   0.0  NC_005042.1  334970  334898 -  cm    no 0.58  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (24) !   2.6e-14   65.1   0.0  NC_005042.1  562384  562457 +  cm    no 0.66  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (25) !   3.8e-14   64.5   0.0  NC_005042.1  345150  345079 -  cm    no 0.53  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (26) !   4.2e-14   64.3   0.0  NC_005042.1  354973  355046 +  cm    no 0.59  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (27) !   4.3e-14   64.3   0.0  NC_005042.1  811269  811196 -  cm    no 0.64  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (28) !     6e-14   63.8   0.0  NC_005042.1  370670  370589 -  cm    no 0.61  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (29) !     2e-13   61.9   0.0  NC_005042.1 1580265 1580338 +  cm    no 0.57  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (30) !   2.3e-13   61.7   0.0  NC_005042.1  736184  736098 -  cm    no 0.54  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (31) !   1.1e-12   59.3   0.0  NC_005042.1 1282673 1282745 +  cm    no 0.68  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (32) !   1.1e-12   59.2   0.0  NC_005042.1 1049322 1049394 +  cm    no 0.63  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (33) !   1.9e-12   58.4   0.0  NC_005042.1  298553  298481 -  cm    no 0.56  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (34) !   3.5e-12   57.5   0.0  NC_005042.1  670854  670781 -  cm    no 0.66  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (35) !   3.6e-12   57.5   0.0  NC_005042.1 1277487 1277568 +  cm    no 0.60  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (36) !   4.6e-12   57.1   0.0  NC_005042.1 1566956 1567027 +  cm    no 0.61  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (37) !   1.2e-11   55.6   0.0  NC_005042.1   85051   84970 -  cm    no 0.59  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (38) !   5.3e-11   53.3   0.0  NC_005042.1 1275907 1275825 -  cm    no 0.55  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+ (39) !   1.1e-10   52.1   0.0  NC_005042.1  262362  262281 -  cm    no 0.60  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete s
+
+
+Hit alignments:
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.7e-17   74.9   0.0  cm        1       71 []     1304251     1304181 - .. 1.00    no 0.59
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:::UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:GA+G++GCGGGUUCGA UCCCGC:::C::C 
+  NC_005042.1 1304251 GCGGGCGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCUGAUGAUGCGGGUUCGAUUCCCGCCGCCCGCU 1304181
+                      *********************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.2e-16   73.5   0.0  cm        1       71 []     1616743     1616670 - .. 0.99    no 0.61
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G:U:UAGCUCAGU GG  AGAGCG:CGG:+U  +AA:CCG:AGG CG GGGUUCGAAUCCC C:A:C:CC+
+  NC_005042.1 1616743 GGGGCUGUAGCUCAGUaGGAuAGAGCGACGGUUUCCUAAACCGUAGGuCGUGGGUUCGAAUCCCGCCAGCCCCG 1616670
+                      *****************8888***************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !     2e-16   72.7   0.0  cm        1       71 []      355056      355128 + .. 1.00    no 0.58
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG G:UAUAGCUCAGU GGUAGAGCG:C:G:+UU  AA:C:G:A G C:::GGUUCGA UCC:::UA:C CCA
+  NC_005042.1 355056 GGGGGUAUAGCUCAGUuGGUAGAGCGCCUGCUUUGCAAGCAGGAUGuCAGCGGUUCGAGUCCGCUUACCUCCA 355128
+                     ************************************************************************* PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   2.2e-16   72.5   0.0  cm        1       71 []     1656359     1656288 - .. 1.00    no 0.54
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GAU:UAGCUCAGUGGUAGAGC+UC:::+U+  AA:::GA GG C::G:GUUCGAAUC:C:::AUC::C 
+  NC_005042.1 1656359 GCGGAUGUAGCUCAGUGGUAGAGCAUCUCCUUGCCAAGGAGAGGGuCGAGAGUUCGAAUCUCUUCAUCCGCU 1656288
+                      ************************************************************************ PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   7.8e-16   70.5   0.0  cm        1       71 []      852209      852295 + .. 0.99    no 0.60
+
+                                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GGAGA::U+GC::AGUGGU  A::GCG::G:ACU+ AAAU:C::+                  CG:GGGUUCGAAUCCC:C::UCUCC+
+  NC_005042.1 852209 GGAGAGGUGGCCGAGUGGUcgAAGGCGCAGCACUGGAAAUGCUGU-auaggggcaacucua-uCGAGGGUUCGAAUCCCUCCCUCUCCG 852295
+                     *********************************************.8*************6.4************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   1.6e-15   69.4   0.0  cm        1       71 []     1173899     1173985 + .. 0.99    no 0.57
+
+                                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::U+GCU:AGUGGU  A:AGCG:::GACU  AAAUC:::+                  CG:GGGUUCGAAUCCC:C::UCUCC+
+  NC_005042.1 1173899 GGAGAGGUGGCUGAGUGGUcgAAAGCGAACGACUCGAAAUCGUUU-gacggguaaaaccguc-CGUGGGUUCGAAUCCCACCCUCUCCG 1173985
+                      *********************************************.8*************76.************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   1.8e-15   69.2   0.0  cm        1       71 []     1546512     1546424 - .. 0.98    no 0.60
+
+                                                                                                                 NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.................,.,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.................g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGAGA::U+GCU:AGUGGU  A:AGCG:C:::CU+ +AA:::G:+                    CG:GGGUUCGAAUCCC:C::UCUCC
+  NC_005042.1 1546512 GGAGAGGUGGCUGAGUGGUugAAAGCGGCUCCCUGCUAAGGAGUU-acaggaggcaacuccug-uCGAGGGUUCGAAUCCCUCCCUCUCC 1546425
+                      ****************9998*************************.8***************6.4************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                      +
+  NC_005042.1 1546424 G 1546424
+                      * PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   2.1e-15   69.0   0.0  cm        1       71 []      370578      370507 - .. 1.00    no 0.61
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:::: :UAGCUCAG GGUAGAGC+:::::+U+ +AA:::::AGG C CGGGUUC+A UCCCG : ::::CA
+  NC_005042.1 370578 GCCCUUGUAGCUCAGCGGUAGAGCACUCCCUUGGUAAGGGAGAGGuCUCGGGUUCAAGUCCCGACGAGGGCA 370507
+                     ************************************************************************ PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   2.2e-15   68.9   0.0  cm        1       71 []      452454      452382 - .. 1.00    no 0.59
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::::UAG:UCAGU GGUAGA:CG::GG:CU  AAA:CC::A G CG: GGUUC+A UCC :C::::::C+
+  NC_005042.1 452454 GCGCCGUUAGUUCAGUuGGUAGAACGCAGGUCUCCAAAACCUGAUGuCGGGGGUUCAAGUCCUCCACGGCGCG 452382
+                     ************************************************************************* PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   2.6e-15   68.6   0.0  cm        1       71 []     1704924     1704853 - .. 1.00    no 0.61
+
+                                                                       v           v           NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAGCUCAG GGUAGAGCG:C:G:CUUA AA:C:G:A G C:C GGUUCGAA CC G::::::CCA
+  NC_005042.1 1704924 GGGCGAUUAGCUCAGCGGUAGAGCGCCUGCCUUACAAGCAGGAUGuCCCUGGUUCGAACCCUGGAUCGCCCA 1704853
+                      ************************************************************************ PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !     3e-15   68.5   0.0  cm        1       71 []     1595707     1595777 + .. 1.00    no 0.58
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G::AU+GC::AG GGUA::GC+::GGA+U+ AAAUCC::++ C:C::GUUCGAAUC::G:U::C:CC 
+  NC_005042.1 1595707 GGCGGCAUGGCCAAGCGGUAAGGCAGAGGAUUGCAAAUCCUUUAUCCCCAGUUCGAAUCUGGGUGCCGCCU 1595777
+                      *********************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   3.9e-15   68.0   0.0  cm        1       71 []      554563      554634 + .. 1.00    no 0.60
+
+                                              v               v                               NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:::: UAGCUCAG GGUAGAGC+ C:G:CUU++AA:C:G +GG C::G:GUUCGAAUC:C:: ::::CCA
+  NC_005042.1 554563 GGGUCGCUAGCUCAGCGGUAGAGCAUCCGGCUUUUAACCGGCUGGuCCUGAGUUCGAAUCUCAGGCGACCCA 554634
+                     ************************************************************************ PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   4.3e-15   67.9   0.0  cm        1       71 []     1337241     1337312 + .. 1.00    no 0.54
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAGCUCAG GGUAGAGC+:::::+U+A A ::::: +G C:C:GGUUCGA UCC:G::::::CCA
+  NC_005042.1 1337241 GGGCGAUUAGCUCAGAGGUAGAGCACUACCUUGACACGGUAGGAGuCACUGGUUCGAUUCCAGUAUCGCCCA 1337312
+                      *******************************************999************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   4.8e-15   67.7   0.0  cm        1       71 []     1510408     1510479 + .. 1.00    no 0.58
+
+                                                   v       v                                   NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:UAGCUCAG GGUAGAGC+:C:G +U  +AA C:G:AGG C:::GGUUC+A UCC::::A:C::CA
+  NC_005042.1 1510408 GCCGGUGUAGCUCAGGGGUAGAGCAACUGAUUCGUAACCAGUAGGcCAGCGGUUCAAUUCCGCUCACCGGCA 1510479
+                      ***************9999***************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   5.2e-15   67.6   0.0  cm        1       71 []      651118      651189 + .. 1.00    no 0.56
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::G U:UAG:UCAGUGGUAGA:CGUC:G:+U   AA:C:GAA G C:C::GUUCGA UC::G::A C::C 
+  NC_005042.1 651118 GCGGGUGUAGUUCAGUGGUAGAACGUCAGCUUCCCAAGCUGAAUGuCGCCAGUUCGAGUCUGGUCAUCCGCU 651189
+                     *******************************************9**************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   5.9e-15   67.4   0.0  cm        1       71 []     1212078     1212151 + .. 0.99    no 0.55
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::UAGCUCAG  GG  AGAGC+:C:G:CUU +AA:C:G: GG C C:GGUUCGAAUCC:G ::::::C+
+  NC_005042.1 1212078 GCUCCGUUAGCUCAGCuGGAuAGAGCAACUGCCUUCUAAGCAGUGGGuCUCAGGUUCGAAUCCUGAACGGAGCG 1212151
+                      *****************8888***************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   9.5e-15   66.7   0.0  cm        1       71 []      451989      451916 - .. 1.00    no 0.64
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:::::UAG UCA+  GGU AGA C+:CG::CU++ A ::CG:A+G +:CGGGUUCGAAUCCCG::::::CC+
+  NC_005042.1 451989 GGGACCGUAGUUCAACuGGUuAGAGCACCGCCCUGUCACGGCGGAAGuUGCGGGUUCGAAUCCCGUCGGUCCCG 451916
+                     ************************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !     1e-14   66.5   0.0  cm        1       71 []      896720      896793 + .. 1.00    no 0.50
+
+                                                    v       v                                   NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::U:UAGCUCAG  GGU AGAGC+::G: +U A+AA :C::AGG CG:G:GUUC+A UC:C:C:A::::CA
+  NC_005042.1 896720 GUCAGUGUAGCUCAGCuGGUuAGAGCACAGCAUUCAUAACGCUGAGGuCGAGAGUUCAAGUCUCUCCACUGACA 896793
+                     ************************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   1.1e-14   66.4   0.0  cm        1       71 []      544514      544599 + .. 0.99    no 0.52
+
+                                                                                                             NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::U:U+G:::A+U GGU  :::C+::GGACUUAAAAUCC::A               G+G:GGGUUC+A UCCC:C:A::::CA
+  NC_005042.1 544514 GCGAGUGUGGUGGAAUuGGUaGACACACAGGACUUAAAAUCCUGA-gaccagcaauggucGUGAGGGUUCAAGUCCCUCCACUCGCA 544599
+                     *********************************************.8************96************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   1.4e-14   66.0   0.0  cm        1       71 []      146967      147038 + .. 1.00    no 0.62
+
+                                                                      v           v           NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     ::: :::UAGCUCAG GGUAGAGCG:::G:CU+++AA:C:::+GG CGC GGUUCGAAUCC GC::: :::+
+  NC_005042.1 146967 UCCUCGGUAGCUCAGCGGUAGAGCGAUCGGCUGUUAACCGAUUGGuCGCAGGUUCGAAUCCCGCCCGGGGAG 147038
+                     ************************************************************************ PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   1.6e-14   65.8   0.0  cm        1       71 []     1237285     1237213 - .. 1.00    no 0.62
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG G::AUAGCUCAGU GGUAGAGC+:C:G: U+  A :C:G: GG C:::GGUUCGAAUCC:::U::C CCA
+  NC_005042.1 1237285 GGGGCCAUAGCUCAGUuGGUAGAGCACCUGCAUGGCAUGCAGGGGGuCAGCGGUUCGAAUCCGCUUGGCUCCA 1237213
+                      ************************************************************************* PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !     2e-14   65.5   0.0  cm        1       71 []      282777      282704 - .. 0.97    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::U:UAGCUCAG  G U AGAGC+UC:GACU    AUC:GA GG CG G:GUUCGAAUC:C C:A::::C+
+  NC_005042.1 282777 GCGCCUGUAGCUCAGCgGAUuAGAGCAUCUGACUACGGAUCAGAGGGuCGGGAGUUCGAAUCUCUCCAGGCGCG 282704
+                     ****************5555****************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   2.2e-14   65.3   0.0  cm        1       71 []      334970      334898 - .. 1.00    no 0.58
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:: ::AUAGCUCAGU GGUAGAGC+:::GACU+AAAAUC:::  G C::::GUUC+AAUC::::U:: ::CA
+  NC_005042.1 334970 GCCGGGAUAGCUCAGUuGGUAGAGCAGGCGACUGAAAAUCGCCGUGuCCGCAGUUCAAAUCUGCGUCCUGGCA 334898
+                     ************************************************************************* PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   2.6e-14   65.1   0.0  cm        1       71 []      562384      562457 + .. 1.00    no 0.66
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:G:::U+GC:CAGU  GGUAG:GCG:::G:+UU   A:C:::AGG C:C:GGUUCGAAUCC:G::::C:C:A
+  NC_005042.1 562384 CGGGGCGUGGCGCAGUuuGGUAGCGCGGGUGCUUUGGGAGCACUAGGuCGCAGGUUCGAAUCCUGUCGCCCCGA 562457
+                     ************************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   3.8e-14   64.5   0.0  cm        1       71 []      345150      345079 - .. 1.00    no 0.53
+
+                                              v               v      v             v          NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::G:::UAGCUCAG GGUAGAGC+ CG::+UU +AA::CG AGG C: ::GUUC+AAUC:: ::::C::CA
+  NC_005042.1 345150 GCCGGCUUAGCUCAGCGGUAGAGCAGCGCUUUUGUAAAGCGAAGGuCAUCAGUUCAAAUCUGUUAGCCGGCA 345079
+                     ************************************************************************ PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   4.2e-14   64.3   0.0  cm        1       71 []      354973      355046 + .. 1.00    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:: ::UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:C:GGUUC+A UCC:G::: ::CCA
+  NC_005042.1 354973 GGGCUAUUAGCUCAGGcGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCCCUGGUUCAAGUCCAGGAUGGCCCA 355046
+                     ************************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   4.3e-14   64.3   0.0  cm        1       71 []      811269      811196 - .. 1.00    no 0.64
+
+                     v                                                                       v  NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                      G:G:::UAG :CAGU  GGUAG: CGUCGG:CU A+AA:CCGAAGG CG:G:GUUC+AAUC:C:C:::C:C A
+  NC_005042.1 811269 CGCGGGGUAGAGCAGUcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGGGAGUUCAAAUCUCCCCCCCGCCA 811196
+                     ************************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !     6e-14   63.8   0.0  cm        1       71 []      370670      370589 - .. 0.98    no 0.61
+
+                                                                                                         NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG: :::U+:C: AGUGGU  A :G:G:CGGACU++AAAUCCG:+           +CG::GGUUC+AAUCC::C::: :CCA
+  NC_005042.1 370670 GGGUCGGUGCCCGAGUGGUuaAUGGGGGCGGACUGUAAAUCCGCU-ggcucugccuACGUUGGUUCAAAUCCAACCCGGCCCA 370589
+                     ****************9999*************************.8********85************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !     2e-13   61.9   0.0  cm        1       71 []     1580265     1580338 + .. 0.99    no 0.57
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G ::AU:UAGCUCAGU GG  AGAGC+UC:GA+U     UC:GA +G CG GGGUUCGA UCCC C:AU:: C+
+  NC_005042.1 1580265 GGGCAUGUAGCUCAGUuGGAuAGAGCAUCAGAUUCCGGUUCUGAGAGuCGGGGGUUCGAGUCCCUCCAUGCUCG 1580338
+                      *****************8888***************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   2.3e-13   61.7   0.0  cm        1       71 []      736184      736098 - .. 0.98    no 0.54
+
+                                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GGAGA::U+G : AGUGGU  A : C :::G:CUU AAA:C:::                   CG:GGGUUCGAAUCCC:C::UCUCC+
+  NC_005042.1 736184 GGAGAGUUGGUCGAGUGGUuuAUGGCUCUAGUCUUGAAAACUAGC-aagggugcaaguccuu-CGGGGGUUCGAAUCCCCCACUCUCCG 736098
+                     ****************9888*************************.8*************85.************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   1.1e-12   59.3   0.0  cm        1       71 []     1282673     1282745 + .. 0.99    no 0.68
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:: :::U GC::AGUGGU A::GC+:CGG:+U++   :CCG:++  C::GGGUUCGAAUCCC::::: ::C 
+  NC_005042.1 1282673 GCGGGCGUCGCCAAGUGGUuAAGGCAGCGGCUUGUGGCGCCGCUAUuCGGGGGUUCGAAUCCCCUCGCUCGCC 1282745
+                      ****************9999************************999************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   1.1e-12   59.2   0.0  cm        1       71 []     1049322     1049394 + .. 0.99    no 0.63
+
+                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G::::AU G:::AG GG   A:::C+:C:::CUU+ A :::G: G+C::GGGUUCGAAUCCC::U::::C:A
+  NC_005042.1 1049322 GGCCCCAUCGUCUAGAGGCcuAGGACACCUCCCUUUCACGGAGGCGACAGGGGUUCGAAUCCCCUUGGGGCUA 1049394
+                      ****************9999***************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   1.9e-12   58.4   0.0  cm        1       71 []      298553      298481 - .. 0.99    no 0.56
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:G:U:UAGC::  UGGU A::GC+:CG:ACU A+AAU:CG:     GCG:GUUCGA  C:CGC:A:C:CCA
+  NC_005042.1 298553 GGGGGUGUAGCAAUCUGGUgAAUGCAGCGAACUCAUAAUUCGCCUUaGGCGAGUUCGAUCCUCGCCACCCCCA 298481
+                     ********************************************999************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   3.5e-12   57.5   0.0  cm        1       71 []      670854      670781 - .. 1.00    no 0.66
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G: :::UAGC:CAG   GGUAG:GC+:C:::+U+    :::G: GG CG GGGUUC+AAUCCC C::: :C:A
+  NC_005042.1 670854 CGGGGCGUAGCGCAGCuuGGUAGCGCACCACUUUGGGGUAGUGGGGGuCGUGGGUUCAAAUCCCGCCGCUCCGA 670781
+                     ************************************************************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   3.6e-12   57.5   0.0  cm        1       71 []     1277487     1277568 + .. 0.99    no 0.60
+
+                                                                                                           NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::U+G ::A+U GGU  :: C+:CG:ACU AAAAU:CG:              +G::GGUUC+A UCC::C:::::CCA
+  NC_005042.1 1277487 GGGAGCGUGGUGGAAUuGGUaGACGCACCGCACUCAAAAUGCGGC-accuucggguu-UGUCGGUUCAAGUCCGACCGCUCCCA 1277568
+                      *********************************************.8********74.************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   4.6e-12   57.1   0.0  cm        1       71 []     1566956     1567027 + .. 1.00    no 0.61
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:::U GC::AGUGGUA::GC+:CG :+UU+   : CG: +  C:::GGUUCGAAUCC::::::C:C:+
+  NC_005042.1 1566956 UGGGGCGUCGCCAAGUGGUAAGGCAGCGGGUUUUGGUCUCGCCAUuCCUAGGUUCGAAUCCUAGCGCCCCAG 1567027
+                      *******************************************999************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   1.2e-11   55.6   0.0  cm        1       71 []       85051       84970 - .. 0.99    no 0.59
+
+                                                                                                         NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+         tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71   
+                    G::GAU:U+G:::A+U GGU  :::CG:::G CU A  A C:::+             +GCG:GUUC+A UC:CGC:AUC::CA
+  NC_005042.1 85051 GCGGAUGUGGUGGAAUuGGUaGACACGCACGUCUAAGGAGCGUGU-ggcuucggccu-UGCGAGUUCAAGUCUCGCCAUCCGCA 84970
+                    *********************************************.8********95.************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   5.3e-11   53.3   0.0  cm        1       71 []     1275907     1275825 - .. 0.99    no 0.55
+
+                                                                                                           NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GAU:U+GC::A+U GGU  ::GCG::: :+U A   : :::+            G+G:G:GUUC+A UC:C:C:AUC::CA
+  NC_005042.1 1275907 GCGGAUGUGGCGGAAUuGGUaGACGCGCAUGUUUCAGGUAUAUGU-ggccuugugcuGUGGGAGUUCAAGUCUCCCCAUCCGCA 1275825
+                      *********************************************.8*********85************************** PP
+
+>> NC_005042.1  Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   1.1e-10   52.1   0.0  cm        1       71 []      262362      262281 - .. 0.99    no 0.60
+
+                                                                                                         NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:::A  U+GC::A+U GGU  ::GCG::GG:+UUA   :CC::+           G+G:G:GUUC+A UC:C:C  U:::CA
+  NC_005042.1 262362 GCCCAUCUGGCGGAAUuGGUaGACGCGCGGGUUUUAGGUACCCGU-gacuuaggucGUGGGAGUUCAAGUCUCCCGGUGGGCA 262281
+                     *********************************************.8********96************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (3502160 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1704  (0.1266); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             392  (0.02987); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             364  (0.02766); expected (0.02)
+Windows   passing  local HMM Forward       filter:              54  (0.005131); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              51  (0.004796); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              45  (0.004436); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              45  (0.004436); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              47  (0.001044); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              43  (0.0009371); expected (0.0001)
+Total CM hits reported:                                         39  (0.0008449); includes 0 truncated hit(s)
+
+# CPU time: 0.42u 0.01s 00:00:00.43 Elapsed: 00:00:00.07
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (3502160 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1478  (0.05976); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             374  (0.01529); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             373  (0.01525); expected (0.02)
+Windows   passing  local HMM Forward       filter:              15  (0.0006367); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              15  (0.0006367); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              15  (0.0006367); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              14  (0.0005973); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              14  (0.0003463); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              14  (0.0002992); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.25u 0.03s 00:00:00.28 Elapsed: 00:00:00.05
+//
+[ok]

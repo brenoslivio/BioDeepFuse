@@ -1,0 +1,791 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Terriglobus_roseus_DSM_18391.fasta
+# output directed to file:               sequences/Terriglobus_roseus_DSM_18391/tRNA.out
+# tabular output of hits:                sequences/Terriglobus_roseus_DSM_18391/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   4.1e-16   73.2   0.0  NC_018014.1 2532470 2532543 +  cm    no 0.69  Terriglobus roseus DSM 18391, complete sequence
+  (2) !   4.1e-16   73.2   0.0  NC_018014.1 2992990 2993063 +  cm    no 0.69  Terriglobus roseus DSM 18391, complete sequence
+  (3) !   4.3e-16   73.2   0.0  NC_018014.1 1920073 1920000 -  cm    no 0.61  Terriglobus roseus DSM 18391, complete sequence
+  (4) !   4.3e-16   73.2   0.0  NC_018014.1  926150  926223 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+  (5) !   4.3e-16   73.2   0.0  NC_018014.1 2076252 2076325 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+  (6) !   7.1e-16   72.4   0.0  NC_018014.1  772881  772953 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+  (7) !   7.3e-16   72.4   0.0  NC_018014.1  699976  699904 -  cm    no 0.55  Terriglobus roseus DSM 18391, complete sequence
+  (8) !   1.2e-15   71.6   0.0  NC_018014.1  488575  488502 -  cm    no 0.57  Terriglobus roseus DSM 18391, complete sequence
+  (9) !   1.3e-15   71.4   0.0  NC_018014.1 2127377 2127306 -  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+ (10) !   1.6e-15   71.2   0.0  NC_018014.1 1025778 1025706 -  cm    no 0.56  Terriglobus roseus DSM 18391, complete sequence
+ (11) !   2.6e-15   70.4   0.0  NC_018014.1 1025308 1025237 -  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+ (12) !   3.1e-15   70.1   0.0  NC_018014.1 3864377 3864306 -  cm    no 0.56  Terriglobus roseus DSM 18391, complete sequence
+ (13) !   3.9e-15   69.7   0.0  NC_018014.1  237661  237733 +  cm    no 0.62  Terriglobus roseus DSM 18391, complete sequence
+ (14) !     6e-15   69.1   0.0  NC_018014.1 2073303 2073375 +  cm    no 0.53  Terriglobus roseus DSM 18391, complete sequence
+ (15) !   6.8e-15   68.9   0.0  NC_018014.1 1967341 1967268 -  cm    no 0.59  Terriglobus roseus DSM 18391, complete sequence
+ (16) !     7e-15   68.8   0.0  NC_018014.1 4379385 4379458 +  cm    no 0.59  Terriglobus roseus DSM 18391, complete sequence
+ (17) !   1.3e-14   67.9   0.0  NC_018014.1 4501335 4501262 -  cm    no 0.64  Terriglobus roseus DSM 18391, complete sequence
+ (18) !   1.5e-14   67.7   0.0  NC_018014.1 1025672 1025589 -  cm    no 0.57  Terriglobus roseus DSM 18391, complete sequence
+ (19) !   1.8e-14   67.4   0.0  NC_018014.1 1682985 1683057 +  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+ (20) !   1.8e-14   67.4   0.0  NC_018014.1 4656351 4656280 -  cm    no 0.67  Terriglobus roseus DSM 18391, complete sequence
+ (21) !   1.9e-14   67.3   0.0  NC_018014.1  498918  498990 +  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+ (22) !   2.1e-14   67.1   0.0  NC_018014.1 1899772 1899699 -  cm    no 0.54  Terriglobus roseus DSM 18391, complete sequence
+ (23) !   2.5e-14   66.9   0.0  NC_018014.1 2127226 2127155 -  cm    no 0.61  Terriglobus roseus DSM 18391, complete sequence
+ (24) !   2.8e-14   66.7   0.0  NC_018014.1  846603  846532 -  cm    no 0.61  Terriglobus roseus DSM 18391, complete sequence
+ (25) !   2.9e-14   66.6   0.0  NC_018014.1 1025182 1025111 -  cm    no 0.61  Terriglobus roseus DSM 18391, complete sequence
+ (26) !   3.3e-14   66.4   0.0  NC_018014.1 5075516 5075427 -  cm    no 0.59  Terriglobus roseus DSM 18391, complete sequence
+ (27) !   3.9e-14   66.2   0.0  NC_018014.1 4932311 4932238 -  cm    no 0.57  Terriglobus roseus DSM 18391, complete sequence
+ (28) !   5.6e-14   65.6   0.0  NC_018014.1 2271938 2271854 -  cm    no 0.59  Terriglobus roseus DSM 18391, complete sequence
+ (29) !   6.9e-14   65.3   0.0  NC_018014.1 1283366 1283437 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+ (30) !     9e-14   64.9   0.0  NC_018014.1  926281  926353 +  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+ (31) !     9e-14   64.9   0.0  NC_018014.1 2076383 2076455 +  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+ (32) !     9e-14   64.9   0.0  NC_018014.1 2215507 2215580 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+ (33) !   9.9e-14   64.7   0.0  NC_018014.1 4049223 4049295 +  cm    no 0.68  Terriglobus roseus DSM 18391, complete sequence
+ (34) !   1.4e-13   64.2   0.0  NC_018014.1  517826  517899 +  cm    no 0.66  Terriglobus roseus DSM 18391, complete sequence
+ (35) !   1.4e-13   64.2   0.0  NC_018014.1  496905  496832 -  cm    no 0.66  Terriglobus roseus DSM 18391, complete sequence
+ (36) !   5.7e-13   62.0   0.0  NC_018014.1  857530  857458 -  cm    no 0.66  Terriglobus roseus DSM 18391, complete sequence
+ (37) !   6.4e-13   61.8   0.0  NC_018014.1 2495795 2495878 +  cm    no 0.63  Terriglobus roseus DSM 18391, complete sequence
+ (38) !   6.4e-13   61.8   0.0  NC_018014.1 2956317 2956400 +  cm    no 0.63  Terriglobus roseus DSM 18391, complete sequence
+ (39) !     1e-12   61.1   0.0  NC_018014.1 5025518 5025604 +  cm    no 0.59  Terriglobus roseus DSM 18391, complete sequence
+ (40) !   2.8e-12   59.5   0.0  NC_018014.1 4475523 4475604 +  cm    no 0.59  Terriglobus roseus DSM 18391, complete sequence
+ (41) !   3.2e-12   59.3   0.0  NC_018014.1  672649  672576 -  cm    no 0.64  Terriglobus roseus DSM 18391, complete sequence
+ (42) !   3.7e-12   59.1   0.0  NC_018014.1  604562  604632 +  cm    no 0.52  Terriglobus roseus DSM 18391, complete sequence
+ (43) !   7.9e-12   57.9   0.1  NC_018014.1 4047992 4047909 -  cm    no 0.70  Terriglobus roseus DSM 18391, complete sequence
+ (44) !     1e-11   57.5   0.0  NC_018014.1 2455841 2455753 -  cm    no 0.55  Terriglobus roseus DSM 18391, complete sequence
+ (45) !     1e-11   57.5   0.0  NC_018014.1 2916364 2916276 -  cm    no 0.55  Terriglobus roseus DSM 18391, complete sequence
+ (46) !   2.2e-11   56.3   0.0  NC_018014.1 2259707 2259626 -  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+ (47) !   3.3e-11   55.7   0.0  NC_018014.1  472214  472142 -  cm    no 0.67  Terriglobus roseus DSM 18391, complete sequence
+ (48) !   2.4e-10   52.6   0.0  NC_018014.1 1020502 1020430 -  cm    no 0.56  Terriglobus roseus DSM 18391, complete sequence
+ (49) !   3.1e-10   52.2   0.0  NC_018014.1  707099  707182 +  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+ (50) !   5.1e-10   51.4   0.0  NC_018014.1 2641227 2641297 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+ (51) !   5.1e-10   51.4   0.0  NC_018014.1 3101747 3101817 +  cm    no 0.58  Terriglobus roseus DSM 18391, complete sequence
+ (52) !   1.2e-09   50.2   0.0  NC_018014.1 1226620 1226693 +  cm    no 0.65  Terriglobus roseus DSM 18391, complete sequence
+
+
+Hit alignments:
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.1e-16   73.2   0.0  cm        1       71 []     2532470     2532543 + .. 1.00    no 0.69
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:GA::UAGCUCAGU GGU AGAGCG::G::CU++ A ::C::AGG C:CGGGUUCGA UCCCG:::UC:CC+
+  NC_018014.1 2532470 GGGGACGUAGCUCAGUcGGUuAGAGCGCUGCCCUGUCACGGCAGAGGuCGCGGGUUCGAGUCCCGUCGUCCCCG 2532543
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   4.1e-16   73.2   0.0  cm        1       71 []     2992990     2993063 + .. 1.00    no 0.69
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:GA::UAGCUCAGU GGU AGAGCG::G::CU++ A ::C::AGG C:CGGGUUCGA UCCCG:::UC:CC+
+  NC_018014.1 2992990 GGGGACGUAGCUCAGUcGGUuAGAGCGCUGCCCUGUCACGGCAGAGGuCGCGGGUUCGAGUCCCGUCGUCCCCG 2993063
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   4.3e-16   73.2   0.0  cm        1       71 []     1920073     1920000 - .. 1.00    no 0.61
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:: ::UAGCUCAGU GGU AGAGCG:C:G:CUUA AA:C:G:A G CG GGGUUCGA UCCC C:: ::CCA
+  NC_018014.1 1920073 GGGCGAGUAGCUCAGUuGGUuAGAGCGCCUGCCUUACAAGCAGGAUGuCGGGGGUUCGAGUCCCUCCUUGCCCA 1920000
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   4.3e-16   73.2   0.0  cm        1       71 []      926150      926223 + .. 1.00    no 0.58
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:::U:UAGCUCAGU GGU AGAGCG:::::CU+A+AA:::::AGG CG:::GUUCGAAUC:::C:A:::CCA
+  NC_018014.1 926150 GGGCCUGUAGCUCAGUuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUAGUUCGAAUCUACCCAGGCCCA 926223
+                     ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   4.3e-16   73.2   0.0  cm        1       71 []     2076252     2076325 + .. 1.00    no 0.58
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::U:UAGCUCAGU GGU AGAGCG:::::CU+A+AA:::::AGG CG:::GUUCGAAUC:::C:A:::CCA
+  NC_018014.1 2076252 GGGCCUGUAGCUCAGUuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUAGUUCGAAUCUACCCAGGCCCA 2076325
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   7.1e-16   72.4   0.0  cm        1       71 []      772881      772953 + .. 1.00    no 0.58
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG::: AUAGCUCA+ GGU AGAGC+::GGACU A+AAUCC::+GG +:C:GGUUCGAAUCC:G:U :::CCA
+  NC_018014.1 772881 GGGCCUAUAGCUCAACGGUcAGAGCAGGGGACUCAUAAUCCCUUGGuUCCAGGUUCGAAUCCUGGUGGGCCCA 772953
+                     ************************************************************************* PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   7.3e-16   72.4   0.0  cm        1       71 []      699976      699904 - .. 1.00    no 0.55
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::GA::UAGCUCAGU GGUAGAGC+:C:GA+U  +AAUC:G:AGG C:::GGUUC+A UCC:::::UC::C 
+  NC_018014.1 699976 GCCGACGUAGCUCAGUuGGUAGAGCAGCUGAUUCGUAAUCAGCAGGuCAACGGUUCAAGUCCGUUCGUCGGCU 699904
+                     ************************************************************************* PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   1.2e-15   71.6   0.0  cm        1       71 []      488575      488502 - .. 0.99    no 0.57
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:A::::UAGCUCAG  GG  AGAGC+UC:G:CUU +AA:C:GA GG CGC:GGUUCGA UCC:GC::::U:CA
+  NC_018014.1 488575 GAACCAGUAGCUCAGCcGGAuAGAGCAUCUGCCUUCUAAGCAGAGGGuCGCAGGUUCGAGUCCUGCCUGGUUCA 488502
+                     *****************8888***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.3e-15   71.4   0.0  cm        1       71 []     2127377     2127306 - .. 1.00    no 0.58
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:::UA:CUCAGUGGUAGAG:G:::::+U+  AA:::::A G C:CGGGUUC+AAUCCCG::::C::C 
+  NC_018014.1 2127377 GCGGGAGUAGCUCAGUGGUAGAGUGCUUCCUUGCCAAGGAAGAUGuCGCGGGUUCAAAUCCCGUCUCCCGCU 2127306
+                      ************************************************************************ PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.6e-15   71.2   0.0  cm        1       71 []     1025778     1025706 - .. 1.00    no 0.56
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:::UAGCUCAG  GGUAGAGC+UC:GA+UU +AAUC:GA GG C: GGGUUC+AAUCCC ::::C::C 
+  NC_018014.1 1025778 GCUGGCGUAGCUCAGCcGGUAGAGCAUCUGAUUUGUAAUCAGAGGGuCGGGGGUUCAAAUCCCUUCGCCAGCU 1025706
+                      ************************************************************************* PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   2.6e-15   70.4   0.0  cm        1       71 []     1025308     1025237 - .. 1.00    no 0.58
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GAU:UAGCUCAGUGG AGAGC+:::::+U+ +AA:::::AGG CG:GGGUUC+A  CCC:C:AUC::C 
+  NC_018014.1 1025308 GCUGAUGUAGCUCAGUGGCAGAGCACUCCCUUGGUAAGGGAGAGGuCGAGGGUUCAAGCCCCUCCAUCAGCU 1025237
+                      ************************************************************************ PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   3.1e-15   70.1   0.0  cm        1       71 []     3864377     3864306 - .. 1.00    no 0.56
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::G:::UAGCUCA+UGG AGAGC+U::G:CU+++AA:C::A GG +G::GGUUCGA UCC::C:::C:::+
+  NC_018014.1 3864377 UCCGCAGUAGCUCAAUGGCAGAGCAUUCGGCUGUUAACCGAAGGGuUGUAGGUUCGAGUCCUACCUGCGGAG 3864306
+                      ************************************************************************ PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   3.9e-15   69.7   0.0  cm        1       71 []      237661      237733 + .. 0.99    no 0.62
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:A::::U+GC::AGUGG  A::GCG::GG:CU+ AAA:CC::++  CG:GGGUUCGA  CCC:C::::U:C 
+  NC_018014.1 237661 GCACCGGUGGCGAAGUGGCuAACGCGCUGGUCUGCAAAACCAGUAUuCGUGGGUUCGAUCCCCACCCGGUGCU 237733
+                     ****************9988************************99*************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !     6e-15   69.1   0.0  cm        1       71 []     2073303     2073375 + .. 0.99    no 0.53
+
+                                                v               v                               NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGA::::UAGCUCA+  GG AGAGC+ ::GACU ++AAUC:: AGG +G::GGUUCGA UCC::C::::UCCA
+  NC_018014.1 2073303 GGACGCGUAGCUCAACuGGCAGAGCAUUCGACUCUUAAUCGACAGGuUGUAGGUUCGAUUCCUACCGCGUCCA 2073375
+                      *****************999************************9**************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   6.8e-15   68.9   0.0  cm        1       71 []     1967341     1967268 - .. 1.00    no 0.59
+
+                                                                                                 NC
+                      (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:::U+G :CAG   GGUAG: CGU:GG:CU A+AA:CC:AAGG CG::GGUUC+AAUCC::C:::C:C:A
+  NC_018014.1 1967341 UGCGGGGUGGAGCAGCccGGUAGCUCGUUGGGCUCAUAACCCAAAGGuCGUAGGUUCAAAUCCUACCCCCGCAA 1967268
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !     7e-15   68.8   0.0  cm        1       71 []     4379385     4379458 + .. 0.99    no 0.59
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:A :::UAGCUCAG  GG  AGAGCG:C:G:CU   AA:C:G:AGG C:::GGUUCGAAUCC:::::: U:CA
+  NC_018014.1 4379385 GCAUCCGUAGCUCAGCuGGAuAGAGCGGCAGCCUCCGAAGCUGUAGGuCAGAGGUUCGAAUCCUCUCGGGUGCA 4379458
+                      *****************8888***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   1.3e-14   67.9   0.0  cm        1       71 []     4501335     4501262 - .. 1.00    no 0.64
+
+                                                     v       v                                   NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G:U:UAGCUCAG  GGU AGAGCG:CGG CU A+AA CCG:AGG C:C:GGUUCGA  CC:G::A:C:CCA
+  NC_018014.1 4501335 GGCGGUGUAGCUCAGCuGGUuAGAGCGGCGGACUCAUAACCCGCAGGuCACUGGUUCGAGCCCAGUCACCGCCA 4501262
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   1.5e-14   67.7   0.0  cm        1       71 []     1025672     1025589 - .. 0.98    no 0.57
+
+                                                                                                            NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:A:A::U+GC: AGUGGU  A :GC+:C:GACU++AAAUC:G:              +CG::GGUUCGAAUCC::C::U:U:CA
+  NC_018014.1 1025672 GCACAGGUGGCCGAGUGGUuaAUGGCAGCAGACUGUAAAUCUGCC-acgcaacgcguuACGGAGGUUCGAAUCCUCCCCUGUGCA 1025589
+                      ****************9998*************************.8**********85************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   1.8e-14   67.4   0.0  cm        1       71 []     1682985     1683057 + .. 1.00    no 0.60
+
+                                                v               v                               NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::UAGCUCAGU GGUAGAGC+ CG::CUU++AA::CG +GG C::GGGUUCGA  CCC::::::::CA
+  NC_018014.1 1682985 GAGAGCGUAGCUCAGUuGGUAGAGCAUCGCCCUUUUAAGGCGCUGGuCCUGGGUUCGAGCCCCAGCGCUCUCA 1683057
+                      ************************************************************************* PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   1.8e-14   67.4   0.0  cm        1       71 []     4656351     4656280 - .. 0.99    no 0.67
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG::A:AUAGCUCAGUGGUAGAGCG::G::CU+AAAA::C::  G CG :GGUUCGA  CC: CU:U::CCA
+  NC_018014.1 4656351 GGCCAGAUAGCUCAGUGGUAGAGCGCGGCCCUGAAAAGGCCGGCGuCGGCGGUUCGAUCCCGUCUCUGGCCA 4656280
+                      *******************************************899************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   1.9e-14   67.3   0.0  cm        1       71 []      498918      498990 + .. 0.99    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::G:UAUAG:UCAG GGU AGA:CG::GG:CU++   :CC::A G CG:GGGUUC+AAUCCC:CUA:C::C 
+  NC_018014.1 498918 GCGGCUAUAGUUCAGGGGUuAGAACGCGGGUCUGUGGCACCCGAUGuCGAGGGUUCAAAUCCCUCUAGCCGCC 498990
+                     ****************9999***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   2.1e-14   67.1   0.0  cm        1       71 []     1899772     1899699 - .. 0.99    no 0.54
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:A :::UAGCUCAG  GG  AGAGC+:::G:CU   AA:C:::AGG CG :GGUUCGAAUCC: C::: U:CA
+  NC_018014.1 1899772 GCAUCCGUAGCUCAGCuGGAuAGAGCAAUUGGCUACGAACCAAUAGGuCGGAGGUUCGAAUCCUUCCGGGUGCA 1899699
+                      *****************8888***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   2.5e-14   66.9   0.0  cm        1       71 []     2127226     2127155 - .. 1.00    no 0.61
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G:::UA:C::AGUGGUA::G:+::GG:CU+ AAA:CC::++  CG::GGUUCGA  CC::C:::C:CC 
+  NC_018014.1 2127226 GGCGCGGUACCCAAGUGGUAAGGGAGAGGUCUGCAAAACCUUUAUgCGUCGGUUCGAUCCCGACCCGCGCCU 2127155
+                      *******************************************999************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   2.8e-14   66.7   0.0  cm        1       71 []      846603      846532 - .. 1.00    no 0.61
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::G:::UAG:UCAGUGG AGA:CGUC:G:+U   AA:C:GAA G C:C:GGUUCGA  CC:G::::C::C 
+  NC_018014.1 846603 GCGGGAGUAGUUCAGUGGCAGAACGUCAGCUUCCCAAGCUGAAUGuCGCCGGUUCGAUCCCGGUCUCCCGCU 846532
+                     *******************************************9**************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   2.9e-14   66.6   0.0  cm        1       71 []     1025182     1025111 - .. 0.99    no 0.61
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:::UA:CUCAGUGGUAGAG:G:C:G:CUU  AA:C:G:+ G C:C:GGUUCGA  CC:G::::C::C 
+  NC_018014.1 1025182 GCGGGAGUAACUCAGUGGUAGAGUGACAGCCUUCCAAGCUGUUCGuCGCCGGUUCGAUCCCGGUCUCCCGCU 1025111
+                      *******************************************899************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   3.3e-14   66.4   0.0  cm        1       71 []     5075516     5075427 - .. 0.97    no 0.59
+
+                                                                                                                 NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..................,.,<<<<<_______>>>>>)))))) CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..................g.cgcgGGUUCgAaUCCcgcuaucuc 69     
+                      GGAGA::U+GC::AGUGG   A::GCG:CGG:+U+ +AA:CCG:+                     CG:GGGUUCGAAUCCC:C::UCUC
+  NC_018014.1 5075516 GGAGAGUUGGCCGAGUGGCugAAGGCGGCGGUUUGCUAAACCGUU-auagggccaaaagcucua-uCGGGGGUUCGAAUCCCCCACUCUC 5075429
+                      ****************7777*************************.8****************6.4************************ PP
+
+                         NC
+                      ): CS
+         tRNA      70 Ca 71     
+                      C+
+  NC_018014.1 5075428 CG 5075427
+                      ** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   3.9e-14   66.2   0.0  cm        1       71 []     4932311     4932238 - .. 1.00    no 0.57
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:: ::UAGCUCAGU GGU AGAGCG:::::+U+A A :::::AGG C::G:GUUCGA UC:C:::: ::C:A
+  NC_018014.1 4932311 AGGCGCGUAGCUCAGUuGGUuAGAGCGCUACCUUGACACGGUAGAGGuCAGGAGUUCGAGUCUCCUCGUGCCUA 4932238
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   5.6e-14   65.6   0.0  cm        1       71 []     2271938     2271854 - .. 0.97    no 0.59
+
+                                                                                                              NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA:AU+GC::AGUGG   A::GCG:::G:+U+ AAA:C:::+                C::GGGUUCGAAUCCC::U:UCUCC+
+  NC_018014.1 2271938 GGAGAGAUGGCCGAGUGGCugAAGGCGCACGCUUGGAAAGCGUGU-auaccgcaaggua-uCCAGGGUUCGAAUCCCUGUCUCUCCG 2271854
+                      ****************7777*************************.8***********6.4************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   6.9e-14   65.3   0.0  cm        1       71 []     1283366     1283437 + .. 1.00    no 0.58
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:: :AUA:CUCAG GGUAGAG:G:C:::+U A A :::G:A+G CG :GGUUCGAAUCC: CU: ::CCA
+  NC_018014.1 1283366 GGGCGCAUAACUCAGCGGUAGAGUGCCACCUUCACACGGUGGAAGuCGUAGGUUCGAAUCCUGCUGUGCCCA 1283437
+                      ************************************************************************ PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !     9e-14   64.9   0.0  cm        1       71 []      926281      926353 + .. 0.98    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG G:U:UAGCUCAGU GG AGAGCG:C:G:+UU  AA:C:G:A G C: :GGUUCGA  CC: ::A:C CCA
+  NC_018014.1 926281 GGGGCUGUAGCUCAGUuGGGAGAGCGCCUGCUUUGCAAGCAGGAUGuCAUCGGUUCGAUCCCGGUCAGCUCCA 926353
+                     ****************9555***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !     9e-14   64.9   0.0  cm        1       71 []     2076383     2076455 + .. 0.98    no 0.60
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG G:U:UAGCUCAGU GG AGAGCG:C:G:+UU  AA:C:G:A G C: :GGUUCGA  CC: ::A:C CCA
+  NC_018014.1 2076383 GGGGCUGUAGCUCAGUuGGGAGAGCGCCUGCUUUGCAAGCAGGAUGuCAUCGGUUCGAUCCCGGUCAGCUCCA 2076455
+                      ****************9555***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !     9e-14   64.9   0.0  cm        1       71 []     2215507     2215580 + .. 1.00    no 0.58
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:UAU+G:::A+  GGU A:::CGUCG::CU + AA::CGAAG+ +:CGGGUUCGA  CCCG:UA:C:C:A
+  NC_018014.1 2215507 GGCGUUAUGGUGUAACuGGUuAACACGUCGCCCUCUCAAGGCGAAGAgUCCGGGUUCGAGCCCCGGUAACGCUA 2215580
+                      ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   9.9e-14   64.7   0.0  cm        1       71 []     4049223     4049295 + .. 0.99    no 0.68
+
+                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::U G::CAGUGG   AG::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGAAUCCCG:::::::C+
+  NC_018014.1 4049223 GUCCCCGUCGUCCAGUGGCccAGGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAAUCCCGUCGGGGACG 4049295
+                      ****************9999***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   1.4e-13   64.2   0.0  cm        1       71 []      517826      517899 + .. 1.00    no 0.66
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:G:::U+GCUCAG   GGUAGAGC+:C:G:+U    A:C:G: GG C:::GGUUCGAAUCC::::::C:C:A
+  NC_018014.1 517826 CGGGGAGUGGCUCAGCcuGGUAGAGCACCUGGUUCGGGACCAGGGGGuCGGAGGUUCGAAUCCUCUCUCCCCGA 517899
+                     ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   1.4e-13   64.2   0.0  cm        1       71 []      496905      496832 - .. 1.00    no 0.66
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:G:::UAGC:CAG   GGUAG:GC+UC:G:+UU   A:C:GA GG CG G:GUUCGAAUC:C C:::C:C:A
+  NC_018014.1 496905 CGGGGCGUAGCGCAGCcuGGUAGCGCAUCUGCUUUGGGAGCAGAGGGuCGGGAGUUCGAAUCUCUCCGCCCCGA 496832
+                     ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   5.7e-13   62.0   0.0  cm        1       71 []      857530      857458 - .. 0.98    no 0.66
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG ::U:UAGCUCAG  GG AGAGCG:C:::+U   AA:::G:AGG C:::GGUUCGA  CC::::A:: CCA
+  NC_018014.1 857530 GGGCCUGUAGCUCAGCuGGGAGAGCGCCUCGUUCGCAACGAGGAGGuCAGCGGUUCGAUCCCGCUCAGGUCCA 857458
+                     ****************9555***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   6.4e-13   61.8   0.0  cm        1       71 []     2495795     2495878 + .. 0.99    no 0.63
+
+                                                                                                            NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::U+G:::A+UGG   :::C+:CGGACUUAAAAUCCG:A              G+GC:GGUUCGA UCC:GC::::::CA
+  NC_018014.1 2495795 GCCCGGGUGGUGAAAUGGCaGACACAGCGGACUUAAAAUCCGCA-gaccuuaacggucGUGCCGGUUCGAGUCCGGCCCCGGGCA 2495878
+                      *******************9************************.8***********96************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   6.4e-13   61.8   0.0  cm        1       71 []     2956317     2956400 + .. 0.99    no 0.63
+
+                                                                                                            NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::U+G:::A+UGG   :::C+:CGGACUUAAAAUCCG:A              G+GC:GGUUCGA UCC:GC::::::CA
+  NC_018014.1 2956317 GCCCGGGUGGUGAAAUGGCaGACACAGCGGACUUAAAAUCCGCA-gaccuuaacggucGUGCCGGUUCGAGUCCGGCCCCGGGCA 2956400
+                      *******************9************************.8***********96************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !     1e-12   61.1   0.0  cm        1       71 []     5025518     5025604 + .. 0.98    no 0.59
+
+                                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAG::AU+G:: AGUGGU  A ::C :C:G:CUU AAA:C:G:                   CG GGGUUCGAAUCCC CU::CUCC+
+  NC_018014.1 5025518 GGAGGGAUGGGCGAGUGGUuuAUGCCUACUGUCUUGAAAACAGUC-gacccguaacaggguc-CGGGGGUUCGAAUCCCUCUCCCUCCG 5025604
+                      ****************9888*************************.8************976.************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   2.8e-12   59.5   0.0  cm        1       71 []     4475523     4475604 + .. 0.99    no 0.59
+
+                                                                                                          NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:::U+GC::A+U GG   ::GC+:::GACUUA  AUC:::            G+::GGGUUC+A UCCC:::::C::CA
+  NC_018014.1 4475523 GCGGGAGUGGCGAAAUuGGCaGACGCACUAGACUUAGGAUCUAGC-ggagagauccGUAGGGGUUCAAGUCCCCUCUCCCGCA 4475604
+                      *******************9*9***********************.8********96************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   3.2e-12   59.3   0.0  cm        1       71 []      672649      672576 - .. 1.00    no 0.64
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:GA::U+GCUCAG   GGUAGAGCG:::::+U+    :::::AGG C:C::GUUCGAAUC::G:::UC:C:A
+  NC_018014.1 672649 CGGGACGUGGCUCAGCcuGGUAGAGCGCACCCUUGGGGUGGGUGAGGuCGCUAGUUCGAAUCUAGUCGUCCCGA 672576
+                     ************************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   3.7e-12   59.1   0.0  cm        1       71 []      604562      604632 + .. 1.00    no 0.52
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:G::AU G ::A+UGGUA:: C :::G:CUU+ AA:C:::+ G+:::GGUUCGAAUCC:::U::C:C:+
+  NC_018014.1 604562 UGGGCGAUCGACUAAUGGUAGGUCCAGUGCCUUUGAAGCACUUUGUCUAGGUUCGAAUCCUAGUCGCCCAG 604632
+                     *********************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   7.9e-12   57.9   0.1  cm        1       71 []     4047992     4047909 - .. 0.99    no 0.70
+
+                                                                                                            NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G::AU+GC::A+U GG   ::GC+:CGGACU AAAAUCCG:              G+G:GGGUUCGA  CCC:CU::C::CA
+  NC_018014.1 4047992 GCCGGGAUGGCGGAAUcGGCaGACGCAGCGGACUCAAAAUCCGCC-gagggcaaccucGUGGGGGUUCGACCCCCCCUCCCGGCA 4047909
+                      *********************************************.8**********96************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !     1e-11   57.5   0.0  cm        1       71 []     2455841     2455753 - .. 0.98    no 0.55
+
+                                                   v               v                                             NC
+                      (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGAGA::U+GC::AG   GGU  A::GC+ C:GACU  AAAUC:G                    CG GGGUUCGAAUCCC C::UCUCC
+  NC_018014.1 2455841 GGAGAGUUGGCAGAGCccGGUugAAUGCACCUGACUCGAAAUCAGAC-auaggcguaagucua-uCGGGGGUUCGAAUCCCUCACUCUCC 2455754
+                      ******************9999***********************99.8*************6.4************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                      +
+  NC_018014.1 2455753 G 2455753
+                      * PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !     1e-11   57.5   0.0  cm        1       71 []     2916364     2916276 - .. 0.98    no 0.55
+
+                                                   v               v                                             NC
+                      (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGAGA::U+GC::AG   GGU  A::GC+ C:GACU  AAAUC:G                    CG GGGUUCGAAUCCC C::UCUCC
+  NC_018014.1 2916364 GGAGAGUUGGCAGAGCccGGUugAAUGCACCUGACUCGAAAUCAGAC-auaggcguaagucua-uCGGGGGUUCGAAUCCCUCACUCUCC 2916277
+                      ******************9999***********************99.8*************6.4************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                      +
+  NC_018014.1 2916276 G 2916276
+                      * PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   2.2e-11   56.3   0.0  cm        1       71 []     2259707     2259626 - .. 0.99    no 0.60
+
+                                                                                                          NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GA::U+GC::A+U GG   ::GC+:::G:+U+A   :C:::            ++:CGGGUUC+A UCCCG:::UC::CA
+  NC_018014.1 2259707 GCGGAGGUGGCGAAAUuGGCaGACGCACUAGCUUGAGGUGCUAGC-ggguaacaccAUACGGGUUCAAGUCCCGUCCUCCGCA 2259626
+                      *******************9*9***********************.8********96************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   3.3e-11   55.7   0.0  cm        1       71 []      472214      472142 - .. 0.98    no 0.67
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG ::U:U+GC:CAG  GG AG:GCG::::: U+  A :::::AGG C:C:GGUUCGA  CC:G::A:: CCA
+  NC_018014.1 472214 GGGCCUGUGGCGCAGCuGGGAGCGCGCUUCCAUGGCAUGGAAGAGGuCACCGGUUCGAUCCCGGUCAGGUCCA 472142
+                     ****************9555***************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   2.4e-10   52.6   0.0  cm        1       71 []     1020502     1020430 - .. 0.98    no 0.56
+
+                                 v           v                                                  NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:::UA:: : +  GGU A: ::GUCGG:CU  AAA:CCGAA  +:::GGUUCGAAUCC::::::C:C:+
+  NC_018014.1 1020502 AGGGGCGUAAGCUCAAcGGUuAAACUGUCGGUCUCCAAAACCGAACUUCUCGGUUCGAAUCCGAGCGCCCCUG 1020430
+                      *********99999888***9************************99************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   3.1e-10   52.2   0.0  cm        1       71 []      707099      707182 + .. 0.99    no 0.60
+
+                                                                                                           NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::GA:AU+GC::A+U GG   ::GCG:::G:+U A   :C:::+             G+:::GGUUCGA UCC:::U:UC::CA
+  NC_018014.1 707099 GCCGAAAUGGCGGAAUuGGCaGACGCGCGUGGUUCAGGUCCACGU-acucgcaaggguGUGGAGGUUCGAGUCCUCUUUUCGGCA 707182
+                     *******************9*9***********************.8**********85************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   5.1e-10   51.4   0.0  cm        1       71 []     2641227     2641297 + .. 1.00    no 0.58
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:::  U G: CA+UGGUAG :C :::GACU + A UC::: +++: GGGUUCGAAUCCC :  :::C:A
+  NC_018014.1 2641227 UGCCCUCUCGUUCAAUGGUAGGACUAGCGACUCUGACUCGCUCAAUCGGGGUUCGAAUCCCUGGGGGGCAA 2641297
+                      *********************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   5.1e-10   51.4   0.0  cm        1       71 []     3101747     3101817 + .. 1.00    no 0.58
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:::  U G: CA+UGGUAG :C :::GACU + A UC::: +++: GGGUUCGAAUCCC :  :::C:A
+  NC_018014.1 3101747 UGCCCUCUCGUUCAAUGGUAGGACUAGCGACUCUGACUCGCUCAAUCGGGGUUCGAAUCCCUGGGGGGCAA 3101817
+                      *********************************************************************** PP
+
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   1.2e-09   50.2   0.0  cm        1       71 []     1226620     1226693 + .. 0.97    no 0.65
+
+                                                 v   v       v   v                               NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G :::::UAGCUCAG  G   AGAGCG CG: CU  +AA :CG AGG CGC:GGUU GA UCC:GC::::: CA
+  NC_018014.1 1226620 GGCCCGGUAGCUCAGAUGCauAGAGCGGCGCACUCCUAAGGCGAAGGuCGCAGGUUGGACUCCUGCCCGGGUCA 1226693
+                      ****************55559***************************************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (10455716 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2030  (0.05037); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             345  (0.008765); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             343  (0.008719); expected (0.02)
+Windows   passing  local HMM Forward       filter:              54  (0.001692); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              54  (0.001692); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              52  (0.001692); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              52  (0.001692); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              59  (0.0004305); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              56  (0.0004104); expected (0.0001)
+Total CM hits reported:                                         52  (0.0003774); includes 0 truncated hit(s)
+
+# CPU time: 0.60u 0.01s 00:00:00.61 Elapsed: 00:00:00.07
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   4.5e-08   47.2   0.0  NC_018014.1 5025516 5025605 +  cm    no 0.60  Terriglobus roseus DSM 18391, complete sequence
+
+
+Hit alignments:
+>> NC_018014.1  Terriglobus roseus DSM 18391, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.5e-08   47.2   0.0  cm        1       91 []     5025516     5025605 + .. 0.89    no 0.60
+
+                                                  v                 v     v        v                             NC
+                      (((((((((,,<<<<<<____>>.>>>><<<<<<_______>>>>>>,<<<<<________>>>>>,.,<<<<_______>>>>.))))) CS
+     tRNA-Sec       1 GggggggcgaucggcccUGGUgg.gccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccg.GggGGUUCGAUUCCcc.cgccc 87     
+                      G:GG:GG::  :G: : UGGU :  :C: :C:G:CUU AAA:C:G: G:::: UA C     ::::  G GGGUUCGA UCCC  ::CC:
+  NC_018014.1 5025516 GCGGAGGGAUGGGCGAGUGGUUUaUGCCUACUGUCUUGAAAACAGUCGACCCGUAAC----AGGGUCcGGGGGUUCGAAUCCCUcUCCCU 5025601
+                      ********************97658*********************98666666666....66666669***********99977***** PP
+
+                           NC
+                      )))) CS
+     tRNA-Sec      88 cccC 91     
+                      CC:C
+  NC_018014.1 5025602 CCGC 5025605
+                      **** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (10455716 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:           10286  (0.14); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            2679  (0.03761); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1706  (0.02392); expected (0.02)
+Windows   passing  local HMM Forward       filter:              88  (0.001334); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              64  (0.0009384); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              56  (0.0008235); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              55  (0.0008012); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              56  (0.0005448); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              25  (0.000198); expected (0.0001)
+Total CM hits reported:                                          1  (8.607e-06); includes 0 truncated hit(s)
+
+# CPU time: 1.10u 0.04s 00:00:01.14 Elapsed: 00:00:00.14
+//
+[ok]

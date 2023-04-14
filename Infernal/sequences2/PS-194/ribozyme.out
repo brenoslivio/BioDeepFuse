@@ -1,0 +1,1243 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/ribozyme.cm
+# target sequence database:              genomes/PS-194.fas
+# output directed to file:               sequences/PS-194/ribozyme.out
+# tabular output of hits:                sequences/PS-194/ribozyme.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Hammerhead_3  [CLEN=54]
+Accession:   RF00008
+Description: Hammerhead ribozyme (type III)
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (54 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (872 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2022  (0.05245); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             800  (0.02084); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             750  (0.01951); expected (0.02)
+Windows   passing  local HMM Forward       filter:              20  (0.000484); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              17  (0.0004092); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              15  (0.0003641); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              15  (0.0003641); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              15  (0.0001294); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               3  (2.283e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.20u 0.02s 00:00:00.22 Elapsed: 00:00:00.04
+//
+Query:       RNaseP_nuc  [CLEN=303]
+Accession:   RF00009
+Description: Nuclear RNase P
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (303 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (4020 residues re-searched)
+Windows   passing  local HMM SSV           filter:             447  (0.05621); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:              39  (0.005094); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:              36  (0.004691); expected (0.02)
+Windows   passing  local HMM Forward       filter:               1  (0.0001284); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               1  (0.0001284); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               1  (0.0001284); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               1  (0.0001284); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               1  (5.007e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.55u 0.05s 00:00:00.60 Elapsed: 00:00:00.18
+//
+Query:       RNaseP_bact_a  [CLEN=367]
+Accession:   RF00010
+Description: Bacterial RNase P class A
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (367 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (2892 residues re-searched)
+Windows   passing  local HMM SSV           filter:             765  (0.07324); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:              95  (0.009372); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:              76  (0.007361); expected (0.02)
+Windows   passing  local HMM Forward       filter:               7  (0.0006617); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               6  (0.0005646); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               6  (0.0005646); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               5  (0.0004742); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               5  (0.0002772); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               3  (0.0001038); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 2.37u 0.20s 00:00:02.57 Elapsed: 00:00:01.06
+//
+Query:       RNaseP_bact_b  [CLEN=366]
+Accession:   RF00011
+Description: Bacterial RNase P class B
+Hit scores:
+ rank     E-value  score  bias  sequence                                                                   start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------------------------------------------------------------------ ------- -------   --- ----- ----  -----------
+  (1) !  7.4e-103  348.9   0.0  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2495050 2494670 -  cm    no 0.49  -
+
+
+Hit alignments:
+>> PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !  7.4e-103  348.9   0.0  cm        1      366 []     2495050     2494670 - .. 0.97    no 0.49
+
+                                                                                                                            NC
+                                                                                   :::{{{{{{{{{{{,<<<<<<____.____>>>>>>,,,, CS
+                                                             RNaseP_bact_b       1 auuuucgGguaaucGCugcgguauu.uuuaccgcaGAGGA 39     
+                                                                                   A  UUCGGG:AAUCGCU:C:G++ U  +++C:G:AGAGGA
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2495050 ACGUUCGGGUAAUCGCUGCAGAUCUuGAAUCUGUAGAGGA 2495011
+                                                                                   *********************998846667********** PP
+
+                                                                                                                            NC
+                                                                                   ,,,,,,,,,{{{{{<<<<.<<______>>>>>>,,,,,[[ CS
+                                                             RNaseP_bact_b      40 AAGUCCAuGCucGCACgg.gCUGuGAUGcccGUAGUGUUc 78     
+                                                                                   AAGUCCAUGCUCGCACGG GCUG+GAUGCCCGUAGUGUUC
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2495010 AAGUCCAUGCUCGCACGGuGCUGAGAUGCCCGUAGUGUUC 2494971
+                                                                                   **************************************** PP
+
+                                                                                                                            NC
+                                                                                   [[[<<<<<<__________>>>>>><<<<<<<____>>>> CS
+                                                             RNaseP_bact_b      79 GuGcugggcgAAauAAUAAgcccagGcAggcguuuacgcc 118    
+                                                                                   G:GC:::GCGAA U AUAAGC:::GGCAG C:UU+ :G C
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494970 GUGCCUAGCGAAGUCAUAAGCUAGGGCAGUCUUUAGAGGC 2494931
+                                                                                   **************************************** PP
+
+                                                                                                                            NC
+                                                                                   >>->((,<<<<----<<<<---<<<____>>>-->>>>-- CS
+                                                             RNaseP_bact_b     119 UgACGGCgggcaAAagggCUAAgucuuuugacAUGcccua 158    
+                                                                                   UGACGGC:GG:AAAA:G:CUA :UCUU +GA:AUG:C:+A
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494930 UGACGGCAGGAAAAAAGCCUACGUCUUCGGAUAUGGCUGA 2494891
+                                                                                   **************************************** PP
+
+                                                                                                                            NC
+                                                                                   --->>>>,,,,,<<<<<------------<<<<<<<<___ CS
+                                                             RNaseP_bact_b     159 auagcccUgAAAGUgCCACAGuGACGaagcuucucugGAA 198    
+                                                                                   +UA:CC:UGAAAGUGCCACAGUGACGAAG::UC:C::GAA
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494890 GUAUCCUUGAAAGUGCCACAGUGACGAAGUCUCACUAGAA 2494851
+                                                                                   **************************************** PP
+
+                                                                                                                            NC
+                                                                                   _>>>>>>>>--------->>>-->>))]]]]]}}}}},,, CS
+                                                             RNaseP_bact_b     199 AcagagaagGUGgAACGcGGuAAACCCCaCgAGCgaGaAA 238    
+                                                                                   A::G:GA::GUGGAACGCGGUAAACCCC:CGAGCGAGAAA
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494850 AUGGUGAGAGUGGAACGCGGUAAACCCCUCGAGCGAGAAA 2494811
+                                                                                   **************************************** PP
+
+                                                                                                                            NC
+                                                                                   <<<___________>>>,,,<<<<<<<_____________ CS
+                                                             RNaseP_bact_b     239 CCcAAAuUUUGGUAgGGGaAcccggucuaagGAAaugAAc 278    
+                                                                                   CCCAAAUUUUGGUAGGGGAACC:::U:+A GGAA+U AAC
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494810 CCCAAAUUUUGGUAGGGGAACCUUCUUAACGGAAUUCAAC 2494771
+                                                                                   **************************************** PP
+
+                                                                                                                            NC
+                                                                                   ____>>>>>>><<<<<<_____>>>>>>,,,,,,,,}}}} CS
+                                                             RNaseP_bact_b     279 uuaagaccgggacggccuuuaaggccguAGAuAgAUgauu 318    
+                                                                                     A :A:::GGAC:G:: U   ::C:GUAGAUAGAUGAUU
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494770 GGA-GAGAAGGACAGAA-UGCUUUCUGUAGAUAGAUGAUU 2494733
+                                                                                   **9.*************.7778****************** PP
+
+                                                                                         vvv                            vvv NC
+                                                                                   }}},<<<<<<<<<_____...............>>>>>>> CS
+                                                             RNaseP_bact_b     319 acCaccgccgggcauuua...............gcccggc 343    
+                                                                                   :CC+CC   G::C +                  G::C   
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494732 GCCGCCUGAGUACGAGGUgaugagccguuugcaGUACGAU 2494693
+                                                                                   *************95444456667777778888******* PP
+
+                                                                                                           NC
+                                                                                   >>,,,,,,,,,,,,,,,,}-}}} CS
+                                                             RNaseP_bact_b     344 ggaACAgAACaUGGCUUAcagaa 366    
+                                                                                   GGAACA+AACAUGGCUUACAGAA
+  PS-194_Unicycler_I3+N2_99127_S3_length_4401718_depth_1.00x_circular_true 2494692 GGAACAAAACAUGGCUUACAGAA 2494670
+                                                                                   *********************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (366 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1932 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1530  (0.1002); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             119  (0.00789); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:              61  (0.004023); expected (0.02)
+Windows   passing  local HMM Forward       filter:               5  (0.0003427); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               4  (0.0003106); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               2  (0.0001374); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               2  (0.0001374); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               2  (8.756e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (4.35e-05); expected (0.0001)
+Total CM hits reported:                                          1  (4.327e-05); includes 0 truncated hit(s)
+
+# CPU time: 0.77u 0.04s 00:00:00.81 Elapsed: 00:00:00.14
+//
+Query:       RNase_MRP  [CLEN=266]
+Accession:   RF00030
+Description: RNase MRP
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (266 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (7472 residues re-searched)
+Windows   passing  local HMM SSV           filter:             225  (0.05118); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:              22  (0.005572); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:              22  (0.005572); expected (0.02)
+Windows   passing  local HMM Forward       filter:               2  (0.0006553); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               2  (0.0006553); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               1  (0.0002313); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               1  (0.0002313); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               1  (5.368e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (2.985e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.75u 0.03s 00:00:00.78 Elapsed: 00:00:00.38
+//
+Query:       HDV_ribozyme  [CLEN=91]
+Accession:   RF00094
+Description: Hepatitis delta virus ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (460 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2090  (0.03295); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             394  (0.006248); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             373  (0.005907); expected (0.02)
+Windows   passing  local HMM Forward       filter:               1  (1.647e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               1  (1.647e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               1  (1.647e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               1  (1.647e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               1  (1.147e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.03
+//
+Query:       Hammerhead_1  [CLEN=46]
+Accession:   RF00163
+Description: Hammerhead ribozyme (type I)
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (46 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (3812 residues re-searched)
+Windows   passing  local HMM SSV           filter:             474  (0.04756); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:              99  (0.01033); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:              96  (0.01003); expected (0.02)
+Windows   passing  local HMM Forward       filter:               2  (0.0001814); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               2  (0.0001814); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               2  (0.0001814); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               2  (0.0001814); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               2  (4.315e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (1.374e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.03
+//
+Query:       Hairpin  [CLEN=52]
+Accession:   RF00173
+Description: Hairpin ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (52 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (268 residues re-searched)
+Windows   passing  local HMM SSV           filter:            6356  (0.05921); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1959  (0.01847); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1565  (0.01474); expected (0.02)
+Windows   passing  local HMM Forward       filter:              42  (0.000422); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              28  (0.0002728); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              24  (0.0002492); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              24  (0.0002492); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              24  (0.0001575); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              14  (8.053e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.03
+//
+Query:       RNaseP_arch  [CLEN=303]
+Accession:   RF00373
+Description: Archaeal RNase P
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (303 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (2744 residues re-searched)
+Windows   passing  local HMM SSV           filter:             904  (0.08008); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             117  (0.01095); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             107  (0.009993); expected (0.02)
+Windows   passing  local HMM Forward       filter:               9  (0.0009852); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               9  (0.0009852); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               2  (0.0002339); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               2  (0.0002339); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               2  (0.0001047); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.96u 0.09s 00:00:01.05 Elapsed: 00:00:00.32
+//
+Query:       CoTC_ribozyme  [CLEN=191]
+Accession:   RF00621
+Description: Beta-globin co-transcriptional cleavage ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (191 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (952 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3983  (0.1265); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             498  (0.01664); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             290  (0.00979); expected (0.02)
+Windows   passing  local HMM Forward       filter:              13  (0.000486); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               6  (0.0002163); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               4  (0.0001397); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               3  (9.597e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               3  (7.235e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.50u 0.00s 00:00:00.50 Elapsed: 00:00:00.06
+//
+Query:       CPEB3_ribozyme  [CLEN=78]
+Accession:   RF00622
+Description: Mammalian CPEB3 ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (78 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (388 residues re-searched)
+Windows   passing  local HMM SSV           filter:            5172  (0.069); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1140  (0.01541); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1132  (0.0153); expected (0.02)
+Windows   passing  local HMM Forward       filter:              16  (0.0002375); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              16  (0.0002375); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              10  (0.0001373); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              10  (0.0001373); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               9  (9.734e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               3  (2.59e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.26u 0.00s 00:00:00.26 Elapsed: 00:00:00.03
+//
+Query:       RNase_P  [CLEN=626]
+Accession:   RF01577
+Description: Plasmodium RNase_P
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (626 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (3128 residues re-searched)
+Windows   passing  local HMM SSV           filter:            8663  (0.7438); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            3952  (0.3929); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             186  (0.02095); expected (0.02)
+Windows   passing  local HMM Forward       filter:              82  (0.00972); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              51  (0.006203); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              29  (0.004364); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              26  (0.00383); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              27  (0.00228); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              12  (0.0001818); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 21.65u 1.20s 00:00:22.85 Elapsed: 00:00:03.01
+//
+Query:       drz-agam-1  [CLEN=82]
+Accession:   RF01787
+Description: drz-agam-1 ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (82 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (488 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4257  (0.06914); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             888  (0.0146); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             870  (0.01429); expected (0.02)
+Windows   passing  local HMM Forward       filter:               7  (0.0001146); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               7  (0.0001146); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               2  (3.567e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               2  (3.567e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               2  (2.385e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (1.068e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.22u 0.00s 00:00:00.22 Elapsed: 00:00:00.04
+//
+Query:       drz-agam-2-2  [CLEN=191]
+Accession:   RF01788
+Description: drz-agam-2-2 ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (191 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (952 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2261  (0.07277); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             182  (0.005899); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             167  (0.005419); expected (0.02)
+Windows   passing  local HMM Forward       filter:               8  (0.0002688); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               7  (0.0002368); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               4  (0.000127); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               4  (0.000127); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               4  (9.984e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.50u 0.02s 00:00:00.52 Elapsed: 00:00:00.09
+//
+Query:       GIR1  [CLEN=199]
+Accession:   RF01807
+Description: GIR1 branching ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (199 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1096 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2387  (0.08796); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             377  (0.01412); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             267  (0.009967); expected (0.02)
+Windows   passing  local HMM Forward       filter:              23  (0.0008683); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              14  (0.0005248); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               7  (0.0002641); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.0002641); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.0001958); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               2  (1.045e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.91u 0.00s 00:00:00.91 Elapsed: 00:00:00.15
+//
+Query:       Vg1_ribozyme  [CLEN=142]
+Accession:   RF01865
+Description: Manganese dependent ribozyme in Vg1 mRNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (142 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (708 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4615  (0.1092); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             932  (0.02258); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             407  (0.009877); expected (0.02)
+Windows   passing  local HMM Forward       filter:              19  (0.0004701); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              10  (0.0002351); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               7  (0.0001649); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               7  (0.0001649); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               7  (0.0001307); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.46u 0.00s 00:00:00.46 Elapsed: 00:00:00.07
+//
+Query:       Hammerhead_HH9  [CLEN=77]
+Accession:   RF02275
+Description: Hammerhead ribozyme HH9
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (77 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (412 residues re-searched)
+Windows   passing  local HMM SSV           filter:            7582  (0.1079); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            2068  (0.03008); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1982  (0.02883); expected (0.02)
+Windows   passing  local HMM Forward       filter:              74  (0.001182); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              72  (0.001154); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              46  (0.000686); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              46  (0.000686); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              45  (0.000489); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               3  (2.476e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.58u 0.01s 00:00:00.59 Elapsed: 00:00:00.08
+//
+Query:       Hammerhead_II  [CLEN=67]
+Accession:   RF02276
+Description: Hammerhead ribozyme (type II)
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (67 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (496 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3954  (0.06523); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             829  (0.01385); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             809  (0.01352); expected (0.02)
+Windows   passing  local HMM Forward       filter:               3  (4.612e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               3  (4.612e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               3  (4.612e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               3  (4.612e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               3  (2.965e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               2  (1.692e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.20u 0.01s 00:00:00.21 Elapsed: 00:00:00.04
+//
+Query:       Hammerhead_HH10  [CLEN=125]
+Accession:   RF02277
+Description: Hammerhead ribozyme HH10
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (125 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (624 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4208  (0.08835); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             669  (0.01454); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             581  (0.01259); expected (0.02)
+Windows   passing  local HMM Forward       filter:              19  (0.0004335); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              17  (0.0003829); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              15  (0.0003619); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              15  (0.0003619); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              15  (0.0002476); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (1.045e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.60u 0.01s 00:00:00.61 Elapsed: 00:00:00.10
+//
+Query:       RNaseP-T  [CLEN=208]
+Accession:   RF02357
+Description: RNaseP truncated form
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (208 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1040 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2088  (0.07258); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             194  (0.00685); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             173  (0.006122); expected (0.02)
+Windows   passing  local HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.37u 0.01s 00:00:00.38 Elapsed: 00:00:00.06
+//
+Query:       Gl_RNase_MRP  [CLEN=189]
+Accession:   RF02472
+Description: Giardia RNase MRP
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (189 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (944 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1185  (0.03735); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             141  (0.004508); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             138  (0.004413); expected (0.02)
+Windows   passing  local HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.29u 0.00s 00:00:00.28 Elapsed: 00:00:00.05
+//
+Query:       Hatchet  [CLEN=133]
+Accession:   RF02678
+Description: Hatchet ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (133 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1300 residues re-searched)
+Windows   passing  local HMM SSV           filter:            5905  (0.2413); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             577  (0.02589); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             255  (0.01115); expected (0.02)
+Windows   passing  local HMM Forward       filter:              26  (0.001195); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              11  (0.0004828); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              10  (0.0004828); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               8  (0.0003813); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               8  (0.0001305); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               1  (9.086e-06); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.70u 0.00s 00:00:00.70 Elapsed: 00:00:00.11
+//
+Query:       Pistol  [CLEN=70]
+Accession:   RF02679
+Description: Pistol ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (70 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (564 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3954  (0.07344); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1041  (0.01974); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1014  (0.01918); expected (0.02)
+Windows   passing  local HMM Forward       filter:              11  (0.0002185); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               9  (0.0001824); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               8  (0.0001625); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               8  (0.0001625); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               8  (6.406e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               3  (2.578e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.24u 0.01s 00:00:00.25 Elapsed: 00:00:00.04
+//
+Query:       Twister-sister  [CLEN=83]
+Accession:   RF02681
+Description: Twister_sister_ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (83 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (864 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1665  (0.04594); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             335  (0.009529); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             321  (0.009117); expected (0.02)
+Windows   passing  local HMM Forward       filter:               3  (0.0001047); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               2  (7.61e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.03
+//
+Query:       HDV-F-prausnitzii  [CLEN=74]
+Accession:   RF02682
+Description: HDV ribozyme from F. prausnitzii
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (74 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (592 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3007  (0.05716); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             541  (0.01046); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             526  (0.01017); expected (0.02)
+Windows   passing  local HMM Forward       filter:               6  (0.0001135); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               6  (0.0001135); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               4  (7.349e-05); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               4  (7.349e-05); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               4  (4.044e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               2  (1.863e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.20u 0.02s 00:00:00.22 Elapsed: 00:00:00.04
+//
+Query:       Twister-P5  [CLEN=60]
+Accession:   RF02684
+Description: Type-P5 twister ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (60 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (940 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1635  (0.04329); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             281  (0.007887); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             275  (0.007723); expected (0.02)
+Windows   passing  local HMM Forward       filter:               2  (5.497e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               2  (5.497e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.03
+//
+Query:       RAGATH-5  [CLEN=53]
+Accession:   RF02685
+Description: RAGATH-5 RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (53 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (332 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4529  (0.05079); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1301  (0.01464); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1186  (0.01333); expected (0.02)
+Windows   passing  local HMM Forward       filter:              22  (0.0002672); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              18  (0.0002266); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              12  (0.0001429); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              11  (0.0001321); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              11  (7.758e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               8  (3.555e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.04
+//
+Query:       RAGATH-6  [CLEN=151]
+Accession:   RF02686
+Description: RAGATH-6 RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (151 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (752 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4616  (0.1175); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             615  (0.01638); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             244  (0.006389); expected (0.02)
+Windows   passing  local HMM Forward       filter:              38  (0.001045); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              15  (0.0003982); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              12  (0.0003735); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              12  (0.0003735); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              12  (0.0002451); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               3  (5.395e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.77u 0.00s 00:00:00.77 Elapsed: 00:00:00.12
+//
+Query:       RAGATH-13  [CLEN=95]
+Accession:   RF02688
+Description: RAGATH-13 RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (95 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (472 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3705  (0.05936); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             789  (0.01278); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             745  (0.01207); expected (0.02)
+Windows   passing  local HMM Forward       filter:              10  (0.0001764); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               9  (0.0001607); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               8  (0.0001447); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               8  (0.0001447); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               8  (9.996e-05); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.26u 0.00s 00:00:00.26 Elapsed: 00:00:00.04
+//
+Query:       RAGATH-1-hammerhead  [CLEN=78]
+Accession:   RF03152
+Description: RAGATH-1 hammerhead ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (78 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (904 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2399  (0.06746); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             903  (0.02605); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             684  (0.01963); expected (0.02)
+Windows   passing  local HMM Forward       filter:              23  (0.0007231); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              16  (0.0004985); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              13  (0.0003919); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              13  (0.0003919); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              13  (0.0001929); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               6  (7.803e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.45u 0.01s 00:00:00.46 Elapsed: 00:00:00.07
+//
+Query:       twister-P3  [CLEN=73]
+Accession:   RF03154
+Description: type-P3 twister ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (73 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (428 residues re-searched)
+Windows   passing  local HMM SSV           filter:            5627  (0.0803); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1167  (0.01691); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1000  (0.0145); expected (0.02)
+Windows   passing  local HMM Forward       filter:              21  (0.0003342); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              16  (0.0002495); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              14  (0.0002118); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              13  (0.0001875); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              13  (0.0001303); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.27u 0.00s 00:00:00.27 Elapsed: 00:00:00.03
+//
+Query:       twister-P1  [CLEN=67]
+Accession:   RF03160
+Description: type-P1 twister ribozyme
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (67 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (984 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2232  (0.06382); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             538  (0.01595); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             511  (0.01516); expected (0.02)
+Windows   passing  local HMM Forward       filter:              13  (0.000405); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              11  (0.000351); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              10  (0.0003248); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              10  (0.0003248); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              10  (0.0001183); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               4  (2.726e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.28u 0.00s 00:00:00.28 Elapsed: 00:00:00.04
+//
+Query:       Hovlinc  [CLEN=170]
+Accession:   RF04188
+Description: Hovlinc ribozyme (hominin vlincRNA-located)
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (170 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (848 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4850  (0.139); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             376  (0.01122); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             250  (0.007452); expected (0.02)
+Windows   passing  local HMM Forward       filter:              19  (0.0005621); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              13  (0.0003989); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              11  (0.0003702); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               9  (0.0003134); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               8  (0.0001615); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.66u 0.00s 00:00:00.66 Elapsed: 00:00:00.10
+//
+Query:       Hairpin-meta1  [CLEN=118]
+Accession:   RF04190
+Description: Hairpin ribozyme 1 from viruses-like metatranscriptomes
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (118 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1388 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2007  (0.08554); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             395  (0.01816); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             324  (0.01479); expected (0.02)
+Windows   passing  local HMM Forward       filter:              19  (0.0008867); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              14  (0.0006484); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              13  (0.000573); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              13  (0.000573); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              13  (0.0003228); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               2  (2.658e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.90u 0.07s 00:00:00.97 Elapsed: 00:00:00.19
+//
+Query:       Hairpin-meta2  [CLEN=269]
+Accession:   RF04191
+Description: Hairpin ribozyme 2 from viruses-like metatranscriptomes
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (269 consensus positions)
+Target sequences:                                                1  (8803436 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1448 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1524  (0.07405); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             242  (0.01206); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             192  (0.009606); expected (0.02)
+Windows   passing  local HMM Forward       filter:               1  (4.77e-05); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:               1  (4.77e-05); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.46u 0.01s 00:00:00.47 Elapsed: 00:00:00.06
+//
+[ok]

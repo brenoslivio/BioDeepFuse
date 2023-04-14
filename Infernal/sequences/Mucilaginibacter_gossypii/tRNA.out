@@ -1,0 +1,815 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Mucilaginibacter_gossypii.fasta
+# output directed to file:               sequences/Mucilaginibacter_gossypii/tRNA.out
+# tabular output of hits:                sequences/Mucilaginibacter_gossypii/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   1.3e-16   75.5   0.0  NZ_CP071878.1 4872877 4872805 -  cm    no 0.53  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (2) !   7.5e-16   72.8   0.0  NZ_CP071878.1 3533276 3533204 -  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (3) !   4.8e-15   69.9   0.0  NZ_CP071878.1 3856372 3856444 +  cm    no 0.48  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (4) !   5.2e-15   69.8   0.0  NZ_CP071878.1 1466694 1466622 -  cm    no 0.51  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (5) !   5.5e-15   69.7   0.0  NZ_CP071878.1 5220712 5220638 -  cm    no 0.56  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (6) !     1e-14   68.7   0.0  NZ_CP071878.1 3533503 3533423 -  cm    no 0.57  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (7) !   1.3e-14   68.4   0.0  NZ_CP071878.1 2852702 2852774 +  cm    no 0.56  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (8) !   1.3e-14   68.4   0.0  NZ_CP071878.1 3094940 3094868 -  cm    no 0.56  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+  (9) !   1.8e-14   67.8   0.0  NZ_CP071878.1 6443594 6443667 +  cm    no 0.57  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (10) !   1.8e-14   67.8   0.0  NZ_CP071878.1 6450794 6450867 +  cm    no 0.57  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (11) !     2e-14   67.7   0.0  NZ_CP071878.1 2358183 2358110 -  cm    no 0.62  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (12) !     2e-14   67.7   0.0  NZ_CP071878.1 2358351 2358278 -  cm    no 0.62  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (13) !     2e-14   67.7   0.0  NZ_CP071878.1 6088216 6088289 +  cm    no 0.51  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (14) !   2.1e-14   67.7   0.0  NZ_CP071878.1 3533107 3533036 -  cm    no 0.53  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (15) !   2.5e-14   67.3   0.0  NZ_CP071878.1 3533641 3533569 -  cm    no 0.51  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (16) !   2.6e-14   67.3   0.0  NZ_CP071878.1 5220496 5220422 -  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (17) !   4.5e-14   66.5   0.0  NZ_CP071878.1 3189949 3190019 +  cm    no 0.58  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (18) !   5.6e-14   66.1   0.0  NZ_CP071878.1 3168937 3168864 -  cm    no 0.43  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (19) !   8.6e-14   65.4   0.0  NZ_CP071878.1 7163810 7163738 -  cm    no 0.53  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (20) !   8.6e-14   65.4   0.0  NZ_CP071878.1 7163970 7163898 -  cm    no 0.53  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (21) !   8.8e-14   65.4   0.0  NZ_CP071878.1 3531706 3531636 -  cm    no 0.46  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (22) !   9.7e-14   65.2   0.0  NZ_CP071878.1 5344746 5344820 +  cm    no 0.48  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (23) !   9.7e-14   65.2   0.0  NZ_CP071878.1 5923274 5923348 +  cm    no 0.48  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (24) !   1.2e-13   65.0   0.0  NZ_CP071878.1 1255126 1255199 +  cm    no 0.54  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (25) !   1.3e-13   64.8   0.0  NZ_CP071878.1  295698  295770 +  cm    no 0.40  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (26) !   1.4e-13   64.7   0.0  NZ_CP071878.1 6236829 6236902 +  cm    no 0.47  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (27) !   1.6e-13   64.4   0.0  NZ_CP071878.1 5136050 5136122 +  cm    no 0.60  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (28) !   2.3e-13   63.9   0.0  NZ_CP071878.1 5344921 5344994 +  cm    no 0.58  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (29) !   2.3e-13   63.9   0.0  NZ_CP071878.1 5923449 5923522 +  cm    no 0.58  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (30) !   2.3e-13   63.9   0.0  NZ_CP071878.1 6237003 6237076 +  cm    no 0.58  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (31) !   2.5e-13   63.8   0.0  NZ_CP071878.1 5175623 5175695 +  cm    no 0.58  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (32) !   2.7e-13   63.7   0.0  NZ_CP071878.1 5892148 5892061 -  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (33) !   3.8e-13   63.1   0.0  NZ_CP071878.1 2404668 2404582 -  cm    no 0.54  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (34) !   3.9e-13   63.1   0.0  NZ_CP071878.1 2852828 2852912 +  cm    no 0.53  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (35) !   3.9e-13   63.1   0.0  NZ_CP071878.1 5527037 5527110 +  cm    no 0.58  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (36) !   9.3e-13   61.7   0.0  NZ_CP071878.1 5451476 5451405 -  cm    no 0.46  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (37) !   1.2e-12   61.3   0.0  NZ_CP071878.1 1380930 1380844 -  cm    no 0.52  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (38) !   1.2e-12   61.3   0.0  NZ_CP071878.1 1653834 1653920 +  cm    no 0.52  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (39) !   1.3e-12   61.2   0.0  NZ_CP071878.1 5278555 5278482 -  cm    no 0.57  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (40) !   1.4e-12   61.1   0.0  NZ_CP071878.1 2769278 2769205 -  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (41) !   2.2e-12   60.4   0.0  NZ_CP071878.1 7185551 7185479 -  cm    no 0.60  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (42) !   2.6e-12   60.1   0.0  NZ_CP071878.1 3726121 3726051 -  cm    no 0.46  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (43) !   2.9e-12   60.0   0.0  NZ_CP071878.1 4923550 4923477 -  cm    no 0.66  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (44) !   4.5e-12   59.3   0.0  NZ_CP071878.1 4706240 4706167 -  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (45) !   4.9e-12   59.1   0.0  NZ_CP071878.1  295777  295850 +  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (46) !   7.7e-12   58.5   0.0  NZ_CP071878.1 3263342 3263413 +  cm    no 0.47  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (47) !   2.7e-11   56.5   0.0  NZ_CP071878.1 5107223 5107152 -  cm    no 0.53  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (48) !     3e-11   56.3   0.0  NZ_CP071878.1 1985130 1985049 -  cm    no 0.61  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (49) !   3.3e-11   56.2   0.0  NZ_CP071878.1  295611  295684 +  cm    no 0.49  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (50) !   6.1e-11   55.2   0.0  NZ_CP071878.1  129984  129914 -  cm    no 0.45  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (51) !   7.3e-11   55.0   0.0  NZ_CP071878.1 7165267 7165350 +  cm    no 0.52  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (52) !   5.3e-10   51.9   0.0  NZ_CP071878.1  801706  801785 +  cm    no 0.64  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (53) !   7.8e-09   47.7   0.0  NZ_CP071878.1 7165414 7165497 +  cm    no 0.55  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+ (54) !   4.5e-05   34.2   0.0  NZ_CP071878.1 1297226 1297130 -  cm    no 0.54  Mucilaginibacter gossypii strain P3 chromosome, complete genom
+
+
+Hit alignments:
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.3e-16   75.5   0.0  cm        1       71 []     4872877     4872805 - .. 1.00    no 0.53
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::A:AUAGCUCAGU GGUAGAGCGUC:G:+U   AA:C:GAAGG C:CGGGUUCGAAUCCCG:U:U:::C 
+  NZ_CP071878.1 4872877 GCGAAAAUAGCUCAGUcGGUAGAGCGUCAGUUUCCCAAACUGAAGGcCGCGGGUUCGAAUCCCGUUUUUCGCU 4872805
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.5e-16   72.8   0.0  cm        1       71 []     3533276     3533204 - .. 1.00    no 0.55
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GA::UAGCUCAGU GGUAGAGCG:::G:CUU  AA:C:::AGG C:CG:GUUCGAA C:CG:::UC::C 
+  NZ_CP071878.1 3533276 GCGGAAGUAGCUCAGUuGGUAGAGCGAUAGCCUUCCAAGCUAUAGGuCGCGAGUUCGAACCUCGUCUUCCGCU 3533204
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   4.8e-15   69.9   0.0  cm        1       71 []     3856372     3856444 + .. 1.00    no 0.48
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG::::AUAGCUCAG  GGUAGAGC+::GGACU+AAAAUCC::  G C:C:GGUUCGA  CC:G:U::::CCA
+  NZ_CP071878.1 3856372 GGUACCAUAGCUCAGAuGGUAGAGCAAAGGACUGAAAAUCCUUGUGuCACUGGUUCGAUCCCAGUUGGUACCA 3856444
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   5.2e-15   69.8   0.0  cm        1       71 []     1466694     1466622 - .. 1.00    no 0.51
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:: :::UAGCUCAG  GGUAGAGC+:::GACU ++AAUC::: GG CG:G:GUUCGAAUC:C:C::: ::CA
+  NZ_CP071878.1 1466694 GACUCCGUAGCUCAGCuGGUAGAGCAAAUGACUCUUAAUCAUUGGGuCGAGAGUUCGAAUCUCUCCGGGGUCA 1466622
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   5.5e-15   69.7   0.0  cm        1       71 []     5220712     5220638 - .. 0.99    no 0.56
+
+                                                                                                    NC
+                        (((((((,,<<<<___.___.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:::::UAGCUCAG  GGU  AGAGC+UC:G:CUUA AA:C:GA GG C:C:GGUUCGAA CC:G::::::CCA
+  NZ_CP071878.1 5220712 GGGAGCUUAGCUCAGCuGGUucAGAGCAUCUGCCUUACAAGCAGAGGGuCACUGGUUCGAACCCAGUAGCUCCCA 5220638
+                        *****************9999****************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !     1e-14   68.7   0.0  cm        1       71 []     3533503     3533423 - .. 0.99    no 0.57
+
+                                                                                                           NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:G::AUA:C::AG GGU  A::G:G:CGGACU++AAAUCCG:+          +CG::GGUUCGAAUCC::CU::C:CCA
+  NZ_CP071878.1 3533503 GGGGGGAUACCAGAGCGGUcaAAUGGGACGGACUGUAAAUCCGUU-gcuucggcuACGAAGGUUCGAAUCCUUCUCCCCCCA 3533423
+                        *********************************************.8*******85************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   1.3e-14   68.4   0.0  cm        1       71 []     2852702     2852774 + .. 1.00    no 0.56
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::A::UAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGAAUC:CG:::U:::C 
+  NZ_CP071878.1 2852702 GCGAAAGUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAAUCUCGUCUUUCGCU 2852774
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   1.3e-14   68.4   0.0  cm        1       71 []     3094940     3094868 - .. 1.00    no 0.56
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::A::UAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGAAUC:CG:::U:::C 
+  NZ_CP071878.1 3094940 GCGAAAGUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAAUCUCGUCUUUCGCU 3094868
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.8e-14   67.8   0.0  cm        1       71 []     6443594     6443667 + .. 1.00    no 0.57
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::::::UAGCUCAG  GGU AGAGC+UC:GACU+++AAUC:GA GG CGC:GGUUCGA  CC:GC:::::::+
+  NZ_CP071878.1 6443594 UCCUGAGUAGCUCAGCcGGUuAGAGCAUCUGACUGUUAAUCAGAGGGuCGCUGGUUCGAGCCCAGCCUCAGGAG 6443667
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.8e-14   67.8   0.0  cm        1       71 []     6450794     6450867 + .. 1.00    no 0.57
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::::::UAGCUCAG  GGU AGAGC+UC:GACU+++AAUC:GA GG CGC:GGUUCGA  CC:GC:::::::+
+  NZ_CP071878.1 6450794 UCCUGAGUAGCUCAGCcGGUuAGAGCAUCUGACUGUUAAUCAGAGGGuCGCUGGUUCGAGCCCAGCCUCAGGAG 6450867
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !     2e-14   67.7   0.0  cm        1       71 []     2358183     2358110 - .. 1.00    no 0.62
+
+                                    v         v                                                    NC
+                        (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:GAU:UAGC: AG   GGUA :GCG:C::A+UU   AU::G:AGG CGC:GGUUCGAAUCC:GC:AUC:C:A
+  NZ_CP071878.1 2358183 CGGGAUGUAGCGUAGCccGGUAUCGCGCCACAUUUGGGAUGUGGAGGcCGCAGGUUCGAAUCCUGCCAUCCCGA 2358110
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !     2e-14   67.7   0.0  cm        1       71 []     2358351     2358278 - .. 1.00    no 0.62
+
+                                    v         v                                                    NC
+                        (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:GAU:UAGC: AG   GGUA :GCG:C::A+UU   AU::G:AGG CGC:GGUUCGAAUCC:GC:AUC:C:A
+  NZ_CP071878.1 2358351 CGGGAUGUAGCGUAGCccGGUAUCGCGCCACAUUUGGGAUGUGGAGGcCGCAGGUUCGAAUCCUGCCAUCCCGA 2358278
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !     2e-14   67.7   0.0  cm        1       71 []     6088216     6088289 + .. 0.99    no 0.51
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:A::::UAGCUCA+U GG  AGAGC+UC:GACU    AUC:GAAGG +: GGGUUCGA UCCC :::::U:CA
+  NZ_CP071878.1 6088216 GCACUCGUAGCUCAAUuGGAuAGAGCAUCUGACUACGGAUCAGAAGGuUAGGGGUUCGACUCCCUUCGAGUGCA 6088289
+                        *****************8888***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   2.1e-14   67.7   0.0  cm        1       71 []     3533107     3533036 - .. 1.00    no 0.53
+
+                                                                                                 NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:: A: UAGCUCAG GGUAGAGC+:::::+U+ +AA:::::AGG C::GGGUUC+AAUCCC:: :U ::C 
+  NZ_CP071878.1 3533107 GCCGACGUAGCUCAGGGGUAGAGCACUUCCUUGGUAAGGAAGAGGuCAUGGGUUCAAAUCCCAUUGUUGGCU 3533036
+                        ***************9999***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   2.5e-14   67.3   0.0  cm        1       71 []     3533641     3533569 - .. 1.00    no 0.51
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::::::UAGCUCAG  GGUAGAGC+:C:GACUU +AAUC:G:AGG C:: GGUUCGA  CC ::::::::C 
+  NZ_CP071878.1 3533641 GCCUCCUUAGCUCAGCuGGUAGAGCAACUGACUUGUAAUCAGUAGGuCAUUGGUUCGAUCCCGAUAGGAGGCU 3533569
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   2.6e-14   67.3   0.0  cm        1       71 []     5220496     5220422 - .. 0.99    no 0.55
+
+                                                                                                    NC
+                        (((((((,,<<<<___.___.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:: ::UAGCUCAG  GGU  AGAGC+UC:G:CUUA AA:C:GA GG C:C:GGUUCGAA CC:G::: ::CCA
+  NZ_CP071878.1 5220496 GGGAGCUUAGCUCAGCuGGUucAGAGCAUCUGCCUUACAAGCAGAGGGuCACUGGUUCGAACCCAGUAGUUCCCA 5220422
+                        *****************9999****************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   4.5e-14   66.5   0.0  cm        1       71 []     3189949     3190019 + .. 1.00    no 0.58
+
+                                                                                                NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG::::AU+GC::AGUGG  ::GC+::GG:CU+ AAA:CC::+ +C:::GGUUCGAAUCC:::U::::CC 
+  NZ_CP071878.1 3189949 GGUCGGAUGGCCGAGUGGCUAGGCAGAGGUCUGCAAAACCUUUUACAGCGGUUCGAAUCCGCUUCCGACCU 3190019
+                        *******************9*************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   5.6e-14   66.1   0.0  cm        1       71 []     3168937     3168864 - .. 0.99    no 0.43
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G ::: AUAGCUCAG  GG  AGAGC+:C:GA+UU +AAUC:G:AGG C ::GGUUCGAAUCC:: U ::: CA
+  NZ_CP071878.1 3168937 GGUCCUAUAGCUCAGCuGGAuAGAGCAACAGAUUUCUAAUCUGUAGGuCUUUGGUUCGAAUCCAAAUGGGAUCA 3168864
+                        *****************8888***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   8.6e-14   65.4   0.0  cm        1       71 []     7163810     7163738 - .. 1.00    no 0.53
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:: :::UAGCUCAG  GGUAGAGC+ :::ACUU++AAU:::  GG C::GGGUUCGA UCCC::::: ::CA
+  NZ_CP071878.1 7163810 GAUUCCGUAGCUCAGCcGGUAGAGCAUAACACUUUUAAUGUUGGGGuCCUGGGUUCGAGUCCCAGCGGGAUCA 7163738
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   8.6e-14   65.4   0.0  cm        1       71 []     7163970     7163898 - .. 1.00    no 0.53
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:: :::UAGCUCAG  GGUAGAGC+ :::ACUU++AAU:::  GG C::GGGUUCGA UCCC::::: ::CA
+  NZ_CP071878.1 7163970 GAUUCCGUAGCUCAGCcGGUAGAGCAUAACACUUUUAAUGUUGGGGuCCUGGGUUCGAGUCCCAGCGGGAUCA 7163898
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   8.8e-14   65.4   0.0  cm        1       71 []     3531706     3531636 - .. 1.00    no 0.46
+
+                                                                                                NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::G::AUA::UCA+ GGUAGA::+::GG:CU  AAA:CC::+G++:: GGUUCGAAUCC ::U::C:::+
+  NZ_CP071878.1 3531706 ACGGGAAUAGUUCAACGGUAGAAUAGAGGUCUCCAAAACCUUUGAUCAGGGUUCGAAUCCUUGUUCCCGUG 3531636
+                        *********************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   9.7e-14   65.2   0.0  cm        1       71 []     5344746     5344820 + .. 1.00    no 0.48
+
+                                                                                                    NC
+                        (((((((,,<<<<___..___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G::: :UAGCUCAG   GGU AGAGC+::::ACU+A+AAU:::: GG C::::GUUC+AAUC::::: :::C:A
+  NZ_CP071878.1 5344746 AGUCCUGUAGCUCAGCuuGGUuAGAGCACUACACUGAUAAUGUAGGGGuCAGCAGUUCAAAUCUGCUCGGGACUA 5344820
+                        *************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   9.7e-14   65.2   0.0  cm        1       71 []     5923274     5923348 + .. 1.00    no 0.48
+
+                                                                                                    NC
+                        (((((((,,<<<<___..___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G::: :UAGCUCAG   GGU AGAGC+::::ACU+A+AAU:::: GG C::::GUUC+AAUC::::: :::C:A
+  NZ_CP071878.1 5923274 AGUCCUGUAGCUCAGCuuGGUuAGAGCACUACACUGAUAAUGUAGGGGuCAGCAGUUCAAAUCUGCUCGGGACUA 5923348
+                        *************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   1.2e-13   65.0   0.0  cm        1       71 []     1255126     1255199 + .. 1.00    no 0.54
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::: AUA:CUCAGU GGU AGAG:+:::GACU A+AAUC:::+GG C:C:GGUUCGA  CC:G:U ::::CA
+  NZ_CP071878.1 1255126 GCGCCUAUAGCUCAGUcGGUuAGAGUAGAAGACUCAUAAUCUUUUGGuCCCUGGUUCGAGCCCAGGUGGGCGCA 1255199
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   1.3e-13   64.8   0.0  cm        1       71 []      295698      295770 + .. 1.00    no 0.40
+
+                                 v            v                                                  NC
+                       (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GGA:AUAUAG UCA+UGGU AGA C+:C:::CUUA+A :::G: GG +:::GGUUC+A UCC:::UAU:UCCA
+  NZ_CP071878.1 295698 GGAAAUAUAGCUCAAUGGUaAGAACAGCACCCUUAUACGGUGUCGGuUAAAGGUUCAAGUCCUUUUAUUUCCA 295770
+                       ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   1.4e-13   64.7   0.0  cm        1       71 []     6236829     6236902 + .. 1.00    no 0.47
+
+                                                                                                   NC
+                        (((((((,,<<<<___..___._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G::: :UAGCUCAG   GGU AGAGC+::::ACU+A+AAU:::: G C::::GUUC+AAUC::::: :::C:A
+  NZ_CP071878.1 6236829 AGUCCUGUAGCUCAGCuuGGUuAGAGCACUACACUGAUAAUGUAGGGUCAGCAGUUCAAAUCUGCUCGGGACUA 6236902
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   1.6e-13   64.4   0.0  cm        1       71 []     5136050     5136122 + .. 1.00    no 0.60
+
+                        v                                                                      v  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                         G:G::AU+G :CAGU GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUCGA UCC: CU::C:C A
+  NZ_CP071878.1 5136050 UGCGGGAUGGAGCAGUuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUAGGUUCGAGUCCUGCUCCCGCUA 5136122
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   2.3e-13   63.9   0.0  cm        1       71 []     5344921     5344994 + .. 0.99    no 0.58
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G ::UAGCUCAG  GG  AGAGC+:C:G:CUU  A :C:G: GG C:::GGUUCGAAUCC::::: C CCA
+  NZ_CP071878.1 5344921 GGGGGAUUAGCUCAGCuGGCuAGAGCACCUGCCUUGCACGCAGGGGGuCAACGGUUCGAAUCCGUUAUUCUCCA 5344994
+                        *****************9999***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   2.3e-13   63.9   0.0  cm        1       71 []     5923449     5923522 + .. 0.99    no 0.58
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G ::UAGCUCAG  GG  AGAGC+:C:G:CUU  A :C:G: GG C:::GGUUCGAAUCC::::: C CCA
+  NZ_CP071878.1 5923449 GGGGGAUUAGCUCAGCuGGCuAGAGCACCUGCCUUGCACGCAGGGGGuCAACGGUUCGAAUCCGUUAUUCUCCA 5923522
+                        *****************9999***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   2.3e-13   63.9   0.0  cm        1       71 []     6237003     6237076 + .. 0.99    no 0.58
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G ::UAGCUCAG  GG  AGAGC+:C:G:CUU  A :C:G: GG C:::GGUUCGAAUCC::::: C CCA
+  NZ_CP071878.1 6237003 GGGGGAUUAGCUCAGCuGGCuAGAGCACCUGCCUUGCACGCAGGGGGuCAACGGUUCGAAUCCGUUAUUCUCCA 6237076
+                        *****************9999***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   2.5e-13   63.8   0.0  cm        1       71 []     5175623     5175695 + .. 1.00    no 0.58
+
+                        v                                                                      v  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                         G:G::AU+G :CAGU GGUAG: CGUCGG:CU A+AA:CCGAAGG C: :GGUUCGA UCC: :U::C:C A
+  NZ_CP071878.1 5175623 UGCGGGAUGGAGCAGUuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCAUAGGUUCGAGUCCUGUUCCCGCUA 5175695
+                        ************************************************************************* PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   2.7e-13   63.7   0.0  cm        1       71 []     5892148     5892061 - .. 0.99    no 0.55
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,.,<<<<<_______>>>>>)))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................g.cgcgGGUUCgAaUCCcgcuaucuc 69     
+                        GGAGA::U+ CU:AGUGGU  A:AG G::: :CU+ AAA: :::+                   CG:GGGUUCGAAUCCC:C::UCUC
+  NZ_CP071878.1 5892148 GGAGAGGUGUCUGAGUGGUcgAAAGAGCACGCCUGGAAAGUGUGU-auacuccaaaagggua-uCGAGGGUUCGAAUCCCUCCCUCUC 5892063
+                        *********************************************.8**************6.4************************ PP
+
+                           NC
+                        ): CS
+           tRNA      70 Ca 71     
+                        C+
+  NZ_CP071878.1 5892062 CG 5892061
+                        ** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   3.8e-13   63.1   0.0  cm        1       71 []     2404668     2404582 - .. 0.98    no 0.54
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GGAGA:AU+:CU:AG GG   A:AG:+:C:G:+U+ +AA:C:G:                   CG:GGGUUCGAAUCCC:CU:UCUCC
+  NZ_CP071878.1 2404668 GGAGAGAUGCCUGAGAGGCcgAAAGGAACAGUUUGCUAAACUGUC-guacuggaaacggua-cCGAGGGUUCGAAUCCCUCUCUCUCC 2404583
+                        ****************9999*************************.8*************5.5************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_CP071878.1 2404582 G 2404582
+                        * PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   3.9e-13   63.1   0.0  cm        1       71 []     2852828     2852912 + .. 0.99    no 0.53
+
+                                                                                                               NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        ::::A:AU+G:::A+  GGU  :::CG::GGACUUAAAAUCC::+              G+GCGGGUUCGA UCCCGCU:U::::A
+  NZ_CP071878.1 2852828 GCUCAGAUGGUGGAACuGGUaGACACGCAGGACUUAAAAUCCUGU-ucccguaaacggaGUGCGGGUUCGAUUCCCGCUCUGAGUA 2852912
+                        *********************************************.9***********74************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   3.9e-13   63.1   0.0  cm        1       71 []     5527037     5527110 + .. 1.00    no 0.58
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GGA :::UA::UCAG  GGU AGA::+:::G:CU++ A :C::: GG C:CGGGUUCGA UCCCG:::: UCC+
+  NZ_CP071878.1 5527037 GGAGUGGUAGUUCAGCuGGUuAGAAUACAUGCCUGUCACGCAUGGGGuCGCGGGUUCGAGUCCCGUCCAUUCCG 5527110
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   9.3e-13   61.7   0.0  cm        1       71 []     5451476     5451405 - .. 0.98    no 0.46
+
+                                                                                                 NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:::::UA::UCA+ GG  AGA::+:::G:+U  +AA:C:::AG++: G:GUUCGA UC:C ::::::CCA
+  NZ_CP071878.1 5451476 GGUCCCGUAGUUCAACGGAuAGAAUAGGAGUUUCCUAAACUCUAGAUAUGAGUUCGAUUCUCGUCGGGACCA 5451405
+                        ****************7777**************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   1.2e-12   61.3   0.0  cm        1       71 []     1380930     1380844 - .. 0.99    no 0.52
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GGAGA::U+GC: AGUGGU  A :GCG:C:G:CUU AAA:C:G:+                  C  GGGUUCGAAUCCC  ::UCUCC
+  NZ_CP071878.1 1380930 GGAGAGUUGGCAGAGUGGUcgAUUGCGGCAGUCUUGAAAACUGUU-gaacugugaaagguuc-CUGGGGUUCGAAUCCCUAACUCUCC 1380845
+                        *********************************************.8*************76.************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_CP071878.1 1380844 G 1380844
+                        * PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.2e-12   61.3   0.0  cm        1       71 []     1653834     1653920 + .. 0.99    no 0.52
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GGAGA::U+GC: AGUGGU  A :GCG:C:G:CUU AAA:C:G:+                  C  GGGUUCGAAUCCC  ::UCUCC
+  NZ_CP071878.1 1653834 GGAGAGUUGGCAGAGUGGUcgAUUGCGGCAGUCUUGAAAACUGUU-gaacugugaaagguuc-CUGGGGUUCGAAUCCCUAACUCUCC 1653919
+                        *********************************************.8*************76.************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_CP071878.1 1653920 G 1653920
+                        * PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   1.3e-12   61.2   0.0  cm        1       71 []     5278555     5278482 - .. 1.00    no 0.57
+
+                                                       v       v                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:G:::UAGCUCAG  GGU AGAGCGU:GG +U A+AA CC:AAGG C::::GUUCGA  C:::::::C:C:A
+  NZ_CP071878.1 5278555 GGCGGGGUAGCUCAGAuGGUuAGAGCGUAGGAUUCAUAACCCUAAGGuCGGCAGUUCGAUCCUGCUCCCCGCUA 5278482
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   1.4e-12   61.1   0.0  cm        1       71 []     2769278     2769205 - .. 1.00    no 0.55
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:A ::AUAGCUCAGU GGU AGAGC+:C:GA+U++   UC:G: GG C::GGGUUCGA  CCC::U:: U:C 
+  NZ_CP071878.1 2769278 GUAGGCAUAGCUCAGUuGGUuAGAGCACCAGAUUGUGGUUCUGGGGGuCGUGGGUUCGAGCCCCAUUGCUUACC 2769205
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   2.2e-12   60.4   0.0  cm        1       71 []     7185551     7185479 - .. 1.00    no 0.60
+
+                          v                                                                  v    NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G G::AU+G :CAG  GG AG: C UCGG:CU A+AA:CCGAAGG CGC:GGUUCGA UCC:GCU::C C:A
+  NZ_CP071878.1 7185551 UGCGGGAUGGAGCAGAuGGCAGCUCUUCGGGCUCAUAACCCGAAGGuCGCAGGUUCGAGUCCUGCUCCCACAA 7185479
+                        *****************999***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   2.6e-12   60.1   0.0  cm        1       71 []     3726121     3726051 - .. 1.00    no 0.46
+
+                                                                                                NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:: :AUAG:::A+UGGUA:::CG:CGG:+UU+   :CCG:+ G+: :GGUUCGAAUCC: :U: ::C:A
+  NZ_CP071878.1 3726121 UGCCUGAUAGUAUAAUGGUAGUACGACGGUUUUUGGUACCGUUUGUCUAGGUUCGAAUCCUGGUCGGGCAA 3726051
+                        *********************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   2.9e-12   60.0   0.0  cm        1       71 []     4923550     4923477 - .. 1.00    no 0.66
+
+                                    v         v                                                    NC
+                        (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:GAU:UAGC: AG   GGUA :GCG:C:G: U+    :C:G:AGG CG GGGUUCGAAUCCC C:AUC:C:A
+  NZ_CP071878.1 4923550 CGGGAUGUAGCGUAGCccGGUAUCGCGCCAGCAUGGGGUGCUGGAGGuCGUGGGUUCGAAUCCCGCCAUCCCGA 4923477
+                        ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   4.5e-12   59.3   0.0  cm        1       71 []     4706240     4706167 - .. 0.99    no 0.55
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G ::UAGCUCAG  GG  AGAGCG:::G: U+  A :C:::AGG C:::GGUUCGA UCC::::: C CCA
+  NZ_CP071878.1 4706240 GGGGGAUUAGCUCAGCuGGCuAGAGCGCUUGCAUGGCAUGCAAGAGGuCAUCGGUUCGACUCCGAUAUUCUCCA 4706167
+                        *****************9999***************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   4.9e-12   59.1   0.0  cm        1       71 []      295777      295850 + .. 0.99    no 0.55
+
+                                                  v               v                               NC
+                       (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG:::::U+:C::AGUGGU  A::G:+ ::::CU+ AAA:::: +G  C:C::GUUCGAAUC::G::::::CC 
+  NZ_CP071878.1 295777 GGCCGGUUGCCCGAGUGGUucAAGGGAGUCCUCUGCAAAAGGAAUGUuCGCAAGUUCGAAUCUUGUACCGGCCU 295850
+                       ****************9998*************************999************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   7.7e-12   58.5   0.0  cm        1       71 []     3263342     3263413 + .. 0.98    no 0.47
+
+                                                                                                 NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::::::UA::UCA+UGG  AGA:: ::GG:+U     :CC:: G++: G:GUUCGAAUC:C :::::::CA
+  NZ_CP071878.1 3263342 GCUCCCGUAGUUCAAUGGAuAGAAUUAUGGUUUCCGGUACCAUCGAUAUGAGUUCGAAUCUCGUCGGGAGCA 3263413
+                        ****************7777**************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   2.7e-11   56.5   0.0  cm        1       71 []     5107223     5107152 - .. 0.99    no 0.53
+
+                                                                                                 NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:::::U G:::AG GGU A:::C+: :GA+UU+ A UC: :A++C::GGGUUCGA UCCC:::::::C:A
+  NZ_CP071878.1 5107223 GGCCCGUUCGUCUAGGGGUuAGGACAGGAGAUUUUCAUUCUUCAAACAGGGGUUCGAUUCCCCUACGGGCUA 5107152
+                        ****************9999**************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !     3e-11   56.3   0.0  cm        1       71 []     1985130     1985049 - .. 0.99    no 0.61
+
+                                    v         v                                                             NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GA::U+GC: A+U GGU   :GC+:C:GACUUA  AUC:G:            G+: GGGUUCGA UCCC :::UC::CA
+  NZ_CP071878.1 1985130 GCGGAAGUGGCGUAAUuGGUaGCCGCACCAGACUUAGGAUCUGGC-gcuucacggcGUGGGGGUUCGAGUCCCUUCUUCCGCA 1985049
+                        ********************99***********************.8********95************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   3.3e-11   56.2   0.0  cm        1       71 []      295611      295684 + .. 1.00    no 0.49
+
+                                v               v                                                 NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:G:: UA  UCA+U GGU AGA  +:C::A+UU   AU::G:AGG +:C:GGUUC+A UCC:G: ::C:C:A
+  NZ_CP071878.1 295611 AGGGUAGUAUAUCAAUuGGUcAGAUUACCACAUUUGGGAUGUGGAGGcUCCCGGUUCAAGUCCGGGUUACCCUA 295684
+                       ************************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   6.1e-11   55.2   0.0  cm        1       71 []      129984      129914 - .. 1.00    no 0.45
+
+                                                                                               NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :::::UAU+G:::A+UGGUA:::CGUC:GA+U +   UC:GAAG++  :GGUUCGA  CC:  UA:::::A
+  NZ_CP071878.1 129984 UUUCCUAUGGUGUAAUGGUAGCACGUCAGAUUCUGGCUCUGAAGAUUGAGGUUCGAGCCCUUGUAGGAAAA 129914
+                       *********************************************************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   7.3e-11   55.0   0.0  cm        1       71 []     7165267     7165350 + .. 0.99    no 0.52
+
+                                                                                                               NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::: AU+:C::A+U GGU A::G: :CGG CU A AA CCG:+               +G:G:GUUCGA UC:C:CU ::::CA
+  NZ_CP071878.1 7165267 GCCCGGAUGGCGAAAUuGGUaAACGUUGCGGUCUCAGAAGCCGUU-gagaauugucucu-UGAGAGUUCGAGUCUCUCUUCGGGCA 7165350
+                        *********************************************.8**********95.************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   5.3e-10   51.9   0.0  cm        1       71 []      801706      801785 + .. 0.99    no 0.64
+
+                                                   v             v                                       NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,........,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       ::::A: U+GC::A+U GGU  ::GCG: GG:CU AAA :CC :+         G+GC:GGUUCGA UCC:GC :U::::A
+  NZ_CP071878.1 801706 GCCCAGCUGGCGGAAUuGGUaGACGCGCUGGUCUCAAACACCUGU-gggaaaccGUGCCGGUUCGACUCCGGCGCUGGGUA 801785
+                       *********************************************.8******96************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   7.8e-09   47.7   0.0  cm        1       71 []     7165414     7165497 + .. 0.98    no 0.55
+
+                                                                                                              NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::A: U+GC::A+U GGU  ::GC+:C: :+U+A   : :G:              G+:CG:GUUCGAAUC:CG: :U:::CA
+  NZ_CP071878.1 7165414 GCCCAGGUGGCGAAAUuGGUaGACGCACCAUCUUGAGGGGGUGGC-auucguaaggauGUACGAGUUCGAAUCUCGUUCUGGGCA 7165497
+                        ************************************999******.8*********985************************** PP
+
+>> NZ_CP071878.1  Mucilaginibacter gossypii strain P3 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   4.5e-05   34.2   0.0  cm        1       71 []     1297226     1297130 - .. 0.88    no 0.54
+
+                        v                                                                                        NC
+                        (((((((,,<<<<______._>>>>,<<<<~~~~~>>>>,,...............................,.,<<<<<_______> CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgG*[9]*Ccgaag...............................g.cgcgGGUUCgAaUC 59     
+                         ::::::U+:C::A+UGGU A::G:+:C:G     C:G:                                   +GCGGGUUCGA UC
+  NZ_CP071878.1 1297226 GUCAGGGUGGCGAAAUGGUaAACGUAGCAG*[4]*CUGUG-ggugauaaagauauagcgcgguaucucaccg-uUGCGGGUUCGACUC 1297142
+                        *************************99877..6..77777.6777788888888888888888899999995.4************** PP
+
+                                  v  NC
+                        >>>>))))))): CS
+           tRNA      60 CcgcuaucucCa 71     
+                        CCGC:::::: A
+  NZ_CP071878.1 1297141 CCGCCCCUGAAA 1297130
+                        ************ PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (14375466 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            6355  (0.1163); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1256  (0.02304); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1139  (0.02095); expected (0.02)
+Windows   passing  local HMM Forward       filter:              86  (0.001825); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              81  (0.001741); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              61  (0.001548); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              61  (0.001548); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              75  (0.0004107); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              63  (0.0003341); expected (0.0001)
+Total CM hits reported:                                         54  (0.0002848); includes 0 truncated hit(s)
+
+# CPU time: 0.97u 0.02s 00:00:00.99 Elapsed: 00:00:00.14
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (14375466 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            7406  (0.07282); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1753  (0.01751); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1705  (0.01704); expected (0.02)
+Windows   passing  local HMM Forward       filter:              43  (0.0004309); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              42  (0.0004211); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              25  (0.0002485); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              25  (0.0002485); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              24  (0.0001472); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              18  (9.606e-05); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.70u 0.01s 00:00:00.71 Elapsed: 00:00:00.09
+//
+[ok]

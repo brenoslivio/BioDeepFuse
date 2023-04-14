@@ -116,7 +116,7 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
             outs.append(x)
 
     if encoding == 2 or feat_extraction:
-        in_layer, x = base_layers(2, max_len[-1])
+        in_layer, x = base_layers(2, max_len[-1], k, conv_params, lstm_params)
         input_layers.append(in_layer)
         outs.append(x)
 

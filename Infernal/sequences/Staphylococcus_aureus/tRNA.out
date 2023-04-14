@@ -1,0 +1,866 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Staphylococcus_aureus.fasta
+# output directed to file:               sequences/Staphylococcus_aureus/tRNA.out
+# tabular output of hits:                sequences/Staphylococcus_aureus/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   3.8e-17   76.0   0.0  NC_007795.1 1901164 1901092 -  cm    no 0.47  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (2) !   3.8e-17   76.0   0.0  NC_007795.1 2238789 2238717 -  cm    no 0.47  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (3) !     1e-16   74.5   0.0  NC_007795.1  492426  492498 +  cm    no 0.48  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (4) !   2.5e-16   73.1   0.0  NC_007795.1 1899360 1899290 -  cm    no 0.55  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (5) !   5.8e-16   71.7   0.0  NC_007795.1 1904841 1904768 -  cm    no 0.59  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (6) !   5.8e-16   71.7   0.0  NC_007795.1 2242707 2242634 -  cm    no 0.59  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (7) !   8.1e-16   71.2   0.0  NC_007795.1 1900435 1900362 -  cm    no 0.54  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (8) !   1.2e-15   70.6   0.0  NC_007795.1  938788  938717 -  cm    no 0.54  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+  (9) !   1.2e-15   70.6   0.0  NC_007795.1 1864602 1864531 -  cm    no 0.54  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (10) !   1.2e-15   70.6   0.0  NC_007795.1 2239220 2239149 -  cm    no 0.54  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (11) !   1.4e-15   70.4   0.0  NC_007795.1   24239   24311 +  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (12) !   1.4e-15   70.4   0.0  NC_007795.1 1864959 1864887 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (13) !   1.4e-15   70.4   0.0  NC_007795.1 1899948 1899876 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (14) !   1.4e-15   70.4   0.0  NC_007795.1 1900252 1900180 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (15) !   2.1e-15   69.7   0.0  NC_007795.1 1864690 1864620 -  cm    no 0.52  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (16) !   2.1e-15   69.7   0.0  NC_007795.1 2128145 2128075 -  cm    no 0.52  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (17) !   2.1e-15   69.7   0.0  NC_007795.1 1088079 1088006 -  cm    no 0.59  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (18) !   2.3e-15   69.6   0.0  NC_007795.1  492344  492416 +  cm    no 0.55  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (19) !   2.3e-15   69.6   0.0  NC_007795.1 1899774 1899702 -  cm    no 0.55  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (20) !   2.3e-15   69.6   0.0  NC_007795.1 1901245 1901173 -  cm    no 0.55  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (21) !   6.5e-15   68.0   0.0  NC_007795.1  492532  492603 +  cm    no 0.54  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (22) !   6.5e-15   68.0   0.0  NC_007795.1 1901000 1900929 -  cm    no 0.54  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (23) !   7.9e-15   67.7   0.0  NC_007795.1  492805  492878 +  cm    no 0.57  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (24) !   7.9e-15   67.7   0.0  NC_007795.1 1900725 1900652 -  cm    no 0.57  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (25) !   8.6e-15   67.6   0.0  NC_007795.1  492252  492324 +  cm    no 0.56  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (26) !   8.6e-15   67.6   0.0  NC_007795.1 1901337 1901265 -  cm    no 0.56  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (27) !   8.6e-15   67.6   0.0  NC_007795.1 2239065 2238993 -  cm    no 0.56  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (28) !   1.3e-14   66.9   0.0  NC_007795.1 1899597 1899527 -  cm    no 0.51  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (29) !   2.6e-14   65.9   0.0  NC_007795.1 1899693 1899613 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (30) !   2.6e-14   65.9   0.0  NC_007795.1 2238960 2238880 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (31) !   2.9e-14   65.7   0.0  NC_007795.1   24157   24228 +  cm    no 0.60  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (32) !   2.9e-14   65.7   0.0  NC_007795.1 1864526 1864455 -  cm    no 0.60  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (33) !   2.9e-14   65.7   0.0  NC_007795.1 2239144 2239073 -  cm    no 0.60  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (34) !   3.6e-14   65.4   0.0  NC_007795.1 1864867 1864795 -  cm    no 0.51  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (35) !   3.6e-14   65.4   0.0  NC_007795.1 1899854 1899782 -  cm    no 0.51  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (36) !   4.1e-14   65.1   0.0  NC_007795.1 1899437 1899366 -  cm    no 0.56  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (37) !   4.1e-14   65.1   0.0  NC_007795.1 2238867 2238796 -  cm    no 0.56  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (38) !   1.4e-13   63.2   0.0  NC_007795.1 1900537 1900464 -  cm    no 0.65  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (39) !     2e-13   62.7   0.0  NC_007795.1  492708  492781 +  cm    no 0.55  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (40) !     2e-13   62.7   0.0  NC_007795.1 1900808 1900735 -  cm    no 0.55  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (41) !   2.5e-13   62.3   0.0  NC_007795.1 1899521 1899449 -  cm    no 0.58  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (42) !   3.3e-13   61.9   0.0  NC_007795.1 1865054 1864981 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (43) !   3.3e-13   61.9   0.0  NC_007795.1 1900031 1899958 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (44) !   6.6e-13   60.8   0.0  NC_007795.1  439581  439670 +  cm    no 0.60  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (45) !   6.6e-13   60.8   0.0  NC_007795.1 1900352 1900263 -  cm    no 0.60  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (46) !   6.7e-13   60.8   0.0  NC_007795.1 1900138 1900049 -  cm    no 0.61  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (47) !     1e-12   60.2   0.0  NC_007795.1 1864781 1864709 -  cm    no 0.56  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (48) !   1.1e-12   60.0   0.0  NC_007795.1  492902  492974 +  cm    no 0.64  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (49) !   1.1e-12   60.0   0.0  NC_007795.1 1900634 1900562 -  cm    no 0.64  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (50) !   1.1e-12   60.0   0.0  NC_007795.1 1904746 1904674 -  cm    no 0.64  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (51) !   1.6e-12   59.5   0.0  NC_007795.1  772226  772155 -  cm    no 0.44  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (52) !   3.6e-12   58.2   0.0  NC_007795.1 1900915 1900830 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (53) !   3.6e-12   58.2   0.0  NC_007795.1  492614  492699 +  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (54) !   5.5e-12   57.5   0.0  NC_007795.1 1901085 1901004 -  cm    no 0.62  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (55) !   6.9e-12   57.2   0.0  NC_007795.1  938711  938623 -  cm    no 0.61  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (56) !   1.4e-11   56.1   0.0  NC_007795.1 1898988 1898905 -  cm    no 0.63  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (57) !   4.7e-11   54.2   0.0  NC_007795.1 1864400 1864312 -  cm    no 0.58  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (58) !   1.8e-10   52.1   0.0  NC_007795.1 2128250 2128168 -  cm    no 0.64  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+ (59) !   8.1e-07   39.0   0.0  NC_007795.1 1899189 1899118 -  cm    no 0.42  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, comple
+
+
+Hit alignments:
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   3.8e-17   76.0   0.0  cm        1       71 []     1901164     1901092 - .. 1.00    no 0.47
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC:GA GG C:::GGUUCGAAUCC:::::::::CA
+  NC_007795.1 1901164 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCAGAGGUUCGAAUCCUCUAUGGCUCA 1901092
+                      ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   3.8e-17   76.0   0.0  cm        1       71 []     2238789     2238717 - .. 1.00    no 0.47
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC:GA GG C:::GGUUCGAAUCC:::::::::CA
+  NC_007795.1 2238789 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCAGAGGUUCGAAUCCUCUAUGGCUCA 2238717
+                      ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !     1e-16   74.5   0.0  cm        1       71 []      492426      492498 + .. 1.00    no 0.48
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::::UAGCUCAG  GGUAGAGC+UC:GACUU++AAUC:GA GG C:::GGUUCGAAUCC:::::::::CA
+  NC_007795.1 492426 GAGCCAUUAGCUCAGCuGGUAGAGCAUCUGACUUUUAAUCAGAGGGuCAGAGGUUCGAAUCCUCUAUGGCUCA 492498
+                     ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   2.5e-16   73.1   0.0  cm        1       71 []     1899360     1899290 - .. 1.00    no 0.55
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G::AUAGC::AGUGGUA::GC+::GG:CU+ AAA:CC::++ C:C:GGUUC+AAUCC:G:U::C:CC 
+  NC_007795.1 1899360 GGCGGCAUAGCCAAGUGGUAAGGCAGAGGUCUGCAAAACCUUUAUCACCGGUUCAAAUCCGGUUGCCGCCU 1899290
+                      *********************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   5.8e-16   71.7   0.0  cm        1       71 []     1904841     1904768 - .. 1.00    no 0.59
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::UAUAGCUCAG  GGU AGAGCG:::G:CU+A+AA:C:::AGG C:::GGUUCGA UCC:::UA:::CCA
+  NC_007795.1 1904841 GGGCCUAUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAGCGUGAGGuCGGUGGUUCGAGUCCACUUAGGCCCA 1904768
+                      ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   5.8e-16   71.7   0.0  cm        1       71 []     2242707     2242634 - .. 1.00    no 0.59
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::UAUAGCUCAG  GGU AGAGCG:::G:CU+A+AA:C:::AGG C:::GGUUCGA UCC:::UA:::CCA
+  NC_007795.1 2242707 GGGCCUAUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAGCGUGAGGuCGGUGGUUCGAGUCCACUUAGGCCCA 2242634
+                      ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   8.1e-16   71.2   0.0  cm        1       71 []     1900435     1900362 - .. 1.00    no 0.54
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGA::U:UAGCUCAGU GGU AGAGC :::G:CU A+AA:C::: GG CGC:GGUUCGA UCC:GC:A::UCCA
+  NC_007795.1 1900435 GGACCUUUAGCUCAGUuGGUuAGAGCUAACGGCUCAUAACCGUUCGGuCGCAGGUUCGAGUCCUGCAAGGUCCA 1900362
+                      ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   1.2e-15   70.6   0.0  cm        1       71 []      938788      938717 - .. 1.00    no 0.54
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CG::GGUUCGA UCC::C:::::::+
+  NC_007795.1 938788 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGUAGGUUCGAGUCCUACCUGUGGAG 938717
+                     ************************************************************************ PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.2e-15   70.6   0.0  cm        1       71 []     1864602     1864531 - .. 1.00    no 0.54
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CG::GGUUCGA UCC::C:::::::+
+  NC_007795.1 1864602 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGUAGGUUCGAGUCCUACCUGUGGAG 1864531
+                      ************************************************************************ PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.2e-15   70.6   0.0  cm        1       71 []     2239220     2239149 - .. 1.00    no 0.54
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C::: GG CG::GGUUCGA UCC::C:::::::+
+  NC_007795.1 2239220 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCGAUCGGuCGUAGGUUCGAGUCCUACCUGUGGAG 2239149
+                      ************************************************************************ PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   1.4e-15   70.4   0.0  cm        1       71 []       24239       24311 + .. 1.00    no 0.62
+
+                                                                                              NC
+                    (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA     1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                    GG:::::UAG:::AG GGU A:::CG:C:G:CU++ A :C:G:AG+ C:CGGGUUCGA UCCCG::::::CC+
+  NC_007795.1 24239 GGUCUCGUAGUGUAGCGGUuAACACGCCUGCCUGUCACGCAGGAGAuCGCGGGUUCGAUUCCCGUCGAGACCG 24311
+                    ****************9999***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   1.4e-15   70.4   0.0  cm        1       71 []     1864959     1864887 - .. 1.00    no 0.62
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAG:::AG GGU A:::CG:C:G:CU++ A :C:G:AG+ C:CGGGUUCGA UCCCG::::::CC+
+  NC_007795.1 1864959 GGUCUCGUAGUGUAGCGGUuAACACGCCUGCCUGUCACGCAGGAGAuCGCGGGUUCGAUUCCCGUCGAGACCG 1864887
+                      ****************9999***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   1.4e-15   70.4   0.0  cm        1       71 []     1899948     1899876 - .. 1.00    no 0.62
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAG:::AG GGU A:::CG:C:G:CU++ A :C:G:AG+ C:CGGGUUCGA UCCCG::::::CC+
+  NC_007795.1 1899948 GGUCUCGUAGUGUAGCGGUuAACACGCCUGCCUGUCACGCAGGAGAuCGCGGGUUCGAUUCCCGUCGAGACCG 1899876
+                      ****************9999***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   1.4e-15   70.4   0.0  cm        1       71 []     1900252     1900180 - .. 1.00    no 0.62
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAG:::AG GGU A:::CG:C:G:CU++ A :C:G:AG+ C:CGGGUUCGA UCCCG::::::CC+
+  NC_007795.1 1900252 GGUCUCGUAGUGUAGCGGUuAACACGCCUGCCUGUCACGCAGGAGAuCGCGGGUUCGAUUCCCGUCGAGACCG 1900180
+                      ****************9999***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   2.1e-15   69.7   0.0  cm        1       71 []     1864690     1864620 - .. 1.00    no 0.52
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:UAG:U:A+UGG A:A:C UC:G:CUU  AA:C:GA+G +::GGGUUCGA UCCC:::A:C::C 
+  NC_007795.1 1864690 GCGGGUGUAGUUUAAUGGCAAAACCUCAGCCUUCCAAGCUGAUGUUGUGGGUUCGAUUCCCAUCACCCGCU 1864620
+                      *********************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   2.1e-15   69.7   0.0  cm        1       71 []     2128145     2128075 - .. 1.00    no 0.52
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:UAG:U:A+UGG A:A:C UC:G:CUU  AA:C:GA+G +::GGGUUCGA UCCC:::A:C::C 
+  NC_007795.1 2128145 GCGGGUGUAGUUUAAUGGCAAAACCUCAGCCUUCCAAGCUGAUGUUGUGGGUUCGAUUCCCAUCACCCGCU 2128075
+                      *********************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   2.1e-15   69.7   0.0  cm        1       71 []     1088079     1088006 - .. 0.99    no 0.59
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::UAGCUCAG  GG  AGAGC+::GG:CUU +AA:CC:: GG CG GGGUUCGAAUCCC C::::::C+
+  NC_007795.1 1088079 GUCCUGGUAGCUCAGCuGGAuAGAGCAAUGGCCUUCUAAGCCAUCGGuCGGGGGUUCGAAUCCCUCCCAGGACG 1088006
+                      *****************8888***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   2.3e-15   69.6   0.0  cm        1       71 []      492344      492416 + .. 1.00    no 0.55
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::G:: UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC :: ::C::CA
+  NC_007795.1 492344 GCCGGCCUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCCUCUGGCCGGCA 492416
+                     ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   2.3e-15   69.6   0.0  cm        1       71 []     1899774     1899702 - .. 1.00    no 0.55
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:: UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC :: ::C::CA
+  NC_007795.1 1899774 GCCGGCCUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCCUCUGGCCGGCA 1899702
+                      ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   2.3e-15   69.6   0.0  cm        1       71 []     1901245     1901173 - .. 1.00    no 0.55
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:: UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC:G:AGG +:: GGUUC+A UCC :: ::C::CA
+  NC_007795.1 1901245 GCCGGCCUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUCAGUAGGuUGGGGGUUCAAGUCCUCUGGCCGGCA 1901173
+                      ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   6.5e-15   68.0   0.0  cm        1       71 []      492532      492603 + .. 1.00    no 0.54
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:AGA::UA::UCAG GGUAGA::+:::::+U+  AA::::: GG C:CGGGUUCGAAUCCCG:::UCU:C 
+  NC_007795.1 492532 GCAGAAGUAGUUCAGCGGUAGAAUACAACCUUGCCAAGGUUGGGGuCGCGGGUUCGAAUCCCGUCUUCUGCU 492603
+                     ************************************************************************ PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   6.5e-15   68.0   0.0  cm        1       71 []     1901000     1900929 - .. 1.00    no 0.54
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:AGA::UA::UCAG GGUAGA::+:::::+U+  AA::::: GG C:CGGGUUCGAAUCCCG:::UCU:C 
+  NC_007795.1 1901000 GCAGAAGUAGUUCAGCGGUAGAAUACAACCUUGCCAAGGUUGGGGuCGCGGGUUCGAAUCCCGUCUUCUGCU 1900929
+                      ************************************************************************ PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   7.9e-15   67.7   0.0  cm        1       71 []      492805      492878 + .. 1.00    no 0.57
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:C::: GG C:C:GGUUCGAAUCC:G:::UC:C:A
+  NC_007795.1 492805 CGGGAAGUAGCUCAGCuuGGUAGAGCACUUGGUUUGGGACCAAGGGGuCGCAGGUUCGAAUCCUGUCUUCCCGA 492878
+                     ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   7.9e-15   67.7   0.0  cm        1       71 []     1900725     1900652 - .. 1.00    no 0.57
+
+                                                                                                 NC
+                      (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:C::: GG C:C:GGUUCGAAUCC:G:::UC:C:A
+  NC_007795.1 1900725 CGGGAAGUAGCUCAGCuuGGUAGAGCACUUGGUUUGGGACCAAGGGGuCGCAGGUUCGAAUCCUGUCUUCCCGA 1900652
+                      ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   8.6e-15   67.6   0.0  cm        1       71 []      492252      492324 + .. 0.98    no 0.56
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GGAGA::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGAA CC: C::UCUCCA
+  NC_007795.1 492252 GGAGAAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAACCCGUCAUUCUCCA 492324
+                     ****************9555***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   8.6e-15   67.6   0.0  cm        1       71 []     1901337     1901265 - .. 0.98    no 0.56
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGAA CC: C::UCUCCA
+  NC_007795.1 1901337 GGAGAAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAACCCGUCAUUCUCCA 1901265
+                      ****************9555***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   8.6e-15   67.6   0.0  cm        1       71 []     2239065     2238993 - .. 0.98    no 0.56
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C:GA GG CG :GGUUCGAA CC: C::UCUCCA
+  NC_007795.1 2239065 GGAGAAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGCAGAGGGuCGGCGGUUCGAACCCGUCAUUCUCCA 2238993
+                      ****************9555***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   1.3e-14   66.9   0.0  cm        1       71 []     1899597     1899527 - .. 1.00    no 0.51
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G::AUA::UCA+ GGUAGA::+::GG:CU  AAA:CC::+GG+G: GGUUCGA UCC :CU::C:C:+
+  NC_007795.1 1899597 AGGGGCAUAGUUCAACGGUAGAAUAGAGGUCUCCAAAACCUUUGGUGUGGGUUCGAUUCCUACUGCCCCUG 1899527
+                      *********************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   2.6e-14   65.9   0.0  cm        1       71 []     1899693     1899613 - .. 0.97    no 0.62
+
+                                                                                                          NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAG:::UAGC::AGUGG   A::GCG:CGGACU++AAAUCCG:+            CG:::GUUCGAAUC:::C:::CUCCA
+  NC_007795.1 1899693 GGAGGGGUAGCGAAGUGGCuaAACGCGGCGGACUGUAAAUCCGCU-ccuucggguu-CGGCAGUUCGAAUCUGCCCCCCUCCA 1899613
+                      ****************7777*************************.********74.************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   2.6e-14   65.9   0.0  cm        1       71 []     2238960     2238880 - .. 0.97    no 0.62
+
+                                                                                                          NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAG:::UAGC::AGUGG   A::GCG:CGGACU++AAAUCCG:+            CG:::GUUCGAAUC:::C:::CUCCA
+  NC_007795.1 2238960 GGAGGGGUAGCGAAGUGGCuaAACGCGGCGGACUGUAAAUCCGCU-ccuucggguu-CGGCAGUUCGAAUCUGCCCCCCUCCA 2238880
+                      ****************7777*************************.********74.************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   2.9e-14   65.7   0.0  cm        1       71 []       24157       24228 + .. 1.00    no 0.60
+
+                                                                                             NC
+                    (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA     1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71   
+                    G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGA UCCCG:::::: CA
+  NC_007795.1 24157 GGCUCCUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAGUCCCGUAGGAGUCA 24228
+                    ****************9999**************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   2.9e-14   65.7   0.0  cm        1       71 []     1864526     1864455 - .. 1.00    no 0.60
+
+                                                                                               NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGA UCCCG:::::: CA
+  NC_007795.1 1864526 GGCUCCUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAGUCCCGUAGGAGUCA 1864455
+                      ****************9999**************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   2.9e-14   65.7   0.0  cm        1       71 []     2239144     2239073 - .. 1.00    no 0.60
+
+                                                                                               NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::CG:+++C:CGGGUUCGA UCCCG:::::: CA
+  NC_007795.1 2239144 GGCUCCUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGGCGGUAACACGGGUUCGAGUCCCGUAGGAGUCA 2239073
+                      ****************9999**************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   3.6e-14   65.4   0.0  cm        1       71 []     1864867     1864795 - .. 1.00    no 0.51
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAGCUCAGU GGUAGAGC+::GGA+U+AA  UCC::  G CG ::GUUCGA UC:: C:::::CCA
+  NC_007795.1 1864867 GGUUCAGUAGCUCAGUuGGUAGAGCAAUGGAUUGAAGCUCCAUGUGuCGGCAGUUCGACUCUGUCCUGAACCA 1864795
+                      ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   3.6e-14   65.4   0.0  cm        1       71 []     1899854     1899782 - .. 1.00    no 0.51
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAGCUCAGU GGUAGAGC+::GGA+U+AA  UCC::  G CG ::GUUCGA UC:: C:::::CCA
+  NC_007795.1 1899854 GGUUCAGUAGCUCAGUuGGUAGAGCAAUGGAUUGAAGCUCCAUGUGuCGGCAGUUCGACUCUGUCCUGAACCA 1899782
+                      ************************************************************************* PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   4.1e-14   65.1   0.0  cm        1       71 []     1899437     1899366 - .. 0.99    no 0.56
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCCG: +  CG :GGUUCGAAUCC: CUA:C:C:+
+  NC_007795.1 1899437 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCCGUCACuCGUUGGUUCGAAUCCAGCUAGCCCAG 1899366
+                      *******************************************988************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   4.1e-14   65.1   0.0  cm        1       71 []     2238867     2238796 - .. 0.99    no 0.56
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCCG: +  CG :GGUUCGAAUCC: CUA:C:C:+
+  NC_007795.1 2238867 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCCGUCACuCGUUGGUUCGAAUCCAGCUAGCCCAG 2238796
+                      *******************************************988************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.4e-13   63.2   0.0  cm        1       71 []     1900537     1900464 - .. 0.99    no 0.65
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G:U:UAGCUCAG  GG  AGAGCG ::G:+U A+A :C:: AGG CG GGGUUCGA  CCC C:A:C:CCA
+  NC_007795.1 1900537 GGCGGUGUAGCUCAGCuGGCuAGAGCGUACGGUUCAUACCCGUGAGGuCGGGGGUUCGAUCCCCUCCACCGCCA 1900464
+                      *****************9999***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !     2e-13   62.7   0.0  cm        1       71 []      492708      492781 + .. 0.99    no 0.55
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::::UAGCUCA+U GG  AGAGCG ::GACU    AUC:: AGG +:: GGUUCGA UCC ::::::::C+
+  NC_007795.1 492708 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAUCAAGAGGuUAUGGGUUCGACUCCUAUCGGGCGCG 492781
+                     *****************8888***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !     2e-13   62.7   0.0  cm        1       71 []     1900808     1900735 - .. 0.99    no 0.55
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::::UAGCUCA+U GG  AGAGCG ::GACU    AUC:: AGG +:: GGUUCGA UCC ::::::::C+
+  NC_007795.1 1900808 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAUCAAGAGGuUAUGGGUUCGACUCCUAUCGGGCGCG 1900735
+                      *****************8888***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   2.5e-13   62.3   0.0  cm        1       71 []     1899521     1899449 - .. 0.99    no 0.58
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:U+G:::AGUGGU A:::C+UCGGA+U++   UCCGA +  C::GGGUUCGA  CCC:::A:C::C 
+  NC_007795.1 1899521 GCGGCUGUGGUGAAGUGGUuAACACAUCGGAUUGUGGUUCCGACAUuCGAGGGUUCGAUCCCCUUCAGCCGCC 1899449
+                      ****************9999************************999************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   3.3e-13   61.9   0.0  cm        1       71 []     1865054     1864981 - .. 1.00    no 0.62
+
+                      v                                                                       v  NC
+                      (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                       G:G::AU+G :CAGU  GGUAG: CGUCGG:CU A+AA:CCGAAGG CG: GGUUC+AAUCC :CU::C:C A
+  NC_007795.1 1865054 CGCGGGAUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGGUGGUUCAAAUCCGCCUCCCGCAA 1864981
+                      ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   3.3e-13   61.9   0.0  cm        1       71 []     1900031     1899958 - .. 1.00    no 0.62
+
+                      v                                                                       v  NC
+                      (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                       G:G::AU+G :CAGU  GGUAG: CGUCGG:CU A+AA:CCGAAGG CG: GGUUC+AAUCC :CU::C:C A
+  NC_007795.1 1900031 CGCGGGAUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGGUGGUUCAAAUCCGCCUCCCGCAA 1899958
+                      ************************************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   6.6e-13   60.8   0.0  cm        1       71 []      439581      439670 + .. 0.98    no 0.60
+
+                                                                                                                 NC
+                     (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AAA:CCGA                  GCG GGGUUCGAAUCCC CU::CUCC+
+  NC_007795.1 439581 GGAGGAAUACCCAAGUccGGCugAAGGGAUCGGUCUUGAAAACCGAC-aggggcuuaacggcucGCGGGGGUUCGAAUCCCUCUUCCUCCG 439670
+                     ******************8878*************************.8**************96************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   6.6e-13   60.8   0.0  cm        1       71 []     1900352     1900263 - .. 0.98    no 0.60
+
+                                                                                                                 NC
+                      (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AAA:CCGA                  GCG GGGUUCGAAUCCC CU::CUCC
+  NC_007795.1 1900352 GGAGGAAUACCCAAGUccGGCugAAGGGAUCGGUCUUGAAAACCGAC-aggggcuuaacggcucGCGGGGGUUCGAAUCCCUCUUCCUCC 1900264
+                      ******************8878*************************.8**************96************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                      +
+  NC_007795.1 1900263 G 1900263
+                      * PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   6.7e-13   60.8   0.0  cm        1       71 []     1900138     1900049 - .. 0.98    no 0.61
+
+                                                                                                                 NC
+                      (((((((,,<<<<___..___.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AAA:CCGA                  GCG GGGUUCGAAUCCC CU::CUCC
+  NC_007795.1 1900138 GGAGGAAUACCCAAGUccGGCugAAGGGAUCGGUCUUGAAAACCGAC-agggccuuaacgggccGCGGGGGUUCGAAUCCCUCUUCCUCC 1900050
+                      ******************8878*************************.8**************96************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                      +
+  NC_007795.1 1900049 G 1900049
+                      * PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !     1e-12   60.2   0.0  cm        1       71 []     1864781     1864709 - .. 0.99    no 0.56
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G U:U+G:::AGUGGU A:::C+UCGGA+U++   UCCGA +  C::GGGUUCGA  CCC:::A C::C 
+  NC_007795.1 1864781 GCGGUUGUGGUGAAGUGGUuAACACAUCGGAUUGUGGUUCCGACAUuCGAGGGUUCGAUCCCCUUCAGCCGCC 1864709
+                      ****************9999************************999************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   1.1e-12   60.0   0.0  cm        1       71 []      492902      492974 + .. 0.98    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG G ::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::::: C CCA
+  NC_007795.1 492902 GGGGGCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGCUAGUCUCCA 492974
+                     ****************9555***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   1.1e-12   60.0   0.0  cm        1       71 []     1900634     1900562 - .. 0.98    no 0.64
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG G ::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::::: C CCA
+  NC_007795.1 1900634 GGGGGCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGCUAGUCUCCA 1900562
+                      ****************9555***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   1.1e-12   60.0   0.0  cm        1       71 []     1904746     1904674 - .. 0.98    no 0.64
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG G ::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C:::GGUUCGA  CC::::: C CCA
+  NC_007795.1 1904746 GGGGGCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCAGCGGUUCGAUCCCGCUAGUCUCCA 1904674
+                      ****************9555***************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   1.6e-12   59.5   0.0  cm        1       71 []      772226      772155 - .. 0.98    no 0.44
+
+                                                                                              NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :::::U:U+G:::A+UGG  A:::CGU::GA+U     UC::AAG++: GGGUUC+A UCCC ::A:::::+
+  NC_007795.1 772226 CUCCUUGUGGUGUAAUGGAuAACACGUAAGAUUCCGGUUCUUAAGAUAGGGGUUCAAUUCCCUUCAAGGAGG 772155
+                     ****************7777**************************************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   3.6e-12   58.2   0.0  cm        1       71 []     1900915     1900830 - .. 0.99    no 0.62
+
+                                                                                                              NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G ::U+GC::A+  GG   ::GC+::GGACUUAAAAUCC::                G+:C:GGUUCGA UCC:G::: C::CA
+  NC_007795.1 1900915 GCCGGGGUGGCGGAACuGGCaGACGCACAGGACUUAAAAUCCUGC-ggugagugaucaccGUACCGGUUCGAUUCCGGUCCUCGGCA 1900830
+                      *******************999***********************.8************96************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   3.6e-12   58.2   0.0  cm        1       71 []      492614      492699 + .. 0.99    no 0.62
+
+                                                                                                             NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::G ::U+GC::A+  GG   ::GC+::GGACUUAAAAUCC::                G+:C:GGUUCGA UCC:G::: C::CA
+  NC_007795.1 492614 GCCGGGGUGGCGGAACuGGCaGACGCACAGGACUUAAAAUCCUGC-ggugagagaucaccGUACCGGUUCGAUUCCGGUCCUCGGCA 492699
+                     *******************999***********************.8************96************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   5.5e-12   57.5   0.0  cm        1       71 []     1901085     1901004 - .. 0.99    no 0.62
+
+                                                                                                          NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:U+GC::A+U GG   ::GC+:::GACUUA  AUC:::            G+: GGGUUCGA UCCC ::A:C::CA
+  NC_007795.1 1901085 GCGGGUGUGGCGGAAUuGGCaGACGCACUAGACUUAGGAUCUAGC-gccuuacggcGUGGGGGUUCGACUCCCUUCACCCGCA 1901004
+                      *******************9*9***********************.8********95************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) !   6.9e-12   57.2   0.0  cm        1       71 []      938711      938623 - .. 0.98    no 0.61
+
+                                                                                                                NC
+                     (((((((,,<<<<___.___.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GGA:A::UA::::AGU GG   A::::G: :::CU+ +AA::: :+                 GCG:GGGUUCGAAUCCC:C::U:UCC+
+  NC_007795.1 938711 GGAAACGUACUCAAGUuGGCugAAGAGGCGCCCCUGCUAAGGGUGU-aggucgcgaaagcggcGCGAGGGUUCGAAUCCCUCCGUUUCCG 938623
+                     *****************8888*************************.8**************95************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) !   1.4e-11   56.1   0.0  cm        1       71 []     1898988     1898905 - .. 0.98    no 0.63
+
+                                                                                                            NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::G:U:U+GC::A+U GG   ::GCG::GGACU AAAAUCC::+             G+G::GGUUCGA  CC::C:A:C:::A
+  NC_007795.1 1898988 GCCGGUGUGGCGGAAUuGGCaGACGCGCGGGACUCAAAAUCCCGU-uccacuuguggaGUGUCGGUUCGACCCCGACCACCGGUA 1898905
+                      *******************9*9***********************.9**********74************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) !   4.7e-11   54.2   0.0  cm        1       71 []     1864400     1864312 - .. 0.99    no 0.58
+
+                                                                                                                 NC
+                      (((((((,,<<<<___.___.._>>>>,<<<<<_______>>>>>,,.................,,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgU.GGU..AgaGCgucgGaCUuaaAAuCcgaag.................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGA::::U+ C::AG  GG   A::G G::: :CU+ AAA: :::+                   C::GGGUUCGAAUCCC::::::UCC
+  NC_007795.1 1864400 GGAAGGUUGUCCGAGCuGGCcgAAGGAGCACGCCUGGAAAGUGUGU-aggcgucacaagcgucu-CAAGGGUUCGAAUCCCUUACCUUCC 1864313
+                      *****************9999*************************.8**************95.************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                      +
+  NC_007795.1 1864312 G 1864312
+                      * PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) !   1.8e-10   52.1   0.0  cm        1       71 []     2128250     2128168 - .. 0.99    no 0.64
+
+                                                                                                           NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G ::U+GC::A+UGG   ::GCG:::G:+U+A   :C:::+             G+:::GGUUC+A UCC::::: C::CA
+  NC_007795.1 2128250 GCGGUCGUGGCGGAAUGGCaGACGCGCUAGGUUGAGGGCCUAGU-gggagaaaucccGUGGAGGUUCAAGUCCUCUCGGCCGCA 2128168
+                      *******************9************************.8**********96************************** PP
+
+>> NC_007795.1  Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) !   8.1e-07   39.0   0.0  cm        1       71 []     1899189     1899118 - .. 0.96    no 0.42
+
+                               v              v                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G ::UA :UCA+   U AGA: +::: :CUU    : :::AGG+:::GGU  +AAUCC::::: C::C 
+  NC_007795.1 1899189 GCGGGAGUAUUUCAACUCUuAGAAUACAUUCCUUCCUGGAAUGAGGUAUAGGUGUAAAUCCUAUCUUCCGCU 1899118
+                      ****************6666*************98766********************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (5642722 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2707  (0.1264); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             527  (0.02484); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             437  (0.02073); expected (0.02)
+Windows   passing  local HMM Forward       filter:              45  (0.002477); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              41  (0.002235); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              25  (0.002116); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              25  (0.002116); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              72  (0.0009751); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              62  (0.0008307); expected (0.0001)
+Total CM hits reported:                                         59  (0.000789); includes 0 truncated hit(s)
+
+# CPU time: 0.51u 0.01s 00:00:00.52 Elapsed: 00:00:00.14
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (5642722 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2005  (0.05026); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             479  (0.01213); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             478  (0.01211); expected (0.02)
+Windows   passing  local HMM Forward       filter:              37  (0.000972); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              36  (0.0009404); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              10  (0.000877); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              10  (0.000877); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              20  (0.0002924); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              20  (0.0002922); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.34u 0.03s 00:00:00.37 Elapsed: 00:00:00.09
+//
+[ok]

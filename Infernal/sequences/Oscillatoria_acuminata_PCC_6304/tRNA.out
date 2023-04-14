@@ -1,0 +1,930 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Oscillatoria_acuminata_PCC_6304.fasta
+# output directed to file:               sequences/Oscillatoria_acuminata_PCC_6304/tRNA.out
+# tabular output of hits:                sequences/Oscillatoria_acuminata_PCC_6304/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   1.3e-16   75.6   0.0  NC_019693.1 4266967 4267038 +  cm    no 0.57  Oscillatoria acuminata PCC 6304, complete sequence
+  (2) !   2.4e-16   74.7   0.0  NC_019693.1 3464868 3464939 +  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+  (3) !     5e-16   73.5   0.0  NC_019693.1 2636437 2636508 +  cm    no 0.44  Oscillatoria acuminata PCC 6304, complete sequence
+  (4) !   1.2e-15   72.2   0.0  NC_019693.1 1421956 1422026 +  cm    no 0.51  Oscillatoria acuminata PCC 6304, complete sequence
+  (5) !   1.2e-15   72.2   0.0  NC_019693.1 2297426 2297355 -  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+  (6) !   1.4e-15   71.9   0.0  NC_019693.1 3680138 3680226 +  cm    no 0.51  Oscillatoria acuminata PCC 6304, complete sequence
+  (7) !   2.1e-15   71.3   0.0  NC_019693.1 3800997 3801069 +  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+  (8) !   2.7e-15   70.9   0.0  NC_019693.1 7206263 7206192 -  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+  (9) !   4.1e-15   70.3   0.0  NC_019693.1  517570  517498 -  cm    no 0.53  Oscillatoria acuminata PCC 6304, complete sequence
+ (10) !   6.8e-15   69.5   0.0  NC_019693.1 1661646 1661732 +  cm    no 0.57  Oscillatoria acuminata PCC 6304, complete sequence
+ (11) !   9.5e-15   69.0   0.0  NC_019693.1  683878  683807 -  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (12) !   9.9e-15   68.9   0.0  NC_019693.1 1520278 1520350 +  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (13) !   1.2e-14   68.6   0.0  NC_019693.1 2636283 2636355 +  cm    no 0.55  Oscillatoria acuminata PCC 6304, complete sequence
+ (14) !   1.7e-14   68.1   0.0  NC_019693.1  286447  286520 +  cm    no 0.59  Oscillatoria acuminata PCC 6304, complete sequence
+ (15) !   1.8e-14   67.9   0.0  NC_019693.1 3786044 3785958 -  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+ (16) !   1.9e-14   67.9   0.0  NC_019693.1  320053  320124 +  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (17) !   2.5e-14   67.4   0.0  NC_019693.1 3793713 3793627 -  cm    no 0.60  Oscillatoria acuminata PCC 6304, complete sequence
+ (18) !   4.3e-14   66.6   0.0  NC_019693.1 7037037 7037107 +  cm    no 0.62  Oscillatoria acuminata PCC 6304, complete sequence
+ (19) !   4.3e-14   66.6   0.0  NC_019693.1 2166026 2166099 +  cm    no 0.55  Oscillatoria acuminata PCC 6304, complete sequence
+ (20) !   4.4e-14   66.6   0.0  NC_019693.1 7416976 7416904 -  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (21) !   5.1e-14   66.3   0.0  NC_019693.1  683588  683661 +  cm    no 0.57  Oscillatoria acuminata PCC 6304, complete sequence
+ (22) !     6e-14   66.1   0.0  NC_019693.1 3353383 3353312 -  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+ (23) !   7.2e-14   65.8   0.0  NC_019693.1 3361585 3361657 +  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (24) !   7.6e-14   65.7   0.0  NC_019693.1 2637327 2637398 +  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+ (25) !   1.6e-13   64.6   0.0  NC_019693.1 3800890 3800963 +  cm    no 0.59  Oscillatoria acuminata PCC 6304, complete sequence
+ (26) !   1.7e-13   64.5   0.0  NC_019693.1 2234981 2235054 +  cm    no 0.62  Oscillatoria acuminata PCC 6304, complete sequence
+ (27) !     2e-13   64.3   0.0  NC_019693.1 2633819 2633896 +  cm    no 0.49  Oscillatoria acuminata PCC 6304, complete sequence
+ (28) !     2e-13   64.2   0.0  NC_019693.1 7390832 7390761 -  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (29) !   2.1e-13   64.2   0.0  NC_019693.1 2632446 2632532 +  cm    no 0.60  Oscillatoria acuminata PCC 6304, complete sequence
+ (30) !   2.4e-13   63.9   0.0  NC_019693.1 3465850 3465921 +  cm    no 0.57  Oscillatoria acuminata PCC 6304, complete sequence
+ (31) !   2.8e-13   63.7   0.0  NC_019693.1 7174227 7174155 -  cm    no 0.59  Oscillatoria acuminata PCC 6304, complete sequence
+ (32) !   4.8e-13   62.9   0.0  NC_019693.1 2631986 2632060 +  cm    no 0.60  Oscillatoria acuminata PCC 6304, complete sequence
+ (33) !   6.1e-13   62.5   0.0  NC_019693.1 2632355 2632441 +  cm    no 0.54  Oscillatoria acuminata PCC 6304, complete sequence
+ (34) !   6.2e-13   62.5   0.0  NC_019693.1  684037  683956 -  cm    no 0.62  Oscillatoria acuminata PCC 6304, complete sequence
+ (35) !   6.3e-13   62.5   0.0  NC_019693.1 2632109 2632180 +  cm    no 0.51  Oscillatoria acuminata PCC 6304, complete sequence
+ (36) !   6.5e-13   62.4   0.0  NC_019693.1 2633732 2633805 +  cm    no 0.50  Oscillatoria acuminata PCC 6304, complete sequence
+ (37) !   7.2e-13   62.2   0.0  NC_019693.1 5123297 5123370 +  cm    no 0.57  Oscillatoria acuminata PCC 6304, complete sequence
+ (38) !   9.1e-13   61.9   0.0  NC_019693.1 2633642 2633714 +  cm    no 0.52  Oscillatoria acuminata PCC 6304, complete sequence
+ (39) !   9.2e-13   61.9   0.0  NC_019693.1 2632190 2632261 +  cm    no 0.49  Oscillatoria acuminata PCC 6304, complete sequence
+ (40) !   1.1e-12   61.6   0.0  NC_019693.1 5072481 5072554 +  cm    no 0.64  Oscillatoria acuminata PCC 6304, complete sequence
+ (41) !   1.3e-12   61.4   0.0  NC_019693.1 2636518 2636591 +  cm    no 0.41  Oscillatoria acuminata PCC 6304, complete sequence
+ (42) !   1.7e-12   60.9   0.0  NC_019693.1 2056551 2056632 +  cm    no 0.61  Oscillatoria acuminata PCC 6304, complete sequence
+ (43) !   2.2e-12   60.5   0.0  NC_019693.1 2632270 2632343 +  cm    no 0.57  Oscillatoria acuminata PCC 6304, complete sequence
+ (44) !   2.4e-12   60.4   0.0  NC_019693.1 2831139 2831059 -  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+ (45) !   2.7e-12   60.2   0.0  NC_019693.1 3688644 3688571 -  cm    no 0.64  Oscillatoria acuminata PCC 6304, complete sequence
+ (46) !   3.2e-12   59.9   0.0  NC_019693.1 2611472 2611543 +  cm    no 0.64  Oscillatoria acuminata PCC 6304, complete sequence
+ (47) !   3.3e-12   59.9   0.0  NC_019693.1 2632570 2632659 +  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+ (48) !   3.4e-12   59.8   0.0  NC_019693.1 1777511 1777439 -  cm    no 0.62  Oscillatoria acuminata PCC 6304, complete sequence
+ (49) !   3.9e-12   59.6   0.0  NC_019693.1 2637564 2637636 +  cm    no 0.51  Oscillatoria acuminata PCC 6304, complete sequence
+ (50) !   7.6e-12   58.6   0.0  NC_019693.1 2636910 2636982 +  cm    no 0.56  Oscillatoria acuminata PCC 6304, complete sequence
+ (51) !   1.3e-11   57.7   0.0  NC_019693.1 5613150 5613077 -  cm    no 0.68  Oscillatoria acuminata PCC 6304, complete sequence
+ (52) !   2.3e-11   56.8   0.0  NC_019693.1  961576  961648 +  cm    no 0.59  Oscillatoria acuminata PCC 6304, complete sequence
+ (53) !   4.2e-11   55.9   0.0  NC_019693.1 2636109 2636182 +  cm    no 0.55  Oscillatoria acuminata PCC 6304, complete sequence
+ (54) !   5.1e-11   55.6   0.0  NC_019693.1  443801  443873 +  cm    no 0.63  Oscillatoria acuminata PCC 6304, complete sequence
+ (55) !   5.6e-11   55.5   0.0  NC_019693.1 2053868 2053785 -  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (56) !   7.9e-11   54.9   0.0  NC_019693.1 2633901 2633975 +  cm    no 0.48  Oscillatoria acuminata PCC 6304, complete sequence
+ (57) !   8.1e-11   54.9   0.0  NC_019693.1 2632664 2632737 +  cm    no 0.59  Oscillatoria acuminata PCC 6304, complete sequence
+ (58) !     1e-10   54.6   0.0  NC_019693.1 2636360 2636431 +  cm    no 0.53  Oscillatoria acuminata PCC 6304, complete sequence
+ (59) !   1.2e-10   54.2   0.0  NC_019693.1    3582    3502 -  cm    no 0.60  Oscillatoria acuminata PCC 6304, complete sequence
+ (60) !     8e-09   47.8   0.0  NC_019693.1 2636197 2636269 +  cm    no 0.51  Oscillatoria acuminata PCC 6304, complete sequence
+ (61) !   1.7e-08   46.6   0.0  NC_019693.1 2633984 2634057 +  cm    no 0.55  Oscillatoria acuminata PCC 6304, complete sequence
+ (62) !   1.5e-07   43.2   0.0  NC_019693.1 2636989 2637062 +  cm    no 0.58  Oscillatoria acuminata PCC 6304, complete sequence
+ (63) !   2.5e-07   42.4   0.0  NC_019693.1 2639474 2639540 +  cm    no 0.40  Oscillatoria acuminata PCC 6304, complete sequence
+ (64) !     1e-06   40.2   0.0  NC_019693.1 2639807 2639879 +  cm    no 0.41  Oscillatoria acuminata PCC 6304, complete sequence
+ (65) !     7e-05   33.7   0.0  NC_019693.1 2637067 2637149 +  cm    no 0.53  Oscillatoria acuminata PCC 6304, complete sequence
+
+
+Hit alignments:
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.3e-16   75.6   0.0  cm        1       71 []     4266967     4267038 + .. 1.00    no 0.57
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GAU:UAGCUCAGUGGUAGAGC+: :GA+U  +AAUC: : GG CGCGGGUUC+AAUCCCGC:AUC::C 
+  NC_019693.1 4266967 GCCGAUGUAGCUCAGUGGUAGAGCACUUGAUUCGUAAUCAGGCGGuCGCGGGUUCAAAUCCCGCCAUCGGCU 4267038
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   2.4e-16   74.7   0.0  cm        1       71 []     3464868     3464939 + .. 1.00    no 0.56
+
+                           v                                                           v       NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG::: :UAGCUCAGUGGUAGAGCG:C:G:CUUA AA:C:G:A G C:C:GGUUCGAAUCC:G:: :::CCA
+  NC_019693.1 3464868 GGGCGUUUAGCUCAGUGGUAGAGCGCCUGCCUUACAAGCAGGAUGuCACUGGUUCGAAUCCAGUAUCGCCCA 3464939
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !     5e-16   73.5   0.0  cm        1       71 []     2636437     2636508 + .. 1.00    no 0.44
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:::UAUAGCUCA+ GGUAGAGCG:::G:CUUA AA:C:::A G +G:::GUUC+AAUC:::CUA:::C:A
+  NC_019693.1 2636437 AGUCCUAUAGCUCAACGGUAGAGCGCUUGCCUUACAAGCAAGAUGuUGUCAGUUCAAAUCUGACUAGGACUA 2636508
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   1.2e-15   72.2   0.0  cm        1       71 []     1421956     1422026 + .. 1.00    no 0.51
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G::AUAG:U:AGUGGUA:A:C :::G:CUU  AA:C:::+G++GCG:GUUCGA UC:CGCU::C::C 
+  NC_019693.1 1421956 GCGGGCAUAGUUUAGUGGUAAAACCAUAGCCUUCCAAGCUAUUGAUGCGAGUUCGAUUCUCGCUGCCCGCU 1422026
+                      *********************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   1.2e-15   72.2   0.0  cm        1       71 []     2297426     2297355 - .. 1.00    no 0.58
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      ::: :::UAGCUCAGUGGUAGAGCG:::G:CU+++AA:C:::+GG CG::GGUUCGAAUCC::C::: :::+
+  NC_019693.1 2297426 UCCUCGGUAGCUCAGUGGUAGAGCGGUCGGCUGUUAACCGAUUGGuCGUAGGUUCGAAUCCUACCCGGGGAG 2297355
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   1.4e-15   71.9   0.0  cm        1       71 []     3680138     3680226 + .. 0.98    no 0.51
+
+                                                                                                                 NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.................,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::U+GCU:AGUGGU  A:AGCG:C:GA+U+ +AAUC:G:+                  +CG:GGGUUCGAAUCCC:C::UCUCC+
+  NC_019693.1 3680138 GGAGAGGUGGCUGAGUGGUugAAAGCGGCAGAUUGCUAAUCUGUU-uuacgguuuuaaucguaACGAGGGUUCGAAUCCCUCCCUCUCCG 3680226
+                      ****************9998*************************.9***************74************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   2.1e-15   71.3   0.0  cm        1       71 []     3800997     3801069 + .. 1.00    no 0.58
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG G:UAUAGCUCAGU GGUAGAGCG::G::+UU  AA::C::A G C:::GGUUCGA UCC:::UA:C CCA
+  NC_019693.1 3800997 GGGGGUAUAGCUCAGUuGGUAGAGCGCUGCCUUUGCAAGGCAGAUGuCAGCGGUUCGAGUCCGCUUACCUCCA 3801069
+                      ************************************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   2.7e-15   70.9   0.0  cm        1       71 []     7206263     7206192 - .. 1.00    no 0.58
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:UAUAGCUCAGUGGUAGAGCGUC:::+U+  AA:::GAA G C:CG GUUCGAAUC CG:UA:C::C 
+  NC_019693.1 7206263 GCGGGUAUAGCUCAGUGGUAGAGCGUCACCUUGCCAAGGUGAAUGuCGCGCGUUCGAAUCGCGUUACCCGCU 7206192
+                      *******************************************9**************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   4.1e-15   70.3   0.0  cm        1       71 []      517570      517498 - .. 1.00    no 0.53
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:: ::AUAGCUCAGU GGUAGAGC+::GGACU+AAAAUCC::  G C:CG:GUUC+A UC:CG:U:: ::CA
+  NC_019693.1 517570 GCCGGGAUAGCUCAGUuGGUAGAGCAGAGGACUGAAAAUCCUCGUGuCACGAGUUCAAGUCUCGUUCCUGGCA 517498
+                     ************************************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   6.8e-15   69.5   0.0  cm        1       71 []     1661646     1661732 + .. 0.98    no 0.57
+
+                                                                                                               NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::U+GC::AG GGU  A::GCG::G:ACU+ AAAU:C::+                +CG:GGGUUCGAAUCCC:C::UCUCC+
+  NC_019693.1 1661646 GGAGAGGUGGCCGAGCGGUugAAGGCGCAGCACUGGAAAUGCUGU-uuagggguaacuuuaACGAGGGUUCGAAUCCCUCCCUCUCCG 1661732
+                      ****************9998*************************.9*************74************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   9.5e-15   69.0   0.0  cm        1       71 []      683878      683807 - .. 1.00    no 0.58
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::::U:UAGCUCAGUGGUAGAGC+:::::+U+ +AA:::::AGG C:CG:GUUC+A  C:CG::A::::C 
+  NC_019693.1 683878 GCCCGUGUAGCUCAGUGGUAGAGCACACCCUUGGUAAGGGUGAGGuCACGAGUUCAAUCCUCGUCACGGGCU 683807
+                     ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   9.9e-15   68.9   0.0  cm        1       71 []     1520278     1520350 + .. 1.00    no 0.58
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:UAGCUCAGU GGUAGAGC+:CG:ACUU +AAU:CG: GG C:C GGUUCGA UCC G::A:C::C 
+  NC_019693.1 1520278 GCUGGUGUAGCUCAGUuGGUAGAGCAACGCACUUGUAAUGCGUGGGuCGCGGGUUCGACUCCUGUCACCAGCU 1520350
+                      ************************************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   1.2e-14   68.6   0.0  cm        1       71 []     2636283     2636355 + .. 1.00    no 0.55
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G:U:U+GCUCA+U GG AGAGCG:::G:CUU +AA:C::: GG +:C:GGUUC+A UCC:G::A:C::C 
+  NC_019693.1 2636283 GCUGGUGUGGCUCAAUuGGCAGAGCGAUCGCCUUGUAAGCGAUGGGuUGCAGGUUCAAUUCCUGUCACCAGCU 2636355
+                      *******************9***************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   1.7e-14   68.1   0.0  cm        1       71 []      286447      286520 + .. 1.00    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     :G:GAU:UAGC:CAG   GGUAG:GCG:C:G:+UU   A:C:G:A G C:C:GGUUC+AAUCC:G::AUC:C:A
+  NC_019693.1 286447 CGGGAUGUAGCGCAGCuuGGUAGCGCGCCUGCUUUGGGAGCAGGAUGuCGCAGGUUCAAAUCCUGUCAUCCCGA 286520
+                     ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   1.8e-14   67.9   0.0  cm        1       71 []     3786044     3785958 - .. 0.99    no 0.56
+
+                                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::U+GC: AGUGGU  A :GCGUC:GACUU AAAUC:GA+                  CG:G:GUUCGAAUC:C:C::UCUCC+
+  NC_019693.1 3786044 GGAGAGGUGGCAGAGUGGUcgAUUGCGUCUGACUUGAAAUCAGAU-gaauccgcaaggguuc-CGGGAGUUCGAAUCUCCCCCUCUCCG 3785958
+                      *********************************************.8*************76.************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   1.9e-14   67.9   0.0  cm        1       71 []      320053      320124 + .. 1.00    no 0.58
+
+                                              v               v                               NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:::: UAGCUCA+UGGUAGAGC+ CGGACU ++AAUCCG +GG +::GGGUUCGA  CCC:: ::::CCA
+  NC_019693.1 320053 GGGUCACUAGCUCAAUGGUAGAGCAUCGGACUCUUAAUCCGUUGGuUCGGGGUUCGAGCCCCCGGUGACCCA 320124
+                     ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   2.5e-14   67.4   0.0  cm        1       71 []     3793713     3793627 - .. 0.98    no 0.60
+
+                                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::U+GC::AG GGU  A::GCG:C:GACU  AAAUC:G:+                  CG:GGGUUCGAAUCCC:C::UCUCC+
+  NC_019693.1 3793713 GGAGAGGUGGCAGAGCGGUugAAUGCGGCAGACUCGAAAUCUGUU-auggugucacagcca-uCGGGGGUUCGAAUCCCCCCCUCUCCG 3793627
+                      ****************9998*************************.8*************6.4************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   4.3e-14   66.6   0.0  cm        1       71 []     7037037     7037107 + .. 1.00    no 0.62
+
+                                                                                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:G::AU GC::AGUGGUA::GC+::GG:CU+ AAA:CC::++ C:C:GGUUCGAAUCC:G:U::C:CC 
+  NC_019693.1 7037037 GGCGGCAUCGCCAAGUGGUAAGGCAGAGGUCUGCAAAACCUUUACCCCCGGUUCGAAUCCGGGUGCCGCCU 7037107
+                      *******************************************99************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   4.3e-14   66.6   0.0  cm        1       71 []     2166026     2166099 + .. 1.00    no 0.55
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGA: :AUAGCUCAGU GGU AGAGC+:C:::+U+A A :::G: GG C:C:GGUUCGA UCC:G:U: :UCCA
+  NC_019693.1 2166026 GGACGCAUAGCUCAGUuGGUuAGAGCACCACGUUGACAUCGUGGGGGuCACUGGUUCGAGUCCAGUUGUGUCCA 2166099
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   4.4e-14   66.6   0.0  cm        1       71 []     7416976     7416904 - .. 1.00    no 0.58
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::: ::UAG:UCAGU GGUAGA:CG::GG:CU  AAA:CC::A G CG: GGUUC+A UCC :C:: :::C+
+  NC_019693.1 7416976 GCGCUCUUAGUUCAGUuGGUAGAACGCAGGUCUCCAAAACCUGAUGuCGGGGGUUCAAGUCCUCCAGGGCGCG 7416904
+                      ************************************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   5.1e-14   66.3   0.0  cm        1       71 []      683588      683661 + .. 0.98    no 0.57
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG:::::UA:CUCAG  GG  AGAG:+:CG:ACUU +AAU:CG:+GG CGC:GGUUCGA UCC:GC:::::CC+
+  NC_019693.1 683588 GGGUGCGUAACUCAGGuGGAuAGAGUAGCGAACUUCUAAUUCGUUGGuCGCAGGUUCGAGUCCUGCCGCACCCG 683661
+                     ***************997778***************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !     6e-14   66.1   0.0  cm        1       71 []     3353383     3353312 - .. 1.00    no 0.56
+
+                                               v               v                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::: UA:CUCA+ GGUAGAG:+ ::G:CUU++AA:C:: ++G +:CGGGUUCGAAUCCCG: ::::CCA
+  NC_019693.1 3353383 GGGUCGCUAACUCAACGGUAGAGUAUUCGGCUUUUAACCGACUAGuUCCGGGUUCGAAUCCCGGGCGACCCA 3353312
+                      *******************************************9**************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   7.2e-14   65.8   0.0  cm        1       71 []     3361585     3361657 + .. 1.00    no 0.58
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG GA::UAGCUCAGU GGUAGAGCG::G:: U   A ::C::AGG C:::GGUUCGAAUCC:::::UC CCA
+  NC_019693.1 3361585 GGGGAAUUAGCUCAGUuGGUAGAGCGCUGCGAUCGCACCGCAGAGGuCAGCGGUUCGAAUCCGCUAUUCUCCA 3361657
+                      ************************************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   7.6e-14   65.7   0.0  cm        1       71 []     2637327     2637398 + .. 1.00    no 0.56
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      ::::::AUAGCUCA+UGGU GAGC+UC:G:CU+++AA:C:GA GG +:::GGUUCGA UCC:::U::::::+
+  NC_019693.1 2637327 UCCUCGAUAGCUCAAUGGUGGAGCAUCCGGCUGUUAACCGGAGGGuUCUUGGUUCGAGUCCAAGUCGAGGAG 2637398
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   1.6e-13   64.6   0.0  cm        1       71 []     3800890     3800963 + .. 1.00    no 0.59
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:: ::UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:C:GGUUCGA UCC:G::: ::CCA
+  NC_019693.1 3800890 GGGCUAUUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCCCUGGUUCGAGUCCAGGAUGGCCCA 3800963
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   1.7e-13   64.5   0.0  cm        1       71 []     2234981     2235054 + .. 1.00    no 0.62
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::U:UAG UCA+U GGU AGA C+:CG::CU++ A ::CG:A+G +:CGGGUUCGA  CCCG::A:::CC+
+  NC_019693.1 2234981 GGGACUGUAGUUCAAUuGGUuAGAGCACCGCCCUGUCACGGCGGAAGuUGCGGGUUCGAGCCCCGUCAGUCCCG 2235054
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !     2e-13   64.3   0.0  cm        1       71 []     2633819     2633896 + .. 0.98    no 0.49
+
+                                                                                                      NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,......,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag......gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::::U:U+GC::A+U GGU  ::GCG:C:GACUUAAAAUC:G:+       ++G:GGGUUCGA UCCC:C:A:::::A
+  NC_019693.1 2633819 GCUCCUGUGGCGGAAUaGGUaGACGCGGCAGACUUAAAAUCUGUU-uuuuaaAUGUGGGUUCGAGUCCCACCAGGAGUA 2633896
+                      *********************************************.9****74************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !     2e-13   64.2   0.0  cm        1       71 []     7390832     7390761 - .. 0.99    no 0.58
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G: :UA::UCAGUGGUAGA::G C:G:+U   AA:C:G A G C::GGGUUCGA UCCC::: :C::C 
+  NC_019693.1 7390832 GCGGGUGUAAUUCAGUGGUAGAAUGUCAGCUUCCCAAGCUGGACGuCGUGGGUUCGAGUCCCAUCGCCCGCU 7390761
+                      *****************************************99888************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   2.1e-13   64.2   0.0  cm        1       71 []     2632446     2632532 + .. 0.97    no 0.60
+
+                                                                                                                NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGAGA::U+GC::AGUGG   A::GCG::: :CU+ +AA: :::A                  CG:GGGUUCGA UCCC:C::UCUCC+
+  NC_019693.1 2632446 GGAGAGGUGGCCGAGUGGCuuAAGGCGCUUUCCUGCUAAGAAAGA-gcgguuuaacgaccg-uCGAGGGUUCGACUCCCUCCCUCUCCG 2632532
+                      ****************7777*************************.8*************6.4************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   2.4e-13   63.9   0.0  cm        1       71 []     3465850     3465921 + .. 1.00    no 0.57
+
+                                 v         v                                                   NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAGC CAGUGGUAG GC+:::::+U A A ::::: GG C:C:GGUUCGAAUCC:G::::::CCA
+  NC_019693.1 3465850 GGGCGAUUAGCACAGUGGUAGCGCACUUCCUUCACACGGAAGGGGuCACUGGUUCGAAUCCAGUAUCGCCCA 3465921
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   2.8e-13   63.7   0.0  cm        1       71 []     7174227     7174155 - .. 1.00    no 0.59
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG G:UAUAGCUCAGU GGUAGAGC+:C::A U+  A U::G: GG C:::GGUUCGA UCC:::UA:C CCA
+  NC_019693.1 7174227 GGGGCUAUAGCUCAGUuGGUAGAGCACCUCAAUGGCAUUGAGGGGGcCAGCGGUUCGAGUCCGCUUAGCUCCA 7174155
+                      ************************************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   4.8e-13   62.9   0.0  cm        1       71 []     2631986     2632060 + .. 0.97    no 0.60
+
+                                                                                                  NC
+                      (((((((,,<<<<___.___.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG: :U:UAGCUCAGU  G   AGAGC+:::G:CU++  A:C:::+ G C:CGGGUUCGA UCCCG::A: :CC+
+  NC_019693.1 2631986 GGGGGUGUAGCUCAGUuAGCguAGAGCACUUGUCUGUCGAACAAGUCGuCGCGGGUUCGAGUCCCGUCACUCCCG 2632060
+                      *****************66666************************999************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   6.1e-13   62.5   0.0  cm        1       71 []     2632355     2632441 + .. 0.99    no 0.54
+
+                                                                                                               NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,...............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag...............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:: ::UA C::A+U GGU A::G G:::GACU++AAAUC:::+                ++G GGGUUCGA UCCC C:: ::CCA
+  NC_019693.1 2632355 GGGCUGGUAUCCAAAUgGGUgAAGGAGCUUGACUGUAAAUCAAGU-gcuauugugcugaacAUGGGGGUUCGAGUCCCUCCCGGCCCA 2632441
+                      *********************************************.8*************95************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   6.2e-13   62.5   0.0  cm        1       71 []      684037      683956 - .. 0.98    no 0.62
+
+                                                                                                         NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     GG: ::AU+:C: AG GGU  A :G:G:CGGACU++AAAUCCG:+           +CGC:GGUUC+AAUCC:GCU:: :CCA
+  NC_019693.1 684037 GGGUCGAUGCCCGAGCGGUuaAUGGGGGCGGACUGUAAAUCCGCU-ggcuacgccuACGCUGGUUCAAAUCCAGCUCGGCCCA 683956
+                     ****************9998*************************.8********85************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   6.3e-13   62.5   0.0  cm        1       71 []     2632109     2632180 + .. 1.00    no 0.51
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:::  UA:CU:A+UGGUA:AG: :C:::CU A+AA:::G:+ G +GCGGGUUC+AAUCCCGC  :::C:A
+  NC_019693.1 2632109 CGCAGUGUAACUUAAUGGUAAAGUCCCCAGCUCAUAACUGGGUUGaUGCGGGUUCAAAUCCCGCUGCUGCGA 2632180
+                      *******************************************9**************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   6.5e-13   62.4   0.0  cm        1       71 []     2633732     2633805 + .. 1.00    no 0.50
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      ::::: :U+GC::A+U GG  A::GCG:::G:CU AAAA:C:::+ + +G:G:GUUCGA UC:C:C: :::::A
+  NC_019693.1 2633732 GCUCCUGUGGCGUAAUuGGAaAACGCGAUCGCCUCAAAAGCGAUUUAuUGUGAGUUCGAGUCUCACCGGGAGUA 2633805
+                      *****************999*************************9**************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   7.2e-13   62.2   0.0  cm        1       71 []     5123297     5123370 + .. 1.00    no 0.57
+
+                                                 v   v       v   v       v           v           NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::UAGCUCAGU GGU AGAGC+ :GG CU A+AA CC: AGG CGC GGUUC+AAUCC GC:::::CCA
+  NC_019693.1 5123297 GGCUCAGUAGCUCAGUaGGUuAGAGCAGGGGACUCAUAAGCCCAAGGuCGCAGGUUCAAAUCCCGCCUGAGCCA 5123370
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   9.1e-13   61.9   0.0  cm        1       71 []     2633642     2633714 + .. 0.97    no 0.52
+
+                                  v       v                                                      NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,.,..,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaag.g..cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:::U GC: A+UGGUA :GC+::G::CUU+ AA::C::A+    +GC:GGUUC+AA CC:GC:::C:C:+
+  NC_019693.1 2633642 UGGGGAGUCGCCUAAUGGUAUGGCACUGCUCUUUGAAAGCAGAAu-aaUGCAGGUUCAAACCCUGCCUCCCCAG 2633714
+                      *******************************************56.46************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   9.2e-13   61.9   0.0  cm        1       71 []     2632190     2632261 + .. 0.99    no 0.49
+
+                       v                                                                   v   NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G :G::AUA::::A+UGG  A::::G:CGG:CU  AAA:CCG:+G++::G:GUUC+AAUC:C::U::C: C+
+  NC_019693.1 2632190 GUGGGGAUAGUGUAAUGGCuAACAUGACGGUCUCCAAAACCGUUGAUCUGAGUUCAAAUCUCAGUCCCCUCG 2632261
+                      ****************9988**************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   1.1e-12   61.6   0.0  cm        1       71 []     5072481     5072554 + .. 1.00    no 0.64
+
+                                                                                                 NC
+                      (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:GAU:U+GC:CAG   GGUAG:GC+:::::+U    A::::: GG C:C:GGUUCGAAUCC:G::AUC:C:A
+  NC_019693.1 5072481 CGGGAUGUGGCGCAGCuuGGUAGCGCACUUCGUUCGGGACGAAGGGGcCGCUGGUUCGAAUCCAGUCAUCCCGA 5072554
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   1.3e-12   61.4   0.0  cm        1       71 []     2636518     2636591 + .. 0.99    no 0.41
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::::U:UA:CU:A+U GG  A:AG: :CG::CUU +AA::CG:+   +G::GGUUCGA UCC::C:A:::::+
+  NC_019693.1 2636518 GAGAGUGUAACUUAAUuGGAaAAAGUCCCGAUCUUCUAAAUCGGUUUaUGUAGGUUCGAGUCCUACCACUCUUG 2636591
+                      *****************999*************************999************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   1.7e-12   60.9   0.0  cm        1       71 []     2056551     2056632 + .. 0.99    no 0.61
+
+                                                                                                          NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::U+GC::A+U GGU  ::GC+:C::ACU AAAAU::G:            G+GCG:GUUCGA UC:CGC:::::CCA
+  NC_019693.1 2056551 GGGCGAGUGGCGAAAUuGGUaGACGCACCACACUCAAAAUGUGGC-ggcuucggucGUGCGAGUUCGACUCUCGCCUCGCCCA 2056632
+                      *********************************************.8********96************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   2.2e-12   60.5   0.0  cm        1       71 []     2632270     2632343 + .. 1.00    no 0.57
+
+                                                                                                 NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:::UAG:::A+U GGU A:::C :CG: CUU+ AA :CG: G  +:CGGGUUC+AAUCCCG::::C:C:+
+  NC_019693.1 2632270 GGUGCCGUAGGCAAAUuGGUaAAGCCCCCGAUCUUUCAAGUCGGCGUuUGCGGGUUCAAAUCCCGUCGGCACUG 2632343
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   2.4e-12   60.4   0.0  cm        1       71 []     2831139     2831059 - .. 0.99    no 0.56
+
+                                                                                                         NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.........,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GA::U+GC::A+U GGU  ::GCG:::GA+UUA   UC:::+          G+G:G:GUUCGA UC:C:C::UC::CA
+  NC_019693.1 2831139 GCGGACGUGGCGGAAUuGGUaGACGCGCUAGAUUUAGGUUCUAGU-gucuuugauGUGGGAGUUCGAGUCUCCCCGUCCGCA 2831059
+                      *********************************************.8*******85************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   2.7e-12   60.2   0.0  cm        1       71 []     3688644     3688571 - .. 0.98    no 0.64
+
+                           v                                                             v       NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG::: :UAGCUCAGUGG   AGAGC+:::G:CU    A:C:::  G CG GGGUUCGAAUCCC C: :::CC+
+  NC_019693.1 3688644 GGGCUUGUAGCUCAGUGGAcuAGAGCACGUGGCUACGGACCACGGUGuCGGGGGUUCGAAUCCCUCCUAGCCCG 3688571
+                      ****************8888*************************999************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   3.2e-12   59.9   0.0  cm        1       71 []     2611472     2611543 + .. 1.00    no 0.64
+
+                                                                                               NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:G:::U GC::AG GGUA::GC+:C:G:+UU+   :C:G: +  CG :GGUUCGAAUCC: C:::C:C:+
+  NC_019693.1 2611472 UGGGGCGUCGCCAAGCGGUAAGGCACCUGGUUUUGGUCCAGGCAUcCGGAGGUUCGAAUCCUUCCGCCCCAG 2611543
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   3.3e-12   59.9   0.0  cm        1       71 []     2632570     2632659 + .. 0.97    no 0.56
+
+                                                                                                                 NC
+                      (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..................,,<<<<<_______>>>>>))))))) CS
+         tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                      GGAGA:AU+GC: AG GG   A :GCG::G :+U+ AAA: C::A                   +CG:GGGUUC+AAUCCC:CU:UCUCC
+  NC_019693.1 2632570 GGAGAGAUGGCCGAGAGGCugAUGGCGCGGUCUUGGAAAGACCGA-ucggauugaacaaauccgACGAGGGUUCAAAUCCCUCUCUCUCC 2632658
+                      ****************7777*************************.9****************74************************* PP
+
+                        NC
+                      : CS
+         tRNA      71 a 71     
+                       
+  NC_019693.1 2632659 U 2632659
+                      * PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   3.4e-12   59.8   0.0  cm        1       71 []     1777511     1777439 - .. 0.97    no 0.62
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G ::A::UAGCUCAG GG  AGAGC+:C:GA+U     UC:G:  G CG GGGUUC+AAUCCC C::U:: C+
+  NC_019693.1 1777511 GGGCACGUAGCUCAGGGGAuAGAGCACCAGAUUCCGGUUCUGGGUGuCGGGGGUUCAAAUCCCUCCGUGCUCG 1777439
+                      ***************96667************************999************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   3.9e-12   59.6   0.0  cm        1       71 []     2637564     2637636 + .. 0.99    no 0.51
+
+                                                                                                NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG:::::U+GC::A  GGU  ::GC+UC:GACUU++AAUC:GA+ G  :::GGUUC+A UCC::::::::CC 
+  NC_019693.1 2637564 GGGUGGUUGGCAGAUCGGUuUAUGCAUCCGACUUUUAAUCGGAUCGaGAGAGGUUCAACUCCUCUACCACCCU 2637636
+                      ****************9999************************899************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   7.6e-12   58.6   0.0  cm        1       71 []     2636910     2636982 + .. 0.96    no 0.56
+
+                                                                                                NC
+                      (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GG ::U:UAG:UC +  GG AGA:CG:::::CUU  AA:::::AGG +GCGGGUUCGA  CCCGC:A:: CCA
+  NC_019693.1 2636910 GGGUCUGUAGUUCCAAuGGGAGAACGCUUCUCUUGCAAAGAAGAGGuUGCGGGUUCGACCCCCGCCAGAUCCA 2636982
+                      ************98887555***************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   1.3e-11   57.7   0.0  cm        1       71 []     5613150     5613077 - .. 1.00    no 0.68
+
+                                                                                                 NC
+                      (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G: :::UAGC:CAG   GGUAG:GC+:::::+U+    ::::: GG CG GGGUUCGAAUCCC C::: :C:A
+  NC_019693.1 5613150 CGGGGCGUAGCGCAGCuuGGUAGCGCACUACCUUGGGGUGGUAGGGGuCGUGGGUUCGAAUCCCGCCGCUCCGA 5613077
+                      ************************************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   2.3e-11   56.8   0.0  cm        1       71 []      961576      961648 + .. 0.99    no 0.59
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G::  ::UAGC::AGUGGU A::GC+::GGA+U++ A UCC:: +  C:C:GGUUC+A  CC:G:::  ::C 
+  NC_019693.1 961576 GCGGGCGUAGCCAAGUGGUuAAGGCAGUGGAUUGUGAUUCCACCAUuCGCCGGUUCAAUCCCGGUCGUUCGCC 961648
+                     ****************9999************************999************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   4.2e-11   55.9   0.0  cm        1       71 []     2636109     2636182 + .. 0.99    no 0.55
+
+                                  v         v                                                    NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::::U:UAGC: A+U GG    :GC+:::GACU A  AUC::: GG +:C:GGUUCGA UCC:G::A:::::A
+  NC_019693.1 2636109 GCCCCUGUAGCCCAAUuGGAaGAGGCACUAGACUAAGGAUCUAGGGGgUACUGGUUCGAGUCCAGUCAGGGGUA 2636182
+                      *****************999999*************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   5.1e-11   55.6   0.0  cm        1       71 []      443801      443873 + .. 0.99    no 0.63
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     ::::::AU G:::AG GG   A:::C+:C:::CUU+ A :::G: G+CG:GG:UUCGAAU:CC:CU::::::A
+  NC_019693.1 443801 GCCCCCAUCGUCUAGAGGCcuAGGACACCUCCCUUUCACGGAGGCGACGGGGAUUCGAAUUCCCCUGGGGGUA 443873
+                     ****************9999***************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) !   5.6e-11   55.5   0.0  cm        1       71 []     2053868     2053785 - .. 0.99    no 0.58
+
+                                                                                                             NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::GA: U+GC::A+U GGU  ::GCG:::GA+U A   UC:::+               +:CGGGUUC+A UCCCG: :UC::CA
+  NC_019693.1 2053868 GCGGAACUGGCGGAAUuGGUaGACGCGCUAGAUUCAGGUUCUAGU-guccgcaaggacu-UCCGGGUUCAAGUCCCGGGUUCCGCA 2053785
+                      *********************************************.8**********95.************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) !   7.9e-11   54.9   0.0  cm        1       71 []     2633901     2633975 + .. 0.99    no 0.48
+
+                               v                v                                                 NC
+                      (((((((,,<<<<______..._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU...AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :G:GAU:UA :UCAG GGU   AGA:  U::G:+UU   A:C::A +G CG: GGUUC+AAUCC :C:AUC:C:A
+  NC_019693.1 2633901 CGGGAUGUAAUUCAGCGGUuuuAGAAGCUUUGGUUUGGGACCAAAGAGuCGUGGGUUCAAAUCCUACCAUCCCGA 2633975
+                      ****************8888******************************************************* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) !   8.1e-11   54.9   0.0  cm        1       71 []     2632664     2632737 + .. 0.99    no 0.59
+
+                                  v         v                                                    NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      ::::: :UAGCU AGU GGU   AGCG:C:G:+U+AA A:C:G:AGG CG::GG UCGAA CC::C: :::::A
+  NC_019693.1 2632664 CCCCCGGUAGCUCAGUuGGUaGUAGCGCCUGUUUGAAGAACAGGAGGuCGUCGGAUCGAAACCGACCUGGGGGA 2632737
+                      ********************999*************************************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) !     1e-10   54.6   0.0  cm        1       71 []     2636360     2636431 + .. 1.00    no 0.53
+
+                                                    v       v                                  NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::G U:U+::::AGUGGU A:::: U::G CU+  A  C::A  GC::GGGUUC+AAUCCC:::A C::C 
+  NC_019693.1 2636360 GCGGGUGUGAUGUAGUGGUaAGCAUCUGAGUCUGCCAGUCUCAGUGCAUGGGUUCAAAUCCCAUCAUCCGCU 2636431
+                      ************************************************************************ PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) !   1.2e-10   54.2   0.0  cm        1       71 []        3582        3502 - .. 0.99    no 0.60
+
+                                                                                                       NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+         tRNA    1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71  
+                   G::GAU:U+GC::A+U GGU  ::GCG:::G +U+A    C:::+            +GCG:GUUCGA UC:CGC:AUC::CA
+  NC_019693.1 3582 GCGGAUGUGGCGGAAUuGGUaUACGCGCACGUUUGAGGGGCGUGU-ggcuuugccu-UGCGAGUUCGAGUCUCGCCAUCCGCA 3502
+                   *********************************************.8*******95.************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (60) !     8e-09   47.8   0.0  cm        1       71 []     2636197     2636269 + .. 0.95    no 0.51
+
+                            v                                                             v        NC
+                      (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,...,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag...g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:AG::AU+G :CA+UGGU  G: CGUC:G:CU A+AA:C:GAA       GC::GUUC+AAUC::GC ::CU:C 
+  NC_019693.1 2636197 GCAGGGAUGGAGCAAUGGUuGGCUCGUCAGUCUCAUAAACUGAA-cau-cAGCAAGUUCAAAUCUUGC-CCCUGCC 2636269
+                      ****************9999************************.665.5899999*******99999.******* PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (61) !   1.7e-08   46.6   0.0  cm        1       71 []     2633984     2634057 + .. 0.99    no 0.55
+
+                                  v         v                                                    NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      :::::U:U+:C: A+U GG  A :G: :C:::CU A A :::G:    +:C:GGUUCGA UCC:G::A:::::A
+  NC_019693.1 2633984 GCCCCUGUGACGUAAUuGGAaACCGUCGCUCGCUCAGACCGAGUGUUuUACAGGUUCGAGUCCUGUCAGGGGUA 2634057
+                      *****************999*************************999************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (62) !   1.5e-07   43.2   0.0  cm        1       71 []     2636989     2637062 + .. 0.97    no 0.58
+
+                                  v         v                                                    NC
+                      (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G::::U: AG:: A+  GGU   ::CG::GG +U++ AA CC::+    :CGGGUUC+A UCCCG::A::::C 
+  NC_019693.1 2636989 GUGUCUGAAGUCCAAGcGGUcCAGACGCUGGUUUGUGAAGCCAGUCCuAGCGGGUUCAAGUCCCGUCAGACACC 2637062
+                      ************99999999989**********************566************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (63) !   2.5e-07   42.4   0.0  cm        3       68 ..     2639474     2639540 + .. 1.00    no 0.40
+
+                                                                                          NC
+                      (((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))) CS
+         tRNA       3 agauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucu 68     
+                      :::: U GCUCA UGGUAGAGC+U::::CU A+AA::::A     G :GGUUCGA UCC: C ::::
+  NC_019693.1 2639474 CAUACUUGCUCACUGGUAGAGCAUUACUCUCAUAAAGUAACUUuAGUAGGUUCGAUUCCUGCGUAUG 2639540
+                      *****************************************999*********************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (64) !     1e-06   40.2   0.0  cm        1       71 []     2639807     2639879 + .. 0.96    no 0.41
+
+                       v                                                                       v   NC
+                      (((((((,,<<<<_______>>>>,<<<<<______~~~~~>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaA*[1]*uCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      : :::: U GCUCA UGGUAGAGC+U::::CU+AAA     ::::AA    GC:GGUUCGA UCC:GC :::: :A
+  NC_019693.1 2639807 UACAUACUUGCUCACUGGUAGAGCAUUACUCUGAAA*[2]*AGUAAACCcAGCAGGUUCGAUUCCUGCGUAUGAAA 2639879
+                      ********************************9986..6..******666************************** PP
+
+>> NC_019693.1  Oscillatoria acuminata PCC 6304, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (65) !     7e-05   33.7   0.0  cm        1       71 []     2637067     2637149 + .. 0.96    no 0.53
+
+                                                                                  v               v         NC
+                      (((((((,,.<<<<_______>>>>,.<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+         tRNA       1 GgagauaUA.GCucAgUGGUAgaGCg.ucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      GGA::::   GC  A+UGG A  GC+ ::GG CU  AAA CC::A             G+ : GGUUCGA UCC : ::::UCCA
+  NC_019693.1 2637067 GGAAGAUGCuGCUGAAUGG-ACGGCAaCUGGUCUCGAAAGCCAGA-guacggguuacuGUAGGGGUUCGAUUCCUCCAUCUUCCA 2637149
+                      ********55*********.*****99******************.8**********8599************************ PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (15378886 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            6547  (0.1116); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1423  (0.02454); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1350  (0.02332); expected (0.02)
+Windows   passing  local HMM Forward       filter:              96  (0.002015); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              95  (0.002001); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              64  (0.001522); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              60  (0.00144); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              84  (0.0004327); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              74  (0.000363); expected (0.0001)
+Total CM hits reported:                                         65  (0.0003188); includes 0 truncated hit(s)
+
+# CPU time: 1.02u 0.02s 00:00:01.04 Elapsed: 00:00:00.20
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (15378886 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:           12997  (0.1198); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            3147  (0.02995); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            2853  (0.02713); expected (0.02)
+Windows   passing  local HMM Forward       filter:             162  (0.001627); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:             143  (0.00144); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              87  (0.0009764); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              85  (0.0009586); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              90  (0.0005695); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              48  (0.0002291); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 1.72u 0.05s 00:00:01.77 Elapsed: 00:00:00.33
+//
+[ok]

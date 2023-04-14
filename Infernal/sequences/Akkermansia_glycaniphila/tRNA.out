@@ -1,0 +1,752 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Akkermansia_glycaniphila.fasta
+# output directed to file:               sequences/Akkermansia_glycaniphila/tRNA.out
+# tabular output of hits:                sequences/Akkermansia_glycaniphila/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   2.5e-16   73.2   0.0  NZ_LT629973.1 2313604 2313676 +  cm    no 0.49  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (2) !   7.1e-16   71.6   0.0  NZ_LT629973.1 3000811 3000740 -  cm    no 0.56  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (3) !   9.1e-16   71.2   0.0  NZ_LT629973.1  912152  912080 -  cm    no 0.62  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (4) !   9.1e-16   71.2   0.0  NZ_LT629973.1 1172100 1172028 -  cm    no 0.62  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (5) !   9.1e-16   71.2   0.0  NZ_LT629973.1 2431963 2432035 +  cm    no 0.62  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (6) !     1e-15   71.0   0.0  NZ_LT629973.1  572744  572673 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (7) !   1.2e-15   70.7   0.0  NZ_LT629973.1  774427  774357 -  cm    no 0.54  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (8) !   1.2e-15   70.7   0.0  NZ_LT629973.1 2447563 2447492 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+  (9) !   1.2e-15   70.7   0.0  NZ_LT629973.1 2447673 2447602 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (10) !   1.3e-15   70.6   0.0  NZ_LT629973.1 2641072 2640999 -  cm    no 0.54  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (11) !   1.9e-15   70.1   0.0  NZ_LT629973.1 1242915 1242843 -  cm    no 0.62  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (12) !     2e-15   69.9   0.0  NZ_LT629973.1  912032  911959 -  cm    no 0.55  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (13) !     2e-15   69.9   0.0  NZ_LT629973.1 1171980 1171907 -  cm    no 0.55  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (14) !     2e-15   69.9   0.0  NZ_LT629973.1 2432083 2432156 +  cm    no 0.55  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (15) !   2.1e-15   69.9   0.0  NZ_LT629973.1 1925698 1925769 +  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (16) !   2.5e-15   69.6   0.0  NZ_LT629973.1 2735582 2735654 +  cm    no 0.59  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (17) !   5.8e-15   68.3   0.0  NZ_LT629973.1  688556  688485 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (18) !   9.3e-15   67.6   0.0  NZ_LT629973.1 1242813 1242740 -  cm    no 0.61  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (19) !   9.8e-15   67.5   0.0  NZ_LT629973.1  282247  282320 +  cm    no 0.53  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (20) !   1.2e-14   67.1   0.0  NZ_LT629973.1  688331  688259 -  cm    no 0.48  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (21) !   1.2e-14   67.1   0.0  NZ_LT629973.1  688443  688371 -  cm    no 0.48  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (22) !   1.7e-14   66.6   0.0  NZ_LT629973.1 2215792 2215718 -  cm    no 0.68  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (23) !   2.4e-14   66.1   0.0  NZ_LT629973.1 2091546 2091617 +  cm    no 0.58  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (24) !   4.6e-14   65.1   0.0  NZ_LT629973.1  260852  260923 +  cm    no 0.54  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (25) !   6.2e-14   64.6   0.0  NZ_LT629973.1   60067   59997 -  cm    no 0.41  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (26) !   6.9e-14   64.5   0.0  NZ_LT629973.1 2866240 2866154 -  cm    no 0.59  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (27) !   8.2e-14   64.2   0.0  NZ_LT629973.1 2090283 2090364 +  cm    no 0.52  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (28) !   8.5e-14   64.1   0.0  NZ_LT629973.1  981861  981932 +  cm    no 0.53  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (29) !     1e-13   63.8   0.0  NZ_LT629973.1 2276113 2276186 +  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (30) !   1.1e-13   63.7   0.0  NZ_LT629973.1 1548024 1547946 -  cm    no 0.58  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (31) !   1.3e-13   63.5   0.0  NZ_LT629973.1  607241  607170 -  cm    no 0.46  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (32) !   1.4e-13   63.3   0.0  NZ_LT629973.1  774548  774618 +  cm    no 0.58  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (33) !   1.5e-13   63.3   0.0  NZ_LT629973.1 2577516 2577588 +  cm    no 0.55  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (34) !   1.5e-13   63.3   0.0  NZ_LT629973.1  808698  808626 -  cm    no 0.55  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (35) !   1.6e-13   63.1   0.0  NZ_LT629973.1 1891179 1891250 +  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (36) !   1.7e-13   63.1   0.0  NZ_LT629973.1 1562574 1562647 +  cm    no 0.62  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (37) !   1.7e-13   63.1   0.0  NZ_LT629973.1  571344  571272 -  cm    no 0.55  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (38) !   1.5e-12   59.7   0.0  NZ_LT629973.1 1145102 1145018 -  cm    no 0.59  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (39) !     2e-12   59.2   0.0  NZ_LT629973.1  292526  292444 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (40) !   2.1e-12   59.1   0.0  NZ_LT629973.1 1986410 1986491 +  cm    no 0.60  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (41) !   2.2e-12   59.1   0.0  NZ_LT629973.1  494806  494879 +  cm    no 0.59  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (42) !   2.5e-12   58.9   0.0  NZ_LT629973.1  442317  442246 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (43) !   3.1e-12   58.5   0.0  NZ_LT629973.1 2356337 2356248 -  cm    no 0.56  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (44) !   4.2e-12   58.1   0.0  NZ_LT629973.1 1756900 1756829 -  cm    no 0.57  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (45) !   4.8e-12   57.9   0.0  NZ_LT629973.1 2866507 2866594 +  cm    no 0.59  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (46) !   5.6e-12   57.6   0.0  NZ_LT629973.1  507814  507741 -  cm    no 0.68  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (47) !   1.1e-11   56.6   0.0  NZ_LT629973.1 2062376 2062304 -  cm    no 0.62  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (48) !   4.6e-11   54.3   0.0  NZ_LT629973.1 1345772 1345843 +  cm    no 0.51  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+ (49) !   9.4e-11   53.2   0.0  NZ_LT629973.1 2162067 2162148 +  cm    no 0.59  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+
+
+Hit alignments:
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.5e-16   73.2   0.0  cm        1       71 []     2313604     2313676 + .. 1.00    no 0.49
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        ::::::AUAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG C:CGGGUUCGA UCCCG:U::::::A
+  NZ_LT629973.1 2313604 GCUUGGAUAGCUCAGUuGGUAGAGCAGUAGACUUUUAAUCUAUUGGuCCCGGGUUCGAGUCCCGGUCCAAGUA 2313676
+                        ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.1e-16   71.6   0.0  cm        1       71 []     3000811     3000740 - .. 1.00    no 0.56
+
+                                                 v               v                               NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::G:U:UAGCUCAGUGGUAGAGC+ C:GA+UU +AAUC:G  GG CG::GGUUC+AAUCC::C:A:C::C 
+  NZ_LT629973.1 3000811 GCCGGUUUAGCUCAGUGGUAGAGCACCCGAUUUGUAAUCGGACGGuCGUCGGUUCAAAUCCGACAACCGGCU 3000740
+                        ************************************************************************ PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   9.1e-16   71.2   0.0  cm        1       71 []      912152      912080 - .. 1.00    no 0.62
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG G: AUAGCUCAGU GGUAGAGCG:C:G:+UU  AA:C:G:A G C::GGGUUCGA UCCC::U :C CCA
+  NZ_LT629973.1 912152 GGGGGUAUAGCUCAGUuGGUAGAGCGCCAGCUUUGCAAGCUGGAUGuCCGGGGUUCGAGUCCCCGUGCCUCCA 912080
+                       ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   9.1e-16   71.2   0.0  cm        1       71 []     1172100     1172028 - .. 1.00    no 0.62
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G: AUAGCUCAGU GGUAGAGCG:C:G:+UU  AA:C:G:A G C::GGGUUCGA UCCC::U :C CCA
+  NZ_LT629973.1 1172100 GGGGGUAUAGCUCAGUuGGUAGAGCGCCAGCUUUGCAAGCUGGAUGuCCGGGGUUCGAGUCCCCGUGCCUCCA 1172028
+                        ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   9.1e-16   71.2   0.0  cm        1       71 []     2431963     2432035 + .. 1.00    no 0.62
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G: AUAGCUCAGU GGUAGAGCG:C:G:+UU  AA:C:G:A G C::GGGUUCGA UCCC::U :C CCA
+  NZ_LT629973.1 2431963 GGGGGUAUAGCUCAGUuGGUAGAGCGCCAGCUUUGCAAGCUGGAUGuCCGGGGUUCGAGUCCCCGUGCCUCCA 2432035
+                        ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !     1e-15   71.0   0.0  cm        1       71 []      572744      572673 - .. 1.00    no 0.57
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::::U:UAGCUCAG GGUAGAGCG:::::+U+ +AA:::::AGG CGCGGGUUC+A UCCCGC:A::::C 
+  NZ_LT629973.1 572744 GCUUCUGUAGCUCAGGGGUAGAGCGCAUCCUUGGUAAGGAUGAGGuCGCGGGUUCAAUUCCCGCCAGAAGCU 572673
+                       ***************9999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   1.2e-15   70.7   0.0  cm        1       71 []      774427      774357 - .. 1.00    no 0.54
+
+                                                v               v                              NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::G:UAUAGCU:A+UGGUA:AGC  C:G:CUU  AA:C:G + +C:CGGGUUCGA UCCCG:UA:C::C 
+  NZ_LT629973.1 774427 GCGGGUAUAGCUUAAUGGUAAAGCUCCAGCCUUCCAAGCUGAUCACACGGGUUCGAUUCCCGUUACCCGCU 774357
+                       *******************************************99************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   1.2e-15   70.7   0.0  cm        1       71 []     2447563     2447492 - .. 1.00    no 0.57
+
+                                                                                                 NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GAU:UAGCUCAG GGUAGAGCG:::::+U+  AA:::::A G C::GGGUUCGAAUCCC:::AUC::C 
+  NZ_LT629973.1 2447563 GCGGAUGUAGCUCAGGGGUAGAGCGCAACCUUGCCAAGGUUGAUGuCGUGGGUUCGAAUCCCAUCAUCCGCU 2447492
+                        ***************9999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.2e-15   70.7   0.0  cm        1       71 []     2447673     2447602 - .. 1.00    no 0.57
+
+                                                                                                 NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G::GAU:UAGCUCAG GGUAGAGCG:::::+U+  AA:::::A G C::GGGUUCGAAUCCC:::AUC::C 
+  NZ_LT629973.1 2447673 GCGGAUGUAGCUCAGGGGUAGAGCGCAACCUUGCCAAGGUUGAUGuCGUGGGUUCGAAUCCCAUCAUCCGCU 2447602
+                        ***************9999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.3e-15   70.6   0.0  cm        1       71 []     2641072     2640999 - .. 0.99    no 0.54
+
+                                                                                                   NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:G:::UAGC::AGUGG   A::GC+:CGG:+U+ AAA:CCG: +  CG:GGGUUC+AAUCCC:C:::C:CC 
+  NZ_LT629973.1 2641072 GGUGGAGUAGCCAAGUGGCcuAAGGCAACGGUUUGCAAAACCGUCAUuCGUGGGUUCAAAUCCCACCUCCACCU 2640999
+                        ****************9999*************************999************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   1.9e-15   70.1   0.0  cm        1       71 []     1242915     1242843 - .. 1.00    no 0.62
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:::::UAGCUCAGU GGUAGAGC+:CGGA+U+AAAAUCCG:  G CG :GGUUCGAA CC: C:::::CCA
+  NZ_LT629973.1 1242915 GGCUCGGUAGCUCAGUuGGUAGAGCAGCGGAUUGAAAAUCCGCGUGuCGGCGGUUCGAACCCGUCCCGAGCCA 1242843
+                        ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !     2e-15   69.9   0.0  cm        1       71 []      912032      911959 - .. 1.00    no 0.55
+
+                                                                                                  NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG:::U UAGCUCAGU GGU AGAGC+:::G:+U+A+AA:C::: GG C:C:GGUUC+A UCC:G: A:::CCA
+  NZ_LT629973.1 912032 GGGCCUGUAGCUCAGUuGGUuAGAGCACACGCUUGAUAAGCGUGGGGuCACAGGUUCAAGUCCUGUUAGGCCCA 911959
+                       ************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !     2e-15   69.9   0.0  cm        1       71 []     1171980     1171907 - .. 1.00    no 0.55
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:::U UAGCUCAGU GGU AGAGC+:::G:+U+A+AA:C::: GG C:C:GGUUC+A UCC:G: A:::CCA
+  NZ_LT629973.1 1171980 GGGCCUGUAGCUCAGUuGGUuAGAGCACACGCUUGAUAAGCGUGGGGuCACAGGUUCAAGUCCUGUUAGGCCCA 1171907
+                        ************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !     2e-15   69.9   0.0  cm        1       71 []     2432083     2432156 + .. 1.00    no 0.55
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG:::U UAGCUCAGU GGU AGAGC+:::G:+U+A+AA:C::: GG C:C:GGUUC+A UCC:G: A:::CCA
+  NZ_LT629973.1 2432083 GGGCCUGUAGCUCAGUuGGUuAGAGCACACGCUUGAUAAGCGUGGGGuCACAGGUUCAAGUCCUGUUAGGCCCA 2432156
+                        ************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   2.1e-15   69.9   0.0  cm        1       71 []     1925698     1925769 + .. 1.00    no 0.57
+
+                                                                                                 NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        ::A:::AUAGCUCAGUGGUAGAGCG:C:G +UUA A  C:G:+GG CG GGGUUCGAAUCCC CU:::U::A
+  NZ_LT629973.1 1925698 GCACGGAUAGCUCAGUGGUAGAGCGGCUGUUUUACACGCAGUUGGuCGGGGGUUCGAAUCCCUCUCCGUGUA 1925769
+                        ************************************************************************ PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   2.5e-15   69.6   0.0  cm        1       71 []     2735582     2735654 + .. 1.00    no 0.59
+
+                                                                                                  NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:G: :UAGCUCAG GGU AGAGC+::GGACU A+AAUCC::+GG C::GGGUUCGAA CCC::: :C:C:A
+  NZ_LT629973.1 2735582 GGGGGUGUAGCUCAGCGGUuAGAGCAGAGGACUCAUAAUCCUUUGGuCCAGGGUUCGAACCCCUGCGCCCCUA 2735654
+                        ****************9999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   5.8e-15   68.3   0.0  cm        1       71 []      688556      688485 - .. 1.00    no 0.57
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::::U:UAGCUCAG GGUAGAGC+:CG:A+U  +AAU:CG: GG CG::GGUUC+A UCC::C:A::::C 
+  NZ_LT629973.1 688556 GCCACUGUAGCUCAGGGGUAGAGCAACGCAUUCGUAAUGCGUGGGuCGUCGGUUCAAUUCCGACCAGUGGCU 688485
+                       ***************9999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   9.3e-15   67.6   0.0  cm        1       71 []     1242813     1242740 - .. 1.00    no 0.61
+
+                                                                                                   NC
+                        (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:GA :UAGCUCAG   GGUAGAGCG:C:G:+UU   A:C:G:A G C:C:GGUUCGAAUCC:G:: UC:C:A
+  NZ_LT629973.1 1242813 CGGGAUGUAGCUCAGCcuGGUAGAGCGCCUGCUUUGGGAGCAGGAUGuCGCAGGUUCGAAUCCUGUCGUCCCGA 1242740
+                        ************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   9.8e-15   67.5   0.0  cm        1       71 []      282247      282320 + .. 0.99    no 0.53
+
+                                                                                                  NC
+                       (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G: ::::UAGCUCAGU GG  AGAGC+:C:G:CUU +AA:C:G: GG C:::GGUUCGAAUCC::::::: :C+
+  NZ_LT629973.1 282247 GCUCCGUUAGCUCAGUuGGAuAGAGCAACAGCCUUCUAAGCUGUGGGuCAUUGGUUCGAAUCCAAUACGGGGCG 282320
+                       *****************8888***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   1.2e-14   67.1   0.0  cm        1       71 []      688331      688259 - .. 1.00    no 0.48
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       ::: :::UAGCUCAGU GGUAGAGC+:::GACU ++AAUC:::+ G C:::GGUUCGA UCC:::::: :::A
+  NZ_LT629973.1 688331 GCCUCGUUAGCUCAGUuGGUAGAGCAGUUGACUCUUAAUCAAUUUGuCCUAGGUUCGAGUCCUAGACGGGGUA 688259
+                       ********************************************9**************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   1.2e-14   67.1   0.0  cm        1       71 []      688443      688371 - .. 1.00    no 0.48
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       ::: :::UAGCUCAGU GGUAGAGC+:::GACU ++AAUC:::+ G C:::GGUUCGA UCC:::::: :::A
+  NZ_LT629973.1 688443 GCCUCGUUAGCUCAGUuGGUAGAGCAGUUGACUCUUAAUCAAUUUGuCCUAGGUUCGAGUCCUAGACGGGGUA 688371
+                       ********************************************9**************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   1.7e-14   66.6   0.0  cm        1       71 []     2215792     2215718 - .. 1.00    no 0.68
+
+                                                                                                    NC
+                        (((((((,,<<<<___..___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G AG:::UAGCUCAGU  GGU AGAGCG:C:G:CU++ A :C:G:AGG C:CGGGUUCGA  CCCG::::CU C+
+  NZ_LT629973.1 2215792 GGAGCGGUAGCUCAGUucGGUuAGAGCGCCAGCCUGUCACGCUGGAGGuCGCGGGUUCGAGCCCCGUCCGCUUCG 2215718
+                        *************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   2.4e-14   66.1   0.0  cm        1       71 []     2091546     2091617 + .. 1.00    no 0.58
+
+                                                                                                 NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::::::UAGCUCAGUGG AGAGCG:::GACU+++AAUC:::AGG CG::GGUUCGA  CC::C:::::::+
+  NZ_LT629973.1 2091546 UCCUGCGUAGCUCAGUGGCAGAGCGGGUGACUGUUAAUCACUAGGuCGUUGGUUCGACCCCAACCGCAGGAG 2091617
+                        ************************************************************************ PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   4.6e-14   65.1   0.0  cm        1       71 []      260852      260923 + .. 1.00    no 0.54
+
+                                                    v       v                                   NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:::::UAGCUCAGUGGUAGAGC+::GG CU A+AA CC::+GG C::G GUUC+AAUC C:::::::C:A
+  NZ_LT629973.1 260852 GGCAGGGUAGCUCAGUGGUAGAGCAGAGGACUCAUAAGCCUUUGGuCGGGUGUUCAAAUCACCUCCCUGCUA 260923
+                       ************************************************************************ PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   6.2e-14   64.6   0.0  cm        1       71 []       60067       59997 - .. 1.00    no 0.41
+
+                                               v               v                              NC
+                      (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA     1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71   
+                      :G:::UAUAG:::A+UGGUA:::C+ CGGA+UU+ A UCCG ++ +: :GGUUCGAAUCC: :UA:::C:A
+  NZ_LT629973.1 60067 AGUCCUAUAGUGUAAUGGUAACACACCGGAUUUUGAUUCCGUUAUUCUAGGUUCGAAUCCUGGUAGGACUA 59997
+                      *******************************************99************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   6.9e-14   64.5   0.0  cm        1       71 []     2866240     2866154 - .. 0.98    no 0.59
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucC 70     
+                        GGAG:::U+:C::AG GGU  A::G:+:CGG:CUU AAA:CCG:                   CG:GGGUUCGAAUCCC:C:::CUCC
+  NZ_LT629973.1 2866240 GGAGGAGUGCCAGAGCGGUuuAAUGGAACGGUCUUGAAAACCGUC-gaggggguaaccucuc-CGUGGGUUCGAAUCCCACCUCCUCC 2866155
+                        ****************8888*************************.8*************76.************************* PP
+
+                          NC
+                        : CS
+           tRNA      71 a 71     
+                        +
+  NZ_LT629973.1 2866154 G 2866154
+                        * PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   8.2e-14   64.2   0.0  cm        1       71 []     2090283     2090364 + .. 0.99    no 0.52
+
+                                                                                                             NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG::A::U :C::AG GGU  A::G:G:C:GACU++AAAUC:G:+             CG::GGUUCGAAUCC::C::U::CCA
+  NZ_LT629973.1 2090283 GGGUAGGUUCCCGAGCGGUcaAAGGGGGCAGACUGUAAAUCUGUU-agcuaugcuuu-CGAAGGUUCGAAUCCUUCCCUACCCA 2090364
+                        *********************************************.8********84.************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   8.5e-14   64.1   0.0  cm        1       71 []      981861      981932 + .. 1.00    no 0.53
+
+                                                v               v                               NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :::::::UAGCUCAGUGGUAGAGC+ C:::+U+A A :::G AGG C:::GGUUC+AAUCC::::::::::A
+  NZ_LT629973.1 981861 GCGCGGUUAGCUCAGUGGUAGAGCAACACCUUGACAUGGUGGAGGuCGUAGGUUCAAAUCCUAUACCGCGUA 981932
+                       ************************************************************************ PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !     1e-13   63.8   0.0  cm        1       71 []     2276113     2276186 + .. 0.99    no 0.57
+
+                                                                                                   NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::::::UAGCUCA+U GG  AGAGCGUC:GACU    AUC:GAAGG +  GGGUUCGAAUCCC  :::::::+
+  NZ_LT629973.1 2276113 GCGCCCGUAGCUCAAUuGGAuAGAGCGUCUGACUACGGAUCAGAAGGuUUGGGGUUCGAAUCCCUACGGGCGUG 2276186
+                        *****************8888***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   1.1e-13   63.7   0.0  cm        1       71 []     1548024     1547946 - .. 0.99    no 0.58
+
+                                                                                                         NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::G:::U+GC::A+UGGU  ::GCG:::GACU AAAAUC:::+         G+G:GGGUUCGA UCCC:C:::C:::A
+  NZ_LT629973.1 1548024 GCCGGCUUGGCGGAAUGGUaGACGCGCUCGACUCAAAAUCGAGU-ucuaacgaGUGUGGGUUCGAGUCCCACAGCCGGUA 1547946
+                        ********************************************.9******74************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   1.3e-13   63.5   0.0  cm        1       71 []      607241      607170 - .. 0.98    no 0.46
+
+                                                                                                NC
+                       (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G::: AUAG:U:A+UGG  A:A:CG:::G:+U  +AA:C:::A+ +GC:GGUUCGA UCC:GCU :::C:A
+  NZ_LT629973.1 607241 GGCCCUAUAGUUAAAUGGAuAUAACGAGCGUUUCCUAAACGCUAAUUGCAGGUUCGAUUCCUGCUGGGGCUA 607170
+                       ****************7777**************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   1.4e-13   63.3   0.0  cm        1       71 []      774548      774618 + .. 1.00    no 0.58
+
+                                                                                               NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :::G:U:U G: CA+UGGUAG :CG: :G:+U   AA:C: :AG+C::GGGUUCGA UCCC:::A:C:::A
+  NZ_LT629973.1 774548 GCGGGUGUCGUUCAAUGGUAGGACGCGAGCUUCCCAAGCUUGAGACGUGGGUUCGAUUCCCAUCACCCGUA 774618
+                       *********************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   1.5e-13   63.3   0.0  cm        1       71 []     2577516     2577588 + .. 1.00    no 0.55
+
+                                                                                                  NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GG G:::UAGCUCAGU GGUAGAGCG:::: +U   AA ::::AGG C::G:GUUCGA  C:C:::::C CCA
+  NZ_LT629973.1 2577516 GGGGCAUUAGCUCAGUuGGUAGAGCGCUUCGUUCGCAAUGAAGAGGuCAGGAGUUCGAGCCUCCUAUGCUCCA 2577588
+                        ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   1.5e-13   63.3   0.0  cm        1       71 []      808698      808626 - .. 1.00    no 0.55
+
+                                                                                                 NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       GG G:::UAGCUCAGU GGUAGAGCG::::A U+  A U::::AGG C:::GGUUCGAA CC::::::C CCA
+  NZ_LT629973.1 808698 GGGGCAUUAGCUCAGUuGGUAGAGCGCUUCAAUGGCAUUGAAGAGGuCAGCGGUUCGAACCCGCUAUGCUCCA 808626
+                       ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   1.6e-13   63.1   0.0  cm        1       71 []     1891179     1891250 + .. 0.98    no 0.57
+
+                                                                                                 NC
+                        (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:: ::UAG:UCA+UGG  AGA:C+UCGG:+U   A :CCGA GG+G GGGUUCGA UCCC C:: ::C:A
+  NZ_LT629973.1 1891179 GGGCUCGUAGUUCAAUGGAuAGAACAUCGGUUUCCGAUACCGACGGUGUGGGUUCGAUUCCCGCCGGGCCUA 1891250
+                        ****************7777**************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   1.7e-13   63.1   0.0  cm        1       71 []     1562574     1562647 + .. 0.99    no 0.62
+
+                                                                                                   NC
+                        (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :GAG:U:UAGC:CAG   GGUAG:GCG:::::+U    A:::::AGG C:C:GGUUCGAAUCC:G::A:CUC:A
+  NZ_LT629973.1 1562574 CGAGCUGUAGCGCAGGcuGGUAGCGCGCUUCGUUCGGGACGAAGAGGuCGCAGGUUCGAAUCCUGUCAGCUCGA 1562647
+                        ***************999999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   1.7e-13   63.1   0.0  cm        1       71 []      571344      571272 - .. 1.00    no 0.55
+
+                                                                        v             v          NC
+                       (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:G:::UAG UCA+U GGUAGA C+:CGG:CU  AAA:CCG:A+G +G GGGUUCGA  CCC C:::C:C:+
+  NZ_LT629973.1 571344 AGGGUAGUAGUUCAAUuGGUAGAGCAGCGGUCUCCAAAACCGCAAGuUGUGGGUUCGAGCCCCUCCUACCCUG 571272
+                       ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.5e-12   59.7   0.0  cm        1       71 []     1145102     1145018 - .. 0.97    no 0.59
+
+                                                   v               v                                            NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        GGAGA:AU+GC :AG GG   A: GC+ C:GACU  AAAUC:G                  CG:GGGUUC+AAUCCC:CU:UCUCC+
+  NZ_LT629973.1 1145102 GGAGAGAUGGCUGAGCGGCuuAAGGCACCCGACUCGAAAUCGGAC-guacggcaacgua-cCGUGGGUUCAAAUCCCACUCUCUCCG 1145018
+                        ****************7777***********************99.8***********5.5************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !     2e-12   59.2   0.0  cm        1       71 []      292526      292444 - .. 0.99    no 0.57
+
+                                                                                                            NC
+                       (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::::U U+G:::A+UGGU  :::C+:C:GACUUAAAAUC:G:              G+:C:GGUUCGA UCC:G: A::::CA
+  NZ_LT629973.1 292526 GCCUCUGUGGUGGAAUGGUaGACACAGCAGACUUAAAAUCUGCC-ggccgcaaagccGUACCGGUUCGAGUCCGGUUAGAGGCA 292444
+                       ********************************************.8**********96************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   2.1e-12   59.1   0.0  cm        1       71 []     1986410     1986491 + .. 0.99    no 0.60
+
+                                                                                                            NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::: AU+GC::A+U GGU  ::GCG:::GACU A  AUC:::+           G+G:GGGUUCGA UCCC:CU ::::CA
+  NZ_LT629973.1 1986410 GCUCGGAUGGCGGAAUuGGUaGACGCGCUAGACUAAGGAUCUAGU-ggagcgauccGUGGGGGUUCGAGUCCCCCUUCGAGCA 1986491
+                        *********************************************.8********96************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   2.2e-12   59.1   0.0  cm        1       71 []      494806      494879 + .. 1.00    no 0.59
+
+                       v                                                                       v  NC
+                       (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                         :G:::U+G :CAG   GGUAG: CGUC:G:CU A+AA:C:GAAGG C:C:GGUUC+AAUCC:G::::C:  A
+  NZ_LT629973.1 494806 CGCGGGGUGGAGCAGCcaGGUAGCUCGUCAGGCUCAUAACCUGAAGGuCGCAGGUUCAAAUCCUGUCCCCGUAA 494879
+                       ************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   2.5e-12   58.9   0.0  cm        1       71 []      442317      442246 - .. 1.00    no 0.57
+
+                                                                                                NC
+                       (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       G::G:::UAG UCA+UGGUAGA C :C:GA+U++ A UC:G:+ G +:CGGGUUCGA  CCCG::::C::C 
+  NZ_LT629973.1 442317 GUGGUCGUAGUUCAAUGGUAGAGCCCCAGAUUGUGAUUCUGGUUGuUGCGGGUUCGAGCCCCGUCGACCACC 442246
+                       ************************************************************************ PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   3.1e-12   58.5   0.0  cm        1       71 []     2356337     2356248 - .. 0.97    no 0.56
+
+                                                   v               v                                             NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..................,.,<<<<<_______>>>>>)))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..................g.cgcgGGUUCgAaUCCcgcuauc 67     
+                        GGAG:::U+GCU:AG GG   A:AGC+ ::::+U+ +AA::::                       CG:GGGUUCGAAUCCC:C:::C
+  NZ_LT629973.1 2356337 GGAGUGGUGGCUGAGCGGCugAAAGCACUCCUUUGCUAAAGGAAC-guacggcuuuaaacugua-cCGAGGGUUCGAAUCCCUCCCAC 2356252
+                        ****************7777***********************99.8****************5.5********************** PP
+
+                             NC
+                        ))): CS
+           tRNA      68 ucCa 71     
+                        UCC+
+  NZ_LT629973.1 2356251 UCCG 2356248
+                        **** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   4.2e-12   58.1   0.0  cm        1       71 []     1756900     1756829 - .. 0.99    no 0.57
+
+                                                                                                 NC
+                        (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        ::::: :UAGCUCAG GGUAGAGC+:::G:+U A A :C::: GG C:C:GGUUCGAA CC:G:: :::::A
+  NZ_LT629973.1 1756900 GCGCGGUUAGCUCAGGGGUAGAGCACAUGCUUCACACGCAUGGGGuCACUGGUUCGAAACCAGUAUCGCGUA 1756829
+                        ***************9999***************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   4.8e-12   57.9   0.0  cm        1       71 []     2866507     2866594 + .. 0.98    no 0.59
+
+                                                                                                                 NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,.,<<<<<_______>>>>>)))))) CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................g.cgcgGGUUCgAaUCCcgcuaucuc 69     
+                        GG :A::U+ C::AGUGGU  A::G G::: :CU+ AAA: :::+                   CG:GGGUUCGAAUCCC:C::U: C
+  NZ_LT629973.1 2866507 GGGCAGGUGUCAGAGUGGUcgAAUGAGCACGCCUGGAAAGUGUGU-guaccccaaaagggua-cCGAGGGUUCGAAUCCCUCCCUGUC 2866592
+                        *********************************************.8**************5.5************************ PP
+
+                           NC
+                        ): CS
+           tRNA      70 Ca 71     
+                        C+
+  NZ_LT629973.1 2866593 CG 2866594
+                        ** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   5.6e-12   57.6   0.0  cm        1       71 []      507814      507741 - .. 1.00    no 0.68
+
+                                                                                                  NC
+                       (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+           tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                       :G:G:U UAGC:CAGU  GGUAG:GC+:C:G: U+    :C:G: GG CG GGGUUCGAAUCCC C A:C:C:A
+  NZ_LT629973.1 507814 CGGGCUGUAGCGCAGUcuGGUAGCGCACCUGCAUGGGGUGCAGGGGGuCGUGGGUUCGAAUCCCGCUAGCCCGA 507741
+                       ************************************************************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   1.1e-11   56.6   0.0  cm        1       71 []     2062376     2062304 - .. 1.00    no 0.62
+
+                                                                                                  NC
+                        (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :::::::U G:::AG GGU  A:::C :C:G:CUU+ A :C:G: ++C:CGGGUUCGA UCCCG::::::::+
+  NZ_LT629973.1 2062376 GUCUGGUUCGUCUAGCGGUcuAGGACUCCCGCCUUUCACGCGGGCAACACGGGUUCGAGUCCCGUACCAGAUG 2062304
+                        ************************************************************************* PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   4.6e-11   54.3   0.0  cm        1       71 []     1345772     1345843 + .. 0.99    no 0.51
+
+                                                  v               v                              NC
+                        (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        :G:::UAU+G:::A+U GG A:::C+ CGG:+U +   :CCG ++ +  GGGUUCGA UCCC  UA:::C:A
+  NZ_LT629973.1 1345772 AGGCCUAUGGUGUAAUuGGCAACACACCGGUUUCUGGCACCGAUAUUUGGGGUUCGAGUCCCUAUAGGCCUA 1345843
+                        *******************9************************99************************** PP
+
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   9.4e-11   53.2   0.0  cm        1       71 []     2162067     2162148 + .. 0.99    no 0.59
+
+                                                       v       v                                            NC
+                        (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+           tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                        G:::A::U+GC::A+U GGU  ::GCG::GG +U A    CC::+           G+:::GGUUCGA UCC:::::U:::CA
+  NZ_LT629973.1 2162067 GCGCACGUGGCGGAAUuGGUaGACGCGCUGGUUUCAGGUUCCAGU-gaguaacaucGUGGAGGUUCGAGUCCUCUCGUGCGCA 2162148
+                        *********************************************.8********96************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (6148156 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1295  (0.05565); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             251  (0.0112); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             248  (0.01104); expected (0.02)
+Windows   passing  local HMM Forward       filter:              45  (0.002406); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              45  (0.002406); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              44  (0.002406); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              44  (0.002406); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              50  (0.000609); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              49  (0.0005968); expected (0.0001)
+Total CM hits reported:                                         49  (0.0005968); includes 0 truncated hit(s)
+
+# CPU time: 0.42u 0.02s 00:00:00.44 Elapsed: 00:00:00.07
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence        start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   6.6e-09   49.5   0.0  NZ_LT629973.1 2866240 2866155 -  cm    no 0.58  Akkermansia glycaniphila isolate APytT chromosome I, complete 
+
+
+Hit alignments:
+>> NZ_LT629973.1  Akkermansia glycaniphila isolate APytT chromosome I, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   6.6e-09   49.5   0.0  cm        1       91 []     2866240     2866155 - .. 0.91    no 0.58
+
+                               v      v         v   v                 v                                      v   NC
+                        (((((((((,,<<<<<<____>>.>>>><<<<<<_______>>>>>>,<<<<<________>>>>>,.,<<<<_______>>>>)))) CS
+       tRNA-Sec       1 GggggggcgaucggcccUGGUgg.gccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccg.GggGGUUCGAUUCCcccgcc 86     
+                        GG:GG:G+G  C:: :  GGU :  ::G :CGG:CUU AAA:CCG: G:G:G:   +    :C:C:  G:GGGUUCGA UCCC:C C:
+  NZ_LT629973.1 2866240 GGAGGAGUG--CCAGAGCGGUUUaAUGGAACGGUCUUGAAAACCGUCGAGGGGGUAA----CCUCUCcGUGGGUUCGAAUCCCAC-CU 2866160
+                        ******986..***9*****987369********************99888888777....7777777****************7.9* PP
+
+                              NC
+                        ))))) CS
+       tRNA-Sec      87 ccccC 91     
+                        CC:CC
+  NZ_LT629973.1 2866159 CCUCC 2866155
+                        ***** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (6148156 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            6353  (0.1471); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1591  (0.03801); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1039  (0.02466); expected (0.02)
+Windows   passing  local HMM Forward       filter:              61  (0.001577); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              41  (0.001039); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              32  (0.0008729); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              32  (0.0008729); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              33  (0.0005092); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              21  (0.0002716); expected (0.0001)
+Total CM hits reported:                                          1  (1.399e-05); includes 0 truncated hit(s)
+
+# CPU time: 0.67u 0.02s 00:00:00.69 Elapsed: 00:00:00.10
+//
+[ok]

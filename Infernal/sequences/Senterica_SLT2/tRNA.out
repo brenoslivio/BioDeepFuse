@@ -1,0 +1,1232 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Senterica_SLT2.fasta
+# output directed to file:               sequences/Senterica_SLT2/tRNA.out
+# tabular output of hits:                sequences/Senterica_SLT2/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   1.3e-17   78.5   0.0  AE006468.2  818781  818853 +  cm    no 0.49  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (2) !   1.3e-17   78.5   0.0  AE006468.2  819067  819139 +  cm    no 0.49  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (3) !   1.3e-17   78.5   0.0  AE006468.2  819192  819264 +  cm    no 0.49  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (4) !   1.3e-17   78.5   0.0  AE006468.2  819402  819474 +  cm    no 0.49  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (5) !   1.3e-17   78.5   0.0  AE006468.2 2532154 2532226 +  cm    no 0.49  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (6) !     5e-16   72.8   0.0  AE006468.2  613561  613634 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (7) !   5.5e-16   72.7   0.0  AE006468.2 4360425 4360497 +  cm    no 0.53  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (8) !   7.4e-16   72.2   0.0  AE006468.2 3379011 3379083 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+  (9) !   1.3e-15   71.4   0.0  AE006468.2 4360059 4360131 +  cm    no 0.51  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (10) !   1.3e-15   71.3   0.0  AE006468.2 2083246 2083318 +  cm    no 0.52  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (11) !   1.3e-15   71.3   0.0  AE006468.2 2084216 2084288 +  cm    no 0.52  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (12) !   1.3e-15   71.3   0.0  AE006468.2 2094233 2094161 -  cm    no 0.52  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (13) !   1.3e-15   71.3   0.0  AE006468.2 2095991 2096063 +  cm    no 0.52  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (14) !   2.2e-15   70.5   0.0  AE006468.2 3197501 3197431 -  cm    no 0.56  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (15) !   3.1e-15   70.0   0.0  AE006468.2  368797  368869 +  cm    no 0.51  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (16) !   5.1e-15   69.2   0.0  AE006468.2  738326  738253 -  cm    no 0.51  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (17) !   5.1e-15   69.2   0.0  AE006468.2  738719  738646 -  cm    no 0.51  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (18) !   6.4e-15   68.9   0.0  AE006468.2 3566864 3566792 -  cm    no 0.56  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (19) !   9.9e-15   68.2   0.0  AE006468.2 4141052 4141124 +  cm    no 0.52  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (20) !   1.9e-14   67.2   0.0  AE006468.2 1501714 1501641 -  cm    no 0.55  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (21) !   2.1e-14   67.0   0.0  AE006468.2 3276153 3276225 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (22) !   2.1e-14   67.0   0.0  AE006468.2 4566670 4566598 -  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (23) !   2.8e-14   66.6   0.0  AE006468.2 2035658 2035586 -  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (24) !   2.8e-14   66.6   0.0  AE006468.2 4596436 4596508 +  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (25) !   2.8e-14   66.6   0.0  AE006468.2 4596668 4596740 +  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (26) !   2.8e-14   66.6   0.0  AE006468.2 4596900 4596972 +  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (27) !     3e-14   66.4   0.0  AE006468.2 1501801 1501728 -  cm    no 0.53  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (28) !   3.2e-14   66.4   0.0  AE006468.2 2970007 2969934 -  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (29) !   3.2e-14   66.4   0.0  AE006468.2 2970277 2970204 -  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (30) !   3.2e-14   66.4   0.0  AE006468.2 2970416 2970343 -  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (31) !   3.2e-14   66.4   0.0  AE006468.2 2970555 2970482 -  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (32) !     4e-14   66.0   0.0  AE006468.2  294829  294902 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (33) !     4e-14   66.0   0.0  AE006468.2  304268  304341 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (34) !     4e-14   66.0   0.0  AE006468.2 4105296 4105369 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (35) !   9.1e-14   64.7   0.0  AE006468.2 4105381 4105453 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (36) !   1.1e-13   64.4   0.0  AE006468.2 2505823 2505894 +  cm    no 0.51  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (37) !   1.2e-13   64.3   0.0  AE006468.2 2082259 2082173 -  cm    no 0.63  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (38) !   1.4e-13   64.1   0.0  AE006468.2 4360344 4360415 +  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (39) !   1.5e-13   63.9   0.0  AE006468.2 1175310 1175394 +  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (40) !   2.4e-13   63.2   0.0  AE006468.2  290791  290864 +  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (41) !   2.4e-13   63.2   0.0  AE006468.2 4197683 4197756 +  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (42) !   2.4e-13   63.2   0.0  AE006468.2 4352754 4352827 +  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (43) !   2.5e-13   63.2   0.0  AE006468.2 4141277 4141350 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (44) !   3.3e-13   62.7   0.0  AE006468.2  738416  738345 -  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (45) !   3.3e-13   62.7   0.0  AE006468.2  738526  738455 -  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (46) !   3.5e-13   62.6   0.0  AE006468.2  738085  738014 -  cm    no 0.58  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (47) !   3.5e-13   62.6   0.0  AE006468.2  738203  738132 -  cm    no 0.58  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (48) !   3.9e-13   62.5   0.0  AE006468.2 2531836 2531908 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (49) !   3.9e-13   62.5   0.0  AE006468.2  818988  819060 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (50) !   3.9e-13   62.5   0.0  AE006468.2 2531957 2532029 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (51) !   3.9e-13   62.5   0.0  AE006468.2 2532074 2532146 +  cm    no 0.62  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (52) !   6.6e-13   61.7   0.0  AE006468.2  290977  291049 +  cm    no 0.63  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (53) !   6.6e-13   61.7   0.0  AE006468.2 4197871 4197943 +  cm    no 0.63  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (54) !   6.6e-13   61.7   0.0  AE006468.2 4352942 4353014 +  cm    no 0.63  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (55) !   6.7e-13   61.6   0.0  AE006468.2 2970651 2970562 -  cm    no 0.64  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (56) !   9.1e-13   61.2   0.0  AE006468.2 4731029 4731110 +  cm    no 0.54  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (57) !   1.1e-12   60.9   0.0  AE006468.2 3141070 3141143 +  cm    no 0.66  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (58) !   1.1e-12   60.9   0.0  AE006468.2 3141176 3141249 +  cm    no 0.66  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (59) !   1.1e-12   60.9   0.0  AE006468.2 3458586 3458513 -  cm    no 0.66  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (60) !   1.5e-12   60.4   0.0  AE006468.2 4140921 4140994 +  cm    no 0.65  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (61) !   1.8e-12   60.1   0.0  AE006468.2 4360143 4360224 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (62) !   1.8e-12   60.1   0.0  AE006468.2 1852563 1852644 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (63) !   1.8e-12   60.1   0.0  AE006468.2 1852852 1852933 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (64) !     2e-12   59.9   0.0  AE006468.2 1027533 1027449 -  cm    no 0.61  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (65) !     2e-12   59.9   0.0  AE006468.2 1224818 1224734 -  cm    no 0.61  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (66) !   2.1e-12   59.8   0.0  AE006468.2 2529012 2528940 -  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (67) !   2.1e-12   59.8   0.0  AE006468.2 2529130 2529058 -  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (68) !   2.2e-12   59.8   0.0  AE006468.2 2800036 2799964 -  cm    no 0.64  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (69) !   2.2e-12   59.8   0.0  AE006468.2 3570387 3570315 -  cm    no 0.64  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (70) !   2.2e-12   59.8   0.0  AE006468.2 4101772 4101844 +  cm    no 0.64  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (71) !   2.2e-12   59.8   0.0  AE006468.2 4396316 4396388 +  cm    no 0.64  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (72) !   2.4e-12   59.6   0.0  AE006468.2 2035445 2035362 -  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (73) !   2.9e-12   59.4   0.0  AE006468.2 1345642 1345715 +  cm    no 0.53  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (74) !     4e-12   58.8   0.0  AE006468.2 3820497 3820424 -  cm    no 0.61  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (75) !     5e-12   58.5   0.0  AE006468.2  738634  738553 -  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (76) !   1.2e-11   57.2   0.0  AE006468.2 2035530 2035460 -  cm    no 0.56  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (77) !   1.2e-11   57.1   0.0  AE006468.2 2761725 2761652 -  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (78) !   8.2e-11   54.2   0.0  AE006468.2 3461845 3461762 -  cm    no 0.57  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (79) !   2.9e-10   52.2   0.0  AE006468.2 2330753 2330826 +  cm    no 0.66  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (80) !   4.5e-10   51.5   0.0  AE006468.2 1333204 1333277 +  cm    no 0.59  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (81) !   1.3e-09   49.9   0.0  AE006468.2 4810851 4810768 -  cm    no 0.60  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (82) !   1.3e-09   49.9   0.0  AE006468.2 4141148 4141231 +  cm    no 0.61  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (83) !   1.3e-09   49.9   0.0  AE006468.2 4810733 4810650 -  cm    no 0.61  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (84) !   1.3e-09   49.9   0.0  AE006468.2 4810965 4810882 -  cm    no 0.61  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (85) !   1.5e-07   42.5   0.0  AE006468.2 1333283 1333351 +  cm    no 0.46  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (86) !     7e-07   40.1   0.0  AE006468.2 3948589 3948678 +  cm    no 0.63  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+ (87) !   8.5e-05   32.6   0.0  AE006468.2 3682780 3682667 -  cm    no 0.54  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+
+
+Hit alignments:
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.3e-17   78.5   0.0  cm        1       71 []      818781      818853 + .. 1.00    no 0.49
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  AE006468.2 818781 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 818853
+                    ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.3e-17   78.5   0.0  cm        1       71 []      819067      819139 + .. 1.00    no 0.49
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  AE006468.2 819067 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 819139
+                    ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.3e-17   78.5   0.0  cm        1       71 []      819192      819264 + .. 1.00    no 0.49
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  AE006468.2 819192 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 819264
+                    ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   1.3e-17   78.5   0.0  cm        1       71 []      819402      819474 + .. 1.00    no 0.49
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  AE006468.2 819402 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 819474
+                    ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   1.3e-17   78.5   0.0  cm        1       71 []     2532154     2532226 + .. 1.00    no 0.49
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  AE006468.2 2532154 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 2532226
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !     5e-16   72.8   0.0  cm        1       71 []      613561      613634 + .. 0.99    no 0.62
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::::::UAGCUCAGU GG  AGAGC+:CGG:CUU +AA:CCG: GG CGC:GGUUCGAAUCC:GC::::::C+
+  AE006468.2 613561 GCGCCCUUAGCUCAGUuGGAuAGAGCAACGGCCUUCUAAGCCGUGGGuCGCAGGUUCGAAUCCUGCAGGGCGCG 613634
+                    *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   5.5e-16   72.7   0.0  cm        1       71 []     4360425     4360497 + .. 1.00    no 0.53
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAUAUAGCUCAGU GGUAGAGCG:::::+U+ +AA:::::AGG CG:::GUUCGAAUC:::CUAUC::CA
+  AE006468.2 4360425 GCUGAUAUAGCUCAGUuGGUAGAGCGCACCCUUGGUAAGGGUGAGGuCGGCAGUUCGAAUCUGCCUAUCAGCA 4360497
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   7.4e-16   72.2   0.0  cm        1       71 []     3379011     3379083 + .. 1.00    no 0.59
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::UAGCUCAGUGGU AGAGC+:::GACU A+AAUC:::+GG CGC:GGUUC+A UCC:GC:::::CCA
+  AE006468.2 3379011 GGCCCCUUAGCUCAGUGGUuAGAGCAGGCGACUCAUAAUCGCUUGGuCGCUGGUUCAAGUCCAGCAGGGGCCA 3379083
+                     ****************9999***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.3e-15   71.4   0.0  cm        1       71 []     4360059     4360131 + .. 1.00    no 0.51
+
+                                                                        v         v            NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GA::UAGCUCAGU GGUAGAGC+:C:GACUU +AAUC:G:AGG C:C: GUUCGA UC :G:::UC::CA
+  AE006468.2 4360059 GCCGACUUAGCUCAGUaGGUAGAGCAACUGACUUGUAAUCAGUAGGuCACCAGUUCGAUUCCGGUAGUCGGCA 4360131
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.3e-15   71.3   0.0  cm        1       71 []     2083246     2083318 + .. 1.00    no 0.52
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  AE006468.2 2083246 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2083318
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   1.3e-15   71.3   0.0  cm        1       71 []     2084216     2084288 + .. 1.00    no 0.52
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  AE006468.2 2084216 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2084288
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   1.3e-15   71.3   0.0  cm        1       71 []     2094233     2094161 - .. 1.00    no 0.52
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  AE006468.2 2094233 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2094161
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   1.3e-15   71.3   0.0  cm        1       71 []     2095991     2096063 + .. 1.00    no 0.52
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  AE006468.2 2095991 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2096063
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   2.2e-15   70.5   0.0  cm        1       71 []     3197501     3197431 - .. 1.00    no 0.56
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:::UAG:UCA+UGGUAGA:CG:::G:+U   AA:C:::A +C::GGGUUCGA UCCC:::::C::C 
+  AE006468.2 3197501 GCGGGCGUAGUUCAAUGGUAGAACGAGAGCUUCCCAAGCUCUAUACGAGGGUUCGAUUCCCUUCGCCCGCU 3197431
+                     *********************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   3.1e-15   70.0   0.0  cm        1       71 []      368797      368869 + .. 1.00    no 0.51
+
+                                              v               v                               NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::GAUAUAGCUCAGU GGUAGAGC+ CG:A+U  +AAU:CG AGG C:::GGUUCGA UCC:::UAUC::CA
+  AE006468.2 368797 GCCGAUAUAGCUCAGUuGGUAGAGCAGCGCAUUCGUAAUGCGAAGGuCGUAGGUUCGACUCCUAUUAUCGGCA 368869
+                    ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   5.1e-15   69.2   0.0  cm        1       71 []      738326      738253 - .. 1.00    no 0.51
+
+                                                                       v           v           NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG::A::UAGCUCAGU GGU AGAGC+::::ACU A+AAU:::: GG C:C GGUUCGAAUCC G:::U::CCA
+  AE006468.2 738326 GGCUACGUAGCUCAGUuGGUuAGAGCACAUCACUCAUAAUGAUGGGGuCACAGGUUCGAAUCCCGUCGUAGCCA 738253
+                    ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   5.1e-15   69.2   0.0  cm        1       71 []      738719      738646 - .. 1.00    no 0.51
+
+                                                                       v           v           NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG::A::UAGCUCAGU GGU AGAGC+::::ACU A+AAU:::: GG C:C GGUUCGAAUCC G:::U::CCA
+  AE006468.2 738719 GGCUACGUAGCUCAGUuGGUuAGAGCACAUCACUCAUAAUGAUGGGGuCACAGGUUCGAAUCCCGUCGUAGCCA 738646
+                    ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   6.4e-15   68.9   0.0  cm        1       71 []     3566864     3566792 - .. 1.00    no 0.56
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAUAU+GCUCAGU GGUAGAGCG:::::+U+ +AA:::::AGG C:C::GUUCGA UC::G:UAUC::CA
+  AE006468.2 3566864 GCUGAUAUGGCUCAGUuGGUAGAGCGCACCCUUGGUAAGGGUGAGGuCCCCAGUUCGACUCUGGGUAUCAGCA 3566792
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   9.9e-15   68.2   0.0  cm        1       71 []     4141052     4141124 + .. 1.00    no 0.52
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:UAUAGCUCAGU GGUAGAGC ::GGA+U++ A UCC::+ G C::GGGUUCGAAUCCC::UA:C::C 
+  AE006468.2 4141052 GUGGCUAUAGCUCAGUuGGUAGAGCCCUGGAUUGUGAUUCCAGUUGuCGUGGGUUCGAAUCCCAUUAGCCACC 4141124
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   1.9e-14   67.2   0.0  cm        1       71 []     1501714     1501641 - .. 1.00    no 0.55
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::U:UAGCUCAGU GGU AGAGC+:C:::+U+A A :::G: GG C:::GGUUCGA UCC::::A::::CA
+  AE006468.2 1501714 GCGUCUGUAGCUCAGUuGGUuAGAGCACCACCUUGACAUGGUGGGGGuCGAUGGUUCGAGUCCAUUCAGACGCA 1501641
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   2.1e-14   67.0   0.0  cm        1       71 []     3276153     3276225 + .. 1.00    no 0.59
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::::AUAGCUCAGU GGUAGAGC+::GGA+U+AAAAUCC::  G C:: GGUUCGA UCC ::U:::::CA
+  AE006468.2 3276153 GCCCGGAUAGCUCAGUcGGUAGAGCAGGGGAUUGAAAAUCCCCGUGuCCUUGGUUCGAUUCCGAGUCCGGGCA 3276225
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   2.1e-14   67.0   0.0  cm        1       71 []     4566670     4566598 - .. 1.00    no 0.59
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::::AUAGCUCAGU GGUAGAGC+::GGA+U+AAAAUCC::  G C:: GGUUCGA UCC ::U:::::CA
+  AE006468.2 4566670 GCCCGGAUAGCUCAGUcGGUAGAGCAGGGGAUUGAAAAUCCCCGUGuCCUUGGUUCGAUUCCGAGUCCGGGCA 4566598
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   2.8e-14   66.6   0.0  cm        1       71 []     2035658     2035586 - .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  AE006468.2 2035658 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 2035586
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   2.8e-14   66.6   0.0  cm        1       71 []     4596436     4596508 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  AE006468.2 4596436 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 4596508
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   2.8e-14   66.6   0.0  cm        1       71 []     4596668     4596740 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  AE006468.2 4596668 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 4596740
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   2.8e-14   66.6   0.0  cm        1       71 []     4596900     4596972 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  AE006468.2 4596900 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 4596972
+                     ************************************************************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !     3e-14   66.4   0.0  cm        1       71 []     1501801     1501728 - .. 1.00    no 0.53
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::::AUAGCUCAGU GGU AGAGC+:C:::+U+A A :::G: GG C:::GGUUCGA UCC:::U:::::CA
+  AE006468.2 1501801 GCGUUCAUAGCUCAGUuGGUuAGAGCACCACCUUGACAUGGUGGGGGuCGUUGGUUCGAGUCCAAUUGAACGCA 1501728
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   3.2e-14   66.4   0.0  cm        1       71 []     2970007     2969934 - .. 0.99    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  AE006468.2 2970007 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2969934
+                     *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   3.2e-14   66.4   0.0  cm        1       71 []     2970277     2970204 - .. 0.99    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  AE006468.2 2970277 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2970204
+                     *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   3.2e-14   66.4   0.0  cm        1       71 []     2970416     2970343 - .. 0.99    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  AE006468.2 2970416 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2970343
+                     *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   3.2e-14   66.4   0.0  cm        1       71 []     2970555     2970482 - .. 0.99    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  AE006468.2 2970555 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2970482
+                     *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !     4e-14   66.0   0.0  cm        1       71 []      294829      294902 + .. 1.00    no 0.62
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GGA :::UA::UCAGU GGU AGA::+:C:G:CU++ A :C:G: GG C:CGGGUUCGA UCCCG:::: UCC+
+  AE006468.2 294829 GGAGCGGUAGUUCAGUuGGUuAGAAUACCUGCCUGUCACGCAGGGGGuCGCGGGUUCGAGUCCCGUCCGUUCCG 294902
+                    ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !     4e-14   66.0   0.0  cm        1       71 []      304268      304341 + .. 1.00    no 0.62
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GGA :::UA::UCAGU GGU AGA::+:C:G:CU++ A :C:G: GG C:CGGGUUCGA UCCCG:::: UCC+
+  AE006468.2 304268 GGAGCGGUAGUUCAGUuGGUuAGAAUACCUGCCUGUCACGCAGGGGGuCGCGGGUUCGAGUCCCGUCCGUUCCG 304341
+                    ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !     4e-14   66.0   0.0  cm        1       71 []     4105296     4105369 + .. 1.00    no 0.62
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GGA :::UA::UCAGU GGU AGA::+:C:G:CU++ A :C:G: GG C:CGGGUUCGA UCCCG:::: UCC+
+  AE006468.2 4105296 GGAGCGGUAGUUCAGUuGGUuAGAAUACCUGCCUGUCACGCAGGGGGuCGCGGGUUCGAGUCCCGUCCGUUCCG 4105369
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   9.1e-14   64.7   0.0  cm        1       71 []     4105381     4105453 + .. 1.00    no 0.59
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:G:::UAG UCA+U GGUAGA C+:CGG:CU  AAA:CCG:  G +G G:GUUCGA UC:C C:::C:C:+
+  AE006468.2 4105381 AGGGGCGUAGUUCAAUuGGUAGAGCACCGGUCUCCAAAACCGGGUGuUGGGAGUUCGAGUCUCUCCGCCCCUG 4105453
+                     ********************************************999************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   1.1e-13   64.4   0.0  cm        1       71 []     2505823     2505894 + .. 0.98    no 0.51
+
+                                                                                              NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UAG:U:A+UGG  A:A:CG:::::CU  +AA:::::AG +GC:GGUUCGA UCC:GC::::::CA
+  AE006468.2 2505823 GUCCCCUUAGUUAAAUGGAuAUAACGAGCCCCUCCUAAGGGCUAGUUGCAGGUUCGAUUCCUGCAGGGGACA 2505894
+                     ****************7777**************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   1.2e-13   64.3   0.0  cm        1       71 []     2082259     2082173 - .. 0.97    no 0.63
+
+                                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GGAGA:AU+:C::AG GG   A::G:+:CGG:CU  AAA:CCG:A                  CG:GGGUUC+AAUCCC:CU:UCUCC+
+  AE006468.2 2082259 GGAGAGAUGCCGGAGCGGCugAACGGACCGGUCUCGAAAACCGGA-guaggggcaacucua-cCGGGGGUUCAAAUCCCCCUCUCUCCG 2082173
+                     ****************7777*************************.8*************5.5************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.4e-13   64.1   0.0  cm        1       71 []     4360344     4360415 + .. 0.99    no 0.57
+
+                                 v        v                                                   NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G::AU G:: A+UGG  A ::C UC:G:CUU  AA:C:GA+G++GCGGGUUCGA UCCCGCU::C::C 
+  AE006468.2 4360344 GCGGGCAUCGUAUAAUGGCuAUUACCUCAGCCUUCCAAGCUGAUGAUGCGGGUUCGAUUCCCGCUGCCCGCU 4360415
+                     ****************9988**************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   1.5e-13   63.9   0.0  cm        1       71 []     1175310     1175394 + .. 0.98    no 0.60
+
+                                                                                                             NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GGA:: :U+GC::AG GGU  A::GC+:CGG:CUU AAA:CCG:                 C::G:GUUCGAAUC:C::: ::UCC+
+  AE006468.2 1175310 GGAAGUGUGGCCGAGCGGUugAAGGCACCGGUCUUGAAAACCGGC-gacccgaaaggguu-CCAGAGUUCGAAUCUCUGCGCUUCCG 1175394
+                     ****************9998*************************.8***********74.************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   2.4e-13   63.2   0.0  cm        1       71 []      290791      290864 + .. 1.00    no 0.57
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:: U:UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:::GGUUC+A UCC::::A ::C:A
+  AE006468.2 290791 AGGCUUGUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUGGUUCAAGUCCACUCAGGCCUA 290864
+                    ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   2.4e-13   63.2   0.0  cm        1       71 []     4197683     4197756 + .. 1.00    no 0.57
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:: U:UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:::GGUUC+A UCC::::A ::C:A
+  AE006468.2 4197683 AGGCUUGUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUGGUUCAAGUCCACUCAGGCCUA 4197756
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   2.4e-13   63.2   0.0  cm        1       71 []     4352754     4352827 + .. 1.00    no 0.57
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:: U:UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:::GGUUC+A UCC::::A ::C:A
+  AE006468.2 4352754 AGGCUUGUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUGGUUCAAGUCCACUCAGGCCUA 4352827
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   2.5e-13   63.2   0.0  cm        1       71 []     4141277     4141350 + .. 1.00    no 0.62
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:::::UAGC:CAG   GGUAG:GC+:C:G:+UU   A:C:G: GG C:::GGUUCGAAUCC::::::::C:A
+  AE006468.2 4141277 CGGCGAGUAGCGCAGCuuGGUAGCGCAACUGGUUUGGGACCAGUGGGuCGGAGGUUCGAAUCCUCUCUCGCCGA 4141350
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   3.3e-13   62.7   0.0  cm        1       71 []      738416      738345 - .. 1.00    no 0.57
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G:UAU GC::AG GGUA::GC+:CGG:+UU+ A :CCG: +  C:C:GGUUCGAAUCC:G:UA:C:C:+
+  AE006468.2 738416 UGGGGUAUCGCCAAGCGGUAAGGCACCGGUUUUUGAUACCGGCAUuCCCUGGUUCGAAUCCAGGUACCCCAG 738345
+                    *******************************************999************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   3.3e-13   62.7   0.0  cm        1       71 []      738526      738455 - .. 1.00    no 0.57
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G:UAU GC::AG GGUA::GC+:CGG:+UU+ A :CCG: +  C:C:GGUUCGAAUCC:G:UA:C:C:+
+  AE006468.2 738526 UGGGGUAUCGCCAAGCGGUAAGGCACCGGUUUUUGAUACCGGCAUuCCCUGGUUCGAAUCCAGGUACCCCAG 738455
+                    *******************************************999************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   3.5e-13   62.6   0.0  cm        1       71 []      738085      738014 - .. 1.00    no 0.58
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G:UAU GC::AG GGUA::GC+:CGGA+U + A UCCG: +  C:::GGUUCGAAUCC:::UA:C:C:+
+  AE006468.2 738085 UGGGGUAUCGCCAAGCGGUAAGGCACCGGAUUCUGAUUCCGGCAUuCCGAGGUUCGAAUCCUCGUACCCCAG 738014
+                    *******************************************99*************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   3.5e-13   62.6   0.0  cm        1       71 []      738203      738132 - .. 1.00    no 0.58
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G:UAU GC::AG GGUA::GC+:CGGA+U + A UCCG: +  C:::GGUUCGAAUCC:::UA:C:C:+
+  AE006468.2 738203 UGGGGUAUCGCCAAGCGGUAAGGCACCGGAUUCUGAUUCCGGCAUuCCGAGGUUCGAAUCCUCGUACCCCAG 738132
+                    *******************************************99*************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   3.9e-13   62.5   0.0  cm        1       71 []     2531836     2531908 + .. 0.98    no 0.62
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  AE006468.2 2531836 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 2531908
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   3.9e-13   62.5   0.0  cm        1       71 []      818988      819060 + .. 0.98    no 0.62
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  AE006468.2 818988 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 819060
+                    ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   3.9e-13   62.5   0.0  cm        1       71 []     2531957     2532029 + .. 0.98    no 0.62
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  AE006468.2 2531957 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 2532029
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   3.9e-13   62.5   0.0  cm        1       71 []     2532074     2532146 + .. 0.98    no 0.62
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  AE006468.2 2532074 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 2532146
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   6.6e-13   61.7   0.0  cm        1       71 []      290977      291049 + .. 0.98    no 0.63
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG G:UAUAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C ::GGUUCGA  CC:: UA:C CCA
+  AE006468.2 290977 GGGGCUAUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCUGCGGUUCGAUCCCGCAUAGCUCCA 291049
+                    ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   6.6e-13   61.7   0.0  cm        1       71 []     4197871     4197943 + .. 0.98    no 0.63
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAUAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C ::GGUUCGA  CC:: UA:C CCA
+  AE006468.2 4197871 GGGGCUAUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCUGCGGUUCGAUCCCGCAUAGCUCCA 4197943
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   6.6e-13   61.7   0.0  cm        1       71 []     4352942     4353014 + .. 0.98    no 0.63
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAUAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C ::GGUUCGA  CC:: UA:C CCA
+  AE006468.2 4352942 GGGGCUAUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCUGCGGUUCGAUCCCGCAUAGCUCCA 4353014
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) !   6.7e-13   61.6   0.0  cm        1       71 []     2970651     2970562 - .. 0.97    no 0.64
+
+                                                                                                                 NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..................,.,<<<<<_______>>>>>))))))) CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..................g.cgcgGGUUCgAaUCCcgcuaucucC 70     
+                     GG:GA::U+GC::AG GG   A::GCG:::::CU+ +AA:::::+                     C::GGGUUCGAAUCCC::::UC:CC
+  AE006468.2 2970651 GGUGAGGUGGCCGAGAGGCugAAGGCGCUCCCCUGCUAAGGGAGU-augcggucaaaagcugca-uCCGGGGUUCGAAUCCCCGCCUCACC 2970563
+                     ****************7777*************************.8****************6.4************************* PP
+
+                       NC
+                     : CS
+        tRNA      71 a 71     
+                     +
+  AE006468.2 2970562 G 2970562
+                     * PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) !   9.1e-13   61.2   0.0  cm        1       71 []     4731029     4731110 + .. 0.99    no 0.54
+
+                                                                                                         NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GA::U+GC::A+U GGU  ::GC+:::GA+U AAAAUC:::            G+GC:GGUUCGA UCC:GC::UC::CA
+  AE006468.2 4731029 GCCGAAGUGGCGAAAUcGGUaGACGCAGUUGAUUCAAAAUCAACC-guagaaauacGUGCCGGUUCGAGUCCGGCCUUCGGCA 4731110
+                     *********************************************.8********95************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) !   1.1e-12   60.9   0.0  cm        1       71 []     3141070     3141143 + .. 1.00    no 0.66
+
+                     v                                                                       v  NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUC+AAUCC: C:::C:C A
+  AE006468.2 3141070 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUCGGUUCAAAUCCGGCCCCCGCAA 3141143
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) !   1.1e-12   60.9   0.0  cm        1       71 []     3141176     3141249 + .. 1.00    no 0.66
+
+                     v                                                                       v  NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUC+AAUCC: C:::C:C A
+  AE006468.2 3141176 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUCGGUUCAAAUCCGGCCCCCGCAA 3141249
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) !   1.1e-12   60.9   0.0  cm        1       71 []     3458586     3458513 - .. 1.00    no 0.66
+
+                     v                                                                       v  NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUC+AAUCC: C:::C:C A
+  AE006468.2 3458586 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUCGGUUCAAAUCCGGCCCCCGCAA 3458513
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (60) !   1.5e-12   60.4   0.0  cm        1       71 []     4140921     4140994 + .. 0.99    no 0.65
+
+                                                                      v               v         NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::::UAGCUCAG  GG  AGAGCG::G::CU    A::C::AGG C C:GGUUCGAAUCC:G :::::::A
+  AE006468.2 4140921 GCGCCCGUAGCUCAGCuGGAuAGAGCGCUGCCCUCCGGAGGCAGAGGuCUCAGGUUCGAAUCCUGUCGGGCGUA 4140994
+                     *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (61) !   1.8e-12   60.1   0.0  cm        1       71 []     4360143     4360224 + .. 0.98    no 0.59
+
+                                                                                                          NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::U :C::AG GG   A::G:+:C:GACU++AAAUC:G:              CG::GGUUCGAAUCC::C:::C:CCA
+  AE006468.2 4360143 GGUGGGGUUCCCGAGCGGCcaAAGGGAGCAGACUGUAAAUCUGCC-gucacagacuu-CGAAGGUUCGAAUCCUUCCCCCACCA 4360224
+                     ****************9999*************************.8********85.************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (62) !   1.8e-12   60.1   0.0  cm        1       71 []     1852563     1852644 + .. 0.98    no 0.59
+
+                                                                                                          NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::U :C::AG GG   A::G:+:C:GACU++AAAUC:G:              CG::GGUUCGAAUCC::C:::C:CCA
+  AE006468.2 1852563 GGUGGGGUUCCCGAGCGGCcaAAGGGAGCAGACUGUAAAUCUGCC-gucaucgacuu-CGAAGGUUCGAAUCCUUCCCCCACCA 1852644
+                     ****************9999*************************.8********85.************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (63) !   1.8e-12   60.1   0.0  cm        1       71 []     1852852     1852933 + .. 0.98    no 0.59
+
+                                                                                                          NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::U :C::AG GG   A::G:+:C:GACU++AAAUC:G:              CG::GGUUCGAAUCC::C:::C:CCA
+  AE006468.2 1852852 GGUGGGGUUCCCGAGCGGCcaAAGGGAGCAGACUGUAAAUCUGCC-gucaucgacuu-CGAAGGUUCGAAUCCUUCCCCCACCA 1852933
+                     ****************9999*************************.8********85.************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (64) !     2e-12   59.9   0.0  cm        1       71 []     1027533     1027449 - .. 0.97    no 0.61
+
+                                                                                                             NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:GA::U+ C::AGUGG   A::G G::: :CU+ AAA: :::+                CG:GGGUUCGAAUCCC:C::UC:CC+
+  AE006468.2 1027533 GGUGAGGUGUCCGAGUGGCugAAGGAGCACGCCUGGAAAGUGUGU-auacggcaacgua-uCGGGGGUUCGAAUCCCCCCCUCACCG 1027449
+                     ****************7777*************************.8***********6.4************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (65) !     2e-12   59.9   0.0  cm        1       71 []     1224818     1224734 - .. 0.97    no 0.61
+
+                                                                                                             NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:GA::U+ C::AGUGG   A::G G::: :CU+ AAA: :::+                CG:GGGUUCGAAUCCC:C::UC:CC+
+  AE006468.2 1224818 GGUGAGGUGUCCGAGUGGCugAAGGAGCACGCCUGGAAAGUGUGU-auacggcaacgua-uCGGGGGUUCGAAUCCCCCCCUCACCG 1224734
+                     ****************7777*************************.8***********6.4************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (66) !   2.1e-12   59.8   0.0  cm        1       71 []     2529012     2528940 - .. 0.98    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAUAGCUCAG  GG AGAGCG:::G: U+  A :C:::AGG C:::GGUUCGA  CC:::UA:C CCA
+  AE006468.2 2529012 GGGGCUAUAGCUCAGCuGGGAGAGCGCUUGCAUGGCAUGCAAGAGGuCAGCGGUUCGAUCCCGCUUAGCUCCA 2528940
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (67) !   2.1e-12   59.8   0.0  cm        1       71 []     2529130     2529058 - .. 0.98    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAUAGCUCAG  GG AGAGCG:::G: U+  A :C:::AGG C:::GGUUCGA  CC:::UA:C CCA
+  AE006468.2 2529130 GGGGCUAUAGCUCAGCuGGGAGAGCGCUUGCAUGGCAUGCAAGAGGuCAGCGGUUCGAUCCCGCUUAGCUCCA 2529058
+                     ****************9555***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (68) !   2.2e-12   59.8   0.0  cm        1       71 []     2800036     2799964 - .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  AE006468.2 2800036 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 2799964
+                     ****************9999***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (69) !   2.2e-12   59.8   0.0  cm        1       71 []     3570387     3570315 - .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  AE006468.2 3570387 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 3570315
+                     ****************9999***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (70) !   2.2e-12   59.8   0.0  cm        1       71 []     4101772     4101844 + .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  AE006468.2 4101772 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 4101844
+                     ****************9999***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (71) !   2.2e-12   59.8   0.0  cm        1       71 []     4396316     4396388 + .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  AE006468.2 4396316 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 4396388
+                     ****************9999***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (72) !   2.4e-12   59.6   0.0  cm        1       71 []     2035445     2035362 - .. 0.99    no 0.60
+
+                                                                                                           NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     ::::::AU+G:::A+U GGU  :::C+::GGA+UUAAAAUCC::              G+GCGGGUUC+A UCCCGCU::::::A
+  AE006468.2 2035445 GCCCGGAUGGUGGAAUcGGUaGACACAAGGGAUUUAAAAUCCCUC-ggcguucgcgcuGUGCGGGUUCAAGUCCCGCUCCGGGUA 2035362
+                     *********************************************.8**********85************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (73) !   2.9e-12   59.4   0.0  cm        1       71 []     1345642     1345715 + .. 0.99    no 0.53
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::::UAGCUCA+  GG  AGAGC+U:G::CUU +A ::C:AAGG +:: GGUUC+A UCC :::::::::A
+  AE006468.2 1345642 CCGCCAUUAGCUCAACcGGAuAGAGCAUAGAGCUUCUACCUCUAAGGuUCGGGGUUCAAUUCCUCGAUGGCGGA 1345715
+                     *****************8888***************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (74) !     4e-12   58.8   0.0  cm        1       71 []     3820497     3820424 - .. 1.00    no 0.61
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:::::U+GC:CAG   GGUAG:GC+:::::+U    A::::: GG C:::GGUUCGAAUCC::::::::C:A
+  AE006468.2 3820497 CGGUGAUUGGCGCAGCcuGGUAGCGCACUUCGUUCGGGACGAAGGGGuCGGAGGUUCGAAUCCUCUAUCACCGA 3820424
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (75) !     5e-12   58.5   0.0  cm        1       71 []      738634      738553 - .. 0.99    no 0.60
+
+                                                                                                        NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::G:::U+GC::A+U GGU  ::GC+:C:GA+UUA   UC:G:            G+GCG:GUUC+A UC:CGC:::C::CA
+  AE006468.2 738634 GCGGGAGUGGCGAAAUuGGUaGACGCACCAGAUUUAGGUUCUGGC-gccgcaagguGUGCGAGUUCAAGUCUCGCCUCCCGCA 738553
+                    *********************************************.8********85************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (76) !   1.2e-11   57.2   0.0  cm        1       71 []     2035530     2035460 - .. 1.00    no 0.56
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::UA:C::AG GGU ::G:+:CGGA+U+ AAAUCCG:  +  C:GGUUCGA UCC:G :::C:CC 
+  AE006468.2 2035530 GGCGCGUUAACAAAGCGGUUAUGUAGCGGAUUGCAAAUCCGUCUAGUCCGGUUCGACUCCGGAACGCGCCU 2035460
+                     *******************9*************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (77) !   1.2e-11   57.1   0.0  cm        1       71 []     2761725     2761652 - .. 1.00    no 0.57
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::::UAGCUCA+  GG  AGAGC+: G::CUU +A ::C :+GG +:: GGUUCGAAUCC :::::::::A
+  AE006468.2 2761725 CCGCCAUUAGCUCAACuGGAaAGAGCACGGAGCUUCUACCUCUGUGGuUCGGGGUUCGAAUCCUCGAUGGCGGA 2761652
+                     *****************999****************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (78) !   8.2e-11   54.2   0.0  cm        1       71 []     3461845     3461762 - .. 0.99    no 0.57
+
+                                                                                                            NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::GA::U+G:::A+U GGU  :::CG:::::+U+A   :::::+               +:CGGGUUC+A UCCCG:::UC:::A
+  AE006468.2 3461845 GCCGAGGUGGUGGAAUuGGUaGACACGCUACCUUGAGGUGGUAGU-gcccaauagggcu-UACGGGUUCAAGUCCCGUCCUCGGUA 3461762
+                     *********************************************.8**********95.************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (79) !   2.9e-10   52.2   0.0  cm        1       71 []     2330753     2330826 + .. 0.99    no 0.66
+
+                                                   v         v                                  NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G::A::UAGC:CAG   GGUAG:GC+:CG : U+    : CG: GG C:::GGUUC+AAUCC:::::U::C:A
+  AE006468.2 2330753 CGGCACGUAGCGCAGCcuGGUAGCGCACCGUCAUGGGGUGUCGGGGGuCGGAGGUUCAAAUCCUCUCGUGCCGA 2330826
+                     ************************************************************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (80) !   4.5e-10   51.5   0.0  cm        1       71 []     1333204     1333277 + .. 0.99    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::: UAGCUCAG  GG  AGAGC+UC:::CU  +AA:::GA+GG  :::GGUUCGA  CC::: :::::: 
+  AE006468.2 1333204 CCGCCACUAGCUCAGCuGGAuAGAGCAUCAACCUCCUAAGUUGAUGGuGCGAGGUUCGAGGCCUCGGUGGCGGU 1333277
+                     *****************8888***************************************9************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (81) !   1.3e-09   49.9   0.0  cm        1       71 []     4810851     4810768 - .. 0.99    no 0.60
+
+                         v                                                                          v      NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  AE006468.2 4810851 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guucuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4810768
+                     *********************************************.8**********95************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (82) !   1.3e-09   49.9   0.0  cm        1       71 []     4141148     4141231 + .. 0.99    no 0.61
+
+                         v                                                                          v      NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  AE006468.2 4141148 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guccuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4141231
+                     *********************************************.8**********95************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (83) !   1.3e-09   49.9   0.0  cm        1       71 []     4810733     4810650 - .. 0.99    no 0.61
+
+                         v                                                                          v      NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  AE006468.2 4810733 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guccuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4810650
+                     *********************************************.8**********95************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (84) !   1.3e-09   49.9   0.0  cm        1       71 []     4810965     4810882 - .. 0.99    no 0.61
+
+                         v                                                                          v      NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  AE006468.2 4810965 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guccuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4810882
+                     *********************************************.8**********95************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (85) !   1.5e-07   42.5   0.0  cm        1       71 []     1333283     1333351 + .. 0.96    no 0.46
+
+                                 v       v                                                 NC
+                     (((((((,,<<<<_______>>>>,<<<<<~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGa*[7]*uCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G: AU G:: A+UG UA ::C UC:G       C:GA+G++G:GGGUUCGA UCCC:CU :C::C 
+  AE006468.2 1333283 GUGGUUAUCGUAUAAUGUUAUUACCUCAGU*[5]*GCUGAUGAUGUGGGUUCGACUCCCACUGACCACU 1333351
+                     ***************9999**********5..7..7********************************* PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (86) !     7e-07   40.1   0.0  cm        1       71 []     3948589     3948678 + .. 0.99    no 0.63
+
+                                                                                                                 NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,...................,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag...................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:AGAU   :: C   GGU AG ::G::GGACUU AAAUCC::+                    G :C:GGUUCGA UCC:G: AUCU:C 
+  AE006468.2 3948589 GAAGAUCGUCGUCUCCGGUgAGGCGGCUGGACUUCAAAUCCAGU-uggggccgccagcggucccGGGCAGGUUCGACUCCUGUGAUCUUCC 3948678
+                     ********************************************.9*****************95************************** PP
+
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (87) !   8.5e-05   32.6   0.0  cm        1       71 []     3682780     3682667 - .. 0.89    no 0.54
+
+                     v  v                         v        v                            v  v  NC
+                     (((((((,,<<<<_______>>>>,<<<<<__~~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCU*[ 5]*uCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G: :U:UAGCUCA+ GGUAGAGCG: :G +U       C: :+G +:CGGGUUCGA  CCCG::A: :C  
+  AE006468.2 3682780 AGCCCUGUAGCUCAACGGUAGAGCGGGUGAUU*[48]*ACAUUUGUUGCGGGUUCGAGACCCGUCAGAGCCC 3682667
+                     **************************999876...8..67888888************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (9714900 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2923  (0.07911); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             506  (0.01397); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             492  (0.0136); expected (0.02)
+Windows   passing  local HMM Forward       filter:              75  (0.002447); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              75  (0.002447); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              57  (0.002351); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              57  (0.002351); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              95  (0.0007566); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              90  (0.0007127); expected (0.0001)
+Total CM hits reported:                                         87  (0.0006791); includes 0 truncated hit(s)
+
+# CPU time: 0.96u 0.05s 00:00:01.01 Elapsed: 00:00:00.12
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   4.6e-17   81.7   0.0  AE006468.2 3948588 3948678 +  cm    no 0.64  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,
+
+
+Hit alignments:
+>> AE006468.2  Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.6e-17   81.7   0.0  cm        1       91 []     3948588     3948678 + .. 1.00    no 0.64
+
+                                                                                                                 NC
+                     (((((((((,,<<<<<<____>>>>>><<<<<<_______>>>>>>,<<<<<________>>>>>,.,<<<<_______>>>>)))))))) CS
+    tRNA-Sec       1 GggggggcgaucggcccUGGUgggccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccg.GggGGUUCGAUUCCcccgcccccc 90     
+                     GG::G::C: UCG:C:C GGUG:G:CG:C:GG:CUUCAAA:CC:G: GGG:C + CA+CGG:CCCG G::GGUUCGA UCC:::G::C::C
+  AE006468.2 3948588 GGAAGAUCG-UCGUCUCCGGUGAGGCGGCUGGACUUCAAAUCCAGUUGGGGCCGCCAGCGGUCCCGgGCAGGUUCGACUCCUGUGAUCUUC 3948677
+                     *********.9******************************************************************************** PP
+
+                       NC
+                     ) CS
+    tRNA-Sec      91 C 91     
+                     C
+  AE006468.2 3948678 C 3948678
+                     * PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (9714900 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            6566  (0.09524); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1463  (0.02169); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1138  (0.01676); expected (0.02)
+Windows   passing  local HMM Forward       filter:              72  (0.001131); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              62  (0.0009838); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              38  (0.0006973); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              38  (0.0006973); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              46  (0.0004597); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              32  (0.0002841); expected (0.0001)
+Total CM hits reported:                                          1  (9.367e-06); includes 0 truncated hit(s)
+
+# CPU time: 0.96u 0.03s 00:00:00.99 Elapsed: 00:00:00.13
+//
+[ok]

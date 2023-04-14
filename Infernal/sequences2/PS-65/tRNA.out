@@ -1,0 +1,1903 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/PS-65.fas
+# output directed to file:               sequences/PS-65/tRNA.out
+# tabular output of hits:                sequences/PS-65/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence                                                                       start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------------------------------------------------------------------------- ------- -------   --- ----- ----  -----------
+  (1) !   7.3e-17   75.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95567   95639 +  cm    no 0.48  -
+  (2) !   7.3e-17   75.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  529095  529167 +  cm    no 0.48  -
+  (3) !   7.3e-17   75.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106199 3106127 -  cm    no 0.48  -
+  (4) !   7.3e-17   75.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087857 4087785 -  cm    no 0.48  -
+  (5) !   2.4e-16   73.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931582  931654 +  cm    no 0.59  -
+  (6) !   2.4e-16   73.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105122 3105050 -  cm    no 0.59  -
+  (7) !   2.4e-16   73.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087507 4087435 -  cm    no 0.59  -
+  (8) !   3.9e-16   73.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95772   95843 +  cm    no 0.60  -
+  (9) !   3.9e-16   73.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  165961  166032 +  cm    no 0.60  -
+ (10) !   3.9e-16   73.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  932152  932223 +  cm    no 0.60  -
+ (11) !   3.9e-16   73.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106021 3105950 -  cm    no 0.60  -
+ (12) !   4.5e-16   72.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  165755  165826 +  cm    no 0.56  -
+ (13) !   4.5e-16   72.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931033  931104 +  cm    no 0.56  -
+ (14) !   4.7e-16   72.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104943 3104873 -  cm    no 0.54  -
+ (15) !   5.7e-16   72.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  528712  528783 +  cm    no 0.56  -
+ (16) !   5.7e-16   72.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104767 3104696 -  cm    no 0.56  -
+ (17) !   6.1e-16   72.3   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104854 3104781 -  cm    no 0.59  -
+ (18) !   8.9e-16   71.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   11464   11537 +  cm    no 0.62  -
+ (19) !   8.9e-16   71.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   31932   32005 +  cm    no 0.62  -
+ (20) !     1e-15   71.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105492 3105419 -  cm    no 0.54  -
+ (21) !   1.4e-15   71.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  614699  614769 +  cm    no 0.51  -
+ (22) !   1.4e-15   71.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  946516  946586 +  cm    no 0.51  -
+ (23) !   3.6e-15   69.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  932232  932302 +  cm    no 0.58  -
+ (24) !     4e-15   69.3   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  619904  619977 +  cm    no 0.64  -
+ (25) !     4e-15   69.3   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931493  931566 +  cm    no 0.64  -
+ (26) !     4e-15   69.3   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105211 3105138 -  cm    no 0.64  -
+ (27) !     4e-15   69.3   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087619 4087546 -  cm    no 0.64  -
+ (28) !   8.1e-15   68.3   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2832511 2832438 -  cm    no 0.59  -
+ (29) !   1.2e-14   67.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95455   95527 +  cm    no 0.52  -
+ (30) !   1.2e-14   67.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  194371  194443 +  cm    no 0.52  -
+ (31) !   1.2e-14   67.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931663  931735 +  cm    no 0.52  -
+ (32) !   1.2e-14   67.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106312 3106240 -  cm    no 0.52  -
+ (33) !   1.3e-14   67.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   70267   70338 +  cm    no 0.61  -
+ (34) !   1.3e-14   67.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  194213  194284 +  cm    no 0.61  -
+ (35) !   1.3e-14   67.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  528911  528982 +  cm    no 0.61  -
+ (36) !   1.3e-14   67.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931239  931310 +  cm    no 0.61  -
+ (37) !   1.3e-14   67.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104573 3104502 -  cm    no 0.61  -
+ (38) !   1.3e-14   67.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087772 4087701 -  cm    no 0.61  -
+ (39) !     2e-14   66.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  194555  194626 +  cm    no 0.56  -
+ (40) !     2e-14   66.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  528994  529065 +  cm    no 0.56  -
+ (41) !     2e-14   66.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  932031  932102 +  cm    no 0.56  -
+ (42) !   2.3e-14   66.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931848  931918 +  cm    no 0.54  -
+ (43) !   2.4e-14   66.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   96060   96133 +  cm    no 0.57  -
+ (44) !   2.4e-14   66.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  166171  166244 +  cm    no 0.57  -
+ (45) !   2.4e-14   66.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105745 3105672 -  cm    no 0.57  -
+ (46) !   2.4e-14   66.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  619767  619840 +  cm    no 0.64  -
+ (47) !   2.4e-14   66.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931405  931478 +  cm    no 0.64  -
+ (48) !   2.4e-14   66.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105299 3105226 -  cm    no 0.64  -
+ (49) !   4.1e-14   65.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  194466  194547 +  cm    no 0.62  -
+ (50) !   4.1e-14   65.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931758  931839 +  cm    no 0.62  -
+ (51) !   4.2e-14   65.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2027056 2026984 -  cm    no 0.53  -
+ (52) !   5.8e-14   65.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95375   95447 +  cm    no 0.60  -
+ (53) !   5.8e-14   65.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  194291  194363 +  cm    no 0.60  -
+ (54) !   5.8e-14   65.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931320  931392 +  cm    no 0.60  -
+ (55) !   5.8e-14   65.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106420 3106348 -  cm    no 0.60  -
+ (56) !   7.5e-14   64.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95956   96029 +  cm    no 0.57  -
+ (57) !   7.5e-14   64.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  166067  166140 +  cm    no 0.57  -
+ (58) !   7.5e-14   64.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  614609  614682 +  cm    no 0.57  -
+ (59) !   7.5e-14   64.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105837 3105764 -  cm    no 0.57  -
+ (60) !     2e-13   63.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2453188 2453258 +  cm    no 0.54  -
+ (61) !   2.2e-13   63.1   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105029 3104957 -  cm    no 0.56  -
+ (62) !   2.9e-13   62.7   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  165832  165904 +  cm    no 0.56  -
+ (63) !   3.6e-13   62.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   11552   11624 +  cm    no 0.66  -
+ (64) !   3.6e-13   62.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   32020   32092 +  cm    no 0.66  -
+ (65) !   3.6e-13   62.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   96146   96218 +  cm    no 0.66  -
+ (66) !   3.6e-13   62.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  166256  166328 +  cm    no 0.66  -
+ (67) !   3.6e-13   62.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105663 3105591 -  cm    no 0.66  -
+ (68) !   3.9e-13   62.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931113  931201 +  cm    no 0.57  -
+ (69) !   6.6e-13   61.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  931946  932018 +  cm    no 0.58  -
+ (70) !   7.4e-13   61.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3127150 3127078 -  cm    no 0.67  -
+ (71) !   9.7e-13   60.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105409 3105320 -  cm    no 0.59  -
+ (72) !   9.8e-13   60.8   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   22292   22381 +  cm    no 0.60  -
+ (73) !   2.7e-12   59.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  529182  529263 +  cm    no 0.60  -
+ (74) !   2.8e-12   59.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 1242242 1242314 +  cm    no 0.59  -
+ (75) !   3.1e-12   59.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104689 3104602 -  cm    no 0.59  -
+ (76) !   3.1e-12   59.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  528791  528878 +  cm    no 0.60  -
+ (77) !   3.4e-12   58.9   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95649   95731 +  cm    no 0.57  -
+ (78) !   4.4e-12   58.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   95861   95946 +  cm    no 0.60  -
+ (79) !   4.4e-12   58.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  932310  932395 +  cm    no 0.60  -
+ (80) !   4.4e-12   58.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105932 3105847 -  cm    no 0.60  -
+ (81) !   4.7e-12   58.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true   70181   70254 +  cm    no 0.65  -
+ (82) !   4.7e-12   58.4   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105571 3105498 -  cm    no 0.65  -
+ (83) !     1e-11   57.2   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3478588 3478513 -  cm    no 0.63  -
+ (84) !     3e-11   55.5   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  932664  932745 +  cm    no 0.61  -
+ (85) !   2.9e-10   52.0   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  529344  529427 +  cm    no 0.63  -
+ (86) !   3.7e-10   51.6   0.0  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106113 3106030 -  cm    no 0.56  -
+
+
+Hit alignments:
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   7.3e-17   75.6   0.0  cm        1       71 []       95567       95639 + .. 1.00    no 0.48
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39   
+                                                                                     G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95567 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUC 95606
+                                                                                     **************************************** PP
+
+                                                                                                                       NC
+                                                                                     >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     :GA GG CG::GGUUCGA UCC::C::::::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95607 AGAGGGuCGAAGGUUCGAGUCCUUCAUGGCUCA 95639
+                                                                                     ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.3e-17   75.6   0.0  cm        1       71 []      529095      529167 + .. 1.00    no 0.48
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529095 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUC 529134
+                                                                                      **************************************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :GA GG CG::GGUUCGA UCC::C::::::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529135 AGAGGGuCGAAGGUUCGAGUCCUUCAUGGCUCA 529167
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   7.3e-17   75.6   0.0  cm        1       71 []     3106199     3106127 - .. 1.00    no 0.48
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106199 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUC 3106160
+                                                                                       **************************************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :GA GG CG::GGUUCGA UCC::C::::::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106159 AGAGGGuCGAAGGUUCGAGUCCUUCAUGGCUCA 3106127
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   7.3e-17   75.6   0.0  cm        1       71 []     4087857     4087785 - .. 1.00    no 0.48
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G::::::UAGCUCAGU GGUAGAGC+UC:GACUU++AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087857 GAGCCAUUAGCUCAGUuGGUAGAGCAUCUGACUUUUAAUC 4087818
+                                                                                       **************************************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :GA GG CG::GGUUCGA UCC::C::::::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087817 AGAGGGuCGAAGGUUCGAGUCCUUCAUGGCUCA 4087785
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   2.4e-16   73.7   0.0  cm        1       71 []      931582      931654 + .. 1.00    no 0.59
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      GG:::::UAGCUCAGU GGUAGAGC+:CGGACU+AAAAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931582 GGCUCGGUAGCUCAGUuGGUAGAGCAACGGACUGAAAAUC 931621
+                                                                                      **************************************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      CG:  G CG :GGUUCGA UCC: C:::::CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931622 CGUGUGuCGGCGGUUCGAUUCCGUCCCGAGCCA 931654
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   2.4e-16   73.7   0.0  cm        1       71 []     3105122     3105050 - .. 1.00    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       GG:::::UAGCUCAGU GGUAGAGC+:CGGACU+AAAAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105122 GGCUCGGUAGCUCAGUuGGUAGAGCAACGGACUGAAAAUC 3105083
+                                                                                       **************************************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CG:  G CG :GGUUCGA UCC: C:::::CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105082 CGUGUGuCGGCGGUUCGAUUCCGUCCCGAGCCA 3105050
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   2.4e-16   73.7   0.0  cm        1       71 []     4087507     4087435 - .. 1.00    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       GG:::::UAGCUCAGU GGUAGAGC+:CGGACU+AAAAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087507 GGCUCGGUAGCUCAGUuGGUAGAGCAACGGACUGAAAAUC 4087468
+                                                                                       **************************************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CG:  G CG :GGUUCGA UCC: C:::::CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087467 CGUGUGuCGGCGGUUCGAUUCCGUCCCGAGCCA 4087435
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   3.9e-16   73.0   0.0  cm        1       71 []       95772       95843 + .. 1.00    no 0.60
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40   
+                                                                                     G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95772 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGU 95811
+                                                                                     **************************************** PP
+
+                                                                                                                      NC
+                                                                                     >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     G: GG C:CGGGUUCGAAUCCCG:::UC::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95812 GGGGGuCGCGGGUUCGAAUCCCGUCUUCCGCU 95843
+                                                                                     ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   3.9e-16   73.0   0.0  cm        1       71 []      165961      166032 + .. 1.00    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 165961 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGU 166000
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      G: GG C:CGGGUUCGAAUCCCG:::UC::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166001 GGGGGuCGCGGGUUCGAAUCCCGUCUUCCGCU 166032
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   3.9e-16   73.0   0.0  cm        1       71 []      932152      932223 + .. 1.00    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932152 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGU 932191
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      G: GG C:CGGGUUCGAAUCCCG:::UC::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932192 GGGGGuCGCGGGUUCGAAUCCCGUCUUCCGCU 932223
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   3.9e-16   73.0   0.0  cm        1       71 []     3106021     3105950 - .. 1.00    no 0.60
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40     
+                                                                                       G::GA::UAG:UCAGUGGUAGA:C+:C:::+U+  AA:::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106021 GCGGAAGUAGUUCAGUGGUAGAACACCACCUUGCCAAGGU 3105982
+                                                                                       **************************************** PP
+
+                                                                                                                        NC
+                                                                                       >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       G: GG C:CGGGUUCGAAUCCCG:::UC::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105981 GGGGGuCGCGGGUUCGAAUCCCGUCUUCCGCU 3105950
+                                                                                       ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   4.5e-16   72.8   0.0  cm        1       71 []      165755      165826 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :::G:::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 165755 UCCGCAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCG 165794
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :: GG CG::GGUUCGAAUCC::C:::C:::+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 165795 AUCGGuCGUAGGUUCGAAUCCUACCUGCGGAG 165826
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   4.5e-16   72.8   0.0  cm        1       71 []      931033      931104 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :::G:::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931033 UCCGCAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCG 931072
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :: GG CG::GGUUCGAAUCC::C:::C:::+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931073 AUCGGuCGUAGGUUCGAAUCCUACCUGCGGAG 931104
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   4.7e-16   72.7   0.0  cm        1       71 []     3104943     3104873 - .. 1.00    no 0.54
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40     
+                                                                                       G::G:U:UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104943 GCGGGUGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCU 3104904
+                                                                                       **************************************** PP
+
+                                                                                                                       NC
+                                                                                       >>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      41 gaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       GA+G C::GGGUUCGA UCCC:::A:C::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104903 GAUGUCGUGGGUUCGAUUCCCAUCACCCGCU 3104873
+                                                                                       ******************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   5.7e-16   72.4   0.0  cm        1       71 []      528712      528783 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528712 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCG 528751
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :: GG CGC:GGUUCGAAUCC:GC:::::::+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528752 AUCGGuCGCAGGUUCGAAUCCUGCCUGUGGAG 528783
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   5.7e-16   72.4   0.0  cm        1       71 []     3104767     3104696 - .. 1.00    no 0.56
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40     
+                                                                                       :::::::UAGCUCAGUGGUAGAGC :::G:CU+++AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104767 UCCACAGUAGCUCAGUGGUAGAGCUAUCGGCUGUUAACCG 3104728
+                                                                                       **************************************** PP
+
+                                                                                                                        NC
+                                                                                       >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :: GG CGC:GGUUCGAAUCC:GC:::::::+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104727 AUCGGuCGCAGGUUCGAAUCCUGCCUGUGGAG 3104696
+                                                                                       ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   6.1e-16   72.3   0.0  cm        1       71 []     3104854     3104781 - .. 1.00    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104854 GGGCCUGUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAG 3104815
+                                                                                       **************************************** PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C:::AGG C:::GGUUCGA UCC::::A:::CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104814 CGUGAGGuCGAUGGUUCGAGUCCAUUCAGGCCCA 3104781
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   8.9e-16   71.7   0.0  cm        1       71 []       11464       11537 + .. 1.00    no 0.62
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38   
+                                                                                     GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 11464 GGGCCUGUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAG 11503
+                                                                                     **************************************** PP
+
+                                                                                                                        NC
+                                                                                     >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     C:::AGG C:::GGUUCGA UCC::::A:::CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 11504 CGUGAGGuCGGUGGUUCGAGUCCACUCAGGCCCA 11537
+                                                                                     ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   8.9e-16   71.7   0.0  cm        1       71 []       31932       32005 + .. 1.00    no 0.62
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38   
+                                                                                     GG:::U:UAGCUCAG  GGU AGAGCG:::G:CU+A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 31932 GGGCCUGUAGCUCAGCuGGUuAGAGCGCACGCCUGAUAAG 31971
+                                                                                     **************************************** PP
+
+                                                                                                                        NC
+                                                                                     >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     C:::AGG C:::GGUUCGA UCC::::A:::CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 31972 CGUGAGGuCGGUGGUUCGAGUCCACUCAGGCCCA 32005
+                                                                                     ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !     1e-15   71.5   0.0  cm        1       71 []     3105492     3105419 - .. 1.00    no 0.54
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       GGA::U:UAGCUCAGU GGU AGAGC+:::G:CU A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105492 GGACCUUUAGCUCAGUuGGUuAGAGCAGACGGCUCAUAAC 3105453
+                                                                                       **************************************** PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C::: GG CG::GGUUCGA UCC::C:A::UCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105452 CGUCCGGuCGUAGGUUCGAGUCCUACAAGGUCCA 3105419
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   1.4e-15   71.0   0.0  cm        1       71 []      614699      614769 + .. 1.00    no 0.51
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      G::G:U:UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 614699 GCGGGUGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCU 614738
+                                                                                      **************************************** PP
+
+                                                                                                                      NC
+                                                                                      >>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      GA+G C::G:GUUCGA UC:C:::A:C::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 614739 GAUGUCGUGAGUUCGAUUCUCAUCACCCGCU 614769
+                                                                                      ******************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   1.4e-15   71.0   0.0  cm        1       71 []      946516      946586 + .. 1.00    no 0.51
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      G::G:U:UAG:U:AGUGGUA:A:C UC:G:CUU  AA:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 946516 GCGGGUGUAGUUUAGUGGUAAAACCUCAGCCUUCCAAGCU 946555
+                                                                                      **************************************** PP
+
+                                                                                                                      NC
+                                                                                      >>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      GA+G C::G:GUUCGA UC:C:::A:C::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 946556 GAUGUCGUGAGUUCGAUUCUCAUCACCCGCU 946586
+                                                                                      ******************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   3.6e-15   69.5   0.0  cm        1       71 []      932232      932302 + .. 1.00    no 0.58
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      GG:G :AUAGC::AGUGGUA::GC+::GG:CU+ AAA:CC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932232 GGCGGCAUAGCCAAGUGGUAAGGCAGAGGUCUGCAAAACC 932271
+                                                                                      **************************************** PP
+
+                                                                                                                      NC
+                                                                                      >>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      ::++ C:C:GGUUCGAAUCC:G:U: C:CC 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932272 UUUAUCCCCGGUUCGAAUCCGGGUGUCGCCU 932302
+                                                                                      ******************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !     4e-15   69.3   0.0  cm        1       71 []      619904      619977 + .. 1.00    no 0.64
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 619904 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACG 619943
+                                                                                      **************************************** PP
+
+                                                                                                                         NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      C:G:AGG C:CGGGUUCGA UCCCG::::::CC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 619944 CAGGAGGuCGCGGGUUCGAGUCCCGUCCGGACCG 619977
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !     4e-15   69.3   0.0  cm        1       71 []      931493      931566 + .. 1.00    no 0.64
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931493 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACG 931532
+                                                                                      **************************************** PP
+
+                                                                                                                         NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      C:G:AGG C:CGGGUUCGA UCCCG::::::CC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931533 CAGGAGGuCGCGGGUUCGAGUCCCGUCCGGACCG 931566
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !     4e-15   69.3   0.0  cm        1       71 []     3105211     3105138 - .. 1.00    no 0.64
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105211 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACG 3105172
+                                                                                       **************************************** PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C:G:AGG C:CGGGUUCGA UCCCG::::::CC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105171 CAGGAGGuCGCGGGUUCGAGUCCCGUCCGGACCG 3105138
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !     4e-15   69.3   0.0  cm        1       71 []     4087619     4087546 - .. 1.00    no 0.64
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       GG:::::UA::UCAGU GGU AGA::G:C:G:CU++ A :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087619 GGUCCGGUAGUUCAGUuGGUuAGAAUGCCUGCCUGUCACG 4087580
+                                                                                       **************************************** PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C:G:AGG C:CGGGUUCGA UCCCG::::::CC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087579 CAGGAGGuCGCGGGUUCGAGUCCCGUCCGGACCG 4087546
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   8.1e-15   68.3   0.0  cm        1       71 []     2832511     2832438 - .. 0.99    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       G::::::UAGCUCAG  GG  AGAGC+:CGG:CUU +AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2832511 GUCCCAGUAGCUCAGCuGGAuAGAGCAACGGCCUUCUAAG 2832472
+                                                                                       *****************8888******************* PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CCG: GG CG G:GUUCGAAUC:C C::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2832471 CCGUCGGuCGGGAGUUCGAAUCUCUCCUGGGACG 2832438
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   1.2e-14   67.6   0.0  cm        1       71 []       95455       95527 + .. 1.00    no 0.52
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39   
+                                                                                     G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95455 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUC 95494
+                                                                                     **************************************** PP
+
+                                                                                                                       NC
+                                                                                     >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     :G:AGG +:: GGUUC+A UCC ::  :C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95495 AGUAGGuUGGGGGUUCAAGUCCUCUUGCCGGCA 95527
+                                                                                     ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   1.2e-14   67.6   0.0  cm        1       71 []      194371      194443 + .. 1.00    no 0.52
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194371 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUC 194410
+                                                                                      **************************************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :G:AGG +:: GGUUC+A UCC ::  :C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194411 AGUAGGuUGGGGGUUCAAGUCCUCUUGCCGGCA 194443
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   1.2e-14   67.6   0.0  cm        1       71 []      931663      931735 + .. 1.00    no 0.52
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931663 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUC 931702
+                                                                                      **************************************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :G:AGG +:: GGUUC+A UCC ::  :C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931703 AGUAGGuUGGGGGUUCAAGUCCUCUUGCCGGCA 931735
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   1.2e-14   67.6   0.0  cm        1       71 []     3106312     3106240 - .. 1.00    no 0.52
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G::G:  UAGCUCA+U GGUAGAGC+:C:GACUU +AAUC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106312 GCCGGUGUAGCUCAAUuGGUAGAGCAACUGACUUGUAAUC 3106273
+                                                                                       **************************************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :G:AGG +:: GGUUC+A UCC ::  :C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106272 AGUAGGuUGGGGGUUCAAGUCCUCUUGCCGGCA 3106240
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   1.3e-14   67.5   0.0  cm        1       71 []       70267       70338 + .. 1.00    no 0.61
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39   
+                                                                                     G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 70267 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGG 70306
+                                                                                     ****************9999******************** PP
+
+                                                                                                                      NC
+                                                                                     >>>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     CG:+++C:CGGGUUCGAAUCCCG:::::: CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 70307 CGGUAACACGGGUUCGAAUCCCGUACGGGUCA 70338
+                                                                                     ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   1.3e-14   67.5   0.0  cm        1       71 []      194213      194284 + .. 1.00    no 0.61
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194213 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGG 194252
+                                                                                      ****************9999******************** PP
+
+                                                                                                                       NC
+                                                                                      >>>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      CG:+++C:CGGGUUCGAAUCCCG:::::: CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194253 CGGUAACACGGGUUCGAAUCCCGUACGGGUCA 194284
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   1.3e-14   67.5   0.0  cm        1       71 []      528911      528982 + .. 1.00    no 0.61
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528911 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGG 528950
+                                                                                      ****************9999******************** PP
+
+                                                                                                                       NC
+                                                                                      >>>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      CG:+++C:CGGGUUCGAAUCCCG:::::: CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528951 CGGUAACACGGGUUCGAAUCCCGUACGGGUCA 528982
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   1.3e-14   67.5   0.0  cm        1       71 []      931239      931310 + .. 1.00    no 0.61
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931239 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGG 931278
+                                                                                      ****************9999******************** PP
+
+                                                                                                                       NC
+                                                                                      >>>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      CG:+++C:CGGGUUCGAAUCCCG:::::: CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931279 CGGUAACACGGGUUCGAAUCCCGUACGGGUCA 931310
+                                                                                      ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   1.3e-14   67.5   0.0  cm        1       71 []     3104573     3104502 - .. 1.00    no 0.61
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104573 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGG 3104534
+                                                                                       ****************9999******************** PP
+
+                                                                                                                        NC
+                                                                                       >>>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CG:+++C:CGGGUUCGAAUCCCG:::::: CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104533 CGGUAACACGGGUUCGAAUCCCGUACGGGUCA 3104502
+                                                                                       ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.3e-14   67.5   0.0  cm        1       71 []     4087772     4087701 - .. 1.00    no 0.61
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G :::::U+G:::AG GGU A:::C+:CG::CUU+ A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087772 GGCCCGUUGGUCAAGCGGUuAAGACACCGCCCUUUCACGG 4087733
+                                                                                       ****************9999******************** PP
+
+                                                                                                                        NC
+                                                                                       >>>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CG:+++C:CGGGUUCGAAUCCCG:::::: CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 4087732 CGGUAACACGGGUUCGAAUCCCGUACGGGUCA 4087701
+                                                                                       ******************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !     2e-14   66.8   0.0  cm        1       71 []      194555      194626 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194555 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCC 194594
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      G: +  CG :GGUUCGAAUCC: CUA:C:C:+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194595 GUCAUgCGUUGGUUCGAAUCCAGCUAGCCCAG 194626
+                                                                                      ***999************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !     2e-14   66.8   0.0  cm        1       71 []      528994      529065 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528994 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCC 529033
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      G: +  CG :GGUUCGAAUCC: CUA:C:C:+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529034 GUCAUgCGUUGGUUCGAAUCCAGCUAGCCCAG 529065
+                                                                                      ***999************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !     2e-14   66.8   0.0  cm        1       71 []      932031      932102 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :G:G:UAUAGC::AG GGUA::GC+:CGGACUU+ A UCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932031 UGGGCUAUAGCCAAGCGGUAAGGCAACGGACUUUGACUCC 932070
+                                                                                      **************************************** PP
+
+                                                                                                                       NC
+                                                                                      >>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      G: +  CG :GGUUCGAAUCC: CUA:C:C:+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932071 GUCAUgCGUUGGUUCGAAUCCAGCUAGCCCAG 932102
+                                                                                      ***999************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   2.3e-14   66.6   0.0  cm        1       71 []      931848      931918 + .. 1.00    no 0.54
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40    
+                                                                                      :G:G::AUAG:U:A+ GGUA:A:C+::GG:CU  AAA:CC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931848 AGGGGCAUAGUUUAACGGUAGAACAGAGGUCUCCAAAACC 931887
+                                                                                      **************************************** PP
+
+                                                                                                                      NC
+                                                                                      >>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     41 gaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :: GG+G: GGUUCGA UCC :CU::C:C:+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931888 UCCGGUGUGGGUUCGAUUCCUACUGCCCCUG 931918
+                                                                                      ******************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   2.4e-14   66.6   0.0  cm        1       71 []       96060       96133 + .. 1.00    no 0.57
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___..____>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAu 38   
+                                                                                     :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 96060 CGGGAAGUAGCUCAGCuuGGUAGAGCACAUGGUUUGGGAC 96099
+                                                                                     **************************************** PP
+
+                                                                                                                        NC
+                                                                                     >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     C::: GG C:C:GGUUCGAAUCC:G:::UC:C:A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 96100 CAUGGGGuCGCAGGUUCGAAUCCUGUCUUCCCGA 96133
+                                                                                     ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   2.4e-14   66.6   0.0  cm        1       71 []      166171      166244 + .. 1.00    no 0.57
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___..____>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAu 38    
+                                                                                      :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166171 CGGGAAGUAGCUCAGCuuGGUAGAGCACAUGGUUUGGGAC 166210
+                                                                                      **************************************** PP
+
+                                                                                                                         NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      C::: GG C:C:GGUUCGAAUCC:G:::UC:C:A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166211 CAUGGGGuCGCAGGUUCGAAUCCUGUCUUCCCGA 166244
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   2.4e-14   66.6   0.0  cm        1       71 []     3105745     3105672 - .. 1.00    no 0.57
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___..____>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAu 38     
+                                                                                       :G:GA::UAGCUCAG   GGUAGAGC+:::G:+UU   A:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105745 CGGGAAGUAGCUCAGCuuGGUAGAGCACAUGGUUUGGGAC 3105706
+                                                                                       **************************************** PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C::: GG C:C:GGUUCGAAUCC:G:::UC:C:A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105705 CAUGGGGuCGCAGGUUCGAAUCCUGUCUUCCCGA 3105672
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   2.4e-14   66.5   0.0  cm        1       71 []      619767      619840 + .. 1.00    no 0.64
+
+                                                                                      v                                        NC
+                                                                                      (((((((,,<<<<___..____>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAu 38    
+                                                                                       G:G:::U+G :CAGU  GGUAG: CGUCGG:CU A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 619767 CGCGGGGUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAAC 619806
+                                                                                      **************************************** PP
+
+                                                                                                                      v  NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      CCGAAGG CGC:GGUUC+AAUCC:GC:::C:C A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 619807 CCGAAGGuCGCAGGUUCAAAUCCUGCCCCCGCAA 619840
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   2.4e-14   66.5   0.0  cm        1       71 []      931405      931478 + .. 1.00    no 0.64
+
+                                                                                      v                                        NC
+                                                                                      (((((((,,<<<<___..____>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAu 38    
+                                                                                       G:G:::U+G :CAGU  GGUAG: CGUCGG:CU A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931405 CGCGGGGUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAAC 931444
+                                                                                      **************************************** PP
+
+                                                                                                                      v  NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      CCGAAGG CGC:GGUUC+AAUCC:GC:::C:C A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931445 CCGAAGGuCGCAGGUUCAAAUCCUGCCCCCGCAA 931478
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   2.4e-14   66.5   0.0  cm        1       71 []     3105299     3105226 - .. 1.00    no 0.64
+
+                                                                                       v                                        NC
+                                                                                       (((((((,,<<<<___..____>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAu 38     
+                                                                                        G:G:::U+G :CAGU  GGUAG: CGUCGG:CU A+AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105299 CGCGGGGUGGAGCAGUucGGUAGCUCGUCGGGCUCAUAAC 3105260
+                                                                                       **************************************** PP
+
+                                                                                                                       v  NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CCGAAGG CGC:GGUUC+AAUCC:GC:::C:C A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105259 CCGAAGGuCGCAGGUUCAAAUCCUGCCCCCGCAA 3105226
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   4.1e-14   65.7   0.0  cm        1       71 []      194466      194547 + .. 0.97    no 0.62
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______.._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAu 38    
+                                                                                      GGAG:::UAGC::AGUGG   A::GCG:CGGACU++AAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194466 GGAGGGGUAGCGAAGUGGCuaAACGCGGCGGACUGUAAAU 194505
+                                                                                      ****************7777******************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,...........,,<<<<<_______>>>>>)))) CS
+                                                                          tRNA     39 Ccgaag...........gcgcgGGUUCgAaUCCcgcuauc 67    
+                                                                                      CCG:+             CG:::GUUCGAAUC:::C:::C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194506 CCGCU-cccucaggguu-CGGCAGUUCGAAUCUGCCCCCC 194543
+                                                                                      *****.*********74.********************** PP
+
+                                                                                           NC
+                                                                                      ))): CS
+                                                                          tRNA     68 ucCa 71    
+                                                                                      UCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194544 UCCA 194547
+                                                                                      **** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   4.1e-14   65.7   0.0  cm        1       71 []      931758      931839 + .. 0.97    no 0.62
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______.._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAu 38    
+                                                                                      GGAG:::UAGC::AGUGG   A::GCG:CGGACU++AAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931758 GGAGGGGUAGCGAAGUGGCuaAACGCGGCGGACUGUAAAU 931797
+                                                                                      ****************7777******************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,...........,,<<<<<_______>>>>>)))) CS
+                                                                          tRNA     39 Ccgaag...........gcgcgGGUUCgAaUCCcgcuauc 67    
+                                                                                      CCG:+             CG:::GUUCGAAUC:::C:::C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931798 CCGCU-cccucaggguu-CGGCAGUUCGAAUCUGCCCCCC 931835
+                                                                                      *****.*********74.********************** PP
+
+                                                                                           NC
+                                                                                      ))): CS
+                                                                          tRNA     68 ucCa 71    
+                                                                                      UCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931836 UCCA 931839
+                                                                                      **** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   4.2e-14   65.7   0.0  cm        1       71 []     2027056     2026984 - .. 0.98    no 0.53
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G::::::UAGC:CAG GG  AG:GC+:C:G:+U  +AA:C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2027056 GCUCUAGUAGCACAGCGGAuAGUGCAGCAGUUUCCUAAAC 2027017
+                                                                                       ****************7777******************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :G:AGG CG G:GUUCGAAUC:C C::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2027016 UGCAGGuCGGGAGUUCGAAUCUCUCCUAGAGCG 2026984
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   5.8e-14   65.2   0.0  cm        1       71 []       95375       95447 + .. 0.98    no 0.60
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39   
+                                                                                     GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95375 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGC 95414
+                                                                                     ****************9555******************** PP
+
+                                                                                                                       NC
+                                                                                     >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     :GA GG CG :GGUUCGA  CC: C:::CUCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95415 AGAGGGuCGGCGGUUCGAGCCCGUCAUCCUCCA 95447
+                                                                                     ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   5.8e-14   65.2   0.0  cm        1       71 []      194291      194363 + .. 0.98    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194291 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGC 194330
+                                                                                      ****************9555******************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :GA GG CG :GGUUCGA  CC: C:::CUCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 194331 AGAGGGuCGGCGGUUCGAGCCCGUCAUCCUCCA 194363
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   5.8e-14   65.2   0.0  cm        1       71 []      931320      931392 + .. 0.98    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931320 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGC 931359
+                                                                                      ****************9555******************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :GA GG CG :GGUUCGA  CC: C:::CUCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931360 AGAGGGuCGGCGGUUCGAGCCCGUCAUCCUCCA 931392
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) !   5.8e-14   65.2   0.0  cm        1       71 []     3106420     3106348 - .. 0.98    no 0.60
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       GGAG:::UAGCUCAG  GG AGAGC+UC:G:CUUA AA:C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106420 GGAGGAUUAGCUCAGCuGGGAGAGCAUCUGCCUUACAAGC 3106381
+                                                                                       ****************9555******************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :GA GG CG :GGUUCGA  CC: C:::CUCCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106380 AGAGGGuCGGCGGUUCGAGCCCGUCAUCCUCCA 3106348
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) !   7.5e-14   64.8   0.0  cm        1       71 []       95956       96029 + .. 0.99    no 0.57
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38   
+                                                                                     G::::::UAGCUCA+U GG  AGAGCGU::GACU    AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95956 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAU 95995
+                                                                                     *****************8888******************* PP
+
+                                                                                                                        NC
+                                                                                     >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     C::AAGG +:: GGUUCGA UCC ::::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95996 CAAAAGGuUAGGGGUUCGACUCCUCUCGGGCGCG 96029
+                                                                                     ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) !   7.5e-14   64.8   0.0  cm        1       71 []      166067      166140 + .. 0.99    no 0.57
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      G::::::UAGCUCA+U GG  AGAGCGU::GACU    AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166067 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAU 166106
+                                                                                      *****************8888******************* PP
+
+                                                                                                                         NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      C::AAGG +:: GGUUCGA UCC ::::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166107 CAAAAGGuUAGGGGUUCGACUCCUCUCGGGCGCG 166140
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) !   7.5e-14   64.8   0.0  cm        1       71 []      614609      614682 + .. 0.99    no 0.57
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      G::::::UAGCUCA+U GG  AGAGCGU::GACU    AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 614609 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAU 614648
+                                                                                      *****************8888******************* PP
+
+                                                                                                                         NC
+                                                                                      >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      C::AAGG +:: GGUUCGA UCC ::::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 614649 CAAAAGGuUAGGGGUUCGACUCCUCUCGGGCGCG 614682
+                                                                                      ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) !   7.5e-14   64.8   0.0  cm        1       71 []     3105837     3105764 - .. 0.99    no 0.57
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       G::::::UAGCUCA+U GG  AGAGCGU::GACU    AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105837 GCGCCCGUAGCUCAAUuGGAuAGAGCGUUUGACUACGGAU 3105798
+                                                                                       *****************8888******************* PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C::AAGG +:: GGUUCGA UCC ::::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105797 CAAAAGGuUAGGGGUUCGACUCCUCUCGGGCGCG 3105764
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (60) !     2e-13   63.2   0.0  cm        1       71 []     2453188     2453258 + .. 1.00    no 0.54
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<_______>>>>,<<<<<_______>>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCc 40     
+                                                                                       :G:G:UAUAGC::AG GGUA::GC+: GGACUU+ A UCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2453188 UGGGCUAUAGCCAAGCGGUAAGGCAAUGGACUUUGACUCC 2453227
+                                                                                       **************************************** PP
+
+                                                                                                                       NC
+                                                                                       >>,,,,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      41 gaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                        : + CG :GGUUCGAAUCC: CUA:C:C:+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 2453228 GUGAUCGUUGGUUCGAAUCCAGCUAGCCCAG 2453258
+                                                                                       ***9*************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (61) !   2.2e-13   63.1   0.0  cm        1       71 []     3105029     3104957 - .. 0.99    no 0.56
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G:: :U:U+GC::AGUGGU A::GC+:C:GA+U++   UC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105029 GCGGUUGUGGCGAAGUGGUuAACGCACCAGAUUGUGGCUC 3104990
+                                                                                       ****************9999******************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :G: +  C::GGGUUCGA UCCC:::A: ::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104989 UGGCAUuCGUGGGUUCGAUUCCCAUCAAUCGCC 3104957
+                                                                                       ****99*************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (62) !   2.9e-13   62.7   0.0  cm        1       71 []      165832      165904 + .. 1.00    no 0.56
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G:::::AUAGCUCAG  GGUAGAGC+::::: U+ +AA::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 165832 GCUUCCAUAGCUCAGCaGGUAGAGCACUUCCAUGGUAAGG 165871
+                                                                                      **************************************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :::AGG C:::GGUUCGA  CC:::U:::::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 165872 AAGAGGuCAGCGGUUCGAGCCCGCUUGGAAGCU 165904
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (63) !   3.6e-13   62.4   0.0  cm        1       71 []       11552       11624 + .. 0.98    no 0.66
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39   
+                                                                                     GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 11552 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGC 11591
+                                                                                     ****************9555******************** PP
+
+                                                                                                                       NC
+                                                                                     >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     :G:AGG C:::GGUUCGA  CC::::::C CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 11592 AGGAGGuCAGCGGUUCGAUCCCGCUAGGCUCCA 11624
+                                                                                     ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (64) !   3.6e-13   62.4   0.0  cm        1       71 []       32020       32092 + .. 0.98    no 0.66
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39   
+                                                                                     GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 32020 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGC 32059
+                                                                                     ****************9555******************** PP
+
+                                                                                                                       NC
+                                                                                     >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     :G:AGG C:::GGUUCGA  CC::::::C CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 32060 AGGAGGuCAGCGGUUCGAUCCCGCUAGGCUCCA 32092
+                                                                                     ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (65) !   3.6e-13   62.4   0.0  cm        1       71 []       96146       96218 + .. 0.98    no 0.66
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39   
+                                                                                     GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 96146 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGC 96185
+                                                                                     ****************9555******************** PP
+
+                                                                                                                       NC
+                                                                                     >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     :G:AGG C:::GGUUCGA  CC::::::C CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 96186 AGGAGGuCAGCGGUUCGAUCCCGCUAGGCUCCA 96218
+                                                                                     ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (66) !   3.6e-13   62.4   0.0  cm        1       71 []      166256      166328 + .. 0.98    no 0.66
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39    
+                                                                                      GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166256 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGC 166295
+                                                                                      ****************9555******************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :G:AGG C:::GGUUCGA  CC::::::C CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 166296 AGGAGGuCAGCGGUUCGAUCCCGCUAGGCUCCA 166328
+                                                                                      ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (67) !   3.6e-13   62.4   0.0  cm        1       71 []     3105663     3105591 - .. 0.98    no 0.66
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       GG G:::UAGCUCAG  GG AGAGCG:C:G:+UU  A :C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105663 GGGGCCUUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGC 3105624
+                                                                                       ****************9555******************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :G:AGG C:::GGUUCGA  CC::::::C CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105623 AGGAGGuCAGCGGUUCGAUCCCGCUAGGCUCCA 3105591
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (68) !   3.9e-13   62.2   0.0  cm        1       71 []      931113      931201 + .. 0.99    no 0.57
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______.._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAu 38    
+                                                                                      GGAGA: U+ C::AGUGGU  A::G G:::GA+U+ AAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931113 GGAGAGCUGUCCGAGUGGUcgAAGGAGCACGAUUGGAAAU 931152
+                                                                                      **************************************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,..................,,<<<<<_______>> CS
+                                                                          tRNA     39 Ccgaag..................gcgcgGGUUCgAaUCC 60    
+                                                                                      C:::+                    C::GGGUUCGAAUCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931153 CGUGU-aggcggucaacuccgucu-CAAGGGUUCGAAUCC 931190
+                                                                                      *****.8***************95.*************** PP
+
+                                                                                                  NC
+                                                                                      >>>))))))): CS
+                                                                          tRNA     61 cgcuaucucCa 71    
+                                                                                      C:: :UCUCC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931191 CUUGCUCUCCG 931201
+                                                                                      *********** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (69) !   6.6e-13   61.4   0.0  cm        1       71 []      931946      932018 + .. 0.99    no 0.58
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G:: :U:U+GC::AGUGGU A::GC+:C:GA+U++   UC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931946 GCGGUUGUGGCGAAGUGGUuAACGCACCAGAUUGUGGCUC 931985
+                                                                                      ****************9999******************** PP
+
+                                                                                                                        NC
+                                                                                      >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA     40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                                                                                      :G: +  C::GGGUUCGA UCCC:::A: ::C 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 931986 UGGCACuCGUGGGUUCGAUUCCCAUCAAUCGCC 932018
+                                                                                      ****988************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (70) !   7.4e-13   61.2   0.0  cm        1       71 []     3127150     3127078 - .. 0.98    no 0.67
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       GG G::AUAGCUCAG  GG AGAGCG:::::CU+  A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3127150 GGGGCCAUAGCUCAGCuGGGAGAGCGCUACGCUGGCAGCG 3127111
+                                                                                       ****************9555******************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :::AGG C::GGGUUCGA  CCC::U::C CCA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3127110 UAGAGGuCAGGGGUUCGAGCCCCCUUGGCUCCA 3127078
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (71) !   9.7e-13   60.8   0.0  cm        1       71 []     3105409     3105320 - .. 0.98    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___..___.._>>>>,<<<<<______ CS
+                                                                          tRNA       1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaA 36     
+                                                                                       GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105409 GGAGGAAUACCCAAGUcuGGCugAAGGGAUCGGUCUUGAA 3105370
+                                                                                       ******************7778****************** PP
+
+                                                                                                                                NC
+                                                                                       _>>>>>,,................,,<<<<<_______>> CS
+                                                                          tRNA      37 AuCcgaag................gcgcgGGUUCgAaUCC 60     
+                                                                                       A:CCGA                  GCG GGGUUCGAAUCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105369 AACCGAC-aggggugucaaagcccGCGGGGGUUCGAAUCC 3105331
+                                                                                       *******.8**************96*************** PP
+
+                                                                                                   NC
+                                                                                       >>>))))))): CS
+                                                                          tRNA      61 cgcuaucucCa 71     
+                                                                                       C CU::CUCC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105330 CUCUUCCUCCG 3105320
+                                                                                       *********** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (72) !   9.8e-13   60.8   0.0  cm        1       71 []       22292       22381 + .. 0.98    no 0.60
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___..___.._>>>>,<<<<<______ CS
+                                                                          tRNA     1 GgagauaUAGCucAgU..GGU..AgaGCgucgGaCUuaaA 36   
+                                                                                     GGAG::AUA:C::AGU  GG   A::G:+UCGG:CUU AA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 22292 GGAGGAAUACCCAAGUccGGCugAAGGGAUCGGUCUUGAA 22331
+                                                                                     ******************8878****************** PP
+
+                                                                                                                              NC
+                                                                                     _>>>>>,,................,,<<<<<_______>> CS
+                                                                          tRNA    37 AuCcgaag................gcgcgGGUUCgAaUCC 60   
+                                                                                     A:CCGA                  GCG GGGUUCGAAUCC
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 22332 AACCGAC-aggggugucaaagcccGCGGGGGUUCGAAUCC 22370
+                                                                                     *******.8**************96*************** PP
+
+                                                                                                 NC
+                                                                                     >>>))))))): CS
+                                                                          tRNA    61 cgcuaucucCa 71   
+                                                                                     C CU::CUCC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 22371 CUCUUCCUCCG 22381
+                                                                                     *********** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (73) !   2.7e-12   59.2   0.0  cm        1       71 []      529182      529263 + .. 0.99    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      G::G:U:U+GC::A+U GG   ::GCG:::GACUUA  AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529182 GCGGGUGUGGCGGAAUuGGCaGACGCGCUAGACUUAGGAU 529221
+                                                                                      *******************9*9****************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,..........,,<<<<<_______>>>>>))))) CS
+                                                                          tRNA     39 Ccgaag..........gcgcgGGUUCgAaUCCcgcuaucu 68    
+                                                                                      C:::+           G+: GGGUUCGA UCCC ::A:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529222 CUAGU-gucuuacgacGUGGGGGUUCGAGUCCCUUCACCC 529260
+                                                                                      *****.8********95*********************** PP
+
+                                                                                          NC
+                                                                                      )): CS
+                                                                          tRNA     69 cCa 71    
+                                                                                      :CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529261 GCA 529263
+                                                                                      *** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (74) !   2.8e-12   59.2   0.0  cm        1       71 []     1242242     1242314 + .. 0.98    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.____>>>>,<<<<<_______>> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuC 39     
+                                                                                       G::::::UAGCUCAG  GG AGAGCG:::::+U+A A ::
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 1242242 GAUUCCGUAGCUCAGCuGGGAGAGCGCUACCUUGACAGGG 1242281
+                                                                                       ****************9555******************** PP
+
+                                                                                                                         NC
+                                                                                       >>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      40 cgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       :::AGG C:C:GGUUCGA  CC:G:::::::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 1242282 UAGAGGuCGCUGGUUCGAGCCCAGUCGGAAUCA 1242314
+                                                                                       ********************************* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (75) !   3.1e-12   59.0   0.0  cm        1       71 []     3104689     3104602 - .. 0.98    no 0.59
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<______.._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAu 38     
+                                                                                       GGAGA::UA::::AGUGG   A::::G: :::CU+ +AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104689 GGAGAAGUACUCAAGUGGCugAAGAGGCGCCCCUGCUAAG 3104650
+                                                                                       ****************7777******************** PP
+
+                                                                                                                                NC
+                                                                                       >>>>,,................,,<<<<<_______>>>> CS
+                                                                          tRNA      39 Ccgaag................gcgcgGGUUCgAaUCCcg 62     
+                                                                                       :: :+                 GCG:GGGUUC+AAUCCC:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104649 GGUGU-aggucguguaagcggcGCGAGGGUUCAAAUCCCU 3104611
+                                                                                       *****.8**************95***************** PP
+
+                                                                                                 NC
+                                                                                       >))))))): CS
+                                                                          tRNA      63 cuaucucCa 71     
+                                                                                       C::UCUCC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3104610 CCUUCUCCG 3104602
+                                                                                       ********* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (76) !   3.1e-12   59.0   0.0  cm        1       71 []      528791      528878 + .. 0.98    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______.._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAu 38    
+                                                                                      GGAGA::UA::::AGUGG   A::::G: :::CU+ +AA:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528791 GGAGAAGUACUCAAGUGGCugAAGAGGCGCCCCUGCUAAG 528830
+                                                                                      ****************7777******************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,................,,<<<<<_______>>>> CS
+                                                                          tRNA     39 Ccgaag................gcgcgGGUUCgAaUCCcg 62    
+                                                                                      :: :+                 GCG:GGGUUC+AAUCCC:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528831 GGUGU-aggucgcguaagcggcGCGAGGGUUCAAAUCCCU 528869
+                                                                                      *****.8**************95***************** PP
+
+                                                                                                NC
+                                                                                      >))))))): CS
+                                                                          tRNA     63 cuaucucCa 71    
+                                                                                      C::UCUCC+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 528870 CCUUCUCCG 528878
+                                                                                      ********* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (77) !   3.4e-12   58.9   0.0  cm        1       71 []       95649       95731 + .. 0.99    no 0.57
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38   
+                                                                                     G::G:U:U+GC::A+U GG   ::GCG:::GACUUA  AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95649 GCGGGUGUGGCGGAAUuGGCaGACGCGCUAGACUUAGGAU 95688
+                                                                                     *******************9*9****************** PP
+
+                                                                                                                              NC
+                                                                                     >>>>,,...........,,<<<<<_______>>>>>)))) CS
+                                                                          tRNA    39 Ccgaag...........gcgcgGGUUCgAaUCCcgcuauc 67   
+                                                                                     C:::+            G+: GGGUUC+A UCCC ::A:C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95689 CUAGU-gucuuuaugacGUGGGGGUUCAAGUCCCUUCACC 95727
+                                                                                     *****.8*********95********************** PP
+
+                                                                                          NC
+                                                                                     ))): CS
+                                                                          tRNA    68 ucCa 71   
+                                                                                     ::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95728 CGCA 95731
+                                                                                     **** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (78) !   4.4e-12   58.5   0.0  cm        1       71 []       95861       95946 + .. 0.99    no 0.60
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38   
+                                                                                     G::G ::U+G:::A+U GG   :::C+::GGACUUAAAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95861 GCCGGGGUGGUGGAAUuGGCaGACACACAGGACUUAAAAU 95900
+                                                                                     *******************9*9****************** PP
+
+                                                                                                                              NC
+                                                                                     >>>>,,..............,,<<<<<_______>>>>>) CS
+                                                                          tRNA    39 Ccgaag..............gcgcgGGUUCgAaUCCcgcu 64   
+                                                                                     CC::                G+GC:GGUUC+A UCC:GC:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95901 CCUGC-gguaggugacuaccGUGCCGGUUCAAGUCCGGCC 95939
+                                                                                     *****.8************96******************* PP
+
+                                                                                             NC
+                                                                                     )))))): CS
+                                                                          tRNA    65 aucucCa 71   
+                                                                                     : C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 95940 CUCGGCA 95946
+                                                                                     ******* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (79) !   4.4e-12   58.5   0.0  cm        1       71 []      932310      932395 + .. 0.99    no 0.60
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      G::G ::U+G:::A+U GG   :::C+::GGACUUAAAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932310 GCCGGGGUGGUGGAAUuGGCaGACACACAGGACUUAAAAU 932349
+                                                                                      *******************9*9****************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,..............,,<<<<<_______>>>>>) CS
+                                                                          tRNA     39 Ccgaag..............gcgcgGGUUCgAaUCCcgcu 64    
+                                                                                      CC::                G+GC:GGUUC+A UCC:GC:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932350 CCUGC-gguaggugacuaccGUGCCGGUUCAAGUCCGGCC 932388
+                                                                                      *****.8************96******************* PP
+
+                                                                                              NC
+                                                                                      )))))): CS
+                                                                          tRNA     65 aucucCa 71    
+                                                                                      : C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932389 CUCGGCA 932395
+                                                                                      ******* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (80) !   4.4e-12   58.5   0.0  cm        1       71 []     3105932     3105847 - .. 0.99    no 0.60
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       G::G ::U+G:::A+U GG   :::C+::GGACUUAAAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105932 GCCGGGGUGGUGGAAUuGGCaGACACACAGGACUUAAAAU 3105893
+                                                                                       *******************9*9****************** PP
+
+                                                                                                                                NC
+                                                                                       >>>>,,..............,,<<<<<_______>>>>>) CS
+                                                                          tRNA      39 Ccgaag..............gcgcgGGUUCgAaUCCcgcu 64     
+                                                                                       CC::                G+GC:GGUUC+A UCC:GC:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105892 CCUGC-gguaggugacuaccGUGCCGGUUCAAGUCCGGCC 3105854
+                                                                                       *****.8************96******************* PP
+
+                                                                                               NC
+                                                                                       )))))): CS
+                                                                          tRNA      65 aucucCa 71     
+                                                                                       : C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105853 CUCGGCA 3105847
+                                                                                       ******* PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (81) !   4.7e-12   58.4   0.0  cm        1       71 []       70181       70254 + .. 0.99    no 0.65
+
+                                                                                                                              NC
+                                                                                     (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38   
+                                                                                     :G:G: :UAGCUCAG  GG  AGAGCG ::G:+U A+A :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 70181 GGCGGUGUAGCUCAGCuGGCuAGAGCGUACGGUUCAUACC 70220
+                                                                                     *****************9999******************* PP
+
+                                                                                                                        NC
+                                                                                     >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA    39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                                                                                     C:: AGG CG GGGUUCGA  CCC C: :C:C:A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 70221 CGUGAGGuCGGGGGUUCGAUCCCCUCCGCCGCUA 70254
+                                                                                     ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (82) !   4.7e-12   58.4   0.0  cm        1       71 []     3105571     3105498 - .. 0.99    no 0.65
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       :G:G: :UAGCUCAG  GG  AGAGCG ::G:+U A+A :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105571 GGCGGUGUAGCUCAGCuGGCuAGAGCGUACGGUUCAUACC 3105532
+                                                                                       *****************9999******************* PP
+
+                                                                                                                          NC
+                                                                                       >>>>,,,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       C:: AGG CG GGGUUCGA  CCC C: :C:C:A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3105531 CGUGAGGuCGGGGGUUCGAUCCCCUCCGCCGCUA 3105498
+                                                                                       ********************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (83) !     1e-11   57.2   0.0  cm        1       71 []     3478588     3478513 - .. 0.97    no 0.63
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       G::::::UAGCUCAGU GG  AGAGCG::GG:+U     :
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3478588 GCGCUCGUAGCUCAGUuGGAuAGAGCGGUGGUUUCCGGUA 3478549
+                                                                                       *****************8888******************* PP
+
+                                                                                                                              NC
+                                                                                       >>>>,,....,.,<<<<<_______>>>>>))))))): CS
+                                                                          tRNA      39 Ccgaag....g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                                                                                       CC::        CG GGGUUCGAAUCCC C::::::C+
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3478548 CCACG-ucug-uCGGGGGUUCGAAUCCCUCCGAGCGCG 3478513
+                                                                                       ***99.8996.4************************** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (84) !     3e-11   55.5   0.0  cm        1       71 []      932664      932745 + .. 0.98    no 0.61
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38    
+                                                                                      :::G:U:U+GC::A+U GG   ::GCG:::GACU AAAAU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932664 GCCGGUGUGGCGGAAUuGGCaGACGCGCACGACUCAAAAU 932703
+                                                                                      *******************9*9****************** PP
+
+                                                                                                                               NC
+                                                                                      >>>>,,..........,,<<<<<_______>>>>>))))) CS
+                                                                          tRNA     39 Ccgaag..........gcgcgGGUUCgAaUCCcgcuaucu 68    
+                                                                                      C:::+           G+G::GGUUCGA  CC::C:A:C:
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932704 CGUGU-uccuucuggaGUGUCGGUUCGACCCCGACCACCG 932742
+                                                                                      *****.9********74*********************** PP
+
+                                                                                          NC
+                                                                                      )): CS
+                                                                          tRNA     69 cCa 71    
+                                                                                      ::A
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 932743 GUA 932745
+                                                                                      *** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (85) !   2.9e-10   52.0   0.0  cm        1       71 []      529344      529427 + .. 0.99    no 0.63
+
+                                                                                                                               NC
+                                                                                      (((((((,,<<<<______._>>>>,<<<<<_______>> CS
+                                                                          tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuC 39    
+                                                                                      G::G ::U+GC::A+UGG   ::GCG:::G:+U+A   :C
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529344 GCGGUCGUGGCGGAAUGGCaGACGCGCUAGGUUGAGGGCC 529383
+                                                                                      *******************9******************** PP
+
+                                                                                                                               NC
+                                                                                      >>>,,.............,,<<<<<_______>>>>>))) CS
+                                                                          tRNA     40 cgaag.............gcgcgGGUUCgAaUCCcgcuau 66    
+                                                                                      :::+              G+:::GGUUC+A UCC::::: 
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529384 UAGU-gggugaauaacccGUGGAGGUUCAAGUCCUCUCGG 529422
+                                                                                      ****.8***********96********************* PP
+
+                                                                                            NC
+                                                                                      )))): CS
+                                                                          tRNA     67 cucCa 71    
+                                                                                      C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 529423 CCGCA 529427
+                                                                                      ***** PP
+
+>> PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (86) !   3.7e-10   51.6   0.0  cm        1       71 []     3106113     3106030 - .. 0.99    no 0.56
+
+                                                                                                                                NC
+                                                                                       (((((((,,<<<<___.___._>>>>,<<<<<_______> CS
+                                                                          tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAu 38     
+                                                                                       G::GAU:U+GC::A+U GG   ::GCG:::GA U A   U
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106113 GCGGAUGUGGCGGAAUuGGCaGACGCGCUAGAAUCAGGCU 3106074
+                                                                                       *******************9*9****************** PP
+
+                                                                                                                                NC
+                                                                                       >>>>,,............,,<<<<<_______>>>>>))) CS
+                                                                          tRNA      39 Ccgaag............gcgcgGGUUCgAaUCCcgcuau 66     
+                                                                                       C:::+             G+: GGGUUC+A UCCC ::AU
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106073 CUAGU-gucuuuacagacGUGGGGGUUCAAGUCCCUUCAU 3106035
+                                                                                       *****.8**********95********************* PP
+
+                                                                                             NC
+                                                                                       )))): CS
+                                                                          tRNA      67 cucCa 71     
+                                                                                       C::CA
+  PS-65_unicycler_I3+N3-Pcct_99127_S6_length_4148255_depth_1.00x_circular_true 3106034 CCGCA 3106030
+                                                                                       ***** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (8296510 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2993  (0.09348); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             618  (0.01933); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             572  (0.01793); expected (0.02)
+Windows   passing  local HMM Forward       filter:              49  (0.001777); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              49  (0.001777); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              25  (0.00165); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              24  (0.001622); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              89  (0.0008067); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              87  (0.0007876); expected (0.0001)
+Total CM hits reported:                                         86  (0.0007785); includes 0 truncated hit(s)
+
+# CPU time: 0.70u 0.03s 00:00:00.73 Elapsed: 00:00:00.14
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (8296510 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            4641  (0.0792); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1199  (0.02088); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1154  (0.02009); expected (0.02)
+Windows   passing  local HMM Forward       filter:              62  (0.00104); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              60  (0.001006); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              17  (0.0008631); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              17  (0.0008631); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              31  (0.0003204); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              28  (0.0002787); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.70u 0.00s 00:00:00.70 Elapsed: 00:00:00.15
+//
+[ok]

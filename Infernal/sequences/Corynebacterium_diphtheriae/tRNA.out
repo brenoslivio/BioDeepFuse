@@ -1,0 +1,754 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Corynebacterium_diphtheriae.fasta
+# output directed to file:               sequences/Corynebacterium_diphtheriae/tRNA.out
+# tabular output of hits:                sequences/Corynebacterium_diphtheriae/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   5.9e-17   75.0   0.0  CP025209.1 2147417 2147487 +  cm    no 0.52  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (2) !   6.1e-17   75.0   0.0  CP025209.1   11814   11887 +  cm    no 0.54  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (3) !   6.1e-17   75.0   0.0  CP025209.1   19041   19114 +  cm    no 0.54  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (4) !   2.8e-16   72.6   0.0  CP025209.1   11900   11972 +  cm    no 0.49  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (5) !   2.8e-16   72.6   0.0  CP025209.1   19127   19199 +  cm    no 0.49  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (6) !   2.8e-16   72.6   0.0  CP025209.1   20181   20253 +  cm    no 0.49  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (7) !   5.7e-16   71.5   0.0  CP025209.1 1912516 1912444 -  cm    no 0.55  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (8) !   1.4e-15   70.1   0.0  CP025209.1  132315  132387 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+  (9) !   1.4e-15   70.1   0.0  CP025209.1  134488  134560 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (10) !   1.7e-15   69.8   0.0  CP025209.1 1346525 1346595 +  cm    no 0.59  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (11) !     3e-15   69.0   0.0  CP025209.1  341535  341606 +  cm    no 0.49  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (12) !   3.2e-15   68.9   0.0  CP025209.1 1656510 1656583 +  cm    no 0.65  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (13) !   3.3e-15   68.8   0.0  CP025209.1  255636  255708 +  cm    no 0.58  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (14) !   3.7e-15   68.6   0.0  CP025209.1 1346219 1346291 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (15) !   3.7e-15   68.6   0.0  CP025209.1 1346414 1346486 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (16) !   3.7e-15   68.6   0.0  CP025209.1 1346708 1346780 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (17) !   3.9e-15   68.5   0.0  CP025209.1  341635  341707 +  cm    no 0.55  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (18) !   7.7e-15   67.5   0.0  CP025209.1 1656331 1656259 -  cm    no 0.52  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (19) !     1e-14   67.1   0.0  CP025209.1 1848062 1847990 -  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (20) !     1e-14   67.1   0.0  CP025209.1 1761819 1761746 -  cm    no 0.64  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (21) !   1.1e-14   66.9   0.0  CP025209.1 1762234 1762163 -  cm    no 0.53  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (22) !   1.1e-14   66.9   0.0  CP025209.1 1784454 1784526 +  cm    no 0.53  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (23) !   1.2e-14   66.8   0.0  CP025209.1 1779348 1779275 -  cm    no 0.59  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (24) !   1.3e-14   66.7   0.1  CP025209.1 1848158 1848085 -  cm    no 0.72  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (25) !   1.3e-14   66.7   0.1  CP025209.1 1849601 1849528 -  cm    no 0.72  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (26) !   1.4e-14   66.6   0.0  CP025209.1 1865552 1865480 -  cm    no 0.63  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (27) !   2.3e-14   65.8   0.0  CP025209.1 1345931 1345860 -  cm    no 0.58  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (28) !   3.8e-14   65.0   0.0  CP025209.1  215002  214929 -  cm    no 0.61  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (29) !   4.4e-14   64.8   0.0  CP025209.1 1829199 1829127 -  cm    no 0.63  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (30) !   5.2e-14   64.5   0.0  CP025209.1  933208  933136 -  cm    no 0.52  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (31) !   6.4e-14   64.2   0.0  CP025209.1  716704  716632 -  cm    no 0.59  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (32) !   6.7e-14   64.1   0.0  CP025209.1  341424  341496 +  cm    no 0.56  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (33) !     1e-13   63.5   0.0  CP025209.1  814135  814208 +  cm    no 0.57  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (34) !   1.9e-13   62.5   0.0  CP025209.1  130767  130851 +  cm    no 0.58  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (35) !   2.4e-13   62.1   0.0  CP025209.1 1124709 1124782 +  cm    no 0.58  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (36) !   3.7e-13   61.5   0.0  CP025209.1 1346309 1346380 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (37) !   3.7e-13   61.5   0.0  CP025209.1 1346603 1346674 +  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (38) !   4.2e-13   61.3   0.0  CP025209.1  657046  657119 +  cm    no 0.65  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (39) !   1.2e-12   59.6   0.0  CP025209.1  341151  341232 +  cm    no 0.57  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (40) !   1.5e-12   59.3   0.0  CP025209.1 1644099 1644027 -  cm    no 0.64  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (41) !   3.1e-12   58.2   0.0  CP025209.1 1782037 1782109 +  cm    no 0.63  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (42) !   3.2e-12   58.1   0.0  CP025209.1 1849703 1849631 -  cm    no 0.64  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (43) !   3.3e-12   58.1   0.0  CP025209.1 1025459 1025531 +  cm    no 0.64  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (44) !   3.3e-12   58.1   0.0  CP025209.1 1029476 1029548 +  cm    no 0.64  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (45) !   6.2e-12   57.1   0.0  CP025209.1 1198148 1198233 +  cm    no 0.64  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (46) !   6.4e-12   57.0   0.0  CP025209.1 1799618 1799537 -  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (47) !   9.2e-12   56.5   0.0  CP025209.1   53016   53099 +  cm    no 0.67  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (48) !     1e-11   56.3   0.0  CP025209.1  132179  132267 +  cm    no 0.61  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (49) !     9e-11   52.9   0.0  CP025209.1 1025354 1025425 +  cm    no 0.51  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (50) !   1.5e-10   52.1   0.0  CP025209.1  801681  801752 +  cm    no 0.51  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (51) !   1.9e-10   51.8   0.0  CP025209.1 1053100 1053027 -  cm    no 0.55  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+ (52) !   2.7e-10   51.2   0.0  CP025209.1  165704  165619 -  cm    no 0.60  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, c
+
+
+Hit alignments:
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   5.9e-17   75.0   0.0  cm        1       71 []     2147417     2147487 + .. 1.00    no 0.52
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAU:UAG:UCA+UGGUAGA:C+UC:G:+U   AA:C:GAA +C:CGGGUUCGA UCCCG::AUC::C 
+  CP025209.1 2147417 GCCGAUGUAGUUCAAUGGUAGAACAUCAGCUUCCCAAGCUGAAUACGCGGGUUCGAUUCCCGUCAUCGGCU 2147487
+                     *********************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   6.1e-17   75.0   0.0  cm        1       71 []       11814       11887 + .. 1.00    no 0.54
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG:::UAUAGCUCAGU GGU AGAGCG:::::CU+A+AA:::::AGG CGC::GUUCGA UC::GCUA:::CCA
+  CP025209.1 11814 GGGCCUAUAGCUCAGUcGGUuAGAGCGCAUCGCUGAUAACGAUGAGGuCGCAAGUUCGAUUCUUGCUAGGCCCA 11887
+                   ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   6.1e-17   75.0   0.0  cm        1       71 []       19041       19114 + .. 1.00    no 0.54
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG:::UAUAGCUCAGU GGU AGAGCG:::::CU+A+AA:::::AGG CGC::GUUCGA UC::GCUA:::CCA
+  CP025209.1 19041 GGGCCUAUAGCUCAGUcGGUuAGAGCGCAUCGCUGAUAACGAUGAGGuCGCAAGUUCGAUUCUUGCUAGGCCCA 19114
+                   ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   2.8e-16   72.6   0.0  cm        1       71 []       11900       11972 + .. 1.00    no 0.49
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG G:::UAGCUCA+U GGUAGAGC+UC:G:+UU  AA:C:GAAGG C::G:GUUCGA UC:C:::::C CCA
+  CP025209.1 11900 GGGGCAUUAGCUCAAUuGGUAGAGCAUCUGCUUUGCAAGCAGAAGGuCAGGAGUUCGAUUCUCCUAUGCUCCA 11972
+                   ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   2.8e-16   72.6   0.0  cm        1       71 []       19127       19199 + .. 1.00    no 0.49
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG G:::UAGCUCA+U GGUAGAGC+UC:G:+UU  AA:C:GAAGG C::G:GUUCGA UC:C:::::C CCA
+  CP025209.1 19127 GGGGCAUUAGCUCAAUuGGUAGAGCAUCUGCUUUGCAAGCAGAAGGuCAGGAGUUCGAUUCUCCUAUGCUCCA 19199
+                   ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   2.8e-16   72.6   0.0  cm        1       71 []       20181       20253 + .. 1.00    no 0.49
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG G:::UAGCUCA+U GGUAGAGC+UC:G:+UU  AA:C:GAAGG C::G:GUUCGA UC:C:::::C CCA
+  CP025209.1 20181 GGGGCAUUAGCUCAAUuGGUAGAGCAUCUGCUUUGCAAGCAGAAGGuCAGGAGUUCGAUUCUCCUAUGCUCCA 20253
+                   ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   5.7e-16   71.5   0.0  cm        1       71 []     1912516     1912444 - .. 1.00    no 0.55
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:::U+GC:CA+U GGUAG:GC+:CG:ACUU +AAU:CG:AGG +::GGGUUC+A UCCC:::::C::C 
+  CP025209.1 1912516 GCUGGAGUGGCGCAAUuGGUAGCGCAACGCACUUGUAAUGCGUAGGuUGUGGGUUCAAGUCCCAUCUCCAGCU 1912444
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   1.4e-15   70.1   0.0  cm        1       71 []      132315      132387 + .. 0.98    no 0.60
+
+                                                                                              NC
+                    (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::::::UAGCUCA+ GG  AGAGC+UC:GACU    AUC:GAAGG +G GGGUUCGAAUCCC C::::::CA
+  CP025209.1 132315 GCGCCCGUAGCUCAACGGAuAGAGCAUCUGACUACGGAUCAGAAGGuUGGGGGUUCGAAUCCCUCCGGGCGCA 132387
+                    ****************7777***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.4e-15   70.1   0.0  cm        1       71 []      134488      134560 + .. 0.98    no 0.60
+
+                                                                                              NC
+                    (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::::::UAGCUCA+ GG  AGAGC+UC:GACU    AUC:GAAGG +G GGGUUCGAAUCCC C::::::CA
+  CP025209.1 134488 GCGCCCGUAGCUCAACGGAuAGAGCAUCUGACUACGGAUCAGAAGGuUGGGGGUUCGAAUCCCUCCGGGCGCA 134560
+                    ****************7777***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.7e-15   69.8   0.0  cm        1       71 []     1346525     1346595 + .. 1.00    no 0.59
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G::AU+GC::AGUGGU ::GC+:CGG:CU+ AAA:CCG:  +C:CGGGUUCGA UCCCG:U::C:CC 
+  CP025209.1 1346525 GGUGGAAUGGCCGAGUGGUGAGGCAACGGUCUGCAAAACCGUGCACACGGGUUCGAUUCCCGUUUCCACCU 1346595
+                     *******************************************9*************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !     3e-15   69.0   0.0  cm        1       71 []      341535      341606 + .. 1.00    no 0.49
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G U:UAGCUCAGUGGUAGAGC+:::GACU A+AAUC:::  G CG:G:GUUC+A UC:C:C:A C:C:A
+  CP025209.1 341535 GGCGGUGUAGCUCAGUGGUAGAGCAAACGACUCAUAAUCGUUGUGuCGAGAGUUCAAUUCUCUCCAUCGCUA 341606
+                    ************************************************************************ PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   3.2e-15   68.9   0.0  cm        1       71 []     1656510     1656583 + .. 1.00    no 0.65
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G: AUAGCUCAGU GGU AGAGC :CGGACU A+AAUCCG:+GG C:CGGGUUCGA  CCCG:U :C:CCA
+  CP025209.1 1656510 GGGGCUAUAGCUCAGUcGGUuAGAGCCGCGGACUCAUAAUCCGUUGGuCCCGGGUUCGAGCCCCGGUGGCCCCA 1656583
+                     ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   3.3e-15   68.8   0.0  cm        1       71 []      255636      255708 + .. 1.00    no 0.58
+
+                                              v               v                               NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::G:::UAGCUCAGU GGUAGAGCG :::ACU  +AAU::: AGG CGCG:GUUCGA UC:CGC:::C::C 
+  CP025209.1 255636 GCCGCCUUAGCUCAGUcGGUAGAGCGCUUCACUCGUAAUGAAAAGGuCGCGAGUUCGAUUCUCGCAGGCGGCU 255708
+                    ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   3.7e-15   68.6   0.0  cm        1       71 []     1346219     1346291 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAU:UAGC:CAGU GGUAG:GC+UC:::+U+  AA:::GA GG C:CG:GUUCGA UC:CG::AUC::C 
+  CP025209.1 1346219 GCGGAUGUAGCGCAGUuGGUAGCGCAUCACCUUGCCAAGGUGAGGGuCGCGAGUUCGAGUCUCGUCAUCCGCU 1346291
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   3.7e-15   68.6   0.0  cm        1       71 []     1346414     1346486 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAU:UAGC:CAGU GGUAG:GC+UC:::+U+  AA:::GA GG C:CG:GUUCGA UC:CG::AUC::C 
+  CP025209.1 1346414 GCGGAUGUAGCGCAGUuGGUAGCGCAUCACCUUGCCAAGGUGAGGGuCGCGAGUUCGAGUCUCGUCAUCCGCU 1346486
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   3.7e-15   68.6   0.0  cm        1       71 []     1346708     1346780 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAU:UAGC:CAGU GGUAG:GC+UC:::+U+  AA:::GA GG C:CG:GUUCGA UC:CG::AUC::C 
+  CP025209.1 1346708 GCGGAUGUAGCGCAGUuGGUAGCGCAUCACCUUGCCAAGGUGAGGGuCGCGAGUUCGAGUCUCGUCAUCCGCU 1346780
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   3.9e-15   68.5   0.0  cm        1       71 []      341635      341707 + .. 1.00    no 0.55
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G:::UAG UCA+U GGUAGA C+:CGG:CU  AAA:CCG:AGG +:C:GGUUC+A UCC:G::::C:C:+
+  CP025209.1 341635 AGGGGCGUAGUUCAAUuGGUAGAGCAACGGUCUCCAAAACCGUAGGuUGCAGGUUCAAGUCCUGUCGCCCCUG 341707
+                    ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   7.7e-15   67.5   0.0  cm        1       71 []     1656331     1656259 - .. 1.00    no 0.52
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     ::::::AUAGCUCA+U GG AGAGC+U::GACU+++AAUC::A GG +:C:GGUUCGA UCC:G:U::::::+
+  CP025209.1 1656331 UCCCCCAUAGCUCAAUuGGCAGAGCAUUCGACUGUUAAUCGAAGGGuUACUGGUUCGAGUCCAGUUGGGGGAG 1656259
+                     *******************9***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !     1e-14   67.1   0.0  cm        1       71 []     1848062     1847990 - .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG::A:AUAGCUCAGU GGUAGAGC+::: :CU+AAAA: ::: GG CGC::GUUCGA  C::GCU:U::CCA
+  CP025209.1 1848062 GGCCAGAUAGCUCAGUcGGUAGAGCACACGCCUGAAAAGUGUGGGGuCGCCAGUUCGAUCCUGGCUCUGGCCA 1847990
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !     1e-14   67.1   0.0  cm        1       71 []     1761819     1761746 - .. 1.00    no 0.64
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:GA::U+GC:CAGU  GGUAG:GC+:C:G:+UU   A:C:G: GG C:C:GGUUC+AAUCC:G:::UC:C:A
+  CP025209.1 1761819 CGGGACGUGGCGCAGUuuGGUAGCGCACCUGCUUUGGGAGCAGGGGGuCGCAGGUUCAAAUCCUGUCGUCCCGA 1761746
+                     ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   1.1e-14   66.9   0.0  cm        1       71 []     1762234     1762163 - .. 0.99    no 0.53
+
+                                                                                              NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG::AU:U G:::AGUGG  A:::C UC:G:CUU  AA:C:GAAG+C:CGGGUUCGA UCCCG::AU::CC 
+  CP025209.1 1762234 GGGAAUGUCGUAUAGUGGCuAAUACCUCAGCCUUCCAAGCUGAAGACGCGGGUUCGAUUCCCGUCAUUCCCU 1762163
+                     ****************9988**************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   1.1e-14   66.9   0.0  cm        1       71 []     1784454     1784526 + .. 1.00    no 0.53
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UAGCUCA+U GG AGAGC+:C:GACU ++AAUC:G: GG +: GGGUUC+A UCCC :::::::CA
+  CP025209.1 1784454 GCGCCAUUAGCUCAAUuGGCAGAGCAACUGACUCUUAAUCAGUGGGuUCGGGGUUCAAGUCCCUGAUGGCGCA 1784526
+                     *******************9***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   1.2e-14   66.8   0.0  cm        1       71 []     1779348     1779275 - .. 0.97    no 0.59
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:: ::AUAGCUCAGU G U AGAGC+:::G:CUU +A :C:::+GG CGC GGUUCGAAUCC GCU:: ::CA
+  CP025209.1 1779348 GCCUCCAUAGCUCAGUgGAUuAGAGCAGUCGGCUUCUACCCGAUUGGuCGCGGGUUCGAAUCCUGCUGGGGGCA 1779275
+                     ****************6555****************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   1.3e-14   66.7   0.1  cm        1       71 []     1848158     1848085 - .. 1.00    no 0.72
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G :::U:U+GC:CAGU GGU AG:GCG:CG::CU++ A ::CG:AGG C:CGGGUUC+A UCCCG::A::: C+
+  CP025209.1 1848158 GGCCCUGUGGCGCAGUuGGUuAGCGCGCCGCCCUGUCACGGCGGAGGuCGCGGGUUCAAGUCCCGUCAGGGUCG 1848085
+                     ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   1.3e-14   66.7   0.1  cm        1       71 []     1849601     1849528 - .. 1.00    no 0.72
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G :::U:U+GC:CAGU GGU AG:GCG:CG::CU++ A ::CG:AGG C:CGGGUUC+A UCCCG::A::: C+
+  CP025209.1 1849601 GGCCCUGUGGCGCAGUuGGUuAGCGCGCCGCCCUGUCACGGCGGAGGuCGCGGGUUCAAGUCCCGUCAGGGUCG 1849528
+                     ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   1.4e-14   66.6   0.0  cm        1       71 []     1865552     1865480 - .. 1.00    no 0.63
+
+                                               v               v                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG::: :UAGCUCAG  GGUAGAGC  CGGACUU++AAUCCG AGG C:CGGGUUCGA  CCCG:: :::CCA
+  CP025209.1 1865552 GGGCCUUUAGCUCAGCuGGUAGAGCUACGGACUUUUAAUCCGCAGGuCCCGGGUUCGAGCCCCGGAGGGCCCA 1865480
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   2.3e-14   65.8   0.0  cm        1       71 []     1345931     1345860 - .. 1.00    no 0.58
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::UAU+GCUCAGUGG AGAGCGU::::+U A A ::::AAGG CGC:GGUUCGA  CC:GCUA:::CCA
+  CP025209.1 1345931 GGUCCUAUGGCUCAGUGGAAGAGCGUUCCGUUCACACCGGAAAGGuCGCUGGUUCGAUCCCAGCUAGGACCA 1345860
+                     *****************99***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   3.8e-14   65.0   0.0  cm        1       71 []      215002      214929 - .. 1.00    no 0.61
+
+                                                                                               NC
+                    (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:GAUAU+GC:CAG   GGUAG:GCG:C:::+U    A:::G:AGG C:C:GGUUC+AAUCC:G:UAUC:C:A
+  CP025209.1 215002 CGGGAUAUGGCGCAGCuuGGUAGCGCGCCUCGUUCGGGACGAGGAGGuCGCAGGUUCAAAUCCUGUUAUCCCGA 214929
+                    ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   4.4e-14   64.8   0.0  cm        1       71 []     1829199     1829127 - .. 1.00    no 0.63
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAU+GC:CAG  GGUAG:GC+ C::ACU+  A U::G  GG C:CGGGUUCGAAUCCCG:UA:C CCA
+  CP025209.1 1829199 GGGGCUAUGGCGCAGCuGGUAGCGCAUCACACUGGCAGUGUGGGGGuCACGGGUUCGAAUCCCGUUAGCUCCA 1829127
+                     ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   5.2e-14   64.5   0.0  cm        1       71 []      933208      933136 - .. 0.98    no 0.52
+
+                                                                                              NC
+                    (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G:: :::UAGCUCAGUGG  AGAGC+U:GG:+U     :CC:AAGG C:C::GUUCGAAUC::G:::: ::CA
+  CP025209.1 933208 GUCUCCGUAGCUCAGUGGAuAGAGCAUUGGUUUCCGGUACCAAAGGuCGCAAGUUCGAAUCUUGUCGGGGACA 933136
+                    ****************7777***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   6.4e-14   64.2   0.0  cm        1       71 []      716704      716632 - .. 0.98    no 0.59
+
+                                                                                              NC
+                    (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::: ::UAGCUCAGUGG  AGAGC+::G::CU  +AA::C::  G C:::GGUUCGA UCC::::: :::CA
+  CP025209.1 716704 GCCCUAGUAGCUCAGUGGAuAGAGCACGGCUCUCCUAAAGCCGGUGuCGGAGGUUCGAUUCCUCUCUGGGGCA 716632
+                    ****************7777************************999************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   6.7e-14   64.1   0.0  cm        1       71 []      341424      341496 + .. 1.00    no 0.56
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::::::UAGCUCAGU GG AGAGCGU:::: U+ +AA::::AAGG CG:::GUUCGA UC:::C::::::C 
+  CP025209.1 341424 GCCCCCUUAGCUCAGUcGGCAGAGCGUUUCCAUGGUAAGGAAAAGGuCGACAGUUCGAUUCUGUCAGGGGGCU 341496
+                    ************************************************************************* PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !     1e-13   63.5   0.0  cm        1       71 []      814135      814208 + .. 0.99    no 0.57
+
+                                v         v                                                    NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G:::::AUAGC: A+U GG    :GC+:::GACUUAAAAUC:::+ + +G:GGGUUCGA UCCC:CU:::::CA
+  CP025209.1 814135 GCCCCCAUAGCCCAAUcGGCaGAGGCAAUCGACUUAAAAUCGAUUCAgUGUGGGUUCGAGUCCCACUGGGGGCA 814208
+                    *******************9999**********************899************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   1.9e-13   62.5   0.0  cm        1       71 []      130767      130851 + .. 0.98    no 0.58
+
+                                                                                                            NC
+                    (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GGAGA :U+GC::AG GG   A::GC+::GG:CUU AAA:CC::                 C::GGGUUC+AAUCCC::: UCUCC+
+  CP025209.1 130767 GGAGAUGUGGCAGAGCGGCcgAAUGCACUGGUCUUGAAAACCAGC-gaugggaaaccauc-CCAGGGUUCAAAUCCCUGCGUCUCCG 130851
+                    ****************9999*************************.8***********76.************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   2.4e-13   62.1   0.0  cm        1       71 []     1124709     1124782 + .. 1.00    no 0.58
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:::UAU+GC:CAG   GGUAG:GC+:::GACU+    UC::: GG C:C:GGUUC+AAUCC:G:UA:::C:A
+  CP025209.1 1124709 CGGACUAUGGCGCAGCuuGGUAGCGCACUUGACUGGGGGUCAAGGGGuCGCAGGUUCAAAUCCUGUUAGUCCGA 1124782
+                     ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   3.7e-13   61.5   0.0  cm        1       71 []     1346309     1346380 + .. 0.98    no 0.60
+
+                          v                                                            v       NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::: :UAGCUCAG  GG AGAGCG:::::CU+A A :::::AGG C:C:GGUUC+A  CC:G:: ::::CA
+  CP025209.1 1346309 GCGCGUUUAGCUCAGCgGG-AGAGCGCUUCCCUGACACGGAAGAGGuCACUGGUUCAAUCCCAGUAUCGCGCA 1346380
+                     ****************666.***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   3.7e-13   61.5   0.0  cm        1       71 []     1346603     1346674 + .. 0.98    no 0.60
+
+                          v                                                            v       NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::: :UAGCUCAG  GG AGAGCG:::::CU+A A :::::AGG C:C:GGUUC+A  CC:G:: ::::CA
+  CP025209.1 1346603 GCGCGUUUAGCUCAGCgGG-AGAGCGCUUCCCUGACACGGAAGAGGuCACUGGUUCAAUCCCAGUAUCGCGCA 1346674
+                     ****************666.***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   4.2e-13   61.3   0.0  cm        1       71 []      657046      657119 + .. 1.00    no 0.65
+
+                    v                                                                       v  NC
+                    (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                     G:G:::U+G :CAG   GGUAG: CG::GG:CU A+AA:CC::AGG CG :GGUUCGAAUCC: C:::C:C A
+  CP025209.1 657046 CGCGGGGUGGAGCAGCucGGUAGCUCGCUGGGCUCAUAACCCAGAGGuCGUAGGUUCGAAUCCUGCCCCCGCUA 657119
+                    ************************************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   1.2e-12   59.6   0.0  cm        1       71 []      341151      341232 + .. 0.98    no 0.57
+
+                                                                                                        NC
+                    (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::::::U+:C::AG GG   A::G:+:CGGACU++AAAUCCG:            +C::::GUUCGAAUC::::::::::CA
+  CP025209.1 341151 GCCAGGUUGCCCGAGCGGCcaAAGGGAGCGGACUGUAAAUCCGUC-ggcauugccuACAGAAGUUCGAAUCUUCUACCUGGCA 341232
+                    ****************9999*************************.8********85************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   1.5e-12   59.3   0.0  cm        1       71 []     1644099     1644027 - .. 0.98    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::: :UAGCUCAG  GG AGAGC+:C:G:+UUA A :C:G:AGG CG :GGUUCGA  CC: C: ::::CA
+  CP025209.1 1644099 GCGCCUUUAGCUCAGCuGGGAGAGCAGCUGGUUUACACCCAGCAGGuCGGCGGUUCGAUCCCGUCAGGGCGCA 1644027
+                     ****************9555***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   3.1e-12   58.2   0.0  cm        1       71 []     1782037     1782109 + .. 1.00    no 0.63
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:U:UAG UCAG  GGUAGA C+:C:G:+U++ A :C:G:  G C:CGGGUUCGA  CCCG::A:C::C 
+  CP025209.1 1782037 GUGGCUGUAGUUCAGCuGGUAGAGCACCAGGUUGUGAUCCUGGGUGuCGCGGGUUCGAGCCCCGUCAGCCACC 1782109
+                     ********************************************999************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   3.2e-12   58.1   0.0  cm        1       71 []     1849703     1849631 - .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     ::::::AU G:::AG GG   A:::C+:CG::CUU+ A ::CG: G+C:CGGGUUCGAAUCCCG:U::::::A
+  CP025209.1 1849703 GCUCCCAUCGUCUAGGGGCcuAGGACACCGCCCUUUCACGGCGGCGACACGGGUUCGAAUCCCGUUGGGAGUA 1849631
+                     ***************98889***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   3.3e-12   58.1   0.0  cm        1       71 []     1025459     1025531 + .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::::U G:::AG GG   A:::CG CGG:CU + A :CCG +++C:CGGGUUC+AAUCCCG::::::::A
+  CP025209.1 1025459 GCCCCGUUCGUCUAGCGGCcuAGGACGUCGGCCUCUCACGCCGGUAACACGGGUUCAAAUCCCGUACGGGGUA 1025531
+                     ****************9999***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   3.3e-12   58.1   0.0  cm        1       71 []     1029476     1029548 + .. 0.99    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::::::U G:::AG GG   A:::CG CGG:CU + A :CCG +++C:CGGGUUC+AAUCCCG::::::::A
+  CP025209.1 1029476 GCCCCGUUCGUCUAGCGGCcuAGGACGUCGGCCUCUCACGCCGGUAACACGGGUUCAAAUCCCGUACGGGGUA 1029548
+                     ****************9999***************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   6.2e-12   57.1   0.0  cm        1       71 []     1198148     1198233 + .. 0.99    no 0.64
+
+                                                                                                             NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,...............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag...............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U+GC::A+UGG   ::GCG:::G:+U+A   :C:::+                G+G:GGGUUC+A UCCC:C::::::CA
+  CP025209.1 1198148 GCCCGAGUGGCGGAAUGGCaGACGCGCUAGCUUGAGGUGCUAGU-guccuacuaacggacGUGGGGGUUCAAGUCCCCCCUCGGGCA 1198233
+                     *******************9************************.8*************95************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   6.4e-12   57.0   0.0  cm        1       71 []     1799618     1799537 - .. 0.99    no 0.60
+
+                                                                                                         NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U+GC::A+U GG   ::GCG::GGA+UUA   UCC::+           G+G:G:GUUC+A UC:C:C::::::CA
+  CP025209.1 1799618 GCGCCCGUGGCGGAAUuGGCaGACGCGCUGGAUUUAGGUUCCAGU-gucuuaggacGUGAGAGUUCAAGUCUCUCCGGGCGCA 1799537
+                     *******************9*9***********************.8********95************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   9.2e-12   56.5   0.0  cm        1       71 []       53016       53099 + .. 0.99    no 0.67
+
+                                                                                                         NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   G:::A::U+GC::A+U GG   ::GCG::GG:+U A   :CC::+             G+G:GGGUUC+A UCCC:C::U:::CA
+  CP025209.1 53016 GCCCAGGUGGCGGAAUuGGCaGACGCGCUGGCUUCAGGUGCCAGU-guucgcaaggacGUGGGGGUUCAAGUCCCCCCCUGGGCA 53099
+                   *******************9*9***********************.8**********95************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !     1e-11   56.3   0.0  cm        1       71 []      132179      132267 + .. 0.98    no 0.61
+
+                                                                                                                NC
+                    (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..................,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..................gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GGAGA::U+:C::AG GG   A::G:G:C:::CU+ +AA:::G:+                    C:::GGUUC+AAUCC:::::UCUCC+
+  CP025209.1 132179 GGAGACGUGCCAGAGCGGCcgAAUGGGGCUCCCUGCUAAGGAGUU-gacuuguuugcgcagguc-CGGAGGUUCAAAUCCUCUCGUCUCCG 132267
+                    ****************9999*************************.8**************976.************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !     9e-11   52.9   0.0  cm        1       71 []     1025354     1025425 + .. 1.00    no 0.51
+
+                                                                                              NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:::UAU+G:::A+U GG A:::C :CGG:+U +   :CCG: + +: :GGUUCGA UCC: :UA:::C:+
+  CP025209.1 1025354 UGGCCUAUGGUGUAAUuGGCAACACUACGGUUUCUGGUACCGUCAUUCUAGGUUCGAGUCCUGGUAGGCCAG 1025425
+                     *******************9**************************************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   1.5e-10   52.1   0.0  cm        1       71 []      801681      801752 + .. 1.00    no 0.51
+
+                                                                                             NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    ::::::AU+G:::A+U GG A:::C :CGG:+UU+   :CCG: + +: :GGUUCGA UCC: :U::::::+
+  CP025209.1 801681 UUCCCCAUGGUGUAAUcGGCAACACUACGGUUUUUGGUACCGUCAUUCUAGGUUCGAGUCCUGGUGGGGAAG 801752
+                    ************************************************************************ PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   1.9e-10   51.8   0.0  cm        1       71 []     1053100     1053027 - .. 0.98    no 0.55
+
+                                 v         v        v       v                                   NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::U:UA C: A+U GG    :G +:CGG +U AAAA CCG:  + +G:G:GUUCGA UC:C:C:A::::CA
+  CP025209.1 1053100 GCCCCUGUAUCCCAAUuGGCaGAGGAAACGGAUUCAAAACCCGUGCAgUGUGAGUUCGAGUCUCACCAGGGGCA 1053027
+                     *******************99899*********************899************************** PP
+
+>> CP025209.1  Corynebacterium diphtheriae bv. mitis str. ISS 3319 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   2.7e-10   51.2   0.0  cm        1       71 []      165704      165619 - .. 0.99    no 0.60
+
+                                v         v                                                                  NC
+                    (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GGAG:::U G : AG GG   A : C+:::G:CU+ AA :C:::                  CG:GGGUUC+AAUCCC:C:::CUCC+
+  CP025209.1 165704 GGAGGAUUCGACUAGCGGCcuAUGUCACACGCCUGGAACGCGUGC-ggguuucacgacccu-CGUGGGUUCAAAUCCCACAUCCUCCG 165619
+                    ****************9999*************************.8************95.************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (4809872 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1304  (0.07176); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             231  (0.01298); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             226  (0.0127); expected (0.02)
+Windows   passing  local HMM Forward       filter:              44  (0.002926); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              43  (0.002873); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              39  (0.002873); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              39  (0.002873); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              53  (0.0008354); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              52  (0.0008065); expected (0.0001)
+Total CM hits reported:                                         52  (0.0008065); includes 0 truncated hit(s)
+
+# CPU time: 0.44u 0.00s 00:00:00.44 Elapsed: 00:00:00.08
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (4809872 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            3994  (0.1175); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             892  (0.02687); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             698  (0.02093); expected (0.02)
+Windows   passing  local HMM Forward       filter:              44  (0.001478); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              32  (0.001052); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              24  (0.0008143); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              23  (0.0007656); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              24  (0.0004594); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              14  (0.0002268); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.41u 0.03s 00:00:00.43 Elapsed: 00:00:00.09
+//
+[ok]

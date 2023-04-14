@@ -1,0 +1,663 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Mycobacterium_tuberculosis.fasta
+# output directed to file:               sequences/Mycobacterium_tuberculosis/tRNA.out
+# tabular output of hits:                sequences/Mycobacterium_tuberculosis/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   2.5e-16   73.8   0.0  AL123456.3  731603  731676 +  cm    no 0.57  Mycobacterium tuberculosis H37Rv complete genome
+  (2) !   5.1e-16   72.6   0.0  AL123456.3  386274  386204 -  cm    no 0.54  Mycobacterium tuberculosis H37Rv complete genome
+  (3) !   5.3e-16   72.6   0.0  AL123456.3 2765541 2765611 +  cm    no 0.62  Mycobacterium tuberculosis H37Rv complete genome
+  (4) !   5.4e-16   72.5   0.0  AL123456.3   10887   10960 +  cm    no 0.59  Mycobacterium tuberculosis H37Rv complete genome
+  (5) !   5.7e-16   72.5   0.0  AL123456.3 2581837 2581764 -  cm    no 0.68  Mycobacterium tuberculosis H37Rv complete genome
+  (6) !   7.8e-16   72.0   0.0  AL123456.3 2969753 2969825 +  cm    no 0.62  Mycobacterium tuberculosis H37Rv complete genome
+  (7) !     1e-15   71.6   0.0  AL123456.3  924213  924286 +  cm    no 0.66  Mycobacterium tuberculosis H37Rv complete genome
+  (8) !   1.6e-15   70.9   0.0  AL123456.3 4081437 4081365 -  cm    no 0.53  Mycobacterium tuberculosis H37Rv complete genome
+  (9) !   1.6e-15   70.9   0.0  AL123456.3  923875  923803 -  cm    no 0.58  Mycobacterium tuberculosis H37Rv complete genome
+ (10) !   1.8e-15   70.7   0.0  AL123456.3 1446265 1446193 -  cm    no 0.68  Mycobacterium tuberculosis H37Rv complete genome
+ (11) !   2.7e-15   70.0   0.0  AL123456.3   11112   11184 +  cm    no 0.62  Mycobacterium tuberculosis H37Rv complete genome
+ (12) !     3e-15   69.9   0.0  AL123456.3 2969855 2969925 +  cm    no 0.65  Mycobacterium tuberculosis H37Rv complete genome
+ (13) !   1.1e-14   67.9   0.0  AL123456.3 1113511 1113583 +  cm    no 0.60  Mycobacterium tuberculosis H37Rv complete genome
+ (14) !   1.2e-14   67.8   0.0  AL123456.3  733524  733596 +  cm    no 0.62  Mycobacterium tuberculosis H37Rv complete genome
+ (15) !   1.4e-14   67.5   0.0  AL123456.3 2765404 2765331 -  cm    no 0.64  Mycobacterium tuberculosis H37Rv complete genome
+ (16) !   1.9e-14   67.0   0.0  AL123456.3 2969568 2969497 -  cm    no 0.68  Mycobacterium tuberculosis H37Rv complete genome
+ (17) !   2.4e-14   66.7   0.0  AL123456.3  850713  850642 -  cm    no 0.58  Mycobacterium tuberculosis H37Rv complete genome
+ (18) !   2.5e-14   66.6   0.0  AL123456.3 2510669 2510598 -  cm    no 0.67  Mycobacterium tuberculosis H37Rv complete genome
+ (19) !   2.5e-14   66.6   0.0  AL123456.3 2835494 2835566 +  cm    no 0.60  Mycobacterium tuberculosis H37Rv complete genome
+ (20) !   2.7e-14   66.5   0.6  AL123456.3  924110  924183 +  cm    no 0.73  Mycobacterium tuberculosis H37Rv complete genome
+ (21) !   3.9e-14   65.9   0.0  AL123456.3 2619479 2619407 -  cm    no 0.60  Mycobacterium tuberculosis H37Rv complete genome
+ (22) !   3.9e-14   65.9   0.0  AL123456.3 1946613 1946686 +  cm    no 0.61  Mycobacterium tuberculosis H37Rv complete genome
+ (23) !   4.9e-14   65.5   0.0  AL123456.3 4216937 4216865 -  cm    no 0.58  Mycobacterium tuberculosis H37Rv complete genome
+ (24) !   6.2e-14   65.2   0.0  AL123456.3  731494  731566 +  cm    no 0.56  Mycobacterium tuberculosis H37Rv complete genome
+ (25) !   7.1e-14   65.0   0.0  AL123456.3 3431912 3431840 -  cm    no 0.66  Mycobacterium tuberculosis H37Rv complete genome
+ (26) !   8.5e-14   64.7   0.0  AL123456.3 2969942 2970013 +  cm    no 0.60  Mycobacterium tuberculosis H37Rv complete genome
+ (27) !   1.1e-13   64.4   0.0  AL123456.3 1025393 1025321 -  cm    no 0.64  Mycobacterium tuberculosis H37Rv complete genome
+ (28) !   1.5e-13   63.8   0.0  AL123456.3 4126541 4126614 +  cm    no 0.68  Mycobacterium tuberculosis H37Rv complete genome
+ (29) !   1.7e-13   63.6   0.0  AL123456.3 1177396 1177469 +  cm    no 0.59  Mycobacterium tuberculosis H37Rv complete genome
+ (30) !   4.2e-13   62.2   0.0  AL123456.3 4222667 4222581 -  cm    no 0.64  Mycobacterium tuberculosis H37Rv complete genome
+ (31) !   4.6e-13   62.1   0.0  AL123456.3 3559443 3559370 -  cm    no 0.65  Mycobacterium tuberculosis H37Rv complete genome
+ (32) !     5e-13   61.9   0.0  AL123456.3 2827854 2827926 +  cm    no 0.58  Mycobacterium tuberculosis H37Rv complete genome
+ (33) !   5.6e-13   61.8   0.0  AL123456.3  658109  658189 +  cm    no 0.62  Mycobacterium tuberculosis H37Rv complete genome
+ (34) !   2.2e-12   59.7   0.0  AL123456.3  923999  924072 +  cm    no 0.65  Mycobacterium tuberculosis H37Rv complete genome
+ (35) !   3.1e-12   59.1   0.0  AL123456.3 4199217 4199131 -  cm    no 0.66  Mycobacterium tuberculosis H37Rv complete genome
+ (36) !   3.9e-12   58.8   0.0  AL123456.3 3348619 3348547 -  cm    no 0.70  Mycobacterium tuberculosis H37Rv complete genome
+ (37) !   9.2e-12   57.4   0.0  AL123456.3 2794176 2794249 +  cm    no 0.62  Mycobacterium tuberculosis H37Rv complete genome
+ (38) !   1.3e-11   56.9   0.0  AL123456.3 4217056 4216968 -  cm    no 0.63  Mycobacterium tuberculosis H37Rv complete genome
+ (39) !   2.2e-11   56.0   0.0  AL123456.3 2401987 2402072 +  cm    no 0.63  Mycobacterium tuberculosis H37Rv complete genome
+ (40) !   3.2e-11   55.5   0.0  AL123456.3 1512728 1512811 +  cm    no 0.58  Mycobacterium tuberculosis H37Rv complete genome
+ (41) !   3.5e-11   55.3   0.0  AL123456.3 4168345 4168430 +  cm    no 0.64  Mycobacterium tuberculosis H37Rv complete genome
+ (42) !   5.7e-11   54.6   0.0  AL123456.3 3348730 3348659 -  cm    no 0.51  Mycobacterium tuberculosis H37Rv complete genome
+ (43) !   7.6e-11   54.1   0.0  AL123456.3   25644   25726 +  cm    no 0.67  Mycobacterium tuberculosis H37Rv complete genome
+ (44) !   7.7e-11   54.1   0.0  AL123456.3 1828088 1828015 -  cm    no 0.59  Mycobacterium tuberculosis H37Rv complete genome
+ (45) !   1.1e-10   53.6   0.0  AL123456.3 1138147 1138076 -  cm    no 0.54  Mycobacterium tuberculosis H37Rv complete genome
+
+
+Hit alignments:
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.5e-16   73.8   0.0  cm        1       71 []      731603      731676 + .. 1.00    no 0.57
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:GAU:UAGCUCAGU GGU AGAGCG:::GACU A+AAUC:::AGG CGC:GGUUCGA UCC:GC:AUC:C:A
+  AL123456.3 731603 GGCGAUGUAGCUCAGUcGGUuAGAGCGAACGACUCAUAAUCGUUAGGuCGCCGGUUCGAGUCCGGCCAUCGCUA 731676
+                    ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   5.1e-16   72.6   0.0  cm        1       71 []      386274      386204 - .. 1.00    no 0.54
+
+                                                                                            NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::GAU:UAG:UCA+UGG AGA:C+UC:G:+U   AA:C:GAA +C:CGGGUUCGA UCCCG::AUC::C 
+  AL123456.3 386274 GCCGAUGUAGUUCAAUGGCAGAACAUCAGCUUCCCAAGCUGAAUACGCGGGUUCGAUUCCCGUCAUCGGCU 386204
+                    *********************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   5.3e-16   72.6   0.0  cm        1       71 []     2765541     2765611 + .. 1.00    no 0.62
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:::UAGCUCA+UGGUAGAGC :::G:CUU  AA:C::: G+C:CGGGUUCGA UCCCG::::C::C 
+  AL123456.3 2765541 GCGGGCGUAGCUCAAUGGUAGAGCCCUAGUCUUCCAAACUAGCGACGCGGGUUCGAUUCCCGUCGCCCGCU 2765611
+                     *********************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   5.4e-16   72.5   0.0  cm        1       71 []       10887       10960 + .. 1.00    no 0.59
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG:::UAUAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG CG::GGUUCGA UCC::CUA:::CCA
+  AL123456.3 10887 GGGCCUAUAGCUCAGGcGGUuAGAGCGCUUCGCUGAUAACGAAGAGGuCGGAGGUUCGAGUCCUCCUAGGCCCA 10960
+                   ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   5.7e-16   72.5   0.0  cm        1       71 []     2581837     2581764 - .. 1.00    no 0.68
+
+                                                                                                NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::UAGCUCAGU GGU AGAGC :CGGACU A+AAUCCG:+GG CGCGGGUUCGA  CCCGC:::C:CCA
+  AL123456.3 2581837 GGGGCGGUAGCUCAGUuGGUuAGAGCCGCGGACUCAUAAUCCGUUGGuCGCGGGUUCGAGCCCCGCCCGCCCCA 2581764
+                     ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   7.8e-16   72.0   0.0  cm        1       71 []     2969753     2969825 + .. 1.00    no 0.62
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::GAU:UAGC:CAGU GGUAG:GC+UC:::+U+  AA:::GA GG C:CGGGUUCGAAUCCCG::AUC::C 
+  AL123456.3 2969753 GCGGAUGUAGCGCAGUuGGUAGCGCAUCACCUUGCCAAGGUGAGGGuCGCGGGUUCGAAUCCCGUCAUCCGCU 2969825
+                     ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !     1e-15   71.6   0.0  cm        1       71 []      924213      924286 + .. 1.00    no 0.66
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG::A::UAGCUCAGU GGU  GAGCGUC:G:CU+AAAA:C:GAAGG CG::GGUUCGA  CC::C::U::CCA
+  AL123456.3 924213 GGCCAGGUAGCUCAGUcGGUaUGAGCGUCCGCCUGAAAAGCGGAAGGuCGGCGGUUCGAUCCCGCCCCUGGCCA 924286
+                    ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   1.6e-15   70.9   0.0  cm        1       71 []     4081437     4081365 - .. 1.00    no 0.53
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:::UAGCUCAGU GGUAGAGCG::::ACU  +AAU::::AGG C::G:GUUCGA UC:C:::::C::C 
+  AL123456.3 4081437 GCCGCCUUAGCUCAGUcGGUAGAGCGAUUCACUCGUAAUGAAUAGGuCAGGAGUUCGAUUCUCCUAGGCGGCU 4081365
+                     ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.6e-15   70.9   0.0  cm        1       71 []      923875      923803 - .. 1.00    no 0.58
+
+                                              v               v                               NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G:::: AUAGCUCAGU GGUAGAGC  CGGACUU++AAUCCG AGG C:C:GGUUCGA UCC:G:U ::::CA
+  AL123456.3 923875 GCCCCUAUAGCUCAGUuGGUAGAGCUACGGACUUUUAAUCCGCAGGuCCCAGGUUCGAGUCCUGGUGGGGGCA 923803
+                    ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.8e-15   70.7   0.0  cm        1       71 []     1446265     1446193 - .. 0.98    no 0.68
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UAGCUCAG GG  AGAGCGUC:G:CU    A:C:GAAGG CGC:GGUUCGAAUCC:GC::::::CA
+  AL123456.3 1446265 GCCCCCGUAGCUCAGGGGAuAGAGCGUCUGCCUCCGGAGCAGAAGGcCGCAGGUUCGAAUCCUGCCGGGGGCA 1446193
+                     ***************96667***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   2.7e-15   70.0   0.0  cm        1       71 []       11112       11184 + .. 1.00    no 0.62
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG G:::UAGCUCAGU GGUAGAGC+::G::+UU  AA::C:: GG C::GGGUUCGA UCCC:::::C CCA
+  AL123456.3 11112 GGGGCCUUAGCUCAGUuGGUAGAGCACUGCCUUUGCAAGGCAGGGGuCAGGGGUUCGAGUCCCCUAGGCUCCA 11184
+                   ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !     3e-15   69.9   0.0  cm        1       71 []     2969855     2969925 + .. 1.00    no 0.65
+
+                                                                                             NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::U+GC::AGUGGU ::GC+:CGG:CU+ AAA:CCG:  +C:CGGGUUCGA UCCCG::::C:CC 
+  AL123456.3 2969855 GGUGGAGUGGCCGAGUGGUGAGGCAACGGCCUGCAAAGCCGUGCACACGGGUUCGAUUCCCGUCUCCACCU 2969925
+                     *******************************************9*************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   1.1e-14   67.9   0.0  cm        1       71 []     1113511     1113583 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAU+GC:CAGU GGUAG:GCG:C:::+U   A :::G:AGG C::GGGUUCGAAUCCC::UA:C CCA
+  AL123456.3 1113511 GGGGCUAUGGCGCAGUuGGUAGCGCGACUCGUUCGCAUCGAGUAGGuCAGGGGUUCGAAUCCCCUUAGCUCCA 1113583
+                     ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   1.2e-14   67.8   0.0  cm        1       71 []      733524      733596 + .. 1.00    no 0.62
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :G:G:::UAGCUCA+  GG AGAGC+:CGG:CU  AAA:CCG:AGG +:C:GGUUC+A UCC:G::::C:C:+
+  AL123456.3 733524 AGGGGCGUAGCUCAACuGGCAGAGCAGCGGUCUCCAAAACCGCAGGuUGCAGGUUCAAGUCCUGUCGCCCCUG 733596
+                    *****************999***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   1.4e-14   67.5   0.0  cm        1       71 []     2765404     2765331 - .. 1.00    no 0.64
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:G:U:UAGC:CAG   GGUAG:GC+UC:G:+UU   A:C:GAAGG C:C:GGUUC+AAUCC:G::A:C:C:A
+  AL123456.3 2765404 CGGGGUGUAGCGCAGCuuGGUAGCGCAUCCGCUUUGGGAGCGGAAGGcCGCAGGUUCAAAUCCUGUCACCCCGA 2765331
+                     ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   1.9e-14   67.0   0.0  cm        1       71 []     2969568     2969497 - .. 0.98    no 0.68
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::U+GCUCAGU GG AGAGCGUC:G:+U A A :C:GAAGG CGC:GGUUCGA  CC:GC:::::CCA
+  AL123456.3 2969568 GGUCCCGUGGCUCAGUgGG-AGAGCGUCCGCUUCACACGCGGAAGGuCGCUGGUUCGAUCCCAGCCGGGACCA 2969497
+                     ****************666.***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   2.4e-14   66.7   0.0  cm        1       71 []      850713      850642 - .. 1.00    no 0.58
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G:: :::UAGCUCAGUGGUAGAGC+:::G:CUU +AA:C::: GG CG:::GUUC+A  C:::C::: ::C 
+  AL123456.3 850713 GCCUCCUUAGCUCAGUGGUAGAGCACUCGCCUUGUAAGCGAGCGGuCGUCAGUUCAAUCCUGACAGGGGGCU 850642
+                    ************************************************************************ PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   2.5e-14   66.6   0.0  cm        1       71 []     2510669     2510598 - .. 1.00    no 0.67
+
+                                                                                              NC
+                     (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:::::UAGCUCAG GGUAGAGC ::GG:+UUA A :CC:: GG CG :GGUUCGA  CC: C:::::CCA
+  AL123456.3 2510669 GGGCGCGUAGCUCAGCGGUAGAGCUCUGGUUUUACACACCAGCGGuCGGCGGUUCGAUCCCGUCCGCGCCCA 2510598
+                     ************************************************************************ PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   2.5e-14   66.6   0.0  cm        1       71 []     2835494     2835566 + .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UAGCUCAGU GGUAGAGC+:C:GACU ++AAUC:G: GG C: GGGUUCGAA CCC :::::::CA
+  AL123456.3 2835494 GCGCCGUUAGCUCAGUuGGUAGAGCAGCUGACUCUUAAUCAGCGGGuCCGGGGUUCGAAACCCUGACGGCGCA 2835566
+                     ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   2.7e-14   66.5   0.6  cm        1       71 []      924110      924183 + .. 1.00    no 0.73
+
+                                                                                               NC
+                    (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G :::U:U+GC:CAGU GGU AG:GCG:CG::CU++ A ::CG:AGG C:CGGGUUCGA UCCCG::A::: C+
+  AL123456.3 924110 GGCCCUGUGGCGCAGUuGGUuAGCGCGCCGCCCUGUCACGGCGGAGGuCGCGGGUUCGAGUCCCGUCAGGGUCG 924183
+                    ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   3.9e-14   65.9   0.0  cm        1       71 []     2619479     2619407 - .. 1.00    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     ::::: :UAGCUCA+U GG AGAGCGU::G:CU+++AA:C::A GG +G::GGUUCGA UCC::C: :::::+
+  AL123456.3 2619479 UCCCCUGUAGCUCAAUuGGCAGAGCGUUCGGCUGUUAACCGAAGGGuUGGAGGUUCGAGUCCUCCCGGGGGAG 2619407
+                     *******************9***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !   3.9e-14   65.9   0.0  cm        1       71 []     1946613     1946686 + .. 1.00    no 0.61
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:G:U:U+GC:CAGU  GGUAG:GC+:::GACU+    UC:::+GG C:C:GGUUC+AAUCC:G::A:C:C:A
+  AL123456.3 1946613 CGGGCUGUGGCGCAGUuuGGUAGCGCACUUGACUGGGGGUCAAGUGGuCGCAGGUUCAAAUCCUGUCAGCCCGA 1946686
+                     ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !   4.9e-14   65.5   0.0  cm        1       71 []     4216937     4216865 - .. 0.98    no 0.58
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UAGCUCA+ GG  AGAGC+UC:GACU    AUC:GAAGG +: G:GUUCGAAUC:C :::::::C+
+  AL123456.3 4216937 GCGCCCGUAGCUCAACGGAuAGAGCAUCUGACUACGGAUCAGAAGGuUGGGAGUUCGAAUCUCUUCGGGCGCG 4216865
+                     ****************7777***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   6.2e-14   65.2   0.0  cm        1       71 []      731494      731566 + .. 1.00    no 0.56
+
+                                                                                              NC
+                    (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    G::::::UAGCUCAGU GG AGAGCGU:::: U+ +AA::::AAGG C:::GGUUCGA UCC:::::::::C 
+  AL123456.3 731494 GCCCCCUUAGCUCAGUcGGCAGAGCGUUUCCAUGGUAAGGAAAAGGuCAACGGUUCGAUUCCGUUAGGGGGCU 731566
+                    ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   7.1e-14   65.0   0.0  cm        1       71 []     3431912     3431840 - .. 1.00    no 0.66
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG G:UAU+GC:CAG  GGUAG:GC+:C::ACU+  A U::G: GG C::GGGUUCGA UCCC::UA:C CCA
+  AL123456.3 3431912 GGGGCUAUGGCGCAGCuGGUAGCGCACCACACUGGCAGUGUGGGGGuCAGGGGUUCGAGUCCCCUUAGCUCCA 3431840
+                     ************************************************************************* PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   8.5e-14   64.7   0.0  cm        1       71 []     2969942     2970013 + .. 0.98    no 0.60
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UAGCUCAG  GG AGAGCG:::::CU+A A :::::AGG C:C:GGUUC+A  CC:G:::::::CA
+  AL123456.3 2969942 GCGCGAUUAGCUCAGCgGG-AGAGCGCUUCCCUGACACGGAAGAGGuCACUGGUUCAAUCCCAGUAUCGCGCA 2970013
+                     ****************666.***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   1.1e-13   64.4   0.0  cm        1       71 []     1025393     1025321 - .. 0.98    no 0.64
+
+                                                                                               NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::: ::UAGCUCAG GG  AGAGC+::G::CU  +AA::C::  G CGC:GGUUCGAAUCC:GC:: :::CA
+  AL123456.3 1025393 GCCCUCGUAGCUCAGGGGAuAGAGCACGGCUCUCCUAAAGCCGGUGuCGCAGGUUCGAAUCCUGCCGGGGGCA 1025321
+                     ***************96667************************999************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   1.5e-13   63.8   0.0  cm        1       71 []     4126541     4126614 + .. 1.00    no 0.68
+
+                                                                                                NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:G:U:U+GC:CAG   GGUAG:GCG:::::+U    A:::::AGG CG GGGUUC+AAUCCC C:A:C:C:A
+  AL123456.3 4126541 CGGGGUGUGGCGCAGCuuGGUAGCGCGCUUCGUUCGGGACGAAGAGGcCGUGGGUUCAAAUCCCGCCACCCCGA 4126614
+                     ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   1.7e-13   63.6   0.0  cm        1       71 []     1177396     1177469 + .. 0.99    no 0.59
+
+                                 v         v                                                    NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:::::AUAGC: A+U GG    :GC+:CGGACUUAAAAUCCG: ++ +G::GGUUCGA UCC::CU:::::CA
+  AL123456.3 1177396 GCCCCCAUAGCCCAAUuGGCaGAGGCAGCGGACUUAAAAUCCGUCAAgUGUCGGUUCGAGUCCGACUGGGGGCA 1177469
+                     *******************9999**********************999************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   4.2e-13   62.2   0.0  cm        1       71 []     4222667     4222581 - .. 0.98    no 0.64
+
+                                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::U+GC::AG GG   A::GC+:::G:CUU AAA:C:::A                  CG GGGUUC+AAUCCC C:::C:CC+
+  AL123456.3 4222667 GGUGGCGUGGCAGAGCGGCcuAAUGCACUCGCCUUGAAAGCGAGA-gacggcuaacaccguc-CGGGGGUUCAAAUCCCUCCGCCACCG 4222581
+                     ****************9999*************************.8*************76.************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   4.6e-13   62.1   0.0  cm        1       71 []     3559443     3559370 - .. 1.00    no 0.65
+
+                     v                                                                       v  NC
+                     (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                      G:G:::U+G :CAG   GGUAG: CG::GG:CU A+AA:CC::AGG C:C:GGUUCGAAUCC:G::::C:C A
+  AL123456.3 3559443 CGCGGGGUGGAGCAGCucGGUAGCUCGCUGGGCUCAUAACCCAGAGGuCGCAGGUUCGAAUCCUGUCCCCGCUA 3559370
+                     ************************************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !     5e-13   61.9   0.0  cm        1       71 []     2827854     2827926 + .. 1.00    no 0.58
+
+                                                                                               NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::U:UAG UCAGU GGUAGA C+:C:G:+U++ A :C:G:  G C:CGGGUUCGA UCCCG::A::::C 
+  AL123456.3 2827854 GUGAGUGUAGUUCAGUuGGUAGAGCACCAGGUUGUGAUCCUGGGUGuCGCGGGUUCGAGUCCCGUCACUCACC 2827926
+                     ********************************************999************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   5.6e-13   61.8   0.0  cm        1       71 []      658109      658189 + .. 0.98    no 0.62
+
+                                                                                                       NC
+                    (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.........,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    GG:::::U+:C: AG GG   A :G:+:CGGACU++AAAUCCG:           +CGC:GGUUCGAAUCC:GC:::::CCA
+  AL123456.3 658109 GGCAGGUUGCCCGAGCGGCcaAUGGGAGCGGACUGUAAAUCCGUC-gcgaaagcuACGCAGGUUCGAAUCCUGCACCUGCCA 658189
+                    ****************9999*************************.8*******85************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   2.2e-12   59.7   0.0  cm        1       71 []      923999      924072 + .. 0.99    no 0.65
+
+                                                                                               NC
+                    (((((((,,<<<<___.___.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA      1 GgagauaUAGCucAgU.GGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                    :::::::U G:::AG  GG   A:::CG:CG::CUU+ AA::CG:+++C:CGGGUUCGAAUCCCG::::::::A
+  AL123456.3 923999 GCCCCCUUCGUCUAGAcGGCcuAGGACGCCGCCCUUUCAAGGCGGUAACGCGGGUUCGAAUCCCGUAGGGGGUA 924072
+                    *****************9999***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   3.1e-12   59.1   0.0  cm        1       71 []     4199217     4199131 - .. 0.98    no 0.66
+
+                                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,................,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GG:G:::U+ C::AG GG   A::G G:::G:CU  AAA:C:::+                  CG:GGGUUC+AAUCCC:C:::C:CC+
+  AL123456.3 4199217 GGUGGCGUGUCCGAGCGGCcuAAGGAGCACGCCUCGAAAGCGUGU-gacggcuaacaccguc-CGAGGGUUCAAAUCCCUCCGCCACCG 4199131
+                     ****************9999*************************.8*************76.************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   3.9e-12   58.8   0.0  cm        1       71 []     3348619     3348547 - .. 0.99    no 0.70
+
+                                                                                               NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:::::U G:::AG GG   A:::CG:CG::CU + A ::CG:++GC::GGGUUCGAAUCCC:::::::C:A
+  AL123456.3 3348619 GGCCCCGUCGUCUAGCGGCcuAGGACGCCGCCCUCUCACGGCGGUAGCGUGGGUUCGAAUCCCAUCGGGGCUA 3348547
+                     ****************9999***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   9.2e-12   57.4   0.0  cm        1       71 []     2794176     2794249 + .. 0.98    no 0.62
+
+                                                    v       v                                   NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G:: :::UAGCUCAG  GG  AGAGC+::GG CUU +AA CC::AGG CGC: GUUCGA UC :GC::: ::CA
+  AL123456.3 2794176 GCCUCCGUAGCUCAGGuGGAuAGAGCAAGGGCCUUCUAAUCCCUAGGuCGCACGUUCGAGUCGUGCCGGGGGCA 2794249
+                     ***************997778***************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.3e-11   56.9   0.0  cm        1       71 []     4217056     4216968 - .. 0.98    no 0.63
+
+                                                                                                                 NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.................,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.................g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GGAG:::U+:C::AG GG   A::G:G:C::ACU+ +AAU::G:+                    C:::GGUUC+AAUCC::::::CUCC+
+  AL123456.3 4217056 GGAGGCGUGCCAGAGCGGCcgAAUGGGGCUCACUGCUAAUGAGUU-gucccccuucaagggga-cCGGAGGUUCAAAUCCUCUCGCCUCCG 4216968
+                     ****************9999*************************.8***************5.5************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   2.2e-11   56.0   0.0  cm        1       71 []     2401987     2402072 + .. 0.99    no 0.63
+
+                                                                                                             NC
+                     (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,...............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag...............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::U+GC::A+UGG   ::GCG:::G:+U+A   :C:::+                G+G:GGGUUC+A UCCC:C::::::CA
+  AL123456.3 2401987 GUCCGAGUGGCGGAAUGGCaGACGCGCUAGCUUGAGGUGCUAGU-gcccuacuaaugggcGUGGGGGUUCAAGUCCCCCCUCGGACA 2402072
+                     *******************9************************.8*************95************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   3.2e-11   55.5   0.0  cm        1       71 []     1512728     1512811 + .. 0.99    no 0.58
+
+                                                                                                            NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::G:::U+::::A+U GG  A::::G:CGG +UUA    CCG:+               +G:GGGUUCGA UCCC:C:::C::CA
+  AL123456.3 1512728 GCGGGCGUGAUGAAAUuGGCaAACAUGCCGGUUUUAGGUGCCGGU-gcucgaaagaguu-UGAGGGUUCGAGUCCCUCCGCCCGCA 1512811
+                     *********************************************.8**********74.************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   3.5e-11   55.3   0.0  cm        1       71 []     4168345     4168430 + .. 0.99    no 0.64
+
+                                 v         v                                                                  NC
+                     (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     GGAG:::U GC: AGUGG   A :GCG: :G:CU+ AA :C: :+                 CGCGGGUUC+AAUCCCGC:::CUCC+
+  AL123456.3 4168345 GGAGGAUUCGCCUAGUGGCcuAUGGCGCUCGCCUGGAACGCGGGU-uggguuaacagcccu-CGCGGGUUCAAAUCCCGCAUCCUCCG 4168430
+                     ****************9999*************************.9************95.************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   5.7e-11   54.6   0.0  cm        1       71 []     3348730     3348659 - .. 1.00    no 0.51
+
+                                                                                              NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :G:G:UAU+G:::A+U GG A:::C+:C:GA+U +   UC:G: + +: :GGUUCGA UCC: :UA:C:C:+
+  AL123456.3 3348730 UGGGGUAUGGUGUAAUuGGCAACACAGCUGAUUCUGGUUCAGCCAUUCUAGGUUCGAGUCCUGGUACCCCAG 3348659
+                     *******************9**************************************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   7.6e-11   54.1   0.0  cm        1       71 []       25644       25726 + .. 0.99    no 0.67
+
+                                                                                                        NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+        tRNA     1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71   
+                   GG:::: U+GC::A+UGG   ::GCG::GG:+U A   :CC::+             G+G:GGGUUC+A UCCC:C ::::CCA
+  AL123456.3 25644 GGGCGAGUGGCGGAAUGGCaGACGCGCUGGCUUCAGGUGCCAGU-guccuucgggacGUGGGGGUUCAAGUCCCCCUUCGCCCA 25726
+                   *******************9************************.8**********95************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   7.7e-11   54.1   0.0  cm        1       71 []     1828088     1828015 - .. 0.98    no 0.59
+
+                                 v         v        v       v                                   NC
+                     (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     G::::::UA C: A+  GG    :G +:CGG CU AAAA CCG:  + +G:GGGUUCGAAUCCC:C::::::CA
+  AL123456.3 1828088 GCCCUCGUAUCCCAACuGGCaGAGGAAACGGACUCAAAACCCGUCCAgUGUGGGUUCGAAUCCCACCGAGGGCA 1828015
+                     *****************9999899*********************899************************** PP
+
+>> AL123456.3  Mycobacterium tuberculosis H37Rv complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   1.1e-10   53.6   0.0  cm        1       71 []     1138147     1138076 - .. 1.00    no 0.54
+
+                                                                                              NC
+                     (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+        tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                     :::G:::U+G:::A+U GG A:::C UC:GA+UU+   UC:GA++G+ C:GGUUCGA UCC:G :::C:::+
+  AL123456.3 1138147 UCCGUCGUGGUGUAAUcGGCAGCACCUCUGAUUUUGGUUCAGAUAGUUCAGGUUCGAGUCCUGGCGACGGAG 1138076
+                     ************************************************************************ PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (8823064 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            1217  (0.03594); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             205  (0.006224); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             205  (0.006224); expected (0.02)
+Windows   passing  local HMM Forward       filter:              40  (0.001405); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              40  (0.001405); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              38  (0.001405); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              38  (0.001405); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              46  (0.0003922); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              46  (0.0003922); expected (0.0001)
+Total CM hits reported:                                         45  (0.0003836); includes 0 truncated hit(s)
+
+# CPU time: 0.46u 0.02s 00:00:00.48 Elapsed: 00:00:00.07
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (8823064 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:           11980  (0.1938); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            2789  (0.0473); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1188  (0.01992); expected (0.02)
+Windows   passing  local HMM Forward       filter:             139  (0.002505); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              71  (0.001308); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              54  (0.001165); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              52  (0.001119); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              54  (0.0006491); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              25  (0.0002423); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 1.25u 0.04s 00:00:01.29 Elapsed: 00:00:00.25
+//
+[ok]

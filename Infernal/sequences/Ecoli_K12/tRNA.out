@@ -1,0 +1,1218 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         cms/tRNA.cm
+# target sequence database:              genomes/Ecoli_K12.fasta
+# output directed to file:               sequences/Ecoli_K12/tRNA.out
+# tabular output of hits:                sequences/Ecoli_K12/tRNA.tblout
+# model-specific thresholding:           GA cutoffs
+# Rfam pipeline mode:                    on [strict filtering]
+# HMM-only mode for 0 basepair models:   no
+# number of worker threads:              12
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tRNA  [CLEN=71]
+Accession:   RF00005
+Description: tRNA
+Hit scores:
+ rank     E-value  score  bias  sequence   start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------- -------   --- ----- ----  -----------
+  (1) !   1.2e-17   78.5   0.0  U00096.3  780554  780626 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (2) !   1.2e-17   78.5   0.0  U00096.3  780843  780915 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (3) !   1.2e-17   78.5   0.0  U00096.3  781147  781219 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (4) !   1.2e-17   78.5   0.0  U00096.3  781369  781441 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (5) !   1.2e-17   78.5   0.0  U00096.3  781577  781649 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (6) !   1.2e-17   78.5   0.0  U00096.3 2521253 2521325 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (7) !   4.6e-16   72.9   0.0  U00096.3 2785837 2785765 -  cm    no 0.56  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (8) !   5.2e-16   72.7   0.0  U00096.3 4175754 4175826 +  cm    no 0.53  Escherichia coli str. K-12 substr. MG1655, complete genome
+  (9) !     7e-16   72.2   0.0  U00096.3 3215598 3215670 +  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (10) !   1.2e-15   71.4   0.0  U00096.3 4175388 4175460 +  cm    no 0.51  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (11) !   1.3e-15   71.3   0.0  U00096.3 2044549 2044621 +  cm    no 0.52  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (12) !   1.3e-15   71.3   0.0  U00096.3 2058102 2058030 -  cm    no 0.52  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (13) !   1.3e-15   71.3   0.0  U00096.3 2059851 2059923 +  cm    no 0.52  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (14) !   1.3e-15   71.3   0.0  U00096.3 2062260 2062332 +  cm    no 0.52  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (15) !   1.6e-15   70.9   0.0  U00096.3  564723  564796 +  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (16) !   2.1e-15   70.5   0.0  U00096.3 2999057 2998987 -  cm    no 0.56  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (17) !   2.9e-15   70.0   0.0  U00096.3  262871  262943 +  cm    no 0.51  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (18) !   4.9e-15   69.2   0.0  U00096.3  696740  696667 -  cm    no 0.51  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (19) !   4.9e-15   69.2   0.0  U00096.3  697133  697060 -  cm    no 0.51  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (20) !   6.1e-15   68.9   0.0  U00096.3 3423655 3423583 -  cm    no 0.56  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (21) !   9.5e-15   68.2   0.0  U00096.3 3982510 3982582 +  cm    no 0.52  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (22) !     2e-14   67.0   0.0  U00096.3 3110366 3110438 +  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (23) !     2e-14   67.0   0.0  U00096.3 4362626 4362554 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (24) !   2.6e-14   66.6   0.0  U00096.3 1992117 1992045 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (25) !   2.6e-14   66.6   0.0  U00096.3 4392360 4392432 +  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (26) !   2.6e-14   66.6   0.0  U00096.3 4392472 4392544 +  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (27) !   2.6e-14   66.6   0.0  U00096.3 4392583 4392655 +  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (28) !   2.9e-14   66.4   0.0  U00096.3 1746435 1746508 +  cm    no 0.53  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (29) !   3.1e-14   66.4   0.0  U00096.3 2817860 2817787 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (30) !   3.1e-14   66.4   0.0  U00096.3 2818135 2818062 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (31) !   3.1e-14   66.4   0.0  U00096.3 2818274 2818201 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (32) !   3.1e-14   66.4   0.0  U00096.3 2818549 2818476 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (33) !   3.8e-14   66.0   0.0  U00096.3  228928  229001 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (34) !   3.8e-14   66.0   0.0  U00096.3  236931  237004 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (35) !   3.8e-14   66.0   0.0  U00096.3 3946872 3946945 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (36) !   4.1e-14   65.9   0.0  U00096.3 1746516 1746589 +  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (37) !   8.7e-14   64.7   0.0  U00096.3 3946957 3947029 +  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (38) !   1.2e-13   64.3   0.0  U00096.3 2043557 2043471 -  cm    no 0.63  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (39) !   1.3e-13   64.1   0.0  U00096.3 4175673 4175744 +  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (40) !   1.5e-13   63.9   0.0  U00096.3 1031712 1031628 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (41) !   2.3e-13   63.2   0.0  U00096.3  225381  225454 +  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (42) !   2.3e-13   63.2   0.0  U00096.3 3427152 3427079 -  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (43) !   2.3e-13   63.2   0.0  U00096.3 4037141 4037214 +  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (44) !   2.3e-13   63.2   0.0  U00096.3 3982735 3982808 +  cm    no 0.62  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (45) !   3.2e-13   62.7   0.0  U00096.3  696830  696759 -  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (46) !   3.2e-13   62.7   0.0  U00096.3  696939  696868 -  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (47) !   3.3e-13   62.6   0.0  U00096.3  696504  696433 -  cm    no 0.58  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (48) !   3.3e-13   62.6   0.0  U00096.3  696616  696545 -  cm    no 0.58  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (49) !   3.7e-13   62.5   0.0  U00096.3 2520931 2521003 +  cm    no 0.62  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (50) !   3.7e-13   62.5   0.0  U00096.3  780765  780837 +  cm    no 0.62  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (51) !   3.7e-13   62.5   0.0  U00096.3  781068  781140 +  cm    no 0.62  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (52) !   3.7e-13   62.5   0.0  U00096.3 2521051 2521123 +  cm    no 0.62  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (53) !   3.7e-13   62.5   0.0  U00096.3 2521173 2521245 +  cm    no 0.62  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (54) !   4.3e-13   62.2   0.0  U00096.3 3982375 3982448 +  cm    no 0.68  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (55) !   5.8e-13   61.8   0.0  U00096.3 2466309 2466380 +  cm    no 0.49  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (56) !   6.3e-13   61.7   0.0  U00096.3  225500  225572 +  cm    no 0.63  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (57) !   6.3e-13   61.7   0.0  U00096.3 3427033 3426961 -  cm    no 0.63  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (58) !   6.3e-13   61.7   0.0  U00096.3 4037260 4037332 +  cm    no 0.63  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (59) !   6.4e-13   61.6   0.0  U00096.3 2818645 2818556 -  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (60) !   8.7e-13   61.2   0.0  U00096.3 4496405 4496486 +  cm    no 0.54  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (61) !   1.1e-12   60.9   0.0  U00096.3 2947387 2947460 +  cm    no 0.66  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (62) !   1.1e-12   60.9   0.0  U00096.3 2947497 2947570 +  cm    no 0.66  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (63) !   1.1e-12   60.9   0.0  U00096.3 2947607 2947680 +  cm    no 0.66  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (64) !   1.1e-12   60.8   0.0  U00096.3 3318289 3318216 -  cm    no 0.65  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (65) !   1.7e-12   60.1   0.0  U00096.3 4175472 4175553 +  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (66) !   1.7e-12   60.1   0.0  U00096.3 1287328 1287247 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (67) !   1.7e-12   60.1   0.0  U00096.3 1287622 1287541 -  cm    no 0.59  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (68) !   1.9e-12   59.9   0.0  U00096.3  925971  925887 -  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (69) !   1.9e-12   59.9   0.0  U00096.3 1097652 1097568 -  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (70) !     2e-12   59.8   0.0  U00096.3 2518116 2518044 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (71) !     2e-12   59.8   0.0  U00096.3 2518231 2518159 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (72) !   2.1e-12   59.8   0.0  U00096.3 2729444 2729372 -  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (73) !   2.1e-12   59.8   0.0  U00096.3 3943435 3943507 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (74) !   2.1e-12   59.8   0.0  U00096.3 4168372 4168444 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (75) !   2.1e-12   59.8   0.0  U00096.3 4209774 4209846 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (76) !   2.3e-12   59.6   0.0  U00096.3 1991901 1991818 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (77) !   3.9e-12   58.8   0.0  U00096.3 3708692 3708619 -  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (78) !   4.8e-12   58.5   0.0  U00096.3  697047  696966 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (79) !   1.1e-11   57.2   0.0  U00096.3 1991987 1991917 -  cm    no 0.56  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (80) !   7.8e-11   54.2   0.0  U00096.3 3322158 3322075 -  cm    no 0.57  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (81) !   2.8e-10   52.2   0.0  U00096.3 2286211 2286284 +  cm    no 0.66  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (82) !   1.2e-09   49.9   0.0  U00096.3 4606286 4606203 -  cm    no 0.60  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (83) !   1.2e-09   49.9   0.0  U00096.3 3982606 3982689 +  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (84) !   1.2e-09   49.9   0.0  U00096.3 4606165 4606082 -  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (85) !   1.2e-09   49.9   0.0  U00096.3 4606401 4606318 -  cm    no 0.61  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (86) !   4.7e-08   44.2   0.0  U00096.3  297178  297251 +  cm    no 0.42  Escherichia coli str. K-12 substr. MG1655, complete genome
+ (87) !   6.7e-07   40.1   0.0  U00096.3 3836223 3836312 +  cm    no 0.63  Escherichia coli str. K-12 substr. MG1655, complete genome
+
+
+Hit alignments:
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.2e-17   78.5   0.0  cm        1       71 []      780554      780626 + .. 1.00    no 0.49
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  U00096.3 780554 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 780626
+                  ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.2e-17   78.5   0.0  cm        1       71 []      780843      780915 + .. 1.00    no 0.49
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  U00096.3 780843 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 780915
+                  ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.2e-17   78.5   0.0  cm        1       71 []      781147      781219 + .. 1.00    no 0.49
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  U00096.3 781147 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 781219
+                  ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   1.2e-17   78.5   0.0  cm        1       71 []      781369      781441 + .. 1.00    no 0.49
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  U00096.3 781369 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 781441
+                  ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   1.2e-17   78.5   0.0  cm        1       71 []      781577      781649 + .. 1.00    no 0.49
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  U00096.3 781577 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 781649
+                  ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   1.2e-17   78.5   0.0  cm        1       71 []     2521253     2521325 + .. 1.00    no 0.49
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:::::UAGCUCAGU GGUAGAGC+:::GACUU++AAUC:::+GG CGC:GGUUCGAAUCC:GC:::::CCA
+  U00096.3 2521253 GGGUCGUUAGCUCAGUuGGUAGAGCAGUUGACUUUUAAUCAAUUGGuCGCAGGUUCGAAUCCUGCACGACCCA 2521325
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   4.6e-16   72.9   0.0  cm        1       71 []     2785837     2785765 - .. 1.00    no 0.56
+
+                                                                                             NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:::U:UAGCUCAGUGGU AGAGC+:::GACU A+AAUC:::+GG CGC:GGUUC+A UCC:GC:A:::CCA
+  U00096.3 2785837 GGCCCUUUAGCUCAGUGGUuAGAGCAGGCGACUCAUAAUCGCUUGGuCGCUGGUUCAAGUCCAGCAAGGGCCA 2785765
+                   ****************9999***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   5.2e-16   72.7   0.0  cm        1       71 []     4175754     4175826 + .. 1.00    no 0.53
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::GAUAUAGCUCAGU GGUAGAGCG:::::+U+ +AA:::::AGG CG:::GUUCGAAUC:::CUAUC::CA
+  U00096.3 4175754 GCUGAUAUAGCUCAGUuGGUAGAGCGCACCCUUGGUAAGGGUGAGGuCGGCAGUUCGAAUCUGCCUAUCAGCA 4175826
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !     7e-16   72.2   0.0  cm        1       71 []     3215598     3215670 + .. 1.00    no 0.59
+
+                                                                                             NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:::::UAGCUCAGUGGU AGAGC+:::GACU A+AAUC:::+GG CGC:GGUUC+A UCC:GC:::::CCA
+  U00096.3 3215598 GGCCCCUUAGCUCAGUGGUuAGAGCAGGCGACUCAUAAUCGCUUGGuCGCUGGUUCAAGUCCAGCAGGGGCCA 3215670
+                   ****************9999***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   1.2e-15   71.4   0.0  cm        1       71 []     4175388     4175460 + .. 1.00    no 0.51
+
+                                                                      v         v            NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::GA::UAGCUCAGU GGUAGAGC+:C:GACUU +AAUC:G:AGG C:C: GUUCGA UC :G:::UC::CA
+  U00096.3 4175388 GCCGACUUAGCUCAGUaGGUAGAGCAACUGACUUGUAAUCAGUAGGuCACCAGUUCGAUUCCGGUAGUCGGCA 4175460
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   1.3e-15   71.3   0.0  cm        1       71 []     2044549     2044621 + .. 1.00    no 0.52
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  U00096.3 2044549 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2044621
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   1.3e-15   71.3   0.0  cm        1       71 []     2058102     2058030 - .. 1.00    no 0.52
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  U00096.3 2058102 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2058030
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   1.3e-15   71.3   0.0  cm        1       71 []     2059851     2059923 + .. 1.00    no 0.52
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  U00096.3 2059851 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2059923
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   1.3e-15   71.3   0.0  cm        1       71 []     2062260     2062332 + .. 1.00    no 0.52
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :::::U:UAG:UCAGU GGUAGA:CG:CGGACU+++AAUCCG:A G C:C:GGUUCGA UCC:G::A:::::+
+  U00096.3 2062260 UCCUCUGUAGUUCAGUcGGUAGAACGGCGGACUGUUAAUCCGUAUGuCACUGGUUCGAGUCCAGUCAGAGGAG 2062332
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !   1.6e-15   70.9   0.0  cm        1       71 []      564723      564796 + .. 0.99    no 0.61
+
+                                                                                             NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  G::::::UAGCUCAGU GG  AGAGC+:CG::CUU +AA::CG: GG CGC:GGUUCGAAUCC:GC::::::C+
+  U00096.3 564723 GCGCCCUUAGCUCAGUuGGAuAGAGCAACGACCUUCUAAGUCGUGGGcCGCAGGUUCGAAUCCUGCAGGGCGCG 564796
+                  *****************8888***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !   2.1e-15   70.5   0.0  cm        1       71 []     2999057     2998987 - .. 1.00    no 0.56
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G:::UAG:UCA+UGGUAGA:CG:::G:+U   AA:C:::A +C::GGGUUCGA UCCC:::::C::C 
+  U00096.3 2999057 GCGGGCGUAGUUCAAUGGUAGAACGAGAGCUUCCCAAGCUCUAUACGAGGGUUCGAUUCCCUUCGCCCGCU 2998987
+                   *********************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !   2.9e-15   70.0   0.0  cm        1       71 []      262871      262943 + .. 1.00    no 0.51
+
+                                            v               v                               NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  G::GAUAUAGCUCAGU GGUAGAGC+ CG:A+U  +AAU:CG AGG C:::GGUUCGA UCC:::UAUC::CA
+  U00096.3 262871 GCCGAUAUAGCUCAGUuGGUAGAGCAGCGCAUUCGUAAUGCGAAGGuCGUAGGUUCGACUCCUAUUAUCGGCA 262943
+                  ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !   4.9e-15   69.2   0.0  cm        1       71 []      696740      696667 - .. 1.00    no 0.51
+
+                                                                     v           v           NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG::A::UAGCUCAGU GGU AGAGC+::::ACU A+AAU:::: GG C:C GGUUCGAAUCC G:::U::CCA
+  U00096.3 696740 GGCUACGUAGCUCAGUuGGUuAGAGCACAUCACUCAUAAUGAUGGGGuCACAGGUUCGAAUCCCGUCGUAGCCA 696667
+                  ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !   4.9e-15   69.2   0.0  cm        1       71 []      697133      697060 - .. 1.00    no 0.51
+
+                                                                     v           v           NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG::A::UAGCUCAGU GGU AGAGC+::::ACU A+AAU:::: GG C:C GGUUCGAAUCC G:::U::CCA
+  U00096.3 697133 GGCUACGUAGCUCAGUuGGUuAGAGCACAUCACUCAUAAUGAUGGGGuCACAGGUUCGAAUCCCGUCGUAGCCA 697060
+                  ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !   6.1e-15   68.9   0.0  cm        1       71 []     3423655     3423583 - .. 1.00    no 0.56
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::GAUAU+GCUCAGU GGUAGAGCG:::::+U+ +AA:::::AGG C:C::GUUCGA UC::G:UAUC::CA
+  U00096.3 3423655 GCUGAUAUGGCUCAGUuGGUAGAGCGCACCCUUGGUAAGGGUGAGGuCCCCAGUUCGACUCUGGGUAUCAGCA 3423583
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !   9.5e-15   68.2   0.0  cm        1       71 []     3982510     3982582 + .. 1.00    no 0.52
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G:UAUAGCUCAGU GGUAGAGC ::GGA+U++ A UCC::+ G C::GGGUUCGAAUCCC::UA:C::C 
+  U00096.3 3982510 GUGGCUAUAGCUCAGUuGGUAGAGCCCUGGAUUGUGAUUCCAGUUGuCGUGGGUUCGAAUCCCAUUAGCCACC 3982582
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !     2e-14   67.0   0.0  cm        1       71 []     3110366     3110438 + .. 1.00    no 0.59
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:::::AUAGCUCAGU GGUAGAGC+::GGA+U+AAAAUCC::  G C:: GGUUCGA UCC ::U:::::CA
+  U00096.3 3110366 GCCCGGAUAGCUCAGUcGGUAGAGCAGGGGAUUGAAAAUCCCCGUGuCCUUGGUUCGAUUCCGAGUCCGGGCA 3110438
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !     2e-14   67.0   0.0  cm        1       71 []     4362626     4362554 - .. 1.00    no 0.59
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:::::AUAGCUCAGU GGUAGAGC+::GGA+U+AAAAUCC::  G C:: GGUUCGA UCC ::U:::::CA
+  U00096.3 4362626 GCCCGGAUAGCUCAGUcGGUAGAGCAGGGGAUUGAAAAUCCCCGUGuCCUUGGUUCGAUUCCGAGUCCGGGCA 4362554
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !   2.6e-14   66.6   0.0  cm        1       71 []     1992117     1992045 - .. 1.00    no 0.60
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  U00096.3 1992117 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 1992045
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !   2.6e-14   66.6   0.0  cm        1       71 []     4392360     4392432 + .. 1.00    no 0.60
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  U00096.3 4392360 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 4392432
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !   2.6e-14   66.6   0.0  cm        1       71 []     4392472     4392544 + .. 1.00    no 0.60
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  U00096.3 4392472 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 4392544
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !   2.6e-14   66.6   0.0  cm        1       71 []     4392583     4392655 + .. 1.00    no 0.60
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G::AUAGCUCAGU GGUAGAGC+:::::+U+  AA::::: GG C:CG:GUUCGA UC:CG:U::C::C 
+  U00096.3 4392583 GCGGGAAUAGCUCAGUuGGUAGAGCACGACCUUGCCAAGGUCGGGGuCGCGAGUUCGAGUCUCGUUUCCCGCU 4392655
+                   ************************************************************************* PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !   2.9e-14   66.4   0.0  cm        1       71 []     1746435     1746508 + .. 1.00    no 0.53
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:::::AUAGCUCAGU GGU AGAGC+:C:::+U+A A :::G: GG C:::GGUUCGA UCC:::U:::::CA
+  U00096.3 1746435 GCGUUCAUAGCUCAGUuGGUuAGAGCACCACCUUGACAUGGUGGGGGuCGUUGGUUCGAGUCCAAUUGAACGCA 1746508
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !   3.1e-14   66.4   0.0  cm        1       71 []     2817860     2817787 - .. 0.99    no 0.59
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  U00096.3 2817860 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2817787
+                   *****************8888***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !   3.1e-14   66.4   0.0  cm        1       71 []     2818135     2818062 - .. 0.99    no 0.59
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  U00096.3 2818135 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2818062
+                   *****************8888***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !   3.1e-14   66.4   0.0  cm        1       71 []     2818274     2818201 - .. 0.99    no 0.59
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  U00096.3 2818274 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2818201
+                   *****************8888***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !   3.1e-14   66.4   0.0  cm        1       71 []     2818549     2818476 - .. 0.99    no 0.59
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:A::::UA:CUCAG  GG  AGAG:+:::G:CU   AA:C::: GG CG::GGUUCGAAUCC::C::::U:CA
+  U00096.3 2818549 GCAUCCGUAGCUCAGCuGGAuAGAGUACUCGGCUACGAACCGAGCGGuCGGAGGUUCGAAUCCUCCCGGAUGCA 2818476
+                   *****************8888***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !   3.8e-14   66.0   0.0  cm        1       71 []      228928      229001 + .. 1.00    no 0.64
+
+                                                                                             NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GGA :::UA::UCAGU GGU AGA::+:C:G:CU++ A :C:G: GG C:CGGGUUCGA UCCCG:::: UCC+
+  U00096.3 228928 GGAGCGGUAGUUCAGUcGGUuAGAAUACCUGCCUGUCACGCAGGGGGuCGCGGGUUCGAGUCCCGUCCGUUCCG 229001
+                  ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !   3.8e-14   66.0   0.0  cm        1       71 []      236931      237004 + .. 1.00    no 0.64
+
+                                                                                             NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GGA :::UA::UCAGU GGU AGA::+:C:G:CU++ A :C:G: GG C:CGGGUUCGA UCCCG:::: UCC+
+  U00096.3 236931 GGAGCGGUAGUUCAGUcGGUuAGAAUACCUGCCUGUCACGCAGGGGGuCGCGGGUUCGAGUCCCGUCCGUUCCG 237004
+                  ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !   3.8e-14   66.0   0.0  cm        1       71 []     3946872     3946945 + .. 1.00    no 0.64
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GGA :::UA::UCAGU GGU AGA::+:C:G:CU++ A :C:G: GG C:CGGGUUCGA UCCCG:::: UCC+
+  U00096.3 3946872 GGAGCGGUAGUUCAGUcGGUuAGAAUACCUGCCUGUCACGCAGGGGGuCGCGGGUUCGAGUCCCGUCCGUUCCG 3946945
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !   4.1e-14   65.9   0.0  cm        1       71 []     1746516     1746589 + .. 1.00    no 0.61
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::::::UAGCUCAGU GGU AGAGC+:C:::+U+A A :::G: GG C:::GGUUCGA UCC:::::::::CA
+  U00096.3 1746516 GCGUCCGUAGCUCAGUuGGUuAGAGCACCACCUUGACAUGGUGGGGGuCGGUGGUUCGAGUCCACUCGGACGCA 1746589
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !   8.7e-14   64.7   0.0  cm        1       71 []     3946957     3947029 + .. 1.00    no 0.59
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :G:G:::UAG UCA+U GGUAGA C+:CGG:CU  AAA:CCG:  G +G G:GUUCGA UC:C C:::C:C:+
+  U00096.3 3946957 AGGGGCGUAGUUCAAUuGGUAGAGCACCGGUCUCCAAAACCGGGUGuUGGGAGUUCGAGUCUCUCCGCCCCUG 3947029
+                   ********************************************999************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !   1.2e-13   64.3   0.0  cm        1       71 []     2043557     2043471 - .. 0.97    no 0.63
+
+                                                                                                             NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...............,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GGAGA:AU+:C::AG GG   A::G:+:CGG:CU  AAA:CCG:A                  CG:GGGUUC+AAUCCC:CU:UCUCC+
+  U00096.3 2043557 GGAGAGAUGCCGGAGCGGCugAACGGACCGGUCUCGAAAACCGGA-guaggggcaacucua-cCGGGGGUUCAAAUCCCCCUCUCUCCG 2043471
+                   ****************7777*************************.8*************5.5************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !   1.3e-13   64.1   0.0  cm        1       71 []     4175673     4175744 + .. 0.99    no 0.57
+
+                               v        v                                                   NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::G::AU G:: A+UGG  A ::C UC:G:CUU  AA:C:GA+G++GCGGGUUCGA UCCCGCU::C::C 
+  U00096.3 4175673 GCGGGCAUCGUAUAAUGGCuAUUACCUCAGCCUUCCAAGCUGAUGAUGCGGGUUCGAUUCCCGCUGCCCGCU 4175744
+                   ****************9988**************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !   1.5e-13   63.9   0.0  cm        1       71 []     1031712     1031628 - .. 0.98    no 0.60
+
+                                                                                                           NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GGA:: :U+GC::AG GGU  A::GC+:CGG:CUU AAA:CCG:                 C::G:GUUCGAAUC:C::: ::UCC+
+  U00096.3 1031712 GGAAGUGUGGCCGAGCGGUugAAGGCACCGGUCUUGAAAACCGGC-gacccgaaaggguu-CCAGAGUUCGAAUCUCUGCGCUUCCG 1031628
+                   ****************9998*************************.8***********74.************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !   2.3e-13   63.2   0.0  cm        1       71 []      225381      225454 + .. 1.00    no 0.57
+
+                                                                                             NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  :G:: U:UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:::GGUUC+A UCC::::A ::C:A
+  U00096.3 225381 AGGCUUGUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUGGUUCAAGUCCACUCAGGCCUA 225454
+                  ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !   2.3e-13   63.2   0.0  cm        1       71 []     3427152     3427079 - .. 1.00    no 0.57
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :G:: U:UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:::GGUUC+A UCC::::A ::C:A
+  U00096.3 3427152 AGGCUUGUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUGGUUCAAGUCCACUCAGGCCUA 3427079
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !   2.3e-13   63.2   0.0  cm        1       71 []     4037141     4037214 + .. 1.00    no 0.57
+
+                                                                                              NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :G:: U:UAGCUCAG  GGU AGAGCG:::::CU+A+AA:::::AGG C:::GGUUC+A UCC::::A ::C:A
+  U00096.3 4037141 AGGCUUGUAGCUCAGGuGGUuAGAGCGCACCCCUGAUAAGGGUGAGGuCGGUGGUUCAAGUCCACUCAGGCCUA 4037214
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !   2.3e-13   63.2   0.0  cm        1       71 []     3982735     3982808 + .. 1.00    no 0.62
+
+                                                                                              NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :G:::::UAGC:CAG   GGUAG:GC+:C:G:+UU   A:C:G: GG C:::GGUUCGAAUCC::::::::C:A
+  U00096.3 3982735 CGGCGAGUAGCGCAGCuuGGUAGCGCAACUGGUUUGGGACCAGUGGGuCGGAGGUUCGAAUCCUCUCUCGCCGA 3982808
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !   3.2e-13   62.7   0.0  cm        1       71 []      696830      696759 - .. 1.00    no 0.57
+
+                                                                                           NC
+                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  :G:G:UAU GC::AG GGUA::GC+:CGG:+UU+ A :CCG: +  C:C:GGUUCGAAUCC:G:UA:C:C:+
+  U00096.3 696830 UGGGGUAUCGCCAAGCGGUAAGGCACCGGUUUUUGAUACCGGCAUuCCCUGGUUCGAAUCCAGGUACCCCAG 696759
+                  *******************************************999************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !   3.2e-13   62.7   0.0  cm        1       71 []      696939      696868 - .. 1.00    no 0.57
+
+                                                                                           NC
+                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  :G:G:UAU GC::AG GGUA::GC+:CGG:+UU+ A :CCG: +  C:C:GGUUCGAAUCC:G:UA:C:C:+
+  U00096.3 696939 UGGGGUAUCGCCAAGCGGUAAGGCACCGGUUUUUGAUACCGGCAUuCCCUGGUUCGAAUCCAGGUACCCCAG 696868
+                  *******************************************999************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !   3.3e-13   62.6   0.0  cm        1       71 []      696504      696433 - .. 1.00    no 0.58
+
+                                                                                           NC
+                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  :G:G:UAU GC::AG GGUA::GC+:CGGA+U + A UCCG: +  C:::GGUUCGAAUCC:::UA:C:C:+
+  U00096.3 696504 UGGGGUAUCGCCAAGCGGUAAGGCACCGGAUUCUGAUUCCGGCAUuCCGAGGUUCGAAUCCUCGUACCCCAG 696433
+                  *******************************************99*************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !   3.3e-13   62.6   0.0  cm        1       71 []      696616      696545 - .. 1.00    no 0.58
+
+                                                                                           NC
+                  (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  :G:G:UAU GC::AG GGUA::GC+:CGGA+U + A UCCG: +  C:::GGUUCGAAUCC:::UA:C:C:+
+  U00096.3 696616 UGGGGUAUCGCCAAGCGGUAAGGCACCGGAUUCUGAUUCCGGCAUuCCGAGGUUCGAAUCCUCGUACCCCAG 696545
+                  *******************************************99*************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !   3.7e-13   62.5   0.0  cm        1       71 []     2520931     2521003 + .. 0.98    no 0.62
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  U00096.3 2520931 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 2521003
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !   3.7e-13   62.5   0.0  cm        1       71 []      780765      780837 + .. 0.98    no 0.62
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  U00096.3 780765 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 780837
+                  ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) !   3.7e-13   62.5   0.0  cm        1       71 []      781068      781140 + .. 0.98    no 0.62
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  U00096.3 781068 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 781140
+                  ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) !   3.7e-13   62.5   0.0  cm        1       71 []     2521051     2521123 + .. 0.98    no 0.62
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  U00096.3 2521051 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 2521123
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) !   3.7e-13   62.5   0.0  cm        1       71 []     2521173     2521245 + .. 0.98    no 0.62
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:::::UAGCUCAG  GG AGAGC+:C:::CUUA AA:::G: GG CG :GGUUCGA  CC: C:::::CCA
+  U00096.3 2521173 GGGUGAUUAGCUCAGCuGGGAGAGCACCUCCCUUACAAGGAGGGGGuCGGCGGUUCGAUCCCGUCAUCACCCA 2521245
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) !   4.3e-13   62.2   0.0  cm        1       71 []     3982375     3982448 + .. 0.99    no 0.68
+
+                                                                    v               v         NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::::::UAGCUCAG  GG  AGAGCG::G::CU    A::C::AGG C C:GGUUCGAAUCC:G ::::::C+
+  U00096.3 3982375 GCGCCCGUAGCUCAGCuGGAuAGAGCGCUGCCCUCCGGAGGCAGAGGuCUCAGGUUCGAAUCCUGUCGGGCGCG 3982448
+                   *****************8888***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) !   5.8e-13   61.8   0.0  cm        1       71 []     2466309     2466380 + .. 0.98    no 0.49
+
+                                                                                            NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::: ::UAG:U:A+UGG  A:A:CG:::::CU  +AA:::::A+ +GC:GGUUCGA UCC:GC:: :::CA
+  U00096.3 2466309 GUCCUCUUAGUUAAAUGGAuAUAACGAGCCCCUCCUAAGGGCUAAUUGCAGGUUCGAUUCCUGCAGGGGACA 2466380
+                   ****************7777**************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) !   6.3e-13   61.7   0.0  cm        1       71 []      225500      225572 + .. 0.98    no 0.63
+
+                                                                                            NC
+                  (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG G:UAUAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C ::GGUUCGA  CC:: UA:C CCA
+  U00096.3 225500 GGGGCUAUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCUGCGGUUCGAUCCCGCAUAGCUCCA 225572
+                  ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) !   6.3e-13   61.7   0.0  cm        1       71 []     3427033     3426961 - .. 0.98    no 0.63
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG G:UAUAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C ::GGUUCGA  CC:: UA:C CCA
+  U00096.3 3427033 GGGGCUAUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCUGCGGUUCGAUCCCGCAUAGCUCCA 3426961
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) !   6.3e-13   61.7   0.0  cm        1       71 []     4037260     4037332 + .. 0.98    no 0.63
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG G:UAUAGCUCAG  GG AGAGCG:C:G:+UU  A :C:G:AGG C ::GGUUCGA  CC:: UA:C CCA
+  U00096.3 4037260 GGGGCUAUAGCUCAGCuGGGAGAGCGCCUGCUUUGCACGCAGGAGGuCUGCGGUUCGAUCCCGCAUAGCUCCA 4037332
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) !   6.4e-13   61.6   0.0  cm        1       71 []     2818645     2818556 - .. 0.97    no 0.64
+
+                                                                                                                NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,..................,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag..................g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:GA::U+GC::AG GG   A::GCG:::::CU+ +AA:::::+                     C::GGGUUCGAAUCCC::::UC:CC+
+  U00096.3 2818645 GGUGAGGUGGCCGAGAGGCugAAGGCGCUCCCCUGCUAAGGGAGU-augcggucaaaagcugca-uCCGGGGUUCGAAUCCCCGCCUCACCG 2818556
+                   ****************7777*************************.8****************6.4************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (60) !   8.7e-13   61.2   0.0  cm        1       71 []     4496405     4496486 + .. 0.99    no 0.54
+
+                                                                                                       NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::GA::U+GC::A+U GGU  ::GC+:::GA+U AAAAUC:::            G+GC:GGUUCGA UCC:GC::UC::CA
+  U00096.3 4496405 GCCGAAGUGGCGAAAUcGGUaGACGCAGUUGAUUCAAAAUCAACC-guagaaauacGUGCCGGUUCGAGUCCGGCCUUCGGCA 4496486
+                   *********************************************.8********95************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (61) !   1.1e-12   60.9   0.0  cm        1       71 []     2947387     2947460 + .. 1.00    no 0.66
+
+                   v                                                                       v  NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                    G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUC+AAUCC: C:::C:C A
+  U00096.3 2947387 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUCGGUUCAAAUCCGGCCCCCGCAA 2947460
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (62) !   1.1e-12   60.9   0.0  cm        1       71 []     2947497     2947570 + .. 1.00    no 0.66
+
+                   v                                                                       v  NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                    G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUC+AAUCC: C:::C:C A
+  U00096.3 2947497 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUCGGUUCAAAUCCGGCCCCCGCAA 2947570
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (63) !   1.1e-12   60.9   0.0  cm        1       71 []     2947607     2947680 + .. 1.00    no 0.66
+
+                   v                                                                       v  NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                    G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAGG CG :GGUUC+AAUCC: C:::C:C A
+  U00096.3 2947607 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGGuCGUCGGUUCAAAUCCGGCCCCCGCAA 2947680
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (64) !   1.1e-12   60.8   0.0  cm        1       71 []     3318289     3318216 - .. 1.00    no 0.65
+
+                   v                                                                       v  NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                    G:G:::U+G :CAG   GGUAG: CGUCGG:CU A+AA:CCGAAG+ CG :GGUUC+AAUCC: C:::C:C A
+  U00096.3 3318289 CGCGGGGUGGAGCAGCcuGGUAGCUCGUCGGGCUCAUAACCCGAAGAuCGUCGGUUCAAAUCCGGCCCCCGCAA 3318216
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (65) !   1.7e-12   60.1   0.0  cm        1       71 []     4175472     4175553 + .. 0.98    no 0.59
+
+                                                                                                        NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:G:::U :C::AG GG   A::G:+:C:GACU++AAAUC:G:              CG::GGUUCGAAUCC::C:::C:CCA
+  U00096.3 4175472 GGUGGGGUUCCCGAGCGGCcaAAGGGAGCAGACUGUAAAUCUGCC-gucacagacuu-CGAAGGUUCGAAUCCUUCCCCCACCA 4175553
+                   ****************9999*************************.8********85.************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (66) !   1.7e-12   60.1   0.0  cm        1       71 []     1287328     1287247 - .. 0.98    no 0.59
+
+                                                                                                        NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:G:::U :C::AG GG   A::G:+:C:GACU++AAAUC:G:              CG::GGUUCGAAUCC::C:::C:CCA
+  U00096.3 1287328 GGUGGGGUUCCCGAGCGGCcaAAGGGAGCAGACUGUAAAUCUGCC-gucaucgacuu-CGAAGGUUCGAAUCCUUCCCCCACCA 1287247
+                   ****************9999*************************.8********85.************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (67) !   1.7e-12   60.1   0.0  cm        1       71 []     1287622     1287541 - .. 0.98    no 0.59
+
+                                                                                                        NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,...........,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag...........gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:G:::U :C::AG GG   A::G:+:C:GACU++AAAUC:G:              CG::GGUUCGAAUCC::C:::C:CCA
+  U00096.3 1287622 GGUGGGGUUCCCGAGCGGCcaAAGGGAGCAGACUGUAAAUCUGCC-gucaucgacuu-CGAAGGUUCGAAUCCUUCCCCCACCA 1287541
+                   ****************9999*************************.8********85.************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (68) !   1.9e-12   59.9   0.0  cm        1       71 []      925971      925887 - .. 0.97    no 0.61
+
+                                                                                                          NC
+                  (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............g.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  GG:GA::U+ C::AGUGG   A::G G::: :CU+ AAA: :::+                CG:GGGUUCGAAUCCC:C::UC:CC+
+  U00096.3 925971 GGUGAGGUGUCCGAGUGGCugAAGGAGCACGCCUGGAAAGUGUGU-auacggcaacgua-uCGGGGGUUCGAAUCCCCCCCUCACCG 925887
+                  ****************7777*************************.8***********6.4************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (69) !   1.9e-12   59.9   0.0  cm        1       71 []     1097652     1097568 - .. 0.97    no 0.61
+
+                                                                                                           NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,.............,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaag.............g.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:GA::U+ C::AGUGG   A::G G::: :CU+ AAA: :::+                CG:GGGUUCGAAUCCC:C::UC:CC+
+  U00096.3 1097652 GGUGAGGUGUCCGAGUGGCugAAGGAGCACGCCUGGAAAGUGUGU-auacggcaacgua-uCGGGGGUUCGAAUCCCCCCCUCACCG 1097568
+                   ****************7777*************************.8***********6.4************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (70) !     2e-12   59.8   0.0  cm        1       71 []     2518116     2518044 - .. 0.98    no 0.60
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG G:UAUAGCUCAG  GG AGAGCG:::G: U+  A :C:::AGG C:::GGUUCGA  CC:::UA:C CCA
+  U00096.3 2518116 GGGGCUAUAGCUCAGCuGGGAGAGCGCUUGCAUGGCAUGCAAGAGGuCAGCGGUUCGAUCCCGCUUAGCUCCA 2518044
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (71) !     2e-12   59.8   0.0  cm        1       71 []     2518231     2518159 - .. 0.98    no 0.60
+
+                                                                                             NC
+                   (((((((,,<<<<___.____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG G:UAUAGCUCAG  GG AGAGCG:::G: U+  A :C:::AGG C:::GGUUCGA  CC:::UA:C CCA
+  U00096.3 2518231 GGGGCUAUAGCUCAGCuGGGAGAGCGCUUGCAUGGCAUGCAAGAGGuCAGCGGUUCGAUCCCGCUUAGCUCCA 2518159
+                   ****************9555***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (72) !   2.1e-12   59.8   0.0  cm        1       71 []     2729444     2729372 - .. 0.99    no 0.64
+
+                                                                                             NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  U00096.3 2729444 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 2729372
+                   ****************9999***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (73) !   2.1e-12   59.8   0.0  cm        1       71 []     3943435     3943507 + .. 0.99    no 0.64
+
+                                                                                             NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  U00096.3 3943435 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 3943507
+                   ****************9999***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (74) !   2.1e-12   59.8   0.0  cm        1       71 []     4168372     4168444 + .. 0.99    no 0.64
+
+                                                                                             NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  U00096.3 4168372 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 4168444
+                   ****************9999***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (75) !   2.1e-12   59.8   0.0  cm        1       71 []     4209774     4209846 + .. 0.99    no 0.64
+
+                                                                                             NC
+                   (((((((,,<<<<______.._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU..AgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::::::U G:::AG GG   A:::C+:CG::CUU+ A ::CG:+++C::GGGUUCGAAUCCC::::::::C+
+  U00096.3 4209774 GUCCCCUUCGUCUAGAGGCccAGGACACCGCCCUUUCACGGCGGUAACAGGGGUUCGAAUCCCCUAGGGGACG 4209846
+                   ****************9999***************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (76) !   2.3e-12   59.6   0.0  cm        1       71 []     1991901     1991818 - .. 0.99    no 0.60
+
+                                                                                                         NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   ::::::AU+G:::A+U GGU  :::C+::GGA+UUAAAAUCC::              G+GCGGGUUC+A UCCCGCU::::::A
+  U00096.3 1991901 GCCCGGAUGGUGGAAUcGGUaGACACAAGGGAUUUAAAAUCCCUC-ggcguucgcgcuGUGCGGGUUCAAGUCCCGCUCCGGGUA 1991818
+                   *********************************************.8**********85************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (77) !   3.9e-12   58.8   0.0  cm        1       71 []     3708692     3708619 - .. 1.00    no 0.61
+
+                                                                                              NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :G:::::U+GC:CAG   GGUAG:GC+:::::+U    A::::: GG C:::GGUUCGAAUCC::::::::C:A
+  U00096.3 3708692 CGGUGAUUGGCGCAGCcuGGUAGCGCACUUCGUUCGGGACGAAGGGGuCGGAGGUUCGAAUCCUCUAUCACCGA 3708619
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (78) !   4.8e-12   58.5   0.0  cm        1       71 []      697047      696966 - .. 0.99    no 0.60
+
+                                                                                                      NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,..........,,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag..........gcgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  G::G:::U+GC::A+U GGU  ::GC+:C:GA+UUA   UC:G:            G+GCG:GUUC+A UC:CGC:::C::CA
+  U00096.3 697047 GCGGGAGUGGCGAAAUuGGUaGACGCACCAGAUUUAGGUUCUGGC-gccgcaagguGUGCGAGUUCAAGUCUCGCCUCCCGCA 696966
+                  *********************************************.8********85************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (79) !   1.1e-11   57.2   0.0  cm        1       71 []     1991987     1991917 - .. 1.00    no 0.56
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGUAgaGCgucgGaCUuaaAAuCcgaaggcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   GG:G:::UA:C::AG GGU ::G:+:CGGA+U+ AAAUCCG:  +  C:GGUUCGA UCC:G :::C:CC 
+  U00096.3 1991987 GGCGCGUUAACAAAGCGGUUAUGUAGCGGAUUGCAAAUCCGUCUAGUCCGGUUCGACUCCGGAACGCGCCU 1991917
+                   *******************9*************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (80) !   7.8e-11   54.2   0.0  cm        1       71 []     3322158     3322075 - .. 0.99    no 0.57
+
+                                                                                                          NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,.............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag.............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :::GA::U+G:::A+U GGU  :::CG:::::+U+A   :::::+               +:CGGGUUC+A UCCCG:::UC:::A
+  U00096.3 3322158 GCCGAGGUGGUGGAAUuGGUaGACACGCUACCUUGAGGUGGUAGU-gcccaauagggcu-UACGGGUUCAAGUCCCGUCCUCGGUA 3322075
+                   *********************************************.8**********95.************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (81) !   2.8e-10   52.2   0.0  cm        1       71 []     2286211     2286284 + .. 0.99    no 0.66
+
+                                                 v         v                                  NC
+                   (((((((,,<<<<___..____>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU..GGUAgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   :G::A::UAGC:CAG   GGUAG:GC+:CG : U+    : CG: GG C:::GGUUC+AAUCC:::::U::C:A
+  U00096.3 2286211 CGGCACGUAGCGCAGCcuGGUAGCGCACCGUCAUGGGGUGUCGGGGGuCGGAGGUUCAAAUCCUCUCGUGCCGA 2286284
+                   ************************************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (82) !   1.2e-09   49.9   0.0  cm        1       71 []     4606286     4606203 - .. 0.99    no 0.60
+
+                       v                                                                          v      NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  U00096.3 4606286 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guucuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4606203
+                   *********************************************.8**********95************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (83) !   1.2e-09   49.9   0.0  cm        1       71 []     3982606     3982689 + .. 0.99    no 0.61
+
+                       v                                                                          v      NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  U00096.3 3982606 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guccuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 3982689
+                   *********************************************.8**********95************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (84) !   1.2e-09   49.9   0.0  cm        1       71 []     4606165     4606082 - .. 0.99    no 0.61
+
+                       v                                                                          v      NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  U00096.3 4606165 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guccuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4606082
+                   *********************************************.8**********95************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (85) !   1.2e-09   49.9   0.0  cm        1       71 []     4606401     4606318 - .. 0.99    no 0.61
+
+                       v                                                                          v      NC
+                   (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,............,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaag............gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G::: ::U+GC::A+U GGU  ::GCG::: :+U A   : :::+             G+G:GGGUUC+A UCCC:C:: :::CA
+  U00096.3 4606401 GCGAAGGUGGCGGAAUuGGUaGACGCGCUAGCUUCAGGUGUUAGU-guccuuacggacGUGGGGGUUCAAGUCCCCCCCCUCGCA 4606318
+                   *********************************************.8**********95************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (86) !   4.7e-08   44.2   0.0  cm        1       71 []      297178      297251 + .. 0.97    no 0.42
+
+                     v v                                                             v v     NC
+                  (((((((,,<<<<___.___._>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))))))): CS
+      tRNA      1 GgagauaUAGCucAgU.GGU.AgaGCgucgGaCUuaaAAuCcgaagg.cgcgGGUUCgAaUCCcgcuaucucCa 71    
+                  G:  A  UAG:U:A+   G   :A:C+UCG:A+U  +AAU:CGAAGG C:::GGUUCGA UCC:::  U  :CA
+  U00096.3 297178 GCUCAAGUAGUUAAAAaUGCaUUAACAUCGCAUUCGUAAUGCGAAGGuCGUAGGUUCGACUCCUAUUAUCGGCA 297251
+                  **************98766678**************************************************** PP
+
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (87) !   6.7e-07   40.1   0.0  cm        1       71 []     3836223     3836312 + .. 0.99    no 0.63
+
+                                                                                                               NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,...................,,<<<<<_______>>>>>))))))): CS
+      tRNA       1 GgagauaUAGCucAgUGGU.AgaGCgucgGaCUuaaAAuCcgaag...................gcgcgGGUUCgAaUCCcgcuaucucCa 71     
+                   G:AGAU   :: C   GGU AG ::G::GGACUU AAAUCC::+                    G :C:GGUUCGA UCC:G: AUCU:C 
+  U00096.3 3836223 GAAGAUCGUCGUCUCCGGUgAGGCGGCUGGACUUCAAAUCCAGU-uggggccgccagcggucccGGGCAGGUUCGACUCCUGUGAUCUUCC 3836312
+                   ********************************************.9*****************95************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (9283304 residues searched)
+Target sequences re-searched for truncated hits:                 1  (1036 residues re-searched)
+Windows   passing  local HMM SSV           filter:            2748  (0.07767); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:             502  (0.01448); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:             486  (0.01404); expected (0.02)
+Windows   passing  local HMM Forward       filter:              73  (0.00246); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              73  (0.00246); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              59  (0.002434); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              59  (0.002434); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              97  (0.0008106); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              89  (0.0007334); expected (0.0001)
+Total CM hits reported:                                         87  (0.0007066); includes 0 truncated hit(s)
+
+# CPU time: 0.92u 0.01s 00:00:00.93 Elapsed: 00:00:00.13
+//
+Query:       tRNA-Sec  [CLEN=91]
+Accession:   RF01852
+Description: Selenocysteine transfer RNA
+Hit scores:
+ rank     E-value  score  bias  sequence   start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------- -------   --- ----- ----  -----------
+  (1) !   4.4e-17   81.7   0.0  U00096.3 3836222 3836312 +  cm    no 0.64  Escherichia coli str. K-12 substr. MG1655, complete genome
+
+
+Hit alignments:
+>> U00096.3  Escherichia coli str. K-12 substr. MG1655, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.4e-17   81.7   0.0  cm        1       91 []     3836222     3836312 + .. 1.00    no 0.64
+
+                                                                                                                NC
+                   (((((((((,,<<<<<<____>>>>>><<<<<<_______>>>>>>,<<<<<________>>>>>,.,<<<<_______>>>>))))))))) CS
+  tRNA-Sec       1 GggggggcgaucggcccUGGUgggccguccGGgCUUCAAAcCCggaGggggcuagcaacggccccg.GggGGUUCGAUUCCcccgccccccC 91     
+                   GG::G::C: UCG:C:C GGUG:G:CG:C:GG:CUUCAAA:CC:G: GGG:C + CA+CGG:CCCG G::GGUUCGA UCC:::G::C::CC
+  U00096.3 3836222 GGAAGAUCG-UCGUCUCCGGUGAGGCGGCUGGACUUCAAAUCCAGUUGGGGCCGCCAGCGGUCCCGgGCAGGUUCGACUCCUGUGAUCUUCC 3836312
+                   *********.9********************************************************************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (91 consensus positions)
+Target sequences:                                                1  (9283304 residues searched)
+Target sequences re-searched for truncated hits:                 1  (468 residues re-searched)
+Windows   passing  local HMM SSV           filter:            6307  (0.09581); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:            1423  (0.022); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:            1200  (0.01847); expected (0.02)
+Windows   passing  local HMM Forward       filter:              79  (0.001331); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:              67  (0.001118); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:              42  (0.000805); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:              42  (0.000805); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:              49  (0.0004992); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:              32  (0.0002888); expected (0.0001)
+Total CM hits reported:                                          1  (9.802e-06); includes 0 truncated hit(s)
+
+# CPU time: 0.93u 0.04s 00:00:00.97 Elapsed: 00:00:00.16
+//
+[ok]
