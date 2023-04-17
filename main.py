@@ -32,8 +32,8 @@ def load_data(train_path, test_path, encoding, feat_extraction, k):
 
     if feat_extraction or encoding == 2:
         print('Extracting features...')
-        train_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8], True)
-        test_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8], False)
+        train_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8, 9], True)
+        test_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8, 9], False)
         max_len.append(train_data[0].features.shape[1])
 
     return train_data, test_data, max_len
