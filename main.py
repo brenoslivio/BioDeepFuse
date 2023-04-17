@@ -32,8 +32,8 @@ def load_data(train_path, test_path, encoding, feat_extraction, k):
 
     if feat_extraction or encoding == 2:
         print('Extracting features...')
-        train_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8], True)
-        test_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8], False)
+        train_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8, 9], True)
+        test_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8, 9], False)
         max_len.append(train_data[0].features.shape[1])
 
     return train_data, test_data, max_len
@@ -95,11 +95,9 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
         out = Flatten()(x)
 
     elif encoding == 2: # no encoding
-        input_layer = Input(shape=(max_len, 1))
+        input_layer = Input(shape=(max_len,))
 
         x = BatchNormalization(scale=False, center=False)(input_layer) # scaling
-
-        x = conv_block(x, conv_params)
 
         out = Flatten()(x)
 
@@ -153,28 +151,24 @@ def train_model(model, encoding, train_data, feat_extraction, epochs, patience):
     ]
 
     if encoding == 2:
-        nrows, ncols = train_data[0].features.shape
-        features = train_data[0].features.reshape(nrows, ncols, 1)
+        features = train_data[0].features
     else:
         features = [train.seqs for train in train_data]
 
         if feat_extraction:
-            nrows, ncols = train_data[0].features.shape
-            features.append(train_data[0].features.reshape(nrows, ncols, 1))
+            features.append(train_data[0].features)
 
     model.fit(features, train_data[0].labels, batch_size=32, epochs=epochs, validation_split=0.1, shuffle=True, callbacks=callbacks)
 
 def report_model(model, encoding, test_data, feat_extraction, output_file):
 
     if encoding == 2:
-        nrows, ncols = test_data[0].features.shape
-        features = test_data[0].features.reshape(nrows, ncols, 1)
+        features = test_data[0].features
     else:
         features = [test.seqs for test in test_data]
 
         if feat_extraction:
-            nrows, ncols = test_data[0].features.shape
-            features.append(test_data[0].features.reshape(nrows, ncols, 1))
+            features.append(test_data[0].features)
 
     model_pred = model.predict(features)
     y_pred = np.argmax(model_pred, axis=1)
@@ -243,7 +237,7 @@ if __name__ == '__main__':
 
         tf.keras.utils.plot_model(
             model,
-            to_file='model.png',
+            to_file= f'{output_folder}/model.png',
             show_shapes=False,
             show_dtype=False,
             show_layer_names=True,

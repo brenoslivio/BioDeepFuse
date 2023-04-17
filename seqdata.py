@@ -3,7 +3,6 @@ from Bio import SeqIO
 import numpy as np
 import tensorflow as tf
 import os, subprocess, shutil
-from sklearn.preprocessing import StandardScaler
 from itertools import product
 
 class Seq:
@@ -170,6 +169,12 @@ class Seq:
                                 fasta_file, '-o', dataset, '-l', self.names[i],
                                 '-k', '5', '-q', '2.3'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
+                
+            if 9 in features:
+                dataset = dataset_path + '/repDNA'
+                subprocess.run(['python', 'other-methods/repDNA-feat.py', '--file',
+                                fasta_file, '--output', dataset, '--label', self.names[i]], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                datasets.append(dataset)
             
         if datasets:
             dataframes = pd.concat([pd.read_csv(f) for f in datasets], axis=1)
@@ -178,8 +183,6 @@ class Seq:
 
         dataframes.pop('nameseq')
         dataframes.pop('label')
-        
-        # sc = StandardScaler()
         
         self.features = dataframes.reset_index(drop=True).values.astype(np.float32)
 
