@@ -179,8 +179,9 @@ class Seq:
         dataframes.pop('nameseq')
         dataframes.pop('label')
         
-        sc = StandardScaler()
-        self.features = sc.fit_transform(dataframes.reset_index(drop=True).values.astype(np.float32))
+        # sc = StandardScaler()
+        
+        self.features = dataframes.reset_index(drop=True).values.astype(np.float32)
 
 def pad_data(train, test):
 

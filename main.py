@@ -41,7 +41,7 @@ def load_data(train_path, test_path, encoding, feat_extraction, k):
 def conv_block(x, conv_params):
     
     for _ in range(conv_params['num_convs']):
-        x = Conv1D(filters=128, kernel_size=3)(x)
+        x = Conv1D(filters=128, kernel_size=3, padding='same')(x)
         if conv_params['batch_norm']:
             x = BatchNormalization()(x)
 
@@ -49,7 +49,8 @@ def conv_block(x, conv_params):
 
         x = MaxPooling1D(pool_size=2)(x)
 
-        x = Dropout(conv_params['dropout'])(x)
+        if conv_params['dropout'] > 0:
+            x = Dropout(conv_params['dropout'])(x)
 
     return x
 
@@ -64,7 +65,8 @@ def lstm_block(x, lstm_params):
         else:
             x = LSTM(128, return_sequences=seq)(x)
 
-        x = Dropout(lstm_params['dropout'])(x)
+        if lstm_params['dropout'] > 0:
+            x = Dropout(lstm_params['dropout'])(x)
 
     return x
 
@@ -93,9 +95,13 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
         out = Flatten()(x)
 
     elif encoding == 2: # no encoding
-        input_layer = Input(shape=(max_len,))
+        input_layer = Input(shape=(max_len, 1))
 
-        out = Flatten()(input_layer)
+        x = BatchNormalization(scale=False, center=False)(input_layer) # scaling
+
+        x = conv_block(x, conv_params)
+
+        out = Flatten()(x)
 
     return input_layer, out
 
@@ -126,46 +132,49 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
         outs = outs[0]
 
     # Dense layers
-    x = Dense(128, activation=LeakyReLU())(outs)
-    x = Dense(128, activation=LeakyReLU())(x)
+    x = Dense(128, activation='relu')(outs)
+    x = Dense(64, activation='relu')(x)
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
 
     model = Model(inputs=input_layers, outputs=output_layer)
 
-    model.compile(loss='categorical_crossentropy', optimizer='adam', 
-                metrics= [tf.keras.metrics.Precision(name="Precision")])
+    model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001), 
+                metrics= [tf.keras.metrics.Precision(name="precision")])
 
     model.summary()
 
     return model
 
-def train_model(model, encoding, train_data, feat_extraction, epochs):
+def train_model(model, encoding, train_data, feat_extraction, epochs, patience):
 
     callbacks = [
-        EarlyStopping(monitor='val_loss', patience=5, verbose=1),
-        ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=3, verbose=1)
+        EarlyStopping(monitor='val_loss', patience=patience, restore_best_weights=True, verbose=1)
     ]
 
     if encoding == 2:
-        features = train_data[0].features
+        nrows, ncols = train_data[0].features.shape
+        features = train_data[0].features.reshape(nrows, ncols, 1)
     else:
         features = [train.seqs for train in train_data]
 
         if feat_extraction:
-            features.append(train_data[0].features)
+            nrows, ncols = train_data[0].features.shape
+            features.append(train_data[0].features.reshape(nrows, ncols, 1))
 
-    model.fit(features, train_data[0].labels, batch_size=32, epochs=epochs, validation_split=0.1, callbacks=callbacks)
+    model.fit(features, train_data[0].labels, batch_size=32, epochs=epochs, validation_split=0.1, shuffle=True, callbacks=callbacks)
 
 def report_model(model, encoding, test_data, feat_extraction, output_file):
 
     if encoding == 2:
-        features = test_data[0].features
+        nrows, ncols = test_data[0].features.shape
+        features = test_data[0].features.reshape(nrows, ncols, 1)
     else:
         features = [test.seqs for test in test_data]
 
         if feat_extraction:
-            features.append(test_data[0].features)
+            nrows, ncols = test_data[0].features.shape
+            features.append(test_data[0].features.reshape(nrows, ncols, 1))
 
     model_pred = model.predict(features)
     y_pred = np.argmax(model_pred, axis=1)
@@ -189,6 +198,7 @@ if __name__ == '__main__':
     parser.add_argument('-train', '--train', help='Folder with FASTA training files')
     parser.add_argument('-test', '--test', help='Folder with FASTA testing files')
     parser.add_argument('-epochs', '--epochs', help='Number of epochs to train')
+    parser.add_argument('-patience', '--patience', help='Epochs to stop training after loss plateau')
     parser.add_argument('-encoding', '--encoding', default=0, help='Encoding - 0: One-hot encoding, 1: K-mer embedding, 2: No encoding (only feature extraction), 3: All encodings (without feature extraction)')
     parser.add_argument('-k', '--k', help='Length of k-mers')
     parser.add_argument('-feat_extraction', '--feat_extraction', default=0, help='Add biological sequences descriptors - 0: False, 1: True; Default: False')
@@ -212,6 +222,7 @@ if __name__ == '__main__':
     train_path = args.train
     test_path = args.test
     epochs = int(args.epochs)
+    patience = int(args.patience)
     encoding = int(args.encoding)
     k = int(args.k)
     feat_extraction = int(args.feat_extraction)
@@ -225,22 +236,24 @@ if __name__ == '__main__':
 
     num_labels = len(train_data[0].names)
 
+    os.makedirs(output_folder, exist_ok=True)
+
     for i in range(1, 11):
         model = create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
 
-        # tf.keras.utils.plot_model(
-        #     model,
-        #     to_file='model.png',
-        #     show_shapes=False,
-        #     show_dtype=False,
-        #     show_layer_names=True,
-        #     rankdir='TB',
-        #     expand_nested=False,
-        #     dpi=96,
-        #     layer_range=None,
-        #     show_layer_activations=False
-        # )
+        tf.keras.utils.plot_model(
+            model,
+            to_file='model.png',
+            show_shapes=False,
+            show_dtype=False,
+            show_layer_names=True,
+            rankdir='TB',
+            expand_nested=False,
+            dpi=96,
+            layer_range=None,
+            show_layer_activations=False
+        )
 
-        train_model(model, encoding, train_data, feat_extraction, epochs)
+        train_model(model, encoding, train_data, feat_extraction, epochs, patience)
 
         report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results_{i}.csv')
