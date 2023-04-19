@@ -3,6 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, LeakyReLU, Concatenate, Activation, BatchNormalization, Bidirectional, LSTM, Dense, Dropout, Conv1D, MaxPooling1D, Flatten, Embedding
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras import Model
+from tensorflow.keras.regularizers import l1_l2
 from itertools import product
 import pandas as pd
 from sklearn.metrics import classification_report
@@ -81,7 +82,11 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = lstm_block(x, lstm_params)
 
-        out = Flatten()(x)
+        x = Flatten()(x)
+
+        x = Dense(128, activation='relu')(x)
+
+        out = Dropout(0.5)(x)
 
     elif encoding == 1: # K-mer embedding
         input_layer = Input(shape=(max_len,))
@@ -92,14 +97,22 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = lstm_block(x, lstm_params)
 
-        out = Flatten()(x)
+        x = Flatten()(x)
+
+        x = Dense(128, activation='relu')(x)
+
+        out = Dropout(0.5)(x)
 
     elif encoding == 2: # no encoding
         input_layer = Input(shape=(max_len,))
 
         x = BatchNormalization(scale=False, center=False)(input_layer) # scaling
 
-        out = Flatten()(x)
+        x = Flatten()(x)
+
+        x = Dense(128, activation='relu')(x)
+
+        out = Dropout(0.5)(x)
 
     return input_layer, out
 
@@ -131,13 +144,12 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
 
     # Dense layers
     x = Dense(128, activation='relu')(outs)
-    x = Dense(64, activation='relu')(x)
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
 
     model = Model(inputs=input_layers, outputs=output_layer)
 
-    model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001), 
+    model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4), 
                 metrics= [tf.keras.metrics.Precision(name="precision")])
 
     model.summary()
@@ -158,7 +170,7 @@ def train_model(model, encoding, train_data, feat_extraction, epochs, patience):
         if feat_extraction:
             features.append(train_data[0].features)
 
-    model.fit(features, train_data[0].labels, batch_size=32, epochs=epochs, validation_split=0.1, shuffle=True, callbacks=callbacks)
+    model.fit(features, train_data[0].labels, batch_size=32, epochs=epochs, validation_split=0.2, shuffle=True, callbacks=callbacks)
 
 def report_model(model, encoding, test_data, feat_extraction, output_file):
 
@@ -224,7 +236,7 @@ if __name__ == '__main__':
 
     conv_params = {'num_convs': int(args.num_convs), 'activation': int(args.activation), 'batch_norm': int(args.batch_norm) , 'dropout': float(args.cnn_dropout)}
 
-    lstm_params = {'num_lstm': int(args.num_lstm), 'bidirectional': int(args.bidirectional) , 'dropout': float(args.lstm_dropout)}
+    lstm_params = {'num_lstm': int(args.num_lstm), 'bidirectional': int(args.bidirectional), 'dropout': float(args.lstm_dropout)}
 
     train_data, test_data, max_len = load_data(train_path, test_path, encoding, feat_extraction, k)
 
