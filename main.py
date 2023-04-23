@@ -33,8 +33,8 @@ def load_data(train_path, test_path, encoding, feat_extraction, k):
 
     if feat_extraction or encoding == 2:
         print('Extracting features...')
-        train_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8, 9], True)
-        test_data[0].feature_extraction([1, 2, 3, 4, 5, 6, 7, 8, 9], False)
+        train_data[0].feature_extraction(feat_extraction, True)
+        test_data[0].feature_extraction(feat_extraction, False)
         max_len.append(train_data[0].features.shape[1])
 
     return train_data, test_data, max_len
@@ -137,19 +137,19 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
         input_layers.append(in_layer)
         outs.append(x)
 
-    if encoding == 3 or feat_extraction:
+    if encoding == 3 or (encoding < 2 and feat_extraction):
         outs = Concatenate()(outs)
     else:
         outs = outs[0]
 
     # Dense layers
-    x = Dense(128, activation='relu')(outs)
+    x = Dense(64, activation='relu')(outs)
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
 
     model = Model(inputs=input_layers, outputs=output_layer)
 
-    model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4), 
+    model.compile(loss='categorical_crossentropy', optimizer= 'adam',
                 metrics= [tf.keras.metrics.Precision(name="precision")])
 
     model.summary()
@@ -207,7 +207,8 @@ if __name__ == '__main__':
     parser.add_argument('-patience', '--patience', help='Epochs to stop training after loss plateau')
     parser.add_argument('-encoding', '--encoding', default=0, help='Encoding - 0: One-hot encoding, 1: K-mer embedding, 2: No encoding (only feature extraction), 3: All encodings (without feature extraction)')
     parser.add_argument('-k', '--k', help='Length of k-mers')
-    parser.add_argument('-feat_extraction', '--feat_extraction', default=0, help='Add biological sequences descriptors - 0: False, 1: True; Default: False')
+    parser.add_argument('-feat_extraction', '--feat_extraction', default=[], nargs='+', help='Features to be extracted, e.g., 1 2 3 4 5 6 7 8 9 10. \
+                        1 = NAC, 2 = DNC, 3 = TNC, 4 = kGap, 5 = ORF, 6 = Fickett Score, 7 = Graphs, 8 = Shannon Entropy, 9 = Tsallis Entropy, 10 = repDNA')
 
     # CNN parameters
     parser.add_argument('-num_convs', '--num_convs', default=1, help='Number of convolutional layers')
@@ -231,7 +232,12 @@ if __name__ == '__main__':
     patience = int(args.patience)
     encoding = int(args.encoding)
     k = int(args.k)
-    feat_extraction = int(args.feat_extraction)
+
+    if args.feat_extraction:
+        feat_extraction = [int(i) for i in args.feat_extraction]
+    else:
+        feat_extraction = args.feat_extraction
+
     output_folder = args.output
 
     conv_params = {'num_convs': int(args.num_convs), 'activation': int(args.activation), 'batch_norm': int(args.batch_norm) , 'dropout': float(args.cnn_dropout)}
@@ -244,22 +250,21 @@ if __name__ == '__main__':
 
     os.makedirs(output_folder, exist_ok=True)
 
-    for i in range(1, 11):
-        model = create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
+    model = create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
 
-        tf.keras.utils.plot_model(
-            model,
-            to_file= f'{output_folder}/model.png',
-            show_shapes=False,
-            show_dtype=False,
-            show_layer_names=True,
-            rankdir='TB',
-            expand_nested=False,
-            dpi=96,
-            layer_range=None,
-            show_layer_activations=False
-        )
+    tf.keras.utils.plot_model(
+        model,
+        to_file= f'{output_folder}/model.png',
+        show_shapes=False,
+        show_dtype=False,
+        show_layer_names=True,
+        rankdir='TB',
+        expand_nested=False,
+        dpi=96,
+        layer_range=None,
+        show_layer_activations=False
+    )
 
-        train_model(model, encoding, train_data, feat_extraction, epochs, patience)
+    train_model(model, encoding, train_data, feat_extraction, epochs, patience)
 
-        report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results_{i}.csv')
+    report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results.csv')

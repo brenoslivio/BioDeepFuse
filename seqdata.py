@@ -142,6 +142,13 @@ class Seq:
                 datasets.append(dataset)
 
             if 7 in features:
+                dataset = dataset_path + '/ComplexNetworks.csv'
+                subprocess.run(['python', 'MathFeature/methods/ComplexNetworksClass-v2.py', '-i', 
+                                fasta_file, '-o', dataset, '-l', self.names[i], 
+                                '-k', '3'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                datasets.append(dataset)
+
+            if 8 in features:
                 dataset = dataset_path + '/Shannon.csv'
                 subprocess.run(['python', 'MathFeature/methods/EntropyClass.py', '-i',
                                 fasta_file, '-o', dataset, '-l', self.names[i],
@@ -149,28 +156,14 @@ class Seq:
                                 stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
 
-            # if 8 in features:
-            #     dataset = dataset_path + '/FourierBinary.csv'
-            #     subprocess.run(['python', 'MathFeature/methods/FourierClass.py', '-i',
-            #                     fasta_file, '-o', dataset, '-l', fasta_labels[i],
-            #                     '-r', '1'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-            #     datasets.append(dataset)
-
-            # if 9 in features:
-            #     dataset = dataset_path + '/FourierComplex.csv'
-            #     subprocess.run(['python', 'other-methods/FourierClass.py', '-i',
-            #                     fasta_file, '-o', dataset, '-l', fasta_labels[i],
-            #                     '-r', '6'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-            #     datasets.append(dataset)
-
-            if 8 in features:
+            if 9 in features:
                 dataset = dataset_path + '/Tsallis.csv'
                 subprocess.run(['python', 'other-methods/TsallisEntropy.py', '-i',
                                 fasta_file, '-o', dataset, '-l', self.names[i],
                                 '-k', '5', '-q', '2.3'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
-                
-            if 9 in features:
+
+            if 10 in features:
                 dataset = dataset_path + '/repDNA'
                 subprocess.run(['python', 'other-methods/repDNA-feat.py', '--file',
                                 fasta_file, '--output', dataset, '--label', self.names[i]], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
