@@ -4,9 +4,16 @@ from tensorflow.keras.layers import Input, LeakyReLU, Concatenate, Activation, B
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras import Model
 from tensorflow.keras.regularizers import l1_l2
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+from xgboost import XGBClassifier
 from itertools import product
 import pandas as pd
 from sklearn.metrics import classification_report
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import precision_score
+import optuna
 import numpy as np
 import seqdata
 import argparse
@@ -84,7 +91,7 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = Flatten()(x)
 
-        x = Dense(128, activation='relu')(x)
+        x = Dense(256, activation='relu')(x)
 
         out = Dropout(0.5)(x)
 
@@ -99,7 +106,7 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = Flatten()(x)
 
-        x = Dense(128, activation='relu')(x)
+        x = Dense(256, activation='relu')(x)
 
         out = Dropout(0.5)(x)
 
@@ -110,7 +117,7 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = Flatten()(x)
 
-        x = Dense(128, activation='relu')(x)
+        x = Dense(256, activation='relu')(x)
 
         out = Dropout(0.5)(x)
 
@@ -143,14 +150,14 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
         outs = outs[0]
 
     # Dense layers
-    x = Dense(64, activation='relu')(outs)
+    x = Dense(128, activation='relu')(outs)
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
 
     model = Model(inputs=input_layers, outputs=output_layer)
 
-    model.compile(loss='categorical_crossentropy', optimizer= 'adam',
-                metrics= [tf.keras.metrics.Precision(name="precision")])
+    model.compile(loss='categorical_crossentropy', optimizer= tf.keras.optimizers.Adam(learning_rate=1e-4),
+                    metrics= [tf.keras.metrics.Precision(name="precision")])
 
     model.summary()
 
@@ -197,18 +204,22 @@ if __name__ == '__main__':
     warnings.filterwarnings('ignore')
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-    tf.keras.utils.set_random_seed(0)  # sets seeds for base-python, numpy and tf
+    SEED = 0
+    tf.keras.utils.set_random_seed(SEED)  # sets seeds for base-python, numpy and tf
     tf.config.experimental.enable_op_determinism()
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-train', '--train', help='Folder with FASTA training files')
     parser.add_argument('-test', '--test', help='Folder with FASTA testing files')
-    parser.add_argument('-epochs', '--epochs', help='Number of epochs to train')
-    parser.add_argument('-patience', '--patience', help='Epochs to stop training after loss plateau')
+    parser.add_argument('-epochs', '--epochs', default=10, help='Number of epochs to train')
+    parser.add_argument('-patience', '--patience', default=10, help='Epochs to stop training after loss plateau')
     parser.add_argument('-encoding', '--encoding', default=0, help='Encoding - 0: One-hot encoding, 1: K-mer embedding, 2: No encoding (only feature extraction), 3: All encodings (without feature extraction)')
-    parser.add_argument('-k', '--k', help='Length of k-mers')
+    parser.add_argument('-k', '--k', default=1, help='Length of k-mers')
     parser.add_argument('-feat_extraction', '--feat_extraction', default=[], nargs='+', help='Features to be extracted, e.g., 1 2 3 4 5 6 7 8 9 10. \
                         1 = NAC, 2 = DNC, 3 = TNC, 4 = kGap, 5 = ORF, 6 = Fickett Score, 7 = Graphs, 8 = Shannon Entropy, 9 = Tsallis Entropy, 10 = repDNA')
+
+    # Choose between conventional and deep learning algorithms
+    parser.add_argument('-algorithm', '--algorithm', default=2, help='Algorithm - 0: Support Vector Machines (SVM), 1: Extreme Gradient Boosting (XGBoost), 2: Deep Learning')
 
     # CNN parameters
     parser.add_argument('-num_convs', '--num_convs', default=1, help='Number of convolutional layers')
@@ -228,6 +239,8 @@ if __name__ == '__main__':
 
     train_path = args.train
     test_path = args.test
+
+    algorithm = int(args.algorithm)
     epochs = int(args.epochs)
     patience = int(args.patience)
     encoding = int(args.encoding)
@@ -250,21 +263,76 @@ if __name__ == '__main__':
 
     os.makedirs(output_folder, exist_ok=True)
 
-    model = create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
+    if algorithm == 2:
+        model = create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
 
-    tf.keras.utils.plot_model(
-        model,
-        to_file= f'{output_folder}/model.png',
-        show_shapes=False,
-        show_dtype=False,
-        show_layer_names=True,
-        rankdir='TB',
-        expand_nested=False,
-        dpi=96,
-        layer_range=None,
-        show_layer_activations=False
-    )
+        tf.keras.utils.plot_model(
+            model,
+            to_file= f'{output_folder}/model.png',
+            show_shapes=False,
+            show_dtype=False,
+            show_layer_names=True,
+            rankdir='TB',
+            expand_nested=False,
+            dpi=96,
+            layer_range=None,
+            show_layer_activations=False
+        )
 
-    train_model(model, encoding, train_data, feat_extraction, epochs, patience)
+        train_model(model, encoding, train_data, feat_extraction, epochs, patience)
 
-    report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results.csv')
+        report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results.csv')
+    else:
+        X_train, y_train = train_data[0].features, np.argmax(train_data[0].labels, axis=1)
+        X_test, y_test = test_data[0].features, np.argmax(test_data[0].labels, axis=1)
+
+        def objective(trial):
+            
+            if algorithm == 0:
+                params = {
+                    'C': trial.suggest_loguniform('C', 1e-4, 1e2),
+                    'gamma': trial.suggest_loguniform('gamma', 1e-4, 1e2),
+                }
+
+                model = make_pipeline(StandardScaler(), SVC(**params, kernel = 'rbf', probability = True, random_state = SEED))
+            elif algorithm == 1:
+                params = {
+                    'max_depth': trial.suggest_int('max_depth', 1, 9),
+                    'learning_rate': trial.suggest_loguniform('learning_rate', 0.01, 1.0),
+                    'n_estimators': trial.suggest_int('n_estimators', 50, 500),
+                    'min_child_weight': trial.suggest_int('min_child_weight', 1, 10),
+                    'gamma': trial.suggest_loguniform('gamma', 1e-8, 1.0),
+                    'subsample': trial.suggest_loguniform('subsample', 0.01, 1.0),
+                    'colsample_bytree': trial.suggest_loguniform('colsample_bytree', 0.01, 1.0),
+                    'reg_alpha': trial.suggest_loguniform('reg_alpha', 1e-8, 1.0),
+                    'reg_lambda': trial.suggest_loguniform('reg_lambda', 1e-8, 1.0),
+                    'eval_metric': 'mlogloss',
+                    'use_label_encoder': False
+                }
+
+                model = make_pipeline(StandardScaler(), XGBClassifier(**params, random_state=SEED))
+
+            scores = cross_val_score(model, X_train, y_train, n_jobs=-1, cv=5, scoring='precision_weighted')
+            weighted_precision = scores.mean()
+
+            return weighted_precision
+
+        study = optuna.create_study(direction="maximize", sampler=optuna.samplers.TPESampler(seed=SEED))
+        study.optimize(objective, n_trials=100)
+        print(study.best_trial)
+
+        if algorithm == 0:
+            model = make_pipeline(StandardScaler(), SVC(**study.best_trial.params, kernel = 'rbf', probability = True, random_state = SEED))
+        elif algorithm == 1:
+            model = make_pipeline(StandardScaler(), XGBClassifier(**study.best_trial.params, random_state=SEED))
+
+        model.fit(X_train, y_train)
+        model_pred = model.predict(X_test)
+
+        report = classification_report(y_test, model_pred, target_names=test_data[0].names, output_dict=True)
+
+        df_report = pd.DataFrame(report).T
+
+        print(df_report)
+
+        df_report.to_csv(f'{output_folder}/results.csv')
