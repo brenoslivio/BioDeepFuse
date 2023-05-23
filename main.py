@@ -1,18 +1,16 @@
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.layers import Input, LeakyReLU, Concatenate, Activation, BatchNormalization, Bidirectional, LSTM, Dense, Dropout, Conv1D, MaxPooling1D, Flatten, Embedding
-from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
+from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras import Model
-from tensorflow.keras.regularizers import l1_l2
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
-from itertools import product
 import pandas as pd
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_score
-from sklearn.metrics import precision_score
+from sklearn.model_selection import train_test_split
 import optuna
 import numpy as np
 import seqdata
@@ -20,12 +18,60 @@ import argparse
 import warnings
 import os
 
-# one-hot encoding + 1-mer + 4 convolutional layers + relu activation + batch normalization + 0.2 dropout between conv layers + 1 lstm layers + not bidirectional + 0.2 dropout between lstm layers
-# running example:
-# python main.py --train train/ --test test/ --epochs 10 --encoding 0 --k 1 --feat_extraction 0 --num_convs 4 --activation 0 \
-# --batch_norm 1 --cnn_dropout 0.2 --num_lstm 1 --bidirectional 0 --lstm_dropout 0.2  --output results/test
+def conventional_models(algorithm, train_data, test_data):
+    X_train, y_train = train_data[0].features, np.argmax(train_data[0].labels, axis=1)
+    X_test, y_test = test_data[0].features, np.argmax(test_data[0].labels, axis=1)
 
-def load_data(train_path, test_path, encoding, feat_extraction, k):
+    def objective(trial):
+        
+        if algorithm == 0:
+            params = {
+                'C': trial.suggest_loguniform('C', 1e-4, 1e2),
+                'gamma': trial.suggest_loguniform('gamma', 1e-4, 1e2),
+            }
+
+            model = make_pipeline(StandardScaler(), SVC(**params, kernel = 'rbf', probability = True, random_state = SEED))
+        elif algorithm == 1:
+            params = {
+                'max_depth': trial.suggest_int('max_depth', 1, 9),
+                'learning_rate': trial.suggest_loguniform('learning_rate', 0.01, 1.0),
+                'n_estimators': trial.suggest_int('n_estimators', 50, 500),
+                'min_child_weight': trial.suggest_int('min_child_weight', 1, 10),
+                'gamma': trial.suggest_loguniform('gamma', 1e-8, 1.0),
+                'subsample': trial.suggest_loguniform('subsample', 0.01, 1.0),
+                'colsample_bytree': trial.suggest_loguniform('colsample_bytree', 0.01, 1.0),
+                'reg_alpha': trial.suggest_loguniform('reg_alpha', 1e-8, 1.0),
+                'reg_lambda': trial.suggest_loguniform('reg_lambda', 1e-8, 1.0),
+                'eval_metric': 'mlogloss',
+                'use_label_encoder': False
+            }
+
+            model = make_pipeline(StandardScaler(), XGBClassifier(**params, random_state=SEED))
+
+        scores = cross_val_score(model, X_train, y_train, n_jobs=-1, cv=10, scoring='precision_weighted')
+        weighted_precision = scores.mean()
+
+        return weighted_precision
+
+    study = optuna.create_study(direction="maximize", sampler=optuna.samplers.TPESampler(seed=SEED))
+    study.optimize(objective, n_trials=100)
+    print(study.best_trial)
+
+    if algorithm == 0:
+        model = make_pipeline(StandardScaler(), SVC(**study.best_trial.params, kernel = 'rbf', probability = True, random_state = SEED))
+    elif algorithm == 1:
+        model = make_pipeline(StandardScaler(), XGBClassifier(**study.best_trial.params, random_state=SEED))
+
+    model.fit(X_train, y_train)
+    model_pred = model.predict(X_test)
+
+    report = classification_report(y_test, model_pred, target_names=test_data[0].names, output_dict=True)
+
+    df_report = pd.DataFrame(report).T
+
+    df_report.to_csv(f'{output_folder}/results.csv')
+    
+def load_data(train_path, test_path, encoding, feat_extraction, features_exist, k):
 
     train_data, test_data, max_len = [], [], []
 
@@ -40,8 +86,8 @@ def load_data(train_path, test_path, encoding, feat_extraction, k):
 
     if feat_extraction or encoding == 2:
         print('Extracting features...')
-        train_data[0].feature_extraction(feat_extraction, True)
-        test_data[0].feature_extraction(feat_extraction, False)
+        train_data[0].feature_extraction(feat_extraction, True, features_exist)
+        test_data[0].feature_extraction(feat_extraction, False, features_exist)
         max_len.append(train_data[0].features.shape[1])
 
     return train_data, test_data, max_len
@@ -78,7 +124,7 @@ def lstm_block(x, lstm_params):
 
     return x
 
-def base_layers(encoding, max_len, k, conv_params, lstm_params):
+def base_layers(encoding, concat, max_len, k, conv_params, lstm_params):
 
     num_combs = 4 ** k
 
@@ -89,11 +135,12 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = lstm_block(x, lstm_params)
 
-        x = Flatten()(x)
-
-        x = Dense(256, activation='relu')(x)
-
-        out = Dropout(0.5)(x)
+        if concat == 1:
+            out = Flatten()(x)
+        elif concat == 2:
+            x = Flatten()(x)
+            x = Dense(256, activation='relu')(x)
+            out = Dropout(0.5)(x)
 
     elif encoding == 1: # K-mer embedding
         input_layer = Input(shape=(max_len,))
@@ -104,26 +151,26 @@ def base_layers(encoding, max_len, k, conv_params, lstm_params):
 
         x = lstm_block(x, lstm_params)
 
-        x = Flatten()(x)
-
-        x = Dense(256, activation='relu')(x)
-
-        out = Dropout(0.5)(x)
+        if concat == 1:
+            out = Flatten()(x)
+        elif concat == 2:
+            x = Flatten()(x)
+            x = Dense(256, activation='relu')(x)
+            out = Dropout(0.5)(x)
 
     elif encoding == 2: # no encoding
         input_layer = Input(shape=(max_len,))
 
-        x = BatchNormalization(scale=False, center=False)(input_layer) # scaling
-
-        x = Flatten()(x)
-
-        x = Dense(256, activation='relu')(x)
-
-        out = Dropout(0.5)(x)
+        if concat == 1:
+            out = Flatten()(input_layer)
+        elif concat == 2:
+            x = Flatten()(x)
+            x = Dense(256, activation='relu')(x)
+            out = Dropout(0.5)(x)
 
     return input_layer, out
 
-def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params):
+def create_model(encoding, concat, feat_extraction, num_labels, max_len, k, conv_params, lstm_params):
 
     input_layers, outs = [], []
 
@@ -132,9 +179,9 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
         if enc == encoding or encoding == 3: # specific encoding or all encodings
 
             if encoding == 3:
-                in_layer, x = base_layers(enc, max_len[enc], k, conv_params, lstm_params)
+                in_layer, x = base_layers(enc, concat, max_len[enc], k, conv_params, lstm_params)
             else:
-                in_layer, x = base_layers(enc, max_len[0], k, conv_params, lstm_params)
+                in_layer, x = base_layers(enc, concat, max_len[0], k, conv_params, lstm_params)
             
             input_layers.append(in_layer)
             outs.append(x)
@@ -150,7 +197,13 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
         outs = outs[0]
 
     # Dense layers
-    x = Dense(128, activation='relu')(outs)
+    if concat == 1:
+        x = Dense(256, activation='relu')(outs)
+        x = Dropout(0.5)(x)
+        x = Dense(128, activation='relu')(x)
+    elif concat == 2:
+        x = Dense(128, activation='relu')(outs)
+    
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
 
@@ -163,7 +216,7 @@ def create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params,
 
     return model
 
-def train_model(model, encoding, train_data, feat_extraction, epochs, patience):
+def train_model(model, encoding, train_data, feat_extraction, epochs, patience, scaling):
 
     callbacks = [
         EarlyStopping(monitor='val_loss', patience=patience, restore_best_weights=True, verbose=1)
@@ -177,9 +230,23 @@ def train_model(model, encoding, train_data, feat_extraction, epochs, patience):
         if feat_extraction:
             features.append(train_data[0].features)
 
-    model.fit(features, train_data[0].labels, batch_size=32, epochs=epochs, validation_split=0.2, shuffle=True, callbacks=callbacks)
+    X_train, X_test, y_train, y_test = [], [], [], []
 
-def report_model(model, encoding, test_data, feat_extraction, output_file):
+    for feature in features:
+        feature_X_train, feature_X_test, feature_y_train, feature_y_test = train_test_split(feature, train_data[0].labels, test_size=0.1, shuffle=True, stratify=train_data[0].labels, random_state=SEED)
+        
+        X_train.append(feature_X_train)
+        X_test.append(feature_X_test)
+        y_train.append(feature_y_train)
+        y_test.append(feature_y_test)
+
+    if feat_extraction:
+        X_train[-1] = scaling.fit_transform(X_train[-1])
+        X_test[-1] = scaling.transform(X_test[-1])
+
+    model.fit(X_train, y_train, validation_data=(X_test, y_test), batch_size=32, epochs=epochs, shuffle=True, callbacks=callbacks)
+
+def report_model(model, encoding, test_data, feat_extraction, scaling, output_file):
 
     if encoding == 2:
         features = test_data[0].features
@@ -187,7 +254,7 @@ def report_model(model, encoding, test_data, feat_extraction, output_file):
         features = [test.seqs for test in test_data]
 
         if feat_extraction:
-            features.append(test_data[0].features)
+            features.append(scaling.transform(test_data[0].features))
 
     model_pred = model.predict(features)
     y_pred = np.argmax(model_pred, axis=1)
@@ -215,8 +282,11 @@ if __name__ == '__main__':
     parser.add_argument('-patience', '--patience', default=10, help='Epochs to stop training after loss plateau')
     parser.add_argument('-encoding', '--encoding', default=0, help='Encoding - 0: One-hot encoding, 1: K-mer embedding, 2: No encoding (only feature extraction), 3: All encodings (without feature extraction)')
     parser.add_argument('-k', '--k', default=1, help='Length of k-mers')
+    parser.add_argument('-concat', '--concat', default=1, help='Concatenation type - 1: Directly, 2: Using dense layer before concatenation')
+
     parser.add_argument('-feat_extraction', '--feat_extraction', default=[], nargs='+', help='Features to be extracted, e.g., 1 2 3 4 5 6 7 8 9 10. \
-                        1 = NAC, 2 = DNC, 3 = TNC, 4 = kGap, 5 = ORF, 6 = Fickett Score, 7 = Graphs, 8 = Shannon Entropy, 9 = Tsallis Entropy, 10 = repDNA')
+                        1 = NAC, 2 = DNC, 3 = TNC, 4 = kGap, 5 = ORF, 6 = Fickett Score')
+    parser.add_argument('-features_exist', '--features_exist', default=0, help='Features extracted previously - 0: False, 1: True; Default: False')
 
     # Choose between conventional and deep learning algorithms
     parser.add_argument('-algorithm', '--algorithm', default=2, help='Algorithm - 0: Support Vector Machines (SVM), 1: Extreme Gradient Boosting (XGBoost), 2: Deep Learning')
@@ -245,11 +315,14 @@ if __name__ == '__main__':
     patience = int(args.patience)
     encoding = int(args.encoding)
     k = int(args.k)
+    concat = int(args.concat)
 
     if args.feat_extraction:
         feat_extraction = [int(i) for i in args.feat_extraction]
     else:
         feat_extraction = args.feat_extraction
+    
+    features_exist = int(args.features_exist)
 
     output_folder = args.output
 
@@ -257,14 +330,14 @@ if __name__ == '__main__':
 
     lstm_params = {'num_lstm': int(args.num_lstm), 'bidirectional': int(args.bidirectional), 'dropout': float(args.lstm_dropout)}
 
-    train_data, test_data, max_len = load_data(train_path, test_path, encoding, feat_extraction, k)
+    train_data, test_data, max_len = load_data(train_path, test_path, encoding, feat_extraction, features_exist, k)
 
     num_labels = len(train_data[0].names)
 
     os.makedirs(output_folder, exist_ok=True)
 
     if algorithm == 2:
-        model = create_model(encoding, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
+        model = create_model(encoding, concat, feat_extraction, num_labels, max_len, k, conv_params, lstm_params)
 
         tf.keras.utils.plot_model(
             model,
@@ -279,60 +352,10 @@ if __name__ == '__main__':
             show_layer_activations=False
         )
 
-        train_model(model, encoding, train_data, feat_extraction, epochs, patience)
+        scaler = StandardScaler()
 
-        report_model(model, encoding, test_data, feat_extraction, f'{output_folder}/results.csv')
+        train_model(model, encoding, train_data, feat_extraction, epochs, patience, scaler)
+
+        report_model(model, encoding, test_data, feat_extraction, scaler, f'{output_folder}/results.csv')
     else:
-        X_train, y_train = train_data[0].features, np.argmax(train_data[0].labels, axis=1)
-        X_test, y_test = test_data[0].features, np.argmax(test_data[0].labels, axis=1)
-
-        def objective(trial):
-            
-            if algorithm == 0:
-                params = {
-                    'C': trial.suggest_loguniform('C', 1e-4, 1e2),
-                    'gamma': trial.suggest_loguniform('gamma', 1e-4, 1e2),
-                }
-
-                model = make_pipeline(StandardScaler(), SVC(**params, kernel = 'rbf', probability = True, random_state = SEED))
-            elif algorithm == 1:
-                params = {
-                    'max_depth': trial.suggest_int('max_depth', 1, 9),
-                    'learning_rate': trial.suggest_loguniform('learning_rate', 0.01, 1.0),
-                    'n_estimators': trial.suggest_int('n_estimators', 50, 500),
-                    'min_child_weight': trial.suggest_int('min_child_weight', 1, 10),
-                    'gamma': trial.suggest_loguniform('gamma', 1e-8, 1.0),
-                    'subsample': trial.suggest_loguniform('subsample', 0.01, 1.0),
-                    'colsample_bytree': trial.suggest_loguniform('colsample_bytree', 0.01, 1.0),
-                    'reg_alpha': trial.suggest_loguniform('reg_alpha', 1e-8, 1.0),
-                    'reg_lambda': trial.suggest_loguniform('reg_lambda', 1e-8, 1.0),
-                    'eval_metric': 'mlogloss',
-                    'use_label_encoder': False
-                }
-
-                model = make_pipeline(StandardScaler(), XGBClassifier(**params, random_state=SEED))
-
-            scores = cross_val_score(model, X_train, y_train, n_jobs=-1, cv=5, scoring='precision_weighted')
-            weighted_precision = scores.mean()
-
-            return weighted_precision
-
-        study = optuna.create_study(direction="maximize", sampler=optuna.samplers.TPESampler(seed=SEED))
-        study.optimize(objective, n_trials=100)
-        print(study.best_trial)
-
-        if algorithm == 0:
-            model = make_pipeline(StandardScaler(), SVC(**study.best_trial.params, kernel = 'rbf', probability = True, random_state = SEED))
-        elif algorithm == 1:
-            model = make_pipeline(StandardScaler(), XGBClassifier(**study.best_trial.params, random_state=SEED))
-
-        model.fit(X_train, y_train)
-        model_pred = model.predict(X_test)
-
-        report = classification_report(y_test, model_pred, target_names=test_data[0].names, output_dict=True)
-
-        df_report = pd.DataFrame(report).T
-
-        print(df_report)
-
-        df_report.to_csv(f'{output_folder}/results.csv')
+        conventional_models(algorithm, train_data, test_data)

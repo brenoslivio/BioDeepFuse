@@ -27,7 +27,7 @@ class Seq:
             for i, comb in enumerate(seq_ohe):
                 seq_ohe[comb][i] = 1
         elif encoding == 1: # k-mer embedding    
-            seq_kmer = {''.join(comb): i for i, comb in enumerate(product(['A', 'C', 'G', 'T'], repeat= k))}
+            seq_kmer = {''.join(comb): i for i, comb in enumerate(product(['A', 'C', 'G', 'T'], repeat = k))}
         
         seqs, labels = [], []
 
@@ -53,18 +53,19 @@ class Seq:
     def max_len(self):
         return max([len(seq) for seq in self.seqs])
     
-    def feature_extraction(self, features, train = True):
+    def feature_extraction(self, features, train = True, features_exist = False):
         path = 'feat_extraction'
 
-        try:
-            if train:
-                shutil.rmtree(path + '/train')
-            else:
-                shutil.rmtree(path + '/test')
-        except OSError as e:
-            print("Error: %s - %s." % (e.filename, e.strerror))
-            print('Creating Directory...')
-        
+        if not features_exist:
+            try:
+                if train:
+                    shutil.rmtree(path + '/train')
+                else:
+                    shutil.rmtree(path + '/test')
+            except OSError as e:
+                print("Error: %s - %s." % (e.filename, e.strerror))
+                print('Creating Directory...')
+
         if not os.path.exists(path):
             os.mkdir(path)
         
@@ -88,85 +89,69 @@ class Seq:
 
             if 1 in features:
                 dataset = dataset_path + '/NAC.csv'
-                subprocess.run(['python', 'MathFeature/methods/ExtractionTechniques.py',
-                                '-i', fasta_file, '-o', dataset, '-l', self.names[i],
-                                '-t', 'NAC', '-seq', '1'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+
+                if not features_exist:
+                    subprocess.run(['python', 'MathFeature/methods/ExtractionTechniques.py',
+                                    '-i', fasta_file, '-o', dataset, '-l', self.names[i],
+                                    '-t', 'NAC', '-seq', '1'], 
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
 
             if 2 in features:
                 dataset = dataset_path + '/DNC.csv'
-                subprocess.run(['python', 'MathFeature/methods/ExtractionTechniques.py', '-i',
-                                fasta_file, '-o', dataset, '-l', self.names[i],
-                                '-t', 'DNC', '-seq', '1'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+
+                if not features_exist:
+                    subprocess.run(['python', 'MathFeature/methods/ExtractionTechniques.py', '-i',
+                                    fasta_file, '-o', dataset, '-l', self.names[i],
+                                    '-t', 'DNC', '-seq', '1'], 
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
 
             if 3 in features:
                 dataset = dataset_path + '/TNC.csv'
-                subprocess.run(['python', 'MathFeature/methods/ExtractionTechniques.py', '-i',
-                                fasta_file, '-o', dataset, '-l', self.names[i],
-                                '-t', 'TNC', '-seq', '1'], stdout=subprocess.DEVNULL,
-                                stderr=subprocess.STDOUT)
+
+                if not features_exist:
+                    subprocess.run(['python', 'MathFeature/methods/ExtractionTechniques.py', '-i',
+                                    fasta_file, '-o', dataset, '-l', self.names[i],
+                                    '-t', 'TNC', '-seq', '1'], 
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
 
             if 4 in features:
                 dataset_di = dataset_path + '/kGap_di.csv'
                 dataset_tri = dataset_path + '/kGap_tri.csv'
 
-                subprocess.run(['python', 'MathFeature/methods/Kgap.py', '-i',
-                                fasta_file, '-o', dataset_di, '-l',
-                                self.names[i], '-k', '1', '-bef', '1',
-                                '-aft', '2', '-seq', '1'],
-                                stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                if not features_exist:
+                    subprocess.run(['python', 'MathFeature/methods/Kgap.py', '-i',
+                                    fasta_file, '-o', dataset_di, '-l',
+                                    self.names[i], '-k', '1', '-bef', '1',
+                                    '-aft', '2', '-seq', '1'],
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
-                subprocess.run(['python', 'MathFeature/methods/Kgap.py', '-i',
-                                fasta_file, '-o', dataset_tri, '-l',
-                                self.names[i], '-k', '1', '-bef', '1',
-                                '-aft', '3', '-seq', '1'],
-                                stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                    subprocess.run(['python', 'MathFeature/methods/Kgap.py', '-i',
+                                    fasta_file, '-o', dataset_tri, '-l',
+                                    self.names[i], '-k', '1', '-bef', '1',
+                                    '-aft', '3', '-seq', '1'],
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset_di)
                 datasets.append(dataset_tri)
 
             if 5 in features:
-
                 dataset = dataset_path + '/ORF.csv'
-                subprocess.run(['python', 'MathFeature/methods/CodingClass.py', '-i',
-                                fasta_file, '-o', dataset, '-l', self.names[i]],
-                                stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+
+                if not features_exist:
+                    subprocess.run(['python', 'MathFeature/methods/CodingClass.py', '-i',
+                                    fasta_file, '-o', dataset, '-l', self.names[i]],
+                                    stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
 
             if 6 in features:
                 dataset = dataset_path + '/Fickett.csv'
-                subprocess.run(['python', 'MathFeature/methods/FickettScore.py', '-i',
-                                fasta_file, '-o', dataset, '-l', self.names[i],
-                                '-seq', '1'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-                datasets.append(dataset)
 
-            if 7 in features:
-                dataset = dataset_path + '/ComplexNetworks.csv'
-                subprocess.run(['python', 'MathFeature/methods/ComplexNetworksClass-v2.py', '-i', 
-                                fasta_file, '-o', dataset, '-l', self.names[i], 
-                                '-k', '3'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-                datasets.append(dataset)
-
-            if 8 in features:
-                dataset = dataset_path + '/Shannon.csv'
-                subprocess.run(['python', 'MathFeature/methods/EntropyClass.py', '-i',
-                                fasta_file, '-o', dataset, '-l', self.names[i],
-                                '-k', '5', '-e', 'Shannon'],
-                                stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-                datasets.append(dataset)
-
-            if 9 in features:
-                dataset = dataset_path + '/Tsallis.csv'
-                subprocess.run(['python', 'other-methods/TsallisEntropy.py', '-i',
-                                fasta_file, '-o', dataset, '-l', self.names[i],
-                                '-k', '5', '-q', '2.3'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-                datasets.append(dataset)
-
-            if 10 in features:
-                dataset = dataset_path + '/repDNA'
-                subprocess.run(['python', 'other-methods/repDNA-feat.py', '--file',
-                                fasta_file, '--output', dataset, '--label', self.names[i]], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                if not features_exist:
+                    subprocess.run(['python', 'MathFeature/methods/FickettScore.py', '-i',
+                                    fasta_file, '-o', dataset, '-l', self.names[i],
+                                    '-seq', '1'], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
                 datasets.append(dataset)
             
         if datasets:
