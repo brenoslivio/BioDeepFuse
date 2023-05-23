@@ -139,7 +139,7 @@ def base_layers(encoding, concat, max_len, k, conv_params, lstm_params):
             out = Flatten()(x)
         elif concat == 2:
             x = Flatten()(x)
-            x = Dense(256, activation='relu')(x)
+            x = Dense(128, activation='relu')(x)
             out = Dropout(0.5)(x)
 
     elif encoding == 1: # K-mer embedding
@@ -155,7 +155,7 @@ def base_layers(encoding, concat, max_len, k, conv_params, lstm_params):
             out = Flatten()(x)
         elif concat == 2:
             x = Flatten()(x)
-            x = Dense(256, activation='relu')(x)
+            x = Dense(128, activation='relu')(x)
             out = Dropout(0.5)(x)
 
     elif encoding == 2: # no encoding
@@ -164,8 +164,8 @@ def base_layers(encoding, concat, max_len, k, conv_params, lstm_params):
         if concat == 1:
             out = Flatten()(input_layer)
         elif concat == 2:
-            x = Flatten()(x)
-            x = Dense(256, activation='relu')(x)
+            x = Flatten()(input_layer)
+            x = Dense(128, activation='relu')(x)
             out = Dropout(0.5)(x)
 
     return input_layer, out
@@ -187,7 +187,7 @@ def create_model(encoding, concat, feat_extraction, num_labels, max_len, k, conv
             outs.append(x)
 
     if encoding == 2 or feat_extraction:
-        in_layer, x = base_layers(2, max_len[-1], k, conv_params, lstm_params)
+        in_layer, x = base_layers(2, concat, max_len[-1], k, conv_params, lstm_params)
         input_layers.append(in_layer)
         outs.append(x)
 
@@ -198,11 +198,11 @@ def create_model(encoding, concat, feat_extraction, num_labels, max_len, k, conv
 
     # Dense layers
     if concat == 1:
-        x = Dense(256, activation='relu')(outs)
-        x = Dropout(0.5)(x)
-        x = Dense(128, activation='relu')(x)
-    elif concat == 2:
         x = Dense(128, activation='relu')(outs)
+        x = Dropout(0.5)(x)
+        x = Dense(64, activation='relu')(x)
+    elif concat == 2:
+        x = Dense(64, activation='relu')(outs)
     
     x = Dropout(0.5)(x)
     output_layer = Dense(num_labels, activation='softmax')(x)
@@ -222,23 +222,28 @@ def train_model(model, encoding, train_data, feat_extraction, epochs, patience, 
         EarlyStopping(monitor='val_loss', patience=patience, restore_best_weights=True, verbose=1)
     ]
 
+    X_train, X_test, y_train, y_test = [], [], [], []
+
     if encoding == 2:
-        features = train_data[0].features
+        feature_X_train, feature_X_test, feature_y_train, feature_y_test = train_test_split(train_data[0].features, train_data[0].labels, test_size=0.1, shuffle=True, stratify=train_data[0].labels, random_state=SEED)
+
+        X_train.append(feature_X_train)
+        X_test.append(feature_X_test)
+        y_train.append(feature_y_train)
+        y_test.append(feature_y_test)
     else:
         features = [train.seqs for train in train_data]
 
         if feat_extraction:
             features.append(train_data[0].features)
 
-    X_train, X_test, y_train, y_test = [], [], [], []
-
-    for feature in features:
-        feature_X_train, feature_X_test, feature_y_train, feature_y_test = train_test_split(feature, train_data[0].labels, test_size=0.1, shuffle=True, stratify=train_data[0].labels, random_state=SEED)
-        
-        X_train.append(feature_X_train)
-        X_test.append(feature_X_test)
-        y_train.append(feature_y_train)
-        y_test.append(feature_y_test)
+        for feature in features:
+            feature_X_train, feature_X_test, feature_y_train, feature_y_test = train_test_split(feature, train_data[0].labels, test_size=0.1, shuffle=True, stratify=train_data[0].labels, random_state=SEED)
+            
+            X_train.append(feature_X_train)
+            X_test.append(feature_X_test)
+            y_train.append(feature_y_train)
+            y_test.append(feature_y_test)
 
     if feat_extraction:
         X_train[-1] = scaling.fit_transform(X_train[-1])
@@ -249,7 +254,7 @@ def train_model(model, encoding, train_data, feat_extraction, epochs, patience, 
 def report_model(model, encoding, test_data, feat_extraction, scaling, output_file):
 
     if encoding == 2:
-        features = test_data[0].features
+        features = scaling.transform(test_data[0].features)
     else:
         features = [test.seqs for test in test_data]
 
@@ -284,7 +289,7 @@ if __name__ == '__main__':
     parser.add_argument('-k', '--k', default=1, help='Length of k-mers')
     parser.add_argument('-concat', '--concat', default=1, help='Concatenation type - 1: Directly, 2: Using dense layer before concatenation')
 
-    parser.add_argument('-feat_extraction', '--feat_extraction', default=[], nargs='+', help='Features to be extracted, e.g., 1 2 3 4 5 6 7 8 9 10. \
+    parser.add_argument('-feat_extraction', '--feat_extraction', default=[], nargs='+', help='Features to be extracted, e.g., 1 2 3 4 5 6. \
                         1 = NAC, 2 = DNC, 3 = TNC, 4 = kGap, 5 = ORF, 6 = Fickett Score')
     parser.add_argument('-features_exist', '--features_exist', default=0, help='Features extracted previously - 0: False, 1: True; Default: False')
 
