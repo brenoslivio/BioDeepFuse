@@ -27,5 +27,5 @@ def fetch_cm(rfam_cm, labels):
 if __name__ == '__main__':
     labels = ['rRNA', 'tRNA', 'sRNA', 'Cis-reg']
 
-    # fetch_cm('Infernal/Rfam.cm', labels)
+    fetch_cm('Infernal/Rfam.cm', labels)
     extract_seqs("genomes", "sequences", labels)
