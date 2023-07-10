@@ -2,6 +2,7 @@
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 ![Status](https://img.shields.io/badge/status-up-brightgreen)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <h4 align="center">Feature Extraction Techniques based on Deep Learning Framework
 for Enhanced Classification of Non-coding RNA</h4>
@@ -83,7 +84,64 @@ conda deactivate
 
 ## How to use
 
+When running the application, it is possible to use diverse arguments. They are shown using the `--help` argument. The options avaliable are:
 
+```bash
+  -train TRAIN, --train TRAIN
+                        Folder with FASTA training files
+
+  -test TEST, --test TEST
+                        Folder with FASTA testing files
+
+  -epochs EPOCHS, --epochs EPOCHS
+                        Number of epochs to train
+
+  -patience PATIENCE, --patience PATIENCE
+                        Epochs to stop training after loss plateau
+
+  -encoding ENCODING, --encoding ENCODING
+                        Encoding - 0: One-hot encoding, 1: K-mer embedding, 2: No encoding (only feature extraction), 3: All encodings (without feature extraction)
+
+  -k K, --k K           Length of k-mers
+
+  -concat CONCAT, --concat CONCAT
+                        Concatenation type - 1: Directly, 2: Using dense layer before concatenation
+
+  -feat_extraction FEAT_EXTRACTION [FEAT_EXTRACTION ...], --feat_extraction FEAT_EXTRACTION [FEAT_EXTRACTION ...]
+                        Features to be extracted, e.g., 1 2 3 4 5 6. 1 = NAC, 2 = DNC, 3 = TNC, 4 = kGap, 5 = ORF, 6 = Fickett Score
+
+  -features_exist FEATURES_EXIST, --features_exist FEATURES_EXIST
+                        Features extracted previously - 0: False, 1: True; Default: False
+
+  -algorithm ALGORITHM, --algorithm ALGORITHM
+                        Algorithm - 0: Support Vector Machines (SVM), 1: Extreme Gradient Boosting (XGBoost), 2: Deep Learning
+
+  -num_convs NUM_CONVS, --num_convs NUM_CONVS
+                        Number of convolutional layers
+
+  -activation ACTIVATION, --activation ACTIVATION
+                        Activation to use - 0: ReLU, 1: Leaky ReLU; Default: ReLU
+
+  -batch_norm BATCH_NORM, --batch_norm BATCH_NORM
+                        Use Batch Normalization for Convolutional Layers - 0: False, 1: True; Default: False
+
+  -cnn_dropout CNN_DROPOUT, --cnn_dropout CNN_DROPOUT
+                        Dropout rate between Convolutional layers - 0 to 1
+
+  -num_lstm NUM_LSTM, --num_lstm NUM_LSTM
+                        Number of LSTM layers
+
+  -bidirectional BIDIRECTIONAL, --bidirectional BIDIRECTIONAL
+                        Use Bidirectional LSTM - 0: False, 1: True; Default: False
+
+  -lstm_dropout LSTM_DROPOUT, --lstm_dropout LSTM_DROPOUT
+                        Dropout rate between LSTM layers - 0 to 1
+
+  -output OUTPUT, --output OUTPUT
+                        Output folder for classification reports.
+```
+
+Alternatively, you can run the experiments used for the paper in `run_experiments.sh`.
 
 ## Citation
 
