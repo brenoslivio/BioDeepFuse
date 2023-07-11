@@ -84,7 +84,7 @@ conda deactivate
 
 ## How to use
 
-When running the application, it is possible to use diverse arguments. They are shown using the `--help` argument. The options avaliable are:
+When running the application, it is possible to use diverse arguments. They are shown using the `--help` argument. The options available are:
 
 ```bash
   -train TRAIN, --train TRAIN
