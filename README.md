@@ -2,7 +2,11 @@
 ![Status](https://img.shields.io/badge/status-up-brightgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<h4 align="center">BioDeepFuse: A Hybrid Deep Learning Approach with Integrated Feature Extraction Techniques for Enhanced Non-coding RNA Classification</h4>
+<h1 align="center">
+  <img src="imgs/BioDeepFuse.png" alt="BioDeepFuse" width="300">
+</h1>
+
+<h3 align="center">BioDeepFuse: Empowering Researchers in Life Sciences with Deep Learning</h3>
 
 <p align="center">
   <a href="https://github.com/brenoslivio/BioDeepFuse">Home</a> •
@@ -17,9 +21,11 @@ The accurate classification of non-coding RNA (ncRNA) sequences is pivotal for a
 
 ## Authors
 
-* Anderson P. Avila Santosa, Breno L. S. de Almeidaa, Robson P. Bonidia, Peter F. Stadler, Polonca Stefanic, Denny Popp, Ines Mandic-Mulec, Ulisses Rocha, Danilo S. Sanches, and André C.P.L.F. de Carvalho
+* Anderson P. Avila Santos $^\dagger$, Breno L. S. de Almeida $^\dagger$, Robson P. Bonidia, Peter F. Stadler, Polonca Stefanic, Denny Popp, Ines Mandic-Mulec, Ulisses Rocha, Danilo S. Sanches, and André C.P.L.F. de Carvalho
 
 * **Correspondence:** Ulisses Nunes da Rocha. Email: ulisses.rocha@ufz.de
+
+$\dagger$ The authors have contributed equally.
 
 ## Publication
 
