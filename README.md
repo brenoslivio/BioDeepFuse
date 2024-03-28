@@ -21,17 +21,17 @@ The accurate classification of non-coding RNA (ncRNA) sequences is pivotal for a
 
 ## Authors
 
-* Anderson P. Avila Santos $^\dagger$, Breno L. S. de Almeida $^\dagger$, Robson P. Bonidia, Peter F. Stadler, Polonca Stefanic, Denny Popp, Ines Mandic-Mulec, Ulisses Rocha, Danilo S. Sanches, and André C.P.L.F. de Carvalho
+* Anderson P. Avila Santos $^\dagger$, Breno L. S. de Almeida $^\dagger$, Robson P. Bonidia, Peter F. Stadler, Polonca Stefanic, Ines Mandic-Mulec, Ulisses Rocha, Danilo S. Sanches, and André C.P.L.F. de Carvalho
 
 * **Correspondence:** Ulisses Nunes da Rocha. Email: ulisses.rocha@ufz.de
 
-$\dagger$ The authors have contributed equally.
+$\dagger$ These authors have contributed equally.
 
 ## Publication
 
 Abstract accepted and presented at the 16th symposium on Genetics and Bacterial Ecology 2023 (BAGECO 2023), with the title:  **Feature Extraction Techniques based on Deep Learning Framework for Enhanced Classification of Non-coding RNA**.
 
-Full paper: In submission.
+Full paper: https://doi.org/10.1080/15476286.2024.2329451
 
 ## Installing dependencies and package
 
@@ -50,7 +50,6 @@ $ git submodule update
 ```
 
 **1 - Install Miniconda:** 
-
 
 See documentation: https://docs.conda.io/en/latest/miniconda.html
 
@@ -145,20 +144,23 @@ Alternatively, you can run the experiments used for the paper in `run_experiment
 
 ## Citation
 
-If you use this application in a scientific publication, we would appreciate citations to the following conference abstract:
+If you use this application in a scientific publication, we would appreciate citations to the following research paper:
 
-Anderson P Avila Santos, Breno L S de Almeida, Robson P Bonidia, Peter F Stadler, Ulisses N da Rocha, Danilo S Sanches, André C P L F de Carvalho, Feature Extraction Techniques based on Deep Learning Framework for Enhanced Classification of Non-coding RNA. In: 16th symposium on Genetics and Bacterial Ecology 2023 (BAGECO 2023), 2023, Copenhagen. New approaches/technologies in microbial ecology, 2023.
+Anderson Avila Santos, Breno L S de Almeida, Robson P. Bonidia, Peter F. Stadler, Polonca Stefanic, Ines Mandic-Mulec, Ulisses Rocha, Danilo S. Sanches, and André CPLF de Carvalho. "BioDeepfuse: a hybrid deep learning approach with integrated feature extraction techniques for enhanced non-coding RNA classification." RNA biology 21, no. 1 (2024): 1-12.
 
 ```sh
-@conference{bageco2023,
-    title        = "{Feature Extraction Techniques based on Deep Learning Framework for Enhanced Classification of Non-coding RNA}",
-    author       = {Santos, Anderson P Avila and de Almeida, Breno L S and Bonidia, Robson P  and Stadler, Peter F and da Rocha, Ulisses N and Sanches, Danilo S and de Carvalho, André C P L F},
-    year         = 2023,
-    month        = {06},
-    booktitle    = {New approaches/technologies in microbial ecology},
-    address      = {Copenhagen, Denmark},
-    pages        = {235},
-    organization = {CAP Partner},
-    url = {https://bageco2023.org/wp-content/uploads/2023/06/CAP-Partner_Bageco2023_programme_A5_abstract-korr10.pdf}
+@article{doi:10.1080/15476286.2024.2329451,
+author = {Anderson P. Avila Santos, Breno L. S. de Almeida, Robson P. Bonidia, Peter F. Stadler, Polonca Stefanic, Ines Mandic-Mulec, Ulisses Rocha, Danilo S. Sanches and André C.P.L.F. de Carvalho},
+title = {BioDeepfuse: a hybrid deep learning approach with integrated feature extraction techniques for enhanced non-coding RNA classification},
+journal = {RNA Biology},
+volume = {21},
+number = {1},
+pages = {1-12},
+year = {2024},
+publisher = {Taylor & Francis},
+doi = {10.1080/15476286.2024.2329451},
+note ={PMID: 38528797},
+URL = {https://doi.org/10.1080/15476286.2024.2329451},
+eprint ={https://doi.org/10.1080/15476286.2024.2329451}
 }
 ```
